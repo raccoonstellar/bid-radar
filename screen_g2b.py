@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.1 페이징 수정(260916)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -57,27 +57,44 @@ JOINT_MAX = 1_300_000_000    # 실적요건 50%면 단독, 아니면 컨소
 LEAD_MAX  = 3_000_000_000    # 대표사 불가, 구성사
 
 
-def fetch(op, bgn, end, rows=300):
-    """inqryDiv=1 : 공고게시일시 기준"""
-    params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end,
-              "pageNo": "1", "numOfRows": str(rows), "ServiceKey": KEY}
-    last = None
+def fetch(op, bgn, end, rows=200, max_pages=25):
+    """inqryDiv=1 : 공고게시일시 기준. totalCount 까지 페이징 (v0.4.1 — 300건 상한 버그 수정)"""
+    items, last = [], None
     for base in BASES:
-        url = f"{base}/{op}?" + urllib.parse.urlencode(params, safe="")
-        try:
-            with urllib.request.urlopen(url, timeout=40) as r:
-                body = r.read().decode("utf-8", "replace")
-            if body.lstrip().startswith("<"):
-                last = body[:300]; continue
-            j = json.loads(body)
+        got, page, total = [], 1, None
+        ok = True
+        while True:
+            params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end,
+                      "pageNo": str(page), "numOfRows": str(rows), "ServiceKey": KEY}
+            url = f"{base}/{op}?" + urllib.parse.urlencode(params, safe="")
+            body = None
+            for attempt in range(2):
+                try:
+                    with urllib.request.urlopen(url, timeout=60) as r:
+                        body = r.read().decode("utf-8", "replace")
+                    break
+                except Exception as e:
+                    last = repr(e); time.sleep(2)
+            if body is None or body.lstrip().startswith("<"):
+                last = last or (body or "")[:300]; ok = False; break
+            try:
+                j = json.loads(body)
+            except Exception as e:
+                last = repr(e); ok = False; break
             hdr = j.get("response", {}).get("header", {})
             if hdr.get("resultCode") not in ("00", "0", None):
-                last = f"{hdr.get('resultCode')} {hdr.get('resultMsg')}"; continue
-            items = j.get("response", {}).get("body", {}).get("items") or []
-            if isinstance(items, dict): items = items.get("item", []) or []
-            return items
-        except Exception as e:
-            last = repr(e)
+                last = f"{hdr.get('resultCode')} {hdr.get('resultMsg')}"; ok = False; break
+            bd = j.get("response", {}).get("body", {}) or {}
+            page_items = bd.get("items") or []
+            if isinstance(page_items, dict): page_items = page_items.get("item", []) or []
+            got.extend(page_items)
+            total = int(bd.get("totalCount") or 0)
+            if not page_items or len(got) >= total or page >= max_pages: break
+            page += 1; time.sleep(0.3)
+        if ok:
+            if total and len(got) < total:
+                print(f"  ! {op}: totalCount {total} 중 {len(got)}건만 수집 (페이지 상한 {max_pages})", file=sys.stderr)
+            return got
         time.sleep(0.4)
     print(f"  ! {op} 실패: {last}", file=sys.stderr)
     return []
