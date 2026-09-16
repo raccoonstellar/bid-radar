@@ -11,14 +11,15 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
    - `git fetch origin claude/radar && git checkout claude/radar` 
    - 원격에 없으면(첫 실행) `git checkout -b claude/radar`
    - 코드가 main보다 오래됐으면 `git merge origin/main --no-edit` (코드 갱신 반영)
-2. `./run_daily.sh` 실행 (환경변수 `G2B_KEY` 필요 — 절대 파일에 쓰지 않는다)
+2. `bash run_daily.sh` 실행 (환경변수 `G2B_KEY` 필요 — 절대 파일에 쓰지 않는다)
    - `screen_g2b.py`: API 수집 → `out/screen_YYYYMMDD.json` (범위: 마지막 성공일-1 ~ 오늘, 3~14일)
    - `build_data.py`: `docs/data/{bids,runs,latest}.json` 병합
 3. `git add docs/data && git commit -m "radar YYYY-MM-DD: 수집 N건 통과 M건" && git push origin claude/radar`
 4. 완료 보고: `docs/data/runs.json` 첫 항목(total·pass·buckets·drops) + OPEN 상위 5건(점수·D-day·금액·공고명·포지션)
 
 ## 실패 처리
-- API 403/타임아웃: 1분 후 1회 재시도. 그래도 실패면 "수집 실패 — 네트워크/키 확인"으로 보고하고 커밋하지 않는다
+- 스크립트가 페이지 단위로 6회 재시도하고 실패 페이지는 건너뛴다. stderr 에 "부분 수집" 경고가 있으면 보고에 실패 페이지 수를 적는다 (다음 실행이 겹침 범위로 메운다)
+- 총 수집 0건이면 "수집 실패 — 네트워크/키 확인"으로 보고하고 커밋하지 않는다
 - 0건 수집: 공휴일일 수 있음. `docs/data`는 건드리지 않고 보고만
 - 규칙 파일(`screen_g2b.py`)은 루틴에서 수정하지 않는다. 오탐이 보이면 보고에 적기만 한다
 

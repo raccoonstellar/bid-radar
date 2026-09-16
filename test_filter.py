@@ -123,3 +123,10 @@ for nm,kind,amt,clse,expect,extra in EXTRA3:
 print(f"v0.4 회귀 {ok4}/{len(EXTRA3)}")
 it={"bidNtceNm":"소형 무인기 탐지식별 테스트베드","presmptPrce":1950000000,"bidClseDt":"20261001","dminsttNm":""}
 b,*_=s.classify(it,"용역",TODAY); print(("✓" if b=="DROP" else "✗")+" 탐지식별 오탐 →",b)
+
+print("\n── v0.4.2 상담회 오탐 ──")
+for nm,exp in [("제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역","DROP"),
+               ("AI 상담 챗봇 구축 및 상담회 운영","OPEN"),
+               ("민원 상담 콜센터 AI 도입","OPEN")]:
+    b,*_=s.classify({"bidNtceNm":nm,"presmptPrce":59090909,"bidClseDt":"20261020","dminsttNm":""},"용역",TODAY)
+    print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7} {nm[:50]}")
