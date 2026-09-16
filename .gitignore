@@ -1,0 +1,5 @@
+# screen_g2b.py 로컬 산출물 — 커밋 대상은 docs/data 뿐 (CLAUDE.md)
+out/
+
+__pycache__/
+*.pyc
