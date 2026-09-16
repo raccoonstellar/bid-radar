@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.1 페이징 수정(260916)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -57,47 +57,43 @@ JOINT_MAX = 1_300_000_000    # 실적요건 50%면 단독, 아니면 컨소
 LEAD_MAX  = 3_000_000_000    # 대표사 불가, 구성사
 
 
-def fetch(op, bgn, end, rows=200, max_pages=25):
-    """inqryDiv=1 : 공고게시일시 기준. totalCount 까지 페이징 (v0.4.1 — 300건 상한 버그 수정)"""
-    items, last = [], None
-    for base in BASES:
-        got, page, total = [], 1, None
-        ok = True
-        while True:
-            params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end,
-                      "pageNo": str(page), "numOfRows": str(rows), "ServiceKey": KEY}
-            url = f"{base}/{op}?" + urllib.parse.urlencode(params, safe="")
-            body = None
-            for attempt in range(2):
-                try:
-                    with urllib.request.urlopen(url, timeout=60) as r:
-                        body = r.read().decode("utf-8", "replace")
-                    break
-                except Exception as e:
-                    last = repr(e); time.sleep(2)
-            if body is None or body.lstrip().startswith("<"):
-                last = last or (body or "")[:300]; ok = False; break
+def fetch(op, bgn, end, rows=200, max_pages=25, tries=6):
+    """inqryDiv=1 : 공고게시일시 기준. totalCount 까지 페이징.
+    v0.4.2 — 프록시 간헐 단절 대응: 페이지당 재시도 6회(백오프), 실패해도 모은 페이지는 살린다."""
+    base = BASES[0]
+    got, page, total, failed_pages = [], 1, None, []
+    while True:
+        params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end,
+                  "pageNo": str(page), "numOfRows": str(rows), "ServiceKey": KEY}
+        url = f"{base}/{op}?" + urllib.parse.urlencode(params, safe="")
+        j, last = None, None
+        for attempt in range(tries):
             try:
+                with urllib.request.urlopen(url, timeout=60) as r:
+                    body = r.read().decode("utf-8", "replace")
+                if body.lstrip().startswith("<"): raise RuntimeError(body[:200])
                 j = json.loads(body)
+                hdr = j.get("response", {}).get("header", {})
+                if hdr.get("resultCode") not in ("00", "0", None):
+                    raise RuntimeError(f"{hdr.get('resultCode')} {hdr.get('resultMsg')}")
+                break
             except Exception as e:
-                last = repr(e); ok = False; break
-            hdr = j.get("response", {}).get("header", {})
-            if hdr.get("resultCode") not in ("00", "0", None):
-                last = f"{hdr.get('resultCode')} {hdr.get('resultMsg')}"; ok = False; break
+                last = repr(e); j = None; time.sleep(1.5 * (attempt + 1))
+        if j is None:
+            failed_pages.append(page)
+            print(f"  ! {op} page {page} 실패 ({last}) — 건너뜀", file=sys.stderr)
+            if total is None: break          # 첫 페이지부터 실패면 total 을 몰라 종료
+        else:
             bd = j.get("response", {}).get("body", {}) or {}
             page_items = bd.get("items") or []
             if isinstance(page_items, dict): page_items = page_items.get("item", []) or []
             got.extend(page_items)
             total = int(bd.get("totalCount") or 0)
-            if not page_items or len(got) >= total or page >= max_pages: break
-            page += 1; time.sleep(0.3)
-        if ok:
-            if total and len(got) < total:
-                print(f"  ! {op}: totalCount {total} 중 {len(got)}건만 수집 (페이지 상한 {max_pages})", file=sys.stderr)
-            return got
-        time.sleep(0.4)
-    print(f"  ! {op} 실패: {last}", file=sys.stderr)
-    return []
+        if total is not None and (page * rows >= total or page >= max_pages): break
+        page += 1; time.sleep(0.3)
+    if failed_pages:
+        print(f"  ! {op}: 실패 페이지 {failed_pages} — {len(got)}/{total or '?'}건 부분 수집", file=sys.stderr)
+    return got
 
 def money(v):
     try: return int(float(str(v).replace(",", "") or 0))
@@ -115,7 +111,13 @@ def has(nm, tok):
     if _ASCII.match(tok[0]) and len(tok) <= 4:
         return re.search(r"(?<![A-Za-z])" + re.escape(tok) + r"(?![A-Za-z])", nm) is not None
     return tok in nm
-def anyk(nm, ks): return [k for k in ks if has(nm, k)]
+_NOT_COUNSEL = re.compile(r"상담회|상담소|상담원 ?(모집|채용)|상담부스")
+def anyk(nm, ks):
+    out = []
+    for k in ks:
+        if k == "상담" and _NOT_COUNSEL.search(nm) and nm.count("상담") == len(_NOT_COUNSEL.findall(nm)): continue
+        if has(nm, k): out.append(k)
+    return out
 
 def position(amt, arslt, joint_ok):
     """금액대 + 실적경쟁 여부 → 단독/컨소 추천"""

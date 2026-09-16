@@ -72,8 +72,9 @@ def main():
     save(f"{DATA}/bids.json", kept)
 
     runs = [x for x in load(f"{DATA}/runs.json", []) if x.get("date") != date]
-    stats = res.get("stats") or {}
-    buckets = {k: stats.get(k, 0) for k in ("OPEN", "SIGNAL", "WATCH")}
+    # 집계는 차수 정리 후(대시보드와 일치) — 오늘 수집분 중 보관된 것만
+    today_rows = [x for x in kept if x.get("lastSeen") == date]
+    buckets = {k: sum(1 for x in today_rows if x.get("bucket") == k) for k in ("OPEN", "SIGNAL", "WATCH")}
     drops = {}
     for r in res.get("rows", []):
         if r.get("bucket") == "DROP":
