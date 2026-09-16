@@ -5,10 +5,10 @@
 "202609162359"
 ],
 "stats":{
-"OPEN":29,
+"OPEN":30,
 "SIGNAL":24,
 "WATCH":4,
-"DROP":3329
+"DROP":3385
 },
 "rows":[
 {
@@ -161,46 +161,6 @@
 "docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731641&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
 "clsfc":"정보시스템개발서비스",
 "clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":""
-},
-{
-"id":"R26BK01731788-000",
-"bidNo":"R26BK01731788",
-"kind":"용역",
-"name":"제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역",
-"inst":"한국무역협회",
-"amount":59090909,
-"closeDt":"2026-09-23 17:00:00",
-"dday":7,
-"bucket":"OPEN",
-"reason":"재공고(유찰 흔적) · 기술70:가격30 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"상담"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731788&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"70",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"Y",
-"briefing":"",
-"qualDt":"",
-"contact":"02-6000-5856",
-"docs":[
-"4. Summary of the Invitation for Bids_9th Korea-China (Shandong) Business Consultation Meeting.pdf",
-"붙임 1. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 입찰공고문.pdf",
-"붙임 2. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 제안요청서.pdf",
-"붙임 3. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 별지서식.hwp",
-"붙임 1. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 입찰공고문.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731788&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"전시회기획및대행서비스",
-"clsLrg":"행사관리 및 기타 사업 지원서비스 ",
 "arslt":"N",
 "infoBiz":""
 },
@@ -513,6 +473,82 @@
 "docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730007&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
 "clsfc":"데이터서비스",
 "clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":""
+},
+{
+"id":"R26BK01732888-000",
+"bidNo":"R26BK01732888",
+"kind":"용역",
+"name":"연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터/AI 기반 통합성과관리시스템 구축 업체 선정 입찰",
+"inst":"연암대학교 산학협력단",
+"amount":129090909,
+"closeDt":"2026-09-28 14:00:00",
+"dday":12,
+"bucket":"OPEN",
+"reason":"재공고(유찰 흔적) · 기술80:가격20 · 실적경쟁 아님",
+"score":12,
+"keywords":[
+"AI"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732888&bidPbancOrd=000",
+"collectedOn":"2026-09-16",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"일반경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"",
+"contact":"041-580-1117",
+"docs":[
+"2. [공고문]연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터_AI 기반 통합성과관리시스템 구축 업체 선정 입찰.pdf",
+"3. [제안요청서]연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터_AI 기반 통합성과관리시스템 구축 업체 선정 입찰.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732888&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":""
+},
+{
+"id":"R26BK01732262-000",
+"bidNo":"R26BK01732262",
+"kind":"용역",
+"name":"2026년 민속아카이브 정보센터 전시개편 사업",
+"inst":"문화체육관광부 국립민속박물관",
+"amount":30000000,
+"closeDt":"2026-09-29 10:00:00",
+"dday":13,
+"bucket":"OPEN",
+"reason":"기술80:가격20 · 실적경쟁 아님",
+"score":12,
+"keywords":[
+"아카이브"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732262&bidPbancOrd=000",
+"collectedOn":"2026-09-16",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-28 18:00",
+"contact":"02-3704-3031",
+"docs":[
+"(공고서) 2026년 민속아카이브 정보센터 전시 개편 사업.hwpx",
+"(공고서) 2026년 민속아카이브 정보센터 전시 개편 사업.pdf",
+"02_2026년 민속아카이브 정보센터 전시 개편 제안요청서_v1.0.hwpx",
+"03_2026년 민속아카이브 정보센터 전시 개편 과업지시서_v1.0.hwpx"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732262&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"clsfc":"전시장치설치및디자인서비스",
+"clsLrg":"행사관리 및 기타 사업 지원서비스 ",
 "arslt":"N",
 "infoBiz":""
 },
