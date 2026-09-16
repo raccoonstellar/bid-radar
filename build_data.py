@@ -50,6 +50,15 @@ def main():
             cur["lastSeen"] = date
             updated += changed; same += (not changed)
 
+    # 동일 공고번호 차수 중복: 최신 차수만 남긴다 (재공고·정정으로 -000/-001 이 동시에 뜨는 경우)
+    latest = {}
+    for b in bids.values():
+        no = b.get("bidNo") or str(b.get("id","")).rsplit("-",1)[0]
+        ordv = str(b.get("id","")).rsplit("-",1)[-1]
+        if no not in latest or ordv > latest[no][0]: latest[no] = (ordv, b["id"])
+    keep_ids = {v[1] for v in latest.values()}
+    bids = {k: v for k, v in bids.items() if k in keep_ids}
+
     # 보관 규칙
     kept = []
     for b in bids.values():
