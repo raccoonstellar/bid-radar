@@ -1,4 +1,16 @@
-[
+{
+"date":"2026-09-16",
+"range":[
+"202609130000",
+"202609162359"
+],
+"stats":{
+"OPEN":8,
+"SIGNAL":6,
+"WATCH":0,
+"DROP":586
+},
+"rows":[
 {
 "id":"R26BK01728112-000",
 "bidNo":"R26BK01728112",
@@ -37,9 +49,7 @@
 "clsfc":"정보시스템개발서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01715255-001",
@@ -78,9 +88,7 @@
 "clsfc":"패키지소프트웨어개발및도입서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01728046-000",
@@ -118,9 +126,7 @@
 "clsfc":"패키지소프트웨어개발및도입서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01728046-001",
@@ -158,9 +164,7 @@
 "clsfc":"패키지소프트웨어개발및도입서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01728066-000",
@@ -199,9 +203,7 @@
 "clsfc":"정보인프라구축서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01727982-000",
@@ -239,9 +241,7 @@
 "clsfc":"정보인프라구축서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01725550-000",
@@ -278,9 +278,7 @@
 "clsfc":"",
 "clsLrg":"",
 "arslt":"",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01727277-000",
@@ -320,9 +318,7 @@
 "clsfc":"정보시스템개발서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01718661-000",
@@ -360,9 +356,7 @@
 "clsfc":"정보시스템감리서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01728010-000",
@@ -400,9 +394,7 @@
 "clsfc":"기타사업지원서비스",
 "clsLrg":"행사관리 및 기타 사업 지원서비스 ",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01726709-000",
@@ -440,9 +432,7 @@
 "clsfc":"기타연구조사서비스",
 "clsLrg":"연구조사서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01727647-000",
@@ -480,9 +470,7 @@
 "clsfc":"경영전략연구조사서비스",
 "clsLrg":"연구조사서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 },
 {
 "id":"R26BK01720531-000",
@@ -519,9 +507,7 @@
 "clsfc":"정보시스템감리서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"Y",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":"Y"
 },
 {
 "id":"R26BK01722200-000",
@@ -563,8 +549,7 @@
 "clsfc":"정보시스템감리서비스",
 "clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":""
 }
 ]
+}
