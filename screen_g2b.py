@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -127,8 +127,8 @@ def position(amt, arslt, joint_ok):
     if amt <= SOLO_MAX:  return "단독"
     if amt <= JOINT_MAX: return ("단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소" if joint_ok
                                  else "단독 실적요건 확인 필수 — 공동수급 불허")
-    if amt <= LEAD_MAX:  return "컨소 구성사 — 대표사 불가" if joint_ok else "참여 불가 추정 — 공동수급 불허"
-    return "대형사 컨소 구성사만" if joint_ok else "참여 불가 추정 — 공동수급 불허"
+    if amt <= LEAD_MAX:  return "컨소 구성사 — 대표사 불가, 구성사 지분 참여" if joint_ok else "참여 불가 추정 — 공동수급 불허"
+    return "대형사 컨소 구성사 — 대표사 수배 필요" if joint_ok else "참여 불가 추정 — 공동수급 불허"
 
 def classify(it, kind, today):
     nm   = it.get("bidNtceNm", "") or ""
@@ -199,7 +199,7 @@ def classify(it, kind, today):
     else: s_bid = 1
     if tech: why.append(f"기술{tech}:가격{100-tech}")
     if "최저가" in meth or "적격심사" in meth: s_bid = 0; why.append("가격 중심 낙찰")
-    s_cap = 2 if amt <= 0 else 4 if amt <= SOLO_MAX else 3 if amt <= JOINT_MAX else 2 if amt <= LEAD_MAX else 1
+    s_cap = 2 if amt <= 0 else 4 if amt <= SOLO_MAX else 3 if amt <= JOINT_MAX else 2   # v0.5: 13억 초과는 2점(컨소 전제)
     s_bar = 0
     if arslt == "N": s_bar += 1; why.append("실적경쟁 아님")
     if info == "Y" or re.search(r"중소기업|대기업 ?참여 ?제한|소기업", nm): s_bar += 1; why.append("정보화사업·대기업 참여제한 추정")
@@ -208,7 +208,7 @@ def classify(it, kind, today):
 
     if "취소" in nm: return R("WATCH", "취소공고 — 재공고 대기", score)
     if d is not None and d < 5: return R("DROP", "D4 마감 임박(D-5 이내)", score)
-    if amt > JOINT_MAX and (strong or midk): return R("WATCH", f"구성사 후보 — {pos}", score)
+    # v0.5: 금액으로 WATCH 보내지 않는다 — 컨소 구성사 실적(100억대 참여 이력)이 있으므로 대형 건도 OPEN, 포지션만 "구성사"
     if score <= 9: return R("DROP", f"저점({score}) Fit{s_fit}", score)   # 임계값 — 남혁님 리뷰 항목
     return R("OPEN", (" · ".join(why) or "키워드 적합"), score)
 

@@ -38,6 +38,11 @@ def main():
 
     bids = {b["id"]: b for b in load(f"{DATA}/bids.json", [])}
     added = updated = same = 0
+    # 규칙 변경으로 오늘 DROP 이 된 건은 누적에서도 제거 (재판정 반영)
+    removed = 0
+    for r in res.get("rows", []):
+        if r.get("bucket") == "DROP" and r.get("id") in bids:
+            del bids[r["id"]]; removed += 1
     for r in res.get("rows", []):
         if r.get("bucket") == "DROP" or not r.get("id"): continue
         cur = bids.get(r["id"])
@@ -81,11 +86,11 @@ def main():
             k = (r.get("reason") or "").split("(")[0].strip(); drops[k] = drops.get(k, 0) + 1
     runs.append({"date": date, "range": res.get("range"), "total": len(res.get("rows", [])),
                  "pass": sum(buckets.values()), "buckets": buckets, "drops": drops,
-                 "added": added, "updated": updated, "same": same, "builtAt": dt.datetime.now().isoformat(timespec="seconds")})
+                 "added": added, "updated": updated, "same": same, "removed": removed, "builtAt": dt.datetime.now().isoformat(timespec="seconds")})
     runs.sort(key=lambda x: x["date"], reverse=True)
     save(f"{DATA}/runs.json", runs[:90])
     save(f"{DATA}/latest.json", {k: res[k] for k in res if k != "rows"} | {"rows": [r for r in res.get("rows", []) if r.get("bucket") != "DROP"]})
-    print(f"[병합] {date} 신규 {added} · 갱신 {updated} · 변동없음 {same} · 보관 {len(kept)}건 · runs {len(runs)}행")
+    print(f"[병합] {date} 신규 {added} · 갱신 {updated} · 변동없음 {same} · 재판정 제거 {removed} · 보관 {len(kept)}건 · runs {len(runs)}행")
 
 if __name__ == "__main__":
     main()
