@@ -13,7 +13,7 @@ CASES = [
  ("연암공과대학교 AI Agent 성과관리 및 회계/구매 시스템 구축 (재공고)","용역",318181818,"20260921","OPEN"),
  ("2026년 AI활용 초기상담정보시스템 업무 편의성 개선","용역",334545455,"20261001","OPEN"),
  ("(취소공고)대학혁신지원사업 홍익대학교 RAG 기반 챗봇 클라우드 서비스 구축 업체 선정","물품",136363636,"20261002","WATCH"),
- ("통합 업무정보관리 시스템(ECM) 구축 사업","용역",5723036364,"20261021","WATCH"),
+ ("통합 업무정보관리 시스템(ECM) 구축 사업","용역",5723036364,"20261021","OPEN"),   # v0.5: 대형 건도 OPEN(구성사)
  ("출입국심사 여권 판독 고도화 사업 감리 및 개인정보영향평가 용역","용역",145762727,"20260911","SIGNAL"),
  ("[사전규격공개] 지방세 AI 상담 서비스 개인정보 영향평가","용역",0,"20260913","SIGNAL"),
  ("빛의 혁명 디지털 아카이브 구축 BPR/ISP 사업","용역",156363636,"20260930","SIGNAL"),
@@ -57,7 +57,7 @@ EXTRA=[
  ("제4기 AI ADVANCED 과정 운영 용역","용역",41818182,"20260928","DROP",{}),
  ("초거대 제조AI 서비스 개발·실증사업 무선통신망 보안 시스템 설치 공사","용역",90000000,"20260928","DROP",{}),
  ("생성형 AI 플랫폼 구축 및 AX 개발 사업 감리용역","용역",271577591,"20261027","SIGNAL",{}),
- ("HS코드 생성 AI 모델 및 서비스 개발","용역",90909091,"20260922","OPEN",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약"}),
+ ("HS코드 생성 AI 모델 및 서비스 개발","용역",90909091,"20260922","DROP",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약"}),  # v0.6: 1억 미만
 ]
 ok2=0
 for nm,kind,amt,clse,expect,extra in EXTRA:
@@ -89,7 +89,7 @@ EXTRA2=[
  ("2026년 미디어 AI 플랫폼 고도화 감리","용역",27272727,"20260928","SIGNAL",{}),
  ("(긴급)2026년 AI 기반 지역현황 진단시스템 구축 사업 용역 재공고","용역",272727273,"20260922","OPEN",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약","cmmnSpldmdMethdNm":"(수기)공동이행"}),
  ("AI 적용 비축사업 통합정보시스템 고도화 용역","용역",550000000,"20261022","DROP",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약"}),  # v0.4: AI만+고도화 → 9점 저점 (경계 케이스)
- ("OnDevice STT 모듈 및 성폭력 KeyWord 도출 NER(Name Entity Recognition) 모듈 개발","용역",80000000,"20260922","OPEN",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약"}),
+ ("OnDevice STT 모듈 및 성폭력 KeyWord 도출 NER(Name Entity Recognition) 모듈 개발","용역",80000000,"20260922","DROP",{"techAbltEvlRt":"90","sucsfbidMthdNm":"협상에의한계약"}),  # v0.6: 1억 미만
 ]
 ok3=0
 for nm,kind,amt,clse,expect,extra in EXTRA2:
@@ -111,7 +111,7 @@ EXTRA3=[
  ("일반 회계시스템 구축 감리용역","용역",200000000,"20261020","DROP",{}),
  ("AI 상담 챗봇 운영 및 유지관리 용역","용역",200000000,"20261020","OPEN",{}),   # STRONG → 보호, D1 플래그
  ("PC 및 주변기기 구매","물품",30000000,"20261020","DROP",{}),
- ("생성형 AI 기반 민원상담 챗봇 구축","용역",2000000000,"20261020","WATCH",{"cmmnSpldmdMethdNm":"공동이행"}),  # 20억 → 구성사 후보
+ ("생성형 AI 기반 민원상담 챗봇 구축","용역",2000000000,"20261020","OPEN",{"cmmnSpldmdMethdNm":"공동이행"}),  # v0.5: 20억 → OPEN, 포지션 구성사
  ("AI 기반 콜센터 상담 품질관리 시스템 구축","용역",900000000,"20261020","OPEN",{"arsltCmptYn":"N"}),
 ]
 ok4=0
@@ -128,5 +128,24 @@ print("\n── v0.4.2 상담회 오탐 ──")
 for nm,exp in [("제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역","DROP"),
                ("AI 상담 챗봇 구축 및 상담회 운영","OPEN"),
                ("민원 상담 콜센터 AI 도입","OPEN")]:
-    b,*_=s.classify({"bidNtceNm":nm,"presmptPrce":59090909,"bidClseDt":"20261020","dminsttNm":""},"용역",TODAY)
+    b,*_=s.classify({"bidNtceNm":nm,"presmptPrce":159090909,"bidClseDt":"20261020","dminsttNm":""},"용역",TODAY)
     print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7} {nm[:50]}")
+
+print("\n── v0.6 공통키워드·1억 하한·포지션 ──")
+C6=[
+ ("AI 상담 SaaS 구독 서비스 도입","용역",150000000,"20261020","OPEN",{}),
+ ("robi형 콜센터 SaaS 구독형 서비스 계약","용역",300000000,"20261020","OPEN",{}),
+ ("2027년 전자저널 및 학술DB 구독","용역",500000000,"20261020","DROP",{}),
+ ("차세대 통합행정정보시스템 구축","용역",800000000,"20261020","WATCH",{"pubPrcrmntLrgClsfcNm":"ICT 서비스"}),
+ ("차세대 통합행정정보시스템 구축","용역",80000000,"20261020","DROP",{"pubPrcrmntLrgClsfcNm":"ICT 서비스"}),
+ ("주차장 관리시스템 구축","용역",800000000,"20261020","DROP",{"pubPrcrmntLrgClsfcNm":"시설관리"}),
+ ("AI 챗봇 상담 시스템 구축","용역",50000000,"20261020","DROP",{}),
+ ("생성형 AI 플랫폼 구축 감리","용역",30000000,"20261020","SIGNAL",{}),
+]
+ok6=0
+for nm,kind,amt,clse,exp,extra in C6:
+    b,r,sc,hit,d,a,inst,pos,fl=s.classify({"bidNtceNm":nm,"presmptPrce":amt,"bidClseDt":clse,"dminsttNm":"",**extra},kind,TODAY)
+    ok6+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:34]:<36} {r[:28]}" + ("" if b==exp else " ✗"))
+b,r,sc,hit,d,a,inst,pos,fl=s.classify({"bidNtceNm":"AI 챗봇 구축","presmptPrce":900000000,"bidClseDt":"20261020","dminsttNm":"","cmmnSpldmdMethdNm":"(전자)공동이행"},"용역",TODAY)
+print("포지션 예:", pos)
+print(f"v0.6 회귀 {ok6}/{len(C6)}")
