@@ -1,0 +1,21 @@
+{
+ "id": "R26BK01735784-000",
+ "name": " 2026년 상생협력 실증 프로그램_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 ",
+ "checkedAt": "2026-09-17T23:46:45",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=01",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=01",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=01",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

@@ -207,6 +207,19 @@
 "perf": false,
 "files": 5
 },
+"R26BK01735784-000": {
+"status": "extract-failed",
+"checkedAt": "2026-09-17T23:46:45",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 3
+},
 "R26BK01730007-000": {
 "status": "ok",
 "checkedAt": "2026-09-17T03:04:48",
