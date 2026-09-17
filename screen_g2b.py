@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916) · v0.6 공통키워드·1억 하한·하도급 표기(260917)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -25,14 +25,14 @@ OPS = {"용역": "getBidPblancListInfoServc", "물품": "getBidPblancListInfoThn
 # 규칙 요약: ① 품명분류로 먼저 자른다 ② STRONG 키워드는 노이즈 필터 면제 ③ 금액은 컷이 아니라 포지션 추천
 KW_STRONG = ["챗봇","콜봇","AICC","IPCC","생성형","LLM","RAG","OCR","콜센터","상담","음성인식","에이전트","Agent"]
 KW_MID    = ["ECM","EDMS","전자문서","기록물","아카이브","지식관리","비정형","문서","STT","TTS","민원","자연어",
-             "학습데이터","디지털전환","AX","튜터","LMS","검색","콘텐츠관리","NER","텍스트","판독"]
+             "학습데이터","디지털전환","AX","튜터","LMS","검색","콘텐츠관리","NER","텍스트","판독","SaaS","구독"]
 KW_WEAK   = ["AI","인공지능"]
 KW_CORE   = KW_STRONG + KW_MID + KW_WEAK
 
 # ── 노이즈 필터 (STRONG 매칭 시 N2·N3·N4·N8·N9 면제) ──────────────────
 N2_DEVICE  = ["GPU","서버","워크스테이션","노트북","모니터","스토리지","카메라","로봇","항온항습기","변압기","클램프",
               "프린터","복합기","공기청정기","태블릿","PC","장비","기자재","스캐너","어댑터","케이블","서버랙"]
-N3_LICENSE = ["라이선스","라이센스","사용권","구독","유지보수","유지관리","갱신","임차","렌탈","임대"]
+N3_LICENSE = ["라이선스","라이센스","사용권","유지보수","유지관리","갱신","임차","렌탈","임대"]   # v0.6: 구독은 MID 키워드로 이동
 N4_EDU     = ["급식","부식","수학여행","체험학습","교육","과정 운영","캠프","공모전","챌린지","Challenge","포럼","메이커톤",
               "홍보","운영 대행","대행용역","커리큘럼","영상콘텐츠","콘텐츠 제작","행사","위탁운영","위탁 운영","프로그램 운영",
               "컨설팅","만족도","설문","여론조사","실태조사"]
@@ -55,6 +55,7 @@ GAIN = {"재공고":"재공고(유찰 흔적)", "긴급":"긴급(경쟁 참여�
 SOLO_MAX  = 650_000_000      # 실적요건 100%여도 단독
 JOINT_MAX = 1_300_000_000    # 실적요건 50%면 단독, 아니면 컨소
 LEAD_MAX  = 3_000_000_000    # 대표사 불가, 구성사
+MIN_AMT   =   100_000_000    # v0.6: 추정가격 1억 미만은 OPEN/WATCH 제외 (SIGNAL 은 유지)
 
 
 def fetch(op, bgn, end, rows=200, max_pages=25, tries=6):
@@ -112,14 +113,22 @@ def has(nm, tok):
         return re.search(r"(?<![A-Za-z])" + re.escape(tok) + r"(?![A-Za-z])", nm) is not None
     return tok in nm
 _NOT_COUNSEL = re.compile(r"상담회|상담소|상담원 ?(모집|채용)|상담부스")
+_NOT_SUBSCR  = re.compile(r"저널|잡지|신문|학술|DB|데이터베이스|뉴스|정기간행물|e-?book|전자책|논문")
 def anyk(nm, ks):
     out = []
     for k in ks:
         if k == "상담" and _NOT_COUNSEL.search(nm) and nm.count("상담") == len(_NOT_COUNSEL.findall(nm)): continue
+        if k == "구독" and _NOT_SUBSCR.search(nm): continue
         if has(nm, k): out.append(k)
     return out
 
-def position(amt, arslt, joint_ok):
+def position(amt, arslt, joint_ok, joint_txt=""):
+    base = _position(amt, arslt, joint_ok)
+    jtx = re.sub(r"^\(.*?\)", "", joint_txt or "").strip()          # "(전자)공동이행" → "공동이행"
+    jt = "공동수급 " + ("불허" if not joint_ok else (f"허용·{jtx}" if jtx else "미기재"))
+    return f"{base} · {jt} · 하도급 공고서 확인(SW사업 50% 상한·사전승인)"
+
+def _position(amt, arslt, joint_ok):
     """금액대 + 실적경쟁 여부 → 단독/컨소 추천"""
     if arslt == "N":
         return "단독 — 실적경쟁 아님(실적 벽 없음)"
@@ -148,7 +157,7 @@ def classify(it, kind, today):
     info  = it.get("infoBizYn", "") or ""
     re_y  = (it.get("reNtceYn") == "Y") or ("재공고" in nm)
     joint_ok = "불허" not in joint
-    pos   = position(amt, arslt, joint_ok)
+    pos   = position(amt, arslt, joint_ok, joint)
     R = lambda b, r, s=0: (b, r, s, hit, d, amt, inst, pos, flags)
 
     # N6 오탐(제품코드)
@@ -162,9 +171,11 @@ def classify(it, kind, today):
         if hit: return R("SIGNAL", "N5 감리·영향평가 = 본사업 존재 신호")
         return R("DROP", "N5 일반 SI 감리 — AI 키워드 없음")
     if not hit:
-        if kind == "용역" and re.search(r"구축|개발", nm) and amt >= 1_000_000_000 \
-           and ("ICT" in lrg or not lrg) and not anyk(nm, N3_LICENSE + N4_EDU + N5_NOT + N7_CIVIL):
-            return R("WATCH", "A3 대형 통합 SI — 과업 내 비정형·OCR 요건 확인", 6)
+        # v0.6 공통키워드: 구축·개발·SaaS 만 걸린 건 — ICT 분류 + 1억 이상이면 WATCH (과업 내 AI 요건 확인용, OPEN 아님)
+        if kind == "용역" and re.search(r"구축|개발", nm) and amt >= MIN_AMT \
+           and ("ICT" in lrg or "SW" in lrg or "정보" in lrg) \
+           and not anyk(nm, N3_LICENSE + N4_EDU + N5_NOT + N7_CIVIL + N8_HW):
+            return R("WATCH", "일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인", 6)
         return R("DROP", "키워드 미매칭")
     if anyk(nm, N7_CIVIL): return R("DROP", "N7 토목·설치공사")
     # 연구조사 분류 → SIGNAL
@@ -206,6 +217,7 @@ def classify(it, kind, today):
     score = s_fit + s_win + s_bid + s_cap + s_bar
     if joint_ok and joint: why.append("공동수급 허용")
 
+    if 0 < amt < MIN_AMT: return R("DROP", f"소액({amt/1e8:.2f}억 < 1억)", score)
     if "취소" in nm: return R("WATCH", "취소공고 — 재공고 대기", score)
     if d is not None and d < 5: return R("DROP", "D4 마감 임박(D-5 이내)", score)
     # v0.5: 금액으로 WATCH 보내지 않는다 — 컨소 구성사 실적(100억대 참여 이력)이 있으므로 대형 건도 OPEN, 포지션만 "구성사"
