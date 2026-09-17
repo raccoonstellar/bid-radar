@@ -270,6 +270,7 @@ def main():
                 "qualDt": it.get("bidQlfctRgstDt",""), "contact": it.get("ntceInsttOfclTelNo",""),
                 "docs": [it.get(f"ntceSpecFileNm{i}") for i in range(1,11) if it.get(f"ntceSpecFileNm{i}")],
                 "docUrl": it.get("ntceSpecDocUrl2") or it.get("ntceSpecDocUrl1") or "",
+                "docUrls": [it.get(f"ntceSpecDocUrl{i}") for i in range(1,11) if it.get(f"ntceSpecDocUrl{i}")],
                 "clsfc": it.get("pubPrcrmntClsfcNm",""), "clsLrg": it.get("pubPrcrmntLrgClsfcNm",""), "arslt": it.get("arsltCmptYn",""), "infoBiz": it.get("infoBizYn",""),
             })
 

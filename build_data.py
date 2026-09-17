@@ -13,7 +13,7 @@ import json, sys, glob, os, datetime as dt
 
 DATA = "docs/data"
 REFRESH = ["dday","closeDt","score","bucket","reason","position","flags","tech","joint","arslt","infoBiz",
-           "keywords","amount","inst","kind","method","url","docUrl","docs","clsfc","clsLrg","reNotice","briefing","contact"]
+           "keywords","amount","inst","kind","method","url","docUrl","docUrls","docs","clsfc","clsLrg","reNotice","briefing","contact"]
 KEEP_DAYS = 30
 
 def load(p, default):
