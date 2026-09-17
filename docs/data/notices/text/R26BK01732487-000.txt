@@ -1,0 +1,19 @@
+
+
+##### 계약 공통 첨부서류(계약일반조건 등).zip #####
+
+
+===== ░Φ╛α ░°┼δ ├╖║╬╝¡╖∙(░Φ╛α└╧╣▌┴╢░╟ ╡ε)/╛╚└ⁿ░ⁿ╕« ░Φ╛α╞»╝÷┴╢░╟.pdf =====
+[추출 실패: [Errno 2] No such file or directory: 'pdftotext']
+
+===== ░Φ╛α ░°┼δ ├╖║╬╝¡╖∙(░Φ╛α└╧╣▌┴╢░╟ ╡ε)/┐δ┐¬░Φ╛α└╧╣▌┴╢░╟.pdf =====
+[추출 실패: [Errno 2] No such file or directory: 'pdftotext']
+
+===== ░Φ╛α ░°┼δ ├╖║╬╝¡╖∙(░Φ╛α└╧╣▌┴╢░╟ ╡ε)/┐δ┐¬└╘┬√└»└╟╝¡.pdf =====
+[추출 실패: [Errno 2] No such file or directory: 'pdftotext']
+
+===== ░Φ╛α ░°┼δ ├╖║╬╝¡╖∙(░Φ╛α└╧╣▌┴╢░╟ ╡ε)/└ⁿ└┌└╘┬√╞»║░└»└╟╝¡.pdf =====
+[추출 실패: [Errno 2] No such file or directory: 'pdftotext']
+
+===== ░Φ╛α ░°┼δ ├╖║╬╝¡╖∙(░Φ╛α└╧╣▌┴╢░╟ ╡ε)/├╗╖┼░Φ╛α└╘┬√╞»║░└»└╟╝¡.pdf =====
+[추출 실패: [Errno 2] No such file or directory: 'pdftotext']

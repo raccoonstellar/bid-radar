@@ -1,0 +1,20 @@
+{
+ "id": "R26BK01725550-000",
+ "name": "2026년 지역 주도형 AI대전환 사업 - 제조 데이터허브 구축 사업",
+ "checkedAt": "2026-09-17T03:07:22",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725550&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=01",
+   "name": "(지에스티) 제안요청서_20260903(제출).pdf",
+   "kind": "pdf",
+   "bytes": 1184045,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725550&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=01",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

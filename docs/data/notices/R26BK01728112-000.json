@@ -1,0 +1,28 @@
+{
+ "id": "R26BK01728112-000",
+ "name": "[한남대학교 산학협력단]철도 도메인 특화 RAG 기반 AI 실시간 안전교관 시스템 구축 및 연동 용역",
+ "checkedAt": "2026-09-17T03:03:30",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "한남대학교산학협력단_용역입찰공고서(제2026-13호).pdf",
+   "kind": "pdf",
+   "bytes": 228379,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

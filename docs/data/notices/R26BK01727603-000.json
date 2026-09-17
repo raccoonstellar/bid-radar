@@ -1,0 +1,17 @@
+{
+ "id": "R26BK01727603-000",
+ "name": "NPU 기반 범정부 AI 서비스 구현 ",
+ "checkedAt": "2026-09-17T03:07:35",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727603&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727603&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

@@ -1,0 +1,35 @@
+{
+ "id": "R26BK01727277-000",
+ "name": "AI 의료 기술 개발 고도화 관련 다기관 임상데이터 연계⦁검증(Dataset) 구축 사업 재공고",
+ "checkedAt": "2026-09-17T03:08:19",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "Dataset_입찰공고문.pdf",
+   "kind": "pdf",
+   "bytes": 184697,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "Dataset_용역과업개요.hwpx.hwp",
+   "kind": "hwp",
+   "bytes": 85504,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

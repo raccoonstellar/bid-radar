@@ -1,0 +1,27 @@
+{
+ "id": "R26BK01727982-000",
+ "name": "AI 솔루션 고도화를 위한 통합 분석검증 인프라 및 데이터 구축 용역",
+ "checkedAt": "2026-09-17T03:07:08",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "1.입찰공고문_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.hwp",
+   "kind": "hwp",
+   "bytes": 52224,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "3. 과업지시서_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.pdf",
+   "kind": "pdf",
+   "bytes": 50416,
+   "chars": 57
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

@@ -1,0 +1,31 @@
+{
+ "id": "R26BK01730107-000",
+ "name": "제조 AX Agent 연계를 위한 로봇 기반 현장 이벤트 데이터 실증 용역",
+ "checkedAt": "2026-09-17T03:04:20",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "팀리부뜨 긴급입찰 사유서.pdf",
+   "kind": "pdf",
+   "bytes": 65376,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "name": "[과업지시서]팀리부뜨 제조 AX Agent 연계를 위한 로봇 기반 현장 이벤트 데이터 실증 용역.pdf",
+   "kind": "pdf",
+   "bytes": 129822,
+   "chars": 57
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

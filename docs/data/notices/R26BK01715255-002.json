@@ -1,0 +1,28 @@
+{
+ "id": "R26BK01715255-002",
+ "name": " 2026년 동아보건대학교 수요자 맞춤형 AI 기반 통합 디지털 캠퍼스 포털 구축",
+ "checkedAt": "2026-09-17T03:06:09",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "3. 긴급입찰사유서(2026년 동아보건대학교 수요자 맞춤형 AI 기반 통합 디지털 캠퍼스 포털 구축).hwp",
+   "kind": "hwp",
+   "bytes": 82432,
+   "chars": 55
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

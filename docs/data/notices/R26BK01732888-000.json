@@ -1,0 +1,23 @@
+{
+ "id": "R26BK01732888-000",
+ "name": "연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터/AI 기반 통합성과관리시스템 구축 업체 선정 입찰",
+ "checkedAt": "2026-09-17T03:04:51",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732888&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "3. [제안요청서]연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터_AI 기반 통합성과관리시스템 구축 업체 선정 입찰.hwp",
+   "kind": "hwp",
+   "bytes": 111616,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732888&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "2. [공고문]연암대학교 충청남도 지역성장 인재양성체계(앵커) 사업 데이터_AI 기반 통합성과관리시스템 구축 업체 선정 입찰.pdf",
+   "kind": "pdf",
+   "bytes": 126616,
+   "chars": 57
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

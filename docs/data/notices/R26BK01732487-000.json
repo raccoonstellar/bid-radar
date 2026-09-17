@@ -1,0 +1,97 @@
+{
+ "id": "R26BK01732487-000",
+ "name": "AI기반 감사업무시스템 재구축 용역",
+ "checkedAt": "2026-09-17T03:08:58",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "납품대금 연동제 안내문.pdf",
+   "kind": "pdf",
+   "bytes": 99624,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "계약 공통 첨부서류(계약일반조건 등).zip",
+   "kind": "zip",
+   "bytes": 1183824,
+   "chars": 651
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "협력사 행동규범.pdf",
+   "kind": "pdf",
+   "bytes": 183061,
+   "chars": 57
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "1. 입찰공고문(온감사)v260916.hwp",
+   "kind": "hwp",
+   "bytes": 1359872,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "name": "1. 입찰공고문(온감사)v260916v변환.pdf",
+   "kind": "pdf",
+   "bytes": 838883,
+   "chars": 57
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 690
+}

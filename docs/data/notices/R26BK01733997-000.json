@@ -1,0 +1,34 @@
+{
+ "id": "R26BK01733997-000",
+ "name": "AI 기반 품질검증 지원 시스템 고도화",
+ "checkedAt": "2026-09-17T03:07:58",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "붙임 1. 입찰공고문.hwp",
+   "kind": "hwp",
+   "bytes": 71680,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "붙임 2. 제안요청서.hwp",
+   "kind": "hwp",
+   "bytes": 319488,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "붙임 3. 과업지시서.hwp",
+   "kind": "hwp",
+   "bytes": 284672,
+   "chars": 55
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}

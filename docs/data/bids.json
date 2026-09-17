@@ -7,7 +7,7 @@
 "inst":"한남대학교 산학협력단",
 "amount":118181818,
 "closeDt":"2026-09-28 14:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님",
 "score":16,
@@ -15,7 +15,7 @@
 "RAG",
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728112&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -39,7 +39,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728112&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01729878-000",
@@ -49,14 +55,14 @@
 "inst":"한국개발연구원국제정책대학원대학교",
 "amount":272727273,
 "closeDt":"2026-09-28 12:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"재공고(유찰 흔적) · 긴급(경쟁 참여율 하락) · 기술90:가격10 · 실적경쟁 아님",
 "score":16,
 "keywords":[
 "콘텐츠관리"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729878&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -78,295 +84,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01730272-000",
-"bidNo":"R26BK01730272",
-"kind":"용역",
-"name":"한동대학교 HOPE통합정보시스템  AX 실증 PoC 기획 및 운영 수행 용역 재공고",
-"inst":"한동대학교",
-"amount":45454545,
-"closeDt":"2026-09-28 13:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"재공고(유찰 흔적) · 기술80:가격20 · 실적경쟁 아님",
-"score":15,
-"keywords":[
-"AX"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730272&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"Y",
-"briefing":"",
-"qualDt":"",
-"contact":"054-260-1143",
-"docs":[
-"입찰공고문-2026년 한동대학교 HOPE통합정보시스템 AX실증 PoC기획 및 운영 용역입찰 공고문(재공고).hwp",
-"입찰공고문-2026년 한동대학교 HOPE통합정보시스템 AX실증 PoC기획 및 운영 용역입찰 공고문(재공고).pdf",
-"한동대학교 HOPE통합정보시스템 AX실증 PoC기획 및 운영 용역 제안요청서(게시용).hwpx"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730272&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"인터넷지원개발서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01731641-000",
-"bidNo":"R26BK01731641",
-"kind":"용역",
-"name":"한양사이버대학교 AI 챗봇 서비스 구축 ",
-"inst":"한양사이버대학교",
-"amount":20000000,
-"closeDt":"2026-09-28 14:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"가격 중심 낙찰 · 실적경쟁 아님",
-"score":15,
-"keywords":[
-"챗봇",
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731641&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"",
-"method":"적격심사제-관리규정외 수기심사(총점입력)",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"",
-"contact":"02-2290-0103",
-"docs":[
-"1. 입찰공고문.pdf",
-"2. 제안요청서.hwp"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731641&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보시스템개발서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01731788-000",
-"bidNo":"R26BK01731788",
-"kind":"용역",
-"name":"제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역",
-"inst":"한국무역협회",
-"amount":59090909,
-"closeDt":"2026-09-23 17:00:00",
-"dday":7,
-"bucket":"OPEN",
-"reason":"재공고(유찰 흔적) · 기술70:가격30 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"상담"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731788&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"70",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"Y",
-"briefing":"",
-"qualDt":"",
-"contact":"02-6000-5856",
-"docs":[
-"4. Summary of the Invitation for Bids_9th Korea-China (Shandong) Business Consultation Meeting.pdf",
-"붙임 1. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 입찰공고문.pdf",
-"붙임 2. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 제안요청서.pdf",
-"붙임 3. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 별지서식.hwp",
-"붙임 1. 제9회 한국-중국(산둥) 경제통상협력 교류회 상담회장 조성 및 운영 용역 입찰공고문.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731788&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"전시회기획및대행서비스",
-"clsLrg":"행사관리 및 기타 사업 지원서비스 ",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01727662-000",
-"bidNo":"R26BK01727662",
-"kind":"용역",
-"name":"「광주첨단 스마트그린 AX실증산단 구축 사업」 디지털트윈 기획 및 설계 용역",
-"inst":"주식회사 레플러스",
-"amount":61456000,
-"closeDt":"2026-09-25 09:00:00",
-"dday":9,
-"bucket":"OPEN",
-"reason":"기술90:가격10 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"AX"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727662&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"",
-"contact":"***********",
-"docs":[
-"[디지털트윈 기획 및 설계] 광주첨단 스마트그린 AX실증산단 구축 사업 수행_RFP_v3.0_20260914.pdf",
-"입찰공고_광주첨단 스마트그린 AX실증산단 구축_디지털트윈 기획 및 설계 용역 v2.0_20260914.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727662&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보시스템개발서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01728220-000",
-"bidNo":"R26BK01728220",
-"kind":"용역",
-"name":"[앵커] 생성형 AI 융합 K-pop 송캠프 운영 용역",
-"inst":"명지전문대학",
-"amount":20000000,
-"closeDt":"2026-09-28 11:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"기술80:가격20 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"생성형",
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[
-"교육·대행 요소 포함 — 과업 비중 확인"
-],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728220&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-27 11:00",
-"contact":"02-300-1038",
-"docs":[
-"붙임1. 입찰공고문_[앵커] 생성형 AI 융합 K-pop 송캠프 운영 용역.pdf",
-"붙임2. 과업지시서_[앵커] 생성형 AI 융합 K-pop 송캠프 운영 용역.hwp",
-"붙임1. 입찰공고문_[앵커] 생성형 AI 융합 K-pop 송캠프 운영 용역.hwp"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728220&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"기타교육서비스",
-"clsLrg":"교육 및 전문직종/기술서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01728710-000",
-"bidNo":"R26BK01728710",
-"kind":"용역",
-"name":"2026년 Google Cloud 기반 AI 에이전트 교육과정 운영 용역",
-"inst":"인덕대학 산학협력단",
-"amount":59090909,
-"closeDt":"2026-09-28 12:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"기술80:가격20 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"에이전트",
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[
-"교육·대행 요소 포함 — 과업 비중 확인"
-],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728710&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-27 18:00",
-"contact":"02-950-7121",
-"docs":[
-"인덕대학교 입찰 공고.hwp",
-"인덕대학교 제안요청서.pdf",
-"인덕대학교 입찰 공고.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728710&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보화교육서비스",
-"clsLrg":"교육 및 전문직종/기술서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01729308-000",
-"bidNo":"R26BK01729308",
-"kind":"용역",
-"name":"한국전통문화대학교 홈페이지 콘텐츠관리시스템 고도화",
-"inst":"국가유산청 한국전통문화대학교",
-"amount":80272727,
-"closeDt":"2026-09-28 14:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"재공고(유찰 흔적) · 기존 구축사 존재 추정(F2) · 기술90:가격10 · 실적경쟁 아님",
-"score":14,
-"keywords":[
-"콘텐츠관리"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729308&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"Y",
-"briefing":"",
-"qualDt":"2026-09-27 18:00",
-"contact":"041-830-7214",
-"docs":[
-"입찰공고문(재공고).pdf",
-"한국전통문화대학교 홈페이지 콘텐츠관리시스템 고도화 사업계획서.hwpx",
-"한국전통문화대학교 홈페이지 콘텐츠관리시스템 고도화 제안요청서.hwpx",
-"긴급입찰사유서(한국전통문화대학교 홈페이지 콘텐츠관리시스템 고도화).hwpx"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729308&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보인프라구축서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729878&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729878&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730107-000",
@@ -376,7 +98,7 @@
 "inst":"주식회사 팀리부뜨",
 "amount":130000000,
 "closeDt":"2026-09-28 14:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님",
 "score":14,
@@ -384,7 +106,7 @@
 "Agent",
 "AX"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730107&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -408,88 +130,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01723289-001",
-"bidNo":"R26BK01723289",
-"kind":"용역",
-"name":"[긴급]AI 라이브 커머스 스토리텔링 콘텐츠 개발 용역",
-"inst":"삼색이수상권상인협동조합",
-"amount":63636364,
-"closeDt":"2026-09-22 16:00:00",
-"dday":6,
-"bucket":"OPEN",
-"reason":"긴급(경쟁 참여율 하락) · 기술90:가격10 · 실적경쟁 아님",
-"score":12,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01723289&bidPbancOrd=001",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-21 18:00",
-"contact":"054-436-5796",
-"docs":[
-"04 공고문_AI 라이브 커머스 스토리텔링 콘텐츠 개발 용역(최종).hwp",
-"05 제안요청서_AI 라이브 커머스 스토리텔링 콘텐츠 개발 용역.hwp",
-"06 과업지시서_AI 라이브 커머스 스토리텔링 콘텐츠 제작 용역.hwp",
-"04 공고문_AI 라이브 커머스 스토리텔링 콘텐츠 개발 용역(최종).pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723289&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"디자인서비스",
-"clsLrg":"매체제작, 디자인, 홍보/마케팅 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01729749-000",
-"bidNo":"R26BK01729749",
-"kind":"물품",
-"name":"서울과학기술대학교 산학협력단 연구장비(LLM/GNN 기반 아산사건 시뮬레이션 자동 생성용 전용 서버) 구매",
-"inst":"서울과학기술대학교 산학협력단",
-"amount":45454545,
-"closeDt":"2026-09-23 11:00:00",
-"dday":7,
-"bucket":"OPEN",
-"reason":"가격 중심 낙찰",
-"score":12,
-"keywords":[
-"LLM"
-],
-"position":"단독",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729749&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"",
-"method":"규격가격동시입찰-제안적격자 중 예가 내 최저가 투찰자",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-22 18:00",
-"contact":"02-970-9095",
-"docs":[
-"입찰공고문.pdf",
-"제안요청서.hwp",
-"규격서.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729749&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=01",
-"clsfc":"",
-"clsLrg":"",
-"arslt":"",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730107&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730007-000",
@@ -499,14 +146,14 @@
 "inst":"(주)유디엔에스",
 "amount":112000000,
 "closeDt":"2026-09-28 18:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술80:가격20 · 실적경쟁 아님",
 "score":12,
 "keywords":[
 "학습데이터"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730007&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -528,7 +175,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730007&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730007&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01732888-000",
@@ -538,14 +189,14 @@
 "inst":"연암대학교 산학협력단",
 "amount":129090909,
 "closeDt":"2026-09-28 14:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"재공고(유찰 흔적) · 기술80:가격20 · 실적경쟁 아님",
 "score":12,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732888&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -567,48 +218,54 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732888&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732888&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
-"id":"R26BK01732262-000",
-"bidNo":"R26BK01732262",
+"id":"R26BK01732564-000",
+"bidNo":"R26BK01732564",
 "kind":"용역",
-"name":"2026년 민속아카이브 정보센터 전시개편 사업",
-"inst":"문화체육관광부 국립민속박물관",
-"amount":30000000,
-"closeDt":"2026-09-29 10:00:00",
-"dday":13,
+"name":"울산항 정보공유 AI 서비스 구축 PoC 용역",
+"inst":"울산항만공사",
+"amount":219165000,
+"closeDt":"2026-10-02 10:00:00",
+"dday":15,
 "bucket":"OPEN",
-"reason":"기술80:가격20 · 실적경쟁 아님",
+"reason":"기술90:가격10 · 실적경쟁 아님 · 정보화사업·대기업 참여제한 추정 · 공동수급 허용",
 "score":12,
 "keywords":[
-"아카이브"
+"AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732262&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732564&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
 "compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
+"joint":"(전자)공동이행",
 "reNotice":"N",
 "briefing":"",
-"qualDt":"2026-09-28 18:00",
-"contact":"02-3704-3031",
+"qualDt":"2026-10-01 18:00",
+"contact":"070-4056-6541",
 "docs":[
-"(공고서) 2026년 민속아카이브 정보센터 전시 개편 사업.hwpx",
-"(공고서) 2026년 민속아카이브 정보센터 전시 개편 사업.pdf",
-"02_2026년 민속아카이브 정보센터 전시 개편 제안요청서_v1.0.hwpx",
-"03_2026년 민속아카이브 정보센터 전시 개편 과업지시서_v1.0.hwpx"
+"공고서_개발(국가,제한,공동,조달평가,온라인서면).hwpx",
+"공고서_개발(국가,제한,공동,조달평가,온라인서면).pdf"
 ],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732262&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"전시장치설치및디자인서비스",
-"clsLrg":"행사관리 및 기타 사업 지원서비스 ",
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732564&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732564&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732564&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
 "arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01729358-000",
@@ -618,14 +275,14 @@
 "inst":"한국생명공학연구원",
 "amount":172590909,
 "closeDt":"2026-10-07 10:00:00",
-"dday":21,
+"dday":20,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님 · 정보화사업·대기업 참여제한 추정 · 공동수급 허용",
 "score":12,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729358&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -647,7 +304,11 @@
 "arslt":"N",
 "infoBiz":"Y",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729358&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729358&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730372-000",
@@ -657,14 +318,14 @@
 "inst":"서울대학교병원",
 "amount":883469455,
 "closeDt":"2026-10-27 10:00:00",
-"dday":41,
+"dday":40,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 공동수급 허용",
 "score":12,
 "keywords":[
 "콜센터"
 ],
-"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소",
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 허용·분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730372&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -690,166 +351,15 @@
 "arslt":"Y",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01721902-000",
-"bidNo":"R26BK01721902",
-"kind":"용역",
-"name":"HS코드 생성 AI 모델 및 서비스 개발",
-"inst":"한국전자정보통신산업진흥회",
-"amount":90909091,
-"closeDt":"2026-09-22 09:00:00",
-"dday":6,
-"bucket":"OPEN",
-"reason":"기술90:가격10 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01721902&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정(엔지니어링)",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"",
-"contact":"02-6388-6155",
-"docs":[
-"(제안요청서) HS코드 생성 AI 모델 및 서비스 개발.hwp",
-"「HS코드 생성 AI 모델 및 서비스 개발」 입찰공고문.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01721902&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05",
-"clsfc":"기타기술용역",
-"clsLrg":"기술용역",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01721879-000",
-"bidNo":"R26BK01721879",
-"kind":"용역",
-"name":"환율 최적화 AI 및 바이어 연계 서비스 개발",
-"inst":"한국전자정보통신산업진흥회",
-"amount":90909091,
-"closeDt":"2026-09-22 09:00:00",
-"dday":6,
-"bucket":"OPEN",
-"reason":"기술90:가격10 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01721879&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정(엔지니어링)",
-"compete":"일반경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"",
-"contact":"02-6388-6155",
-"docs":[
-"(제안요청서) 환율 최적화 AI 모델 및 바이어 연계 서비스 개발.hwp",
-"「환율 최적화 AI 모델 및 바이어 연계 서비스 개발」 입찰공고문.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01721879&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05",
-"clsfc":"기타기술용역",
-"clsLrg":"기술용역",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01728046-001",
-"bidNo":"R26BK01728046",
-"kind":"용역",
-"name":"AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역",
-"inst":"주식회사 타이거 인공지능",
-"amount":46820000,
-"closeDt":"2026-09-28 10:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"기술90:가격10 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728046&bidPbancOrd=001",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-27 18:00",
-"contact":"***********",
-"docs":[
-"1.입찰공고문_AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역.hwp",
-"1.입찰공고문_AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역.pdf",
-"3. 과업지시서_AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728046&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"패키지소프트웨어개발및도입서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01728066-000",
-"bidNo":"R26BK01728066",
-"kind":"용역",
-"name":"[한남대학교 산학협력단]철도 안전훈련 실수패턴 분석 AI 적용환경 구축 및 시스템 연동 용역",
-"inst":"한남대학교 산학협력단",
-"amount":81818182,
-"closeDt":"2026-09-28 14:00:00",
-"dday":12,
-"bucket":"OPEN",
-"reason":"기술90:가격10 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728066&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"90",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-27 18:00",
-"contact":"042-629-8441",
-"docs":[
-"한남대학교산학협력단_용역과업지시서(제2026-12호).hwp",
-"한남대학교산학협력단_용역입찰공고서(제2026-12호).hwp",
-"한남대학교산학협력단_용역입찰공고서(제2026-12호).pdf",
-"한남대학교산학협력단_용역제안요청서(제2026-12호).hwp"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728066&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보인프라구축서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01715255-002",
@@ -859,14 +369,14 @@
 "inst":"동아보건대학교",
 "amount":181818182,
 "closeDt":"2026-09-28 10:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님 · 공동수급 허용",
 "score":11,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01715255&bidPbancOrd=002",
 "collectedOn":"2026-09-16",
@@ -890,7 +400,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01715255&bidPbancOrd=002&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01733558-000",
@@ -900,14 +416,14 @@
 "inst":"(주)원화정밀",
 "amount":100000000,
 "closeDt":"2026-09-28 15:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님",
 "score":11,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733558&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -931,91 +447,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01733079-000",
-"bidNo":"R26BK01733079",
-"kind":"용역",
-"name":"AI 기반 파쇄암 입도 분포 분석 시스템 평가 모듈 통합 및 연계 체계 구축 용역",
-"inst":"한국해양대학교 산학협력단",
-"amount":90809091,
-"closeDt":"2026-10-02 10:00:00",
-"dday":16,
-"bucket":"OPEN",
-"reason":"기술80:가격20 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733079&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-10-01 18:00",
-"contact":"051-410-5286",
-"docs":[
-"[공고서] AI 기반 파쇄암 입도 분포 분석 시스템 평가 모듈 통합 및 연계 체계 구축 용역.hwp",
-"[공고서] AI 기반 파쇄암 입도 분포 분석 시스템 평가 모듈 통합 및 연계 체계 구축 용역.pdf",
-"과업지시서.pdf",
-"제안요청서.hwp",
-"긴급입찰 사유서.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733079&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보시스템개발서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01733433-000",
-"bidNo":"R26BK01733433",
-"kind":"용역",
-"name":"AI 기반 발파 설계 패턴 자동화 시스템 개발 용역",
-"inst":"한국해양대학교 산학협력단",
-"amount":90809091,
-"closeDt":"2026-10-02 10:00:00",
-"dday":16,
-"bucket":"OPEN",
-"reason":"기술80:가격20 · 실적경쟁 아님",
-"score":11,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733433&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-10-01 18:00",
-"contact":"051-410-5286",
-"docs":[
-"[공고서] AI 기반 발파 설계 패턴 자동화 시스템 개발 용역.hwp",
-"[공고서] AI 기반 발파 설계 패턴 자동화 시스템 개발 용역.pdf",
-"과업지시서.pdf",
-"제안요청서.hwp",
-"긴급입찰 사유서.pdf"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733433&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"정보시스템개발서비스",
-"clsLrg":"ICT 서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733558&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733558&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733558&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733558&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731458-000",
@@ -1025,14 +463,14 @@
 "inst":"국방부 국군재정관리단",
 "amount":454545455,
 "closeDt":"2026-10-07 10:00:00",
-"dday":21,
+"dday":20,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님",
 "score":11,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731458&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1053,7 +491,10 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731458&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01727982-000",
@@ -1063,14 +504,14 @@
 "inst":"주식회사 타이거 인공지능",
 "amount":100000000,
 "closeDt":"2026-09-28 10:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기존 구축사 존재 추정(F2) · 기술90:가격10 · 실적경쟁 아님",
 "score":10,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727982&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1093,7 +534,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01725550-000",
@@ -1103,14 +549,14 @@
 "inst":"(주)지에스티",
 "amount":545454545,
 "closeDt":"2026-09-28 18:00:00",
-"dday":12,
+"dday":11,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 공동수급 허용",
 "score":10,
 "keywords":[
 "AI"
 ],
-"position":"단독",
+"position":"단독 · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725550&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1132,7 +578,101 @@
 "arslt":"",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725550&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=01",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725550&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=01"
+]
+},
+{
+"id":"R26BK01727603-000",
+"bidNo":"R26BK01727603",
+"kind":"용역",
+"name":"NPU 기반 범정부 AI 서비스 구현 ",
+"inst":"한국지능정보사회진흥원",
+"amount":12125677778,
+"closeDt":"2026-09-29 10:00:00",
+"dday":12,
+"bucket":"OPEN",
+"reason":"재공고(유찰 흔적) · 기술90:가격10 · 실적경쟁 아님 · 정보화사업·대기업 참여제한 추정 · 공동수급 허용",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727603&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"일반경쟁",
+"joint":"(전자)공동이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-28 18:00",
+"contact":"070-4056-7988",
+"docs":[
+"공고서(국가SW, 80억 이상, 오프라인평가, 차등)_NPU 기반 범정부 AI 서비스 구현 .hwpx",
+"공고서(국가SW, 80억 이상, 오프라인평가, 차등)_NPU 기반 범정부 AI 서비스 구현 .pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727603&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727603&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727603&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"정보인프라구축서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01733997-000",
+"bidNo":"R26BK01733997",
+"kind":"용역",
+"name":"AI 기반 품질검증 지원 시스템 고도화",
+"inst":"(재)공간정보품질관리원",
+"amount":172727273,
+"closeDt":"2026-09-29 14:00:00",
+"dday":12,
+"bucket":"OPEN",
+"reason":"기존 구축사 존재 추정(F2) · 기술90:가격10 · 실적경쟁 아님",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733997&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-28 18:00",
+"contact":"02-6418-9112",
+"docs":[
+"붙임 1. 입찰공고문.hwp",
+"붙임 1. 입찰공고문.pdf",
+"붙임 2. 제안요청서.hwp",
+"붙임 3. 과업지시서.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733997&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01727277-000",
@@ -1142,14 +682,14 @@
 "inst":"원광대학교 광주한방병원, 원광병원",
 "amount":1091363636,
 "closeDt":"2026-10-07 11:00:00",
-"dday":21,
+"dday":20,
 "bucket":"OPEN",
 "reason":"재공고(유찰 흔적) · 기존 구축사 존재 추정(F2) · 기술90:가격10 · 실적경쟁 아님",
 "score":10,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727277&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1174,7 +714,14 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727277&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731510-001",
@@ -1184,14 +731,14 @@
 "inst":"한국지역난방공사",
 "amount":1013300000,
 "closeDt":"2026-10-27 14:00:00",
-"dday":41,
+"dday":40,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님 · 공동수급 허용",
 "score":10,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731510&bidPbancOrd=001",
 "collectedOn":"2026-09-16",
@@ -1210,7 +757,8 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[]
 },
 {
 "id":"R26BK01732487-000",
@@ -1220,14 +768,14 @@
 "inst":"한국지역난방공사",
 "amount":1013300000,
 "closeDt":"2026-10-27 14:00:00",
-"dday":41,
+"dday":40,
 "bucket":"OPEN",
 "reason":"기술90:가격10 · 실적경쟁 아님 · 공동수급 허용",
 "score":10,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732487&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1255,7 +803,17 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732487&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01732510-000",
@@ -1265,14 +823,14 @@
 "inst":"한국철도기술연구원",
 "amount":50000000,
 "closeDt":"2026-09-16 17:00:00",
-"dday":0,
+"dday":-1,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "비정형"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732510&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1295,7 +853,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732510&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732510&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732510&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01728063-000",
@@ -1305,14 +868,14 @@
 "inst":"주식회사 레이와트",
 "amount":190000000,
 "closeDt":"2026-09-17 10:00:00",
-"dday":1,
+"dday":0,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728063&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1334,7 +897,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728063&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728063&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730333-000",
@@ -1344,14 +911,14 @@
 "inst":"경상남도",
 "amount":90444991,
 "closeDt":"2026-09-21 10:00:00",
-"dday":5,
+"dday":4,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730333&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1374,7 +941,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730333&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730333&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730333&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01718661-000",
@@ -1384,14 +956,14 @@
 "inst":"한국언론진흥재단",
 "amount":27272727,
 "closeDt":"2026-09-28 11:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01718661&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1414,7 +986,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01718661&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01718661&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01718661&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01728010-000",
@@ -1424,14 +1001,14 @@
 "inst":"한국관광공사",
 "amount":70856364,
 "closeDt":"2026-09-28 10:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"N9 연구·전략 용역 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728010&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1454,7 +1031,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728010&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728010&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728010&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01727923-000",
@@ -1464,14 +1046,14 @@
 "inst":"주식회사 아이스테이징아시아",
 "amount":90000000,
 "closeDt":"2026-09-28 17:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727923&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1495,7 +1077,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727923&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727923&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727923&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727923&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01728282-000",
@@ -1505,14 +1093,14 @@
 "inst":"프리베노틱스 주식회사",
 "amount":310000000,
 "closeDt":"2026-09-28 10:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728282&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1536,7 +1124,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728282&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728282&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728282&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728282&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01729183-000",
@@ -1546,7 +1140,7 @@
 "inst":"한국화학융합시험연구원",
 "amount":181818182,
 "closeDt":"2026-09-28 14:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
@@ -1554,7 +1148,7 @@
 "AX",
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729183&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1577,7 +1171,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729183&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729183&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729183&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01729184-000",
@@ -1587,7 +1186,7 @@
 "inst":"한국화학융합시험연구원",
 "amount":363636364,
 "closeDt":"2026-09-28 14:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
@@ -1595,7 +1194,7 @@
 "AX",
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729184&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1618,7 +1217,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729184&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729184&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729184&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01729342-000",
@@ -1628,14 +1232,14 @@
 "inst":"정보통신정책연구원",
 "amount":54545455,
 "closeDt":"2026-09-28 18:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729342&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1657,7 +1261,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729342&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729342&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01729901-000",
@@ -1667,14 +1275,14 @@
 "inst":"한국생산기술연구원",
 "amount":21818182,
 "closeDt":"2026-09-28 12:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729901&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1697,7 +1305,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729901&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729901&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729901&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731410-000",
@@ -1707,14 +1320,14 @@
 "inst":"대한적십자사 혈액관리본부",
 "amount":100000000,
 "closeDt":"2026-09-28 11:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "콜센터"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731410&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1741,7 +1354,16 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731410&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731834-000",
@@ -1751,14 +1373,14 @@
 "inst":"포항공과대학교 산학협력단",
 "amount":63636364,
 "closeDt":"2026-09-28 11:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731834&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1782,7 +1404,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731834&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731834&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731834&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731834&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730000-000",
@@ -1792,14 +1420,14 @@
 "inst":"주식회사 오스코",
 "amount":150000000,
 "closeDt":"2026-09-28 12:00:00",
-"dday":12,
+"dday":11,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730000&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1822,7 +1450,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730000&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730000&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730000&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+]
 },
 {
 "id":"R26BK01726709-000",
@@ -1832,14 +1465,14 @@
 "inst":"기술보증기금",
 "amount":90909091,
 "closeDt":"2026-09-29 10:00:00",
-"dday":13,
+"dday":12,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01726709&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1862,7 +1495,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01726709&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01726709&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01726709&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01727647-000",
@@ -1872,14 +1510,14 @@
 "inst":"한국생산기술연구원",
 "amount":15454545,
 "closeDt":"2026-09-29 12:00:00",
-"dday":13,
+"dday":12,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "인공지능"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727647&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1902,7 +1540,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727647&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727647&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727647&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01730997-000",
@@ -1912,14 +1555,14 @@
 "inst":"한국사회보장정보원",
 "amount":99827273,
 "closeDt":"2026-09-29 12:00:00",
-"dday":13,
+"dday":12,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730997&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1942,7 +1585,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730997&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01732609-000",
@@ -1952,14 +1600,14 @@
 "inst":"재단법인 경북테크노파크",
 "amount":90000000,
 "closeDt":"2026-09-29 12:00:00",
-"dday":13,
+"dday":12,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732609&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -1982,7 +1630,57 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732609&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732609&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732609&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
+},
+{
+"id":"R26BK01734391-000",
+"bidNo":"R26BK01734391",
+"kind":"용역",
+"name":"[2026년 경상남도 앵커 사업] AI 기반 낙상예측 프로그램 개발연구 용역 ",
+"inst":"가야대학교",
+"amount":40909091,
+"closeDt":"2026-09-29 11:00:00",
+"dday":12,
+"bucket":"SIGNAL",
+"reason":"C2 연구조사 분류 = 본사업 선행 신호",
+"score":0,
+"keywords":[
+"AI"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01734391&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(전자)공동이행",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-28 18:00",
+"contact":"055-330-1023",
+"docs":[
+"[2026년 경상남도 앵커 사업] 4-2 AI 기반 낙상예측 프로그램 개발연구 용역 입찰공고(가야대학교)2026-8.hwpx",
+"[2026년 경상남도 앵커 사업] 4-2 AI 기반 낙상예측 프로그램 개발연구 용역 입찰공고(가야대학교)2026-8.pdf",
+"2026_(4-2) AI기반 낙상예측 프로그램 과업지시서.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01734391&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01734391&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01734391&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01734391&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+],
+"clsfc":"기타연구조사서비스",
+"clsLrg":"연구조사서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01729813-000",
@@ -1992,14 +1690,14 @@
 "inst":"한국지질자원연구원",
 "amount":40909091,
 "closeDt":"2026-09-30 10:00:00",
-"dday":14,
+"dday":13,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729813&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2023,7 +1721,13 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729813&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729813&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729813&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729813&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01724750-000",
@@ -2033,14 +1737,14 @@
 "inst":"한국지능정보사회진흥원",
 "amount":79578656,
 "closeDt":"2026-09-30 10:00:00",
-"dday":14,
+"dday":13,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "민원"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01724750&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2062,50 +1766,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
-},
-{
-"id":"R26BK01732268-000",
-"bidNo":"R26BK01732268",
-"kind":"용역",
-"name":"[앵커]경북형 앵커 혁신 특구 기반 AI 인재 혁신대학 조성 및 확산 전략 연구 용역",
-"inst":"영남대학교",
-"amount":136363636,
-"closeDt":"2026-09-30 11:00:00",
-"dday":14,
-"bucket":"SIGNAL",
-"reason":"C2 연구조사 분류 = 본사업 선행 신호",
-"score":0,
-"keywords":[
-"AI"
-],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
-"flags":[],
-"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732268&bidPbancOrd=000",
-"collectedOn":"2026-09-16",
-"tech":"80",
-"method":"협상에의한계약-협상에 의한 낙찰자 결정",
-"compete":"제한경쟁",
-"joint":"(없음)공동수급불허",
-"reNotice":"N",
-"briefing":"",
-"qualDt":"2026-09-29 18:00",
-"contact":"053-810-1284",
-"docs":[
-"01-(게시용)-입찰공고 및 입찰유의서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.hwp",
-"01-(게시용)-입찰공고 및 입찰유의서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.pdf",
-"02-(게시용)_제안요청서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.pdf",
-"03-(게시용)-용역계약 일반조건.hwp",
-"04-(게시용)-업체 제출 서식(4종).hwp",
-"05-(게시용)-입찰 참가자 유의사항.hwp"
-],
-"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-"clsfc":"기타연구조사서비스",
-"clsLrg":"연구조사서비스",
-"arslt":"N",
-"infoBiz":"",
-"firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01724750&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01724750&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01733437-000",
@@ -2115,14 +1780,14 @@
 "inst":"한국화학융합시험연구원",
 "amount":90909091,
 "closeDt":"2026-09-30 10:00:00",
-"dday":14,
+"dday":13,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "인공지능"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733437&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2145,7 +1810,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733437&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733437&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733437&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01733478-000",
@@ -2155,14 +1825,14 @@
 "inst":"한국공학대학교 산학협력단",
 "amount":25454545,
 "closeDt":"2026-09-30 11:00:00",
-"dday":14,
+"dday":13,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01733478&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2183,7 +1853,61 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01733478&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+]
+},
+{
+"id":"R26BK01732268-001",
+"bidNo":"R26BK01732268",
+"kind":"용역",
+"name":"[앵커]경북형 앵커 혁신 특구 기반 AI 인재 혁신대학 조성 및 확산 전략 연구 용역",
+"inst":"영남대학교",
+"amount":136363636,
+"closeDt":"2026-09-30 11:00:00",
+"dday":13,
+"bucket":"SIGNAL",
+"reason":"C2 연구조사 분류 = 본사업 선행 신호",
+"score":0,
+"keywords":[
+"AI"
+],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732268&bidPbancOrd=001",
+"collectedOn":"2026-09-17",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-29 18:00",
+"contact":"053-810-1284",
+"docs":[
+"01-(게시용)-입찰공고 및 입찰유의서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.hwp",
+"01-(게시용)-입찰공고 및 입찰유의서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.pdf",
+"02-(게시용)_제안요청서_[AI앵커] 경북형 앵커 혁신 특구 기반 AI인재 혁신 대학 조성 및 확산 전략 연구용역.pdf",
+"03-(게시용)-용역계약 일반조건.hwp",
+"04-(게시용)-업체 제출 서식(4종).hwp",
+"05-(게시용)-입찰 참가자 유의사항.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732268&bidPbancOrd=001&fileType=&fileSeq=6&prcmBsneSeCd=03"
+],
+"clsfc":"기타연구조사서비스",
+"clsLrg":"연구조사서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01720531-000",
@@ -2193,14 +1917,14 @@
 "inst":"한국지능정보사회진흥원",
 "amount":147716654,
 "closeDt":"2026-10-01 10:00:00",
-"dday":15,
+"dday":14,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01720531&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2222,7 +1946,11 @@
 "arslt":"N",
 "infoBiz":"Y",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01720531&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01720531&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01725512-000",
@@ -2232,14 +1960,14 @@
 "inst":"한국지능정보사회진흥원",
 "amount":63662925,
 "closeDt":"2026-10-01 10:00:00",
-"dday":15,
+"dday":14,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725512&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2261,7 +1989,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725512&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725512&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731198-000",
@@ -2271,14 +2003,14 @@
 "inst":"한국산업기술진흥원",
 "amount":45454545,
 "closeDt":"2026-10-01 12:00:00",
-"dday":15,
+"dday":14,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731198&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2301,7 +2033,12 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731198&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731198&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731198&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01731158-000",
@@ -2311,14 +2048,14 @@
 "inst":"국방부 전쟁기념사업회",
 "amount":72227273,
 "closeDt":"2026-10-01 10:00:00",
-"dday":15,
+"dday":14,
 "bucket":"SIGNAL",
 "reason":"C2 연구조사 분류 = 본사업 선행 신호",
 "score":0,
 "keywords":[
 "아카이브"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731158&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2348,7 +2085,19 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731158&bidPbancOrd=000&fileType=&fileSeq=10&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01732306-000",
@@ -2358,14 +2107,14 @@
 "inst":"한국지능정보사회진흥원",
 "amount":26172732,
 "closeDt":"2026-10-02 10:00:00",
-"dday":16,
+"dday":15,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
 "keywords":[
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732306&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2387,7 +2136,11 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732306&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732306&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01722200-000",
@@ -2397,7 +2150,7 @@
 "inst":"한국석유공사",
 "amount":271577591,
 "closeDt":"2026-10-27 10:00:00",
-"dday":41,
+"dday":40,
 "bucket":"SIGNAL",
 "reason":"N5 감리·영향평가 = 본사업 존재 신호",
 "score":0,
@@ -2406,7 +2159,7 @@
 "AX",
 "AI"
 ],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01722200&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2431,7 +2184,53 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01722200&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01722200&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01722200&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01722200&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01722200&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+]
+},
+{
+"id":"R26BK01727072-000",
+"bidNo":"R26BK01727072",
+"kind":"용역",
+"name":"개인정보 이노베이션 존 연계 허브 인프라 구축을 위한 전산장비 구매",
+"inst":"한국인터넷진흥원",
+"amount":922727273,
+"closeDt":"2026-09-15 11:00:00",
+"dday":-2,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727072&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"",
+"method":"수의시담-일반경쟁->수의",
+"compete":"수의계약",
+"joint":"(전자)공동이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-14 18:00",
+"contact":"070-4056-8223",
+"docs":[
+"제안요청서.hwpx"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727072&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727072&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+],
+"clsfc":"정보인프라구축서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01730884-000",
@@ -2441,12 +2240,12 @@
 "inst":"해양수산부",
 "amount":1245365455,
 "closeDt":"2026-09-16 11:00:00",
-"dday":0,
+"dday":-1,
 "bucket":"WATCH",
-"reason":"A3 대형 통합 SI — 과업 내 비정형·OCR 요건 확인",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
 "score":6,
 "keywords":[],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730884&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2465,7 +2264,585 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[]
+},
+{
+"id":"R26BK01725280-000",
+"bidNo":"R26BK01725280",
+"kind":"용역",
+"name":"한국형 그린버튼 플랫폼 서버 인프라 고도화 구축",
+"inst":"한국에너지공단",
+"amount":493636364,
+"closeDt":"2026-09-17 12:00:00",
+"dday":0,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725280&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"",
+"method":"수의시담-일반경쟁->수의",
+"compete":"수의계약",
+"joint":"(전자)공동이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-17 10:00",
+"contact":"070-4056-6541",
+"docs":[
+"수의계약사유서_(국가,재공고 유찰).hwpx"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725280&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725280&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+],
+"clsfc":"정보인프라구축서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01727228-000",
+"bidNo":"R26BK01727228",
+"kind":"용역",
+"name":"천안시 거점형 스마트도시 조성사업 클라우드 기반 통합 데이터 플랫폼 구축 용역",
+"inst":"엔에이치엔클라우드 주식회사",
+"amount":212000000,
+"closeDt":"2026-09-22 10:00:00",
+"dday":5,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727228&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"",
+"method":"수의시담-수의시담",
+"compete":"수의계약",
+"joint":"(없음)공동수급불허",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-21 18:00",
+"contact":"031-8038-2229",
+"docs":[
+"수의계약_견적_및_제안서_제출_요청서.docx",
+"입찰조건_무변경_대비표.docx",
+"[과업지시서]천안시 거점형 스마트도시 조성사업 클라우드 기반 통합 데이터 플랫폼 구축_v0.97_NHN.hwp",
+"[입찰공고문] 천안시 거점형 스마트도시 조성사업 클라우드 기반 통합 데이터 플랫폼 구축.hwp",
+"붙임3_사적이해관계자_부존재_확인서.docx",
+"[입찰공고문] 천안시 거점형 스마트도시 조성사업 클라우드 기반 통합 데이터 플랫폼 구축.pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727228&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+],
+"clsfc":"패키지소프트웨어개발및도입서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01717288-001",
+"bidNo":"R26BK01717288",
+"kind":"용역",
+"name":"2026년 한국문화관광연구원 연구지원시스템 구축 및 고도화",
+"inst":"한국문화관광연구원",
+"amount":154545454,
+"closeDt":"2026-09-23 10:00:00",
+"dday":6,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01717288&bidPbancOrd=001",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(전자)공동이행",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-22 18:00",
+"contact":"02-2669-6972",
+"docs":[
+"입찰공고문(변경)_2026년 연구지원시스템 구축 및 고도화.hwp",
+"입찰공고문(변경)_2026년 연구지원시스템 구축 및 고도화.pdf",
+"제안요청서(변경)_2026년 연구지원시스템 구축 및 고도화.hwp",
+"과업내용서(변경)_2026년 연구지원시스템 구축 및 고도화.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01717288&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01717288&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01717288&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01717288&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01717288&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템유지관리서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01727838-000",
+"bidNo":"R26BK01727838",
+"kind":"용역",
+"name":"(재공고)반달가슴곰 위치추적 프로그램 재개발",
+"inst":"국립공원공단 국립공원야생생물보전원",
+"amount":124545455,
+"closeDt":"2026-09-28 10:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727838&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(전자)공동이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-27 10:00",
+"contact":"061-780-1806",
+"docs":[
+"(재공고)입찰공고문_반달가슴곰 위치추적 프로그램 재개발.pdf",
+"(재공고)입찰공고문_반달가슴곰 위치추적 프로그램 재개발.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727838&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727838&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727838&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01728754-000",
+"bidNo":"R26BK01728754",
+"kind":"용역",
+"name":"방폐물 분석 관리시스템 개발 용역",
+"inst":"한국원자력환경공단",
+"amount":390909091,
+"closeDt":"2026-09-28 12:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01728754&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-24 18:00",
+"contact":"***********",
+"docs":[
+"2-1. 입찰공고문(사본).pdf",
+"2-1. 입찰공고문.hwpx",
+"2-2. 용역시방서.hwp",
+"2-3. 제안요청서_수정본.hwp",
+"2-4. 용역계약일반조건.hwpx"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728754&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01729394-000",
+"bidNo":"R26BK01729394",
+"kind":"용역",
+"name":"춘해보건대학교 전문대학 혁신지원사업 학생 전주기 성장관리 플랫폼 구축 ",
+"inst":"춘해보건대학 산학협력단",
+"amount":136363636,
+"closeDt":"2026-09-28 15:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729394&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"",
+"contact":"052-270-0453",
+"docs":[
+"1. 입찰공고(제2026-23호)_fn.pdf",
+"2. 입찰제안요청서(학생 전주기 성장관리 플랫폼).hwp",
+"3. 과업지시서_fn.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729394&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729394&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729394&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729394&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+],
+"clsfc":"컴퓨터네트워크또는인터넷보안서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01730959-000",
+"bidNo":"R26BK01730959",
+"kind":"용역",
+"name":"재난안전 드론 데이터 상황실 연계 구축사업(협상에 의한 계약)",
+"inst":"제주특별자치도",
+"amount":263636363,
+"closeDt":"2026-09-28 17:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·혼합방식 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01730959&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"일반경쟁",
+"joint":"(수기)혼합방식",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"",
+"contact":"064-710-6599",
+"docs":[
+"★입찰유의서(행정안전부 예규 252호), 청렴유의서.zip",
+"공고문(재난안전 드론 데이터 상황실 연계 구축)_협상.hwpx",
+"제안요청서_재난안전 드론 데이터 상황실 연계 구축사업_0915.hwpx",
+"공고문(재난안전 드론 데이터 상황실 연계 구축)_협상.pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730959&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730959&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730959&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730959&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730959&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+],
+"clsfc":"소프트웨어유지및지원서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01731623-000",
+"bidNo":"R26BK01731623",
+"kind":"용역",
+"name":"차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계)",
+"inst":"한국해양수산개발원",
+"amount":120000000,
+"closeDt":"2026-09-28 14:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731623&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"",
+"contact":"051-797-4425",
+"docs":[
+"0. 입찰공고_차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계).hwp",
+"0. 입찰공고_차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계).pdf",
+"1. 사업계획서_차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계) (최종).hwp",
+"2. 제안요청서_차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계) (최종).hwp",
+"3. 과업지시서_차세대 글로벌 물류기술 통합정보시스템 개발 및 운영(7단계).hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731623&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01731838-000",
+"bidNo":"R26BK01731838",
+"kind":"용역",
+"name":"시장데이터 사업관리 플랫폼(KMBS) 고도화 개발용역(재공고)",
+"inst":"(주)코스콤",
+"amount":160000000,
+"closeDt":"2026-09-28 10:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731838&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"2026-09-21 10:30:00",
+"qualDt":"2026-09-27 18:00",
+"contact":"02-767-7405",
+"docs":[
+"[입찰공고] 시장데이터 사업관리 플랫폼(KMBS) 고도화 개발용역.hwp",
+"[입찰공고] 시장데이터 사업관리 플랫폼(KMBS) 고도화 개발용역.pdf",
+"[제안요청서] 시장데이터 사업관리 플랫폼(KMBS) 고도화.hwp",
+"[지급각서](입찰보증금_협력업체만 사용가능) (1).hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731838&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731838&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731838&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731838&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731838&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+],
+"clsfc":"패키지소프트웨어개발및도입서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01731714-000",
+"bidNo":"R26BK01731714",
+"kind":"용역",
+"name":"방폐물인수관리시스템(WTSRI-UTOPIA) 고도화  및 연계체계 구축 용역",
+"inst":"한국원자력환경공단",
+"amount":450017855,
+"closeDt":"2026-09-28 12:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731714&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-27 18:00",
+"contact":"***********",
+"docs":[
+"2-1. 입찰공고문(사본).pdf",
+"2-1. 입찰공고문.hwpx",
+"2-2. 제안요청서.hwp",
+"2-3. 과업지시서.hwp",
+"2-4. 용역계약일반조건.hwpx"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731714&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01732826-001",
+"bidNo":"R26BK01732826",
+"kind":"용역",
+"name":"중원대학교 앵커사업 운영성과관리시스템 구축 사업",
+"inst":"중원대학교 산학협력단",
+"amount":109090909,
+"closeDt":"2026-09-28 12:00:00",
+"dday":11,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01732826&bidPbancOrd=001",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정",
+"compete":"제한경쟁",
+"joint":"(없음)공동수급불허",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-27 18:00",
+"contact":"043-830-8562",
+"docs":[
+"앵커사업 운영성과관리시스템 구축사업 입찰공고(2026-006).hwp",
+"앵커사업 운영성과관리시스템 구축사업 제안요청서.hwp",
+"앵커사업 운영성과관리시스템 구축사업 입찰공고(2026-006).pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732826&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732826&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732826&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01732826&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01731423-000",
+"bidNo":"R26BK01731423",
+"kind":"용역",
+"name":"2026년 지능형 한우번식 효율개선 토탈 솔루션 개발 용역(협상에 의한 계약) 입찰 재공고",
+"inst":"강원특별자치도 양구군 농업기술센터",
+"amount":681818182,
+"closeDt":"2026-09-29 09:00:00",
+"dday":12,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 또는 분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01731423&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(수기)공동이행 또는 분담이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"",
+"contact":"033-480-7613",
+"docs":[
+"제안요청서.hwpx",
+"공고문.hwpx",
+"과업지시서.hwpx",
+"공고문.pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731423&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731423&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731423&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731423&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731423&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+],
+"clsfc":"정보인프라구축서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
+},
+{
+"id":"R26BK01725852-000",
+"bidNo":"R26BK01725852",
+"kind":"용역",
+"name":"남해안 관광 UAM 시범사업을 위한 공간정보 구축 용역",
+"inst":"재단법인 경남테크노파크",
+"amount":116363636,
+"closeDt":"2026-09-30 10:00:00",
+"dday":13,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 또는 분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01725852&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(전자)공동이행 또는 분담이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"2026-09-29 18:00",
+"contact":"070-4056-6758",
+"docs":[
+"공고서(지방_협상_자체_공동_분담_1470_20억 미만).hwpx",
+"공고서(지방_협상_자체_공동_분담_1470_20억 미만).pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725852&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725852&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01725852&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"공간정보DB구축서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01729704-000",
@@ -2475,12 +2852,12 @@
 "inst":"행정안전부 국가정보자원관리원",
 "amount":22467272727,
 "closeDt":"2026-10-01 10:00:00",
-"dday":15,
+"dday":14,
 "bucket":"WATCH",
-"reason":"A3 대형 통합 SI — 과업 내 비정형·OCR 요건 확인",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
 "score":6,
 "keywords":[],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01729704&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2502,7 +2879,52 @@
 "arslt":"N",
 "infoBiz":"Y",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729704&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729704&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+]
+},
+{
+"id":"R26BK01720310-000",
+"bidNo":"R26BK01720310",
+"kind":"용역",
+"name":"2026년 한국건강증진개발원 통합홈페이지 기능 고도화",
+"inst":"한국건강증진개발원",
+"amount":118181818,
+"closeDt":"2026-10-01 10:00:00",
+"dday":14,
+"bucket":"WATCH",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
+"score":6,
+"keywords":[],
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01720310&bidPbancOrd=000",
+"collectedOn":"2026-09-17",
+"tech":"90",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(전자)공동이행",
+"reNotice":"N",
+"briefing":"",
+"qualDt":"2026-09-30 18:00",
+"contact":"02-590-8891",
+"docs":[
+"입찰공고서(긴급)-1468(2026년 한국건강증진개발원 통합홈페이지 기능 고도화))(국가_협상_중기간_수평_차등).hwpx",
+"입찰공고서(긴급)-1468(2026년 한국건강증진개발원 통합홈페이지 기능 고도화))(국가_협상_중기간_수평_차등).pdf"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01720310&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01720310&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01720310&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"N",
+"infoBiz":"Y",
+"firstSeen":"2026-09-17",
+"lastSeen":"2026-09-17"
 },
 {
 "id":"R26BK01727333-000",
@@ -2512,12 +2934,12 @@
 "inst":"한국국제협력단",
 "amount":1927507805,
 "closeDt":"2026-10-27 11:00:00",
-"dday":41,
+"dday":40,
 "bucket":"WATCH",
-"reason":"A3 대형 통합 SI — 과업 내 비정형·OCR 요건 확인",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
 "score":6,
 "keywords":[],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 불허 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01727333&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2546,7 +2968,18 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727333&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
+]
 },
 {
 "id":"R26BK01723015-000",
@@ -2556,12 +2989,12 @@
 "inst":"한국국제협력단",
 "amount":4586650222,
 "closeDt":"2026-10-28 10:00:00",
-"dday":42,
+"dday":41,
 "bucket":"WATCH",
-"reason":"A3 대형 통합 SI — 과업 내 비정형·OCR 요건 확인",
+"reason":"일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인",
 "score":6,
 "keywords":[],
-"position":"단독 — 실적경쟁 아님(실적 벽 없음)",
+"position":"단독 — 실적경쟁 아님(실적 벽 없음) · 공동수급 허용·공동이행 또는 분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "flags":[],
 "url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01723015&bidPbancOrd=000",
 "collectedOn":"2026-09-16",
@@ -2591,6 +3024,18 @@
 "arslt":"N",
 "infoBiz":"",
 "firstSeen":"2026-09-16",
-"lastSeen":"2026-09-16"
+"lastSeen":"2026-09-17",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01723015&bidPbancOrd=000&fileType=&fileSeq=10&prcmBsneSeCd=03"
+]
 }
 ]

@@ -1,0 +1,97 @@
+{
+ "id": "R26BK01730372-000",
+ "name": "서울대학교병원 강남센터 콜센터 서비스 계약 ",
+ "checkedAt": "2026-09-17T03:05:31",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "02 제안요청서.hwp",
+   "kind": "hwp",
+   "bytes": 245760,
+   "chars": 55
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01730372&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "name": "04 계약조건(안).hwpx",
+   "kind": "hwpx",
+   "bytes": 66037,
+   "chars": 10053
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 4,
+   "verdict": "허용",
+   "snippets": [
+    "미정)을 \"을\"로, 콜센터시스템 구축 및 운영 업체 (미정)을 \"병\"으로 정하여 다음과 같이 계약을 체결한다. / ※ 본 계약은 공동수급체 분담이행방식에 따른 3자 계약으로, \"을\"과 \"병\"은 각자의 분담 부분에 대하여 책임을 진다. / 제 1 조 (목적) / 본 계약",
+    "을\"로, 콜센터시스템 구축 및 운영 업체 (미정)을 \"병\"으로 정하여 다음과 같이 계약을 체결한다. / ※ 본 계약은 공동수급체 분담이행방식에 따른 3자 계약으로, \"을\"과 \"병\"은 각자의 분담 부분에 대하여 책임을 진다. / 제 1 조 (목적) / 본 계약의 목적은",
+    "용을 성실히 준수하고 공동의 발전을 위하여 노력한다. / 제 3 조 (계약문서) / 계약문서는 계약서, 계약금액명세서, 부속합의서, 공동수급표준협정서(분담이행방식), 제안요청서, 제안서, 개인정보처리업무 특수조건, 네트워크 장비 구축·운영사업 추가 특수조건 등으로",
+    "고 공동의 발전을 위하여 노력한다. / 제 3 조 (계약문서) / 계약문서는 계약서, 계약금액명세서, 부속합의서, 공동수급표준협정서(분담이행방식), 제안요청서, 제안서, 개인정보처리업무 특수조건, 네트워크 장비 구축·운영사업 추가 특수조건 등으로 구성되며 상호보완의"
+   ]
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 1,
+   "verdict": "방문",
+   "snippets": [
+    "위반에 따른 소송은 \"갑\"의 본점 소재지를 관할하는 법원으로 한다. / 제 31 조 (계약서 보관) / 본 계약서는 3부를 작성하여 각 당사자가 서명 날인한 다음 각 1부씩 보관한다. / 2026년 월 일 /"
+   ]
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 1,
+   "verdict": "",
+   "snippets": [
+    "30 조 (분쟁의 처리) / 본 계약과 관련하여 당사자 간에 야기되는 분쟁, 논쟁, 이의 또는 계약위반에 따른 소송은 \"갑\"의 본점 소재지를 관할하는 법원으로 한다. / 제 31 조 (계약서 보관) / 본 계약서는 3부를 작성하여 각 당사자가 서명 날인한 다음 각 1부"
+   ]
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 10083
+}

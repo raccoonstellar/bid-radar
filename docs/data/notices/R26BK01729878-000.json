@@ -1,0 +1,20 @@
+{
+ "id": "R26BK01729878-000",
+ "name": "[긴급] 재공고_KDI국제정책대학원 차세대 학습관리시스템 및 콘텐츠관리시스템 구축사업",
+ "checkedAt": "2026-09-17T03:04:07",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729878&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01729878&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "1.재공고_입찰공고문(KDI대학원 차세대 학습관리시스템 및 콘텐츠관리시스템 구축사업)_260914.pdf",
+   "kind": "pdf",
+   "bytes": 186917,
+   "chars": 57
+  }
+ ],
+ "gate": {},
+ "status": "extract-failed"
+}
