@@ -11,4 +11,5 @@ set +e
 command -v pdftotext >/dev/null 2>&1 || (apt-get install -y -qq poppler-utils >/dev/null 2>&1 || sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1)
 command -v hwp5txt  >/dev/null 2>&1 || pip install -q pyhwp >/dev/null 2>&1
 python3 read_notice.py || echo "  ! 공고서 확인 단계 실패 — 수집·병합은 완료됨"
+python3 opening.py || echo "  ! 개찰결과 단계 실패 — 낙찰정보서비스 활용신청 확인"
 exit 0
