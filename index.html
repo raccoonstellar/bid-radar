@@ -193,7 +193,7 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section>
     <div class="head"><h2>개찰결과 — 경쟁사·투찰률</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
-    <p class="lede">우리 Core 영역에서 낙찰된 건과 낙찰사 (낙찰정보서비스 자동 수집). 투찰률이 낮을수록 가격 경쟁이 붙었다는 뜻. 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
+    <p class="lede">우리 Core 영역에서 낙찰된 건과 낙찰사 (낙찰정보서비스 자동 수집). 투찰률이 낮을수록 가격 경쟁이 붙었다는 뜻 (≈는 예정가격 미공개라 추정가격 대비로 계산). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
     <div class="tablewrap">
       <table>
         <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
@@ -314,14 +314,14 @@ function render(rows, runs, comps){
     ).join("") : `<div style="padding:22px;text-align:center;color:var(--muted);font-size:.85rem">신호 없음</div>`;
 
   document.getElementById("compRows").innerHTML = comps.length ? comps.map(c => {
-    const ratio = c.ratio ?? c.rate ?? null, pct = Math.max(0, Math.min(100, ratio || 0));
+    const ratio = c.ratio ?? c.rate ?? null, est = c.rateEst ?? null, shown = ratio ?? est, pct = Math.max(0, Math.min(100, shown || 0));
     const vendor = c.vendor || c.winner || "";
     const failed = c.result === "유찰" || (!vendor && !c.amount);
     return `<tr>
       <td>${esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}${c.inst ? `<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst)}</div>` : ""}</td>
       <td class="vendor">${failed ? '<span style="color:var(--accent-ink)">유찰 — 재공고 대기</span>' : esc(vendor)}</td>
       <td class="num mono">${failed ? "—" : won(c.amount)}</td>
-      <td>${ratio ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${Number(ratio).toFixed(1)}%</em></span>` : "—"}</td>
+      <td>${shown ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${ratio ? "" : "≈"}${Number(shown).toFixed(1)}%</em></span>` : "—"}${c.bidders ? `<div style="font-size:.68rem;color:var(--muted)">참가 ${c.bidders}개사</div>` : ""}</td>
       <td class="num mono" style="color:var(--muted)">${esc(c.date||"")}</td>
     </tr>`;
   }).join("") : `<tr><td colspan="5" style="padding:22px;text-align:center;color:var(--muted)">기록된 개찰결과가 없습니다.</td></tr>`;

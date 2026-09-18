@@ -13,7 +13,7 @@ docs/data/bids.json 의 OPEN 건에 대해 API 첨부(docUrl / docs)를 내려�
       python3 read_notice.py R26BK01726222-000
 필요: pip install pyhwp  (hwp5txt) · apt: poppler-utils (pdftotext)
 """
-import json, os, re, sys, io, zipfile, subprocess, tempfile, urllib.request, urllib.parse, datetime as dt, hashlib
+import json, os, re, sys, io, zipfile, subprocess, tempfile, urllib.request, urllib.parse, datetime as dt, hashlib, shutil
 
 DATA = "docs/data"; OUT = f"{DATA}/notices"
 UA = {"User-Agent": "Mozilla/5.0 (bid-radar; +https://github.com/raccoonstellar/bid-radar)"}
@@ -93,11 +93,18 @@ def run(cmd, data, suffix):
     finally: os.unlink(p)
 
 def text_pdf(data):
-    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f: f.write(data); p = f.name
-    try:
-        r = subprocess.run(["pdftotext", "-layout", p, "-"], capture_output=True, timeout=120)
-        return r.stdout.decode("utf-8", "replace")
-    finally: os.unlink(p)
+    if shutil.which("pdftotext"):
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f: f.write(data); p = f.name
+        try:
+            r = subprocess.run(["pdftotext", "-layout", p, "-"], capture_output=True, timeout=120)
+            t = r.stdout.decode("utf-8", "replace")
+            if len(t.strip()) > 100: return t
+        finally: os.unlink(p)
+    try:   # 순수 파이썬 폴백
+        from pypdf import PdfReader
+        rd = PdfReader(io.BytesIO(data)); return "\n".join((pg.extract_text() or "") for pg in rd.pages[:80])
+    except Exception as e:
+        return f"[추출 실패: pdftotext/pypdf 없음 — {e}]"
 
 import shutil
 HWP_TOOL = shutil.which("hwp5txt")

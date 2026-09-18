@@ -149,3 +149,16 @@ for nm,kind,amt,clse,exp,extra in C6:
 b,r,sc,hit,d,a,inst,pos,fl=s.classify({"bidNtceNm":"AI 챗봇 구축","presmptPrce":900000000,"bidClseDt":"20261020","dminsttNm":"","cmmnSpldmdMethdNm":"(전자)공동이행"},"용역",TODAY)
 print("포지션 예:", pos)
 print(f"v0.6 회귀 {ok6}/{len(C6)}")
+
+print("\n── v0.6.1 STRONG 보호 예외 ──")
+C7=[
+ ("Claude Pro 등 생성형AI 단기 사용권 구매","물품",101000000,"20260928","DROP",{}),
+ ("생성형 AI 플랫폼 라이선스 및 구축","용역",300000000,"20260928","OPEN",{}),
+ ("제조 AX Agent 로봇 현장 데이터 실증","용역",130000000,"20260928","DROP",{}),
+ ("AI 챗봇 상담 로봇 안내 서비스 구축","용역",200000000,"20260928","OPEN",{}),
+]
+ok7=0
+for nm,kind,amt,clse,exp,extra in C7:
+    b,r,sc,*_=s.classify({"bidNtceNm":nm,"presmptPrce":amt,"bidClseDt":clse,"dminsttNm":"",**extra},kind,TODAY)
+    ok7+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:40]:<42} {r[:30]}")
+print(f"v0.6.1 회귀 {ok7}/{len(C7)}")

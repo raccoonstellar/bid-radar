@@ -17,8 +17,7 @@ KEY = os.environ.get("G2B_KEY", "")
 DATA = "docs/data"
 # 낙찰정보서비스 — 신규(as) 경로 우선, 구 경로 폴백
 # 오퍼레이션 후보 — 낙찰정보서비스 1.1: 낙찰 목록(getScsbidListSttus*) / 개찰결과 목록(getOpengResultListInfo*). 첫 응답하는 것을 쓴다
-OPS = {"용역": ["getScsbidListSttusServc", "getOpengResultListInfoServc", "getScsbidListSttusServcPPSSrch"],
-       "물품": ["getScsbidListSttusThng", "getOpengResultListInfoThng", "getScsbidListSttusThngPPSSrch"]}
+OPS = {"용역": ["getScsbidListSttusServc"], "물품": ["getScsbidListSttusThng"]}   # 고정 — 필드 구성이 섞이지 않게
 BASES = ["https://apis.data.go.kr/1230000/as/ScsbidInfoService"]
 
 # 필드명 후보 (버전·오퍼레이션에 따라 다름) — 첫 매치 사용
@@ -30,10 +29,13 @@ F = {
   "winner": ["bidwinnrNm", "sucsfbidCorpNm", "scsbidCorpNm", "opengCorpInfo", "prtcptCnum"],
   "amount": ["sucsfbidAmt", "scsbidAmt", "bidwinnrAmt", "opengAmt"],
   "rate":   ["sucsfbidRate", "scsbidRate", "bidwinnrRate", "opengRate"],
-  "date":   ["opengDt", "rlOpengDt", "fnlSucsfDate", "sucsfbidDt"],
+  "date":   ["rlOpengDt", "opengDt", "fnlSucsfDate", "sucsfbidDt"],
   "budget": ["presmptPrce", "asignBdgtAmt", "bssamt"],
   "flag":   ["progrsDivCdNm", "sucsfbidMthdNm", "bidClseExcpYn"],
 }
+import importlib.util as _iu
+_spec = _iu.spec_from_file_location("screen_g2b", os.path.join(os.path.dirname(os.path.abspath(__file__)), "screen_g2b.py"))
+_sg = _iu.module_from_spec(_spec); _spec.loader.exec_module(_sg)
 STRONG = ["챗봇","콜봇","AICC","IPCC","생성형","LLM","RAG","OCR","콜센터","상담","음성인식","에이전트","Agent","AI","인공지능","비정형","문서","STT","TTS","민원"]
 PARTNER = re.compile(r"콜센터.*(운영|위탁)|상담센터.*(운영|위탁)|BPO|고객센터 운영")
 
@@ -69,7 +71,7 @@ def fetch(ops, bgn, end, rows=200, max_pages=25, tries=6):
     base_used = op = None
     for o in (ops if isinstance(ops, list) else [ops]):
         for base in BASES:
-            for a in range(3):
+            for a in range(5):
                 j, err = _try(base, o, bgn, end)
                 if j is not None: base_used, op = base, o; break
                 LAST_ERR[o] = err; time.sleep(1.5 * (a + 1))
@@ -104,12 +106,14 @@ def fetch(ops, bgn, end, rows=200, max_pages=25, tries=6):
 def main():
     if "--probe" in sys.argv:
         t = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date(); b = (t - dt.timedelta(days=2)).strftime("%Y%m%d") + "0000"; e = t.strftime("%Y%m%d") + "2359"
-        ok = False
+        ok = False; fails = []
         for kind, ops in OPS.items():
             items = fetch(ops, b, e, rows=3, max_pages=1)
             print(f"== {kind} {len(items)}건")
+            if not items: fails.append(kind)
             if items: ok = True; print(json.dumps(items[0], ensure_ascii=False, indent=1)[:3000])
         if not ok: print("PROBE FAILED — 위 오류 참고", file=sys.stderr); sys.exit(1)
+        if fails: print(f"PROBE PARTIAL — 실패: {fails}", file=sys.stderr); sys.exit(1)
         return
     if not KEY: print("G2B_KEY 없음", file=sys.stderr); sys.exit(2)
     today = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date()   # KST — 클라우드 컨테이너는 UTC
@@ -129,27 +133,34 @@ def main():
 
     try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
     except Exception: comps = []
+    before = len(comps)
+    comps = [c for c in comps if _sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[0] in ("OPEN","WATCH")]
+    if len(comps) != before: print(f"  · 누적 재필터: {before} → {len(comps)}건", file=sys.stderr)
     seen = {c["id"] for c in comps}
+    try: est = {b.get("bidNo") or str(b["id"]).rsplit("-",1)[0]: b.get("amount") for b in json.load(open(f"{DATA}/bids.json", encoding="utf-8"))}
+    except Exception: est = {}
     added = 0
     for kind, ops in OPS.items():
         items = fetch(ops, bgn, end)
         print(f"  {kind}: {len(items)}건")
         for it in items:
             name = str(pick(it, F["name"]))
-            if not any(k in name for k in STRONG): continue
-            if re.search(r"AITC\d|SCECM|DGX|GPU|서버|노트북|워크스테이션|장비 구매|라이선스", name): continue
+            # 입찰공고와 같은 필터 통과 건만 (OPEN 이 됐을 사업 = 우리가 경쟁했을 사업). 감리·연구(SIGNAL)·노이즈는 제외
+            b_, reason_, *_ = _sg.classify({"bidNtceNm": name, "presmptPrce": pick(it, F["amount"]), "dminsttNm": pick(it, F["inst"])}, kind, today)
+            if b_ not in ("OPEN", "WATCH"): continue
             no = str(pick(it, F["no"])); ord_ = str(pick(it, F["ord"]) or "000")
             cid = f"{no}-{ord_}"
             if cid in seen: continue
-            amt = money(pick(it, F["amount"])); budget = money(pick(it, F["budget"]))
-            rate = pick(it, F["rate"])
-            try: rate = round(float(str(rate).replace("%", "")), 2) if rate != "" else (round(amt / budget * 100, 2) if amt and budget else None)
+            amt = money(pick(it, F["amount"])); budget = money(pick(it, F["budget"])) or money(est.get(no) or 0)
+            rate = pick(it, F["rate"]); rate_est = None
+            try: rate = round(float(str(rate).replace("%", "")), 2) if rate != "" else None
             except Exception: rate = None
+            if rate is None and amt and budget: rate_est = round(amt / budget * 100, 1)   # 추정가격 대비 (예정가격 미공개)
             winner = str(pick(it, F["winner"]))
             failed = (amt == 0) or ("유찰" in str(pick(it, F["flag"]))) or (winner == "")
             comps.append({
                 "id": cid, "kind": kind, "name": name, "inst": str(pick(it, F["inst"])),
-                "winner": winner, "amount": amt, "budget": budget, "rate": rate,
+                "winner": winner, "amount": amt, "budget": budget, "rate": rate, "rateEst": rate_est, "bidders": money(pick(it, ["prtcptCnum"])),
                 "date": re.sub(r"\D", "", str(pick(it, F["date"])))[:8] and dt.datetime.strptime(re.sub(r"\D", "", str(pick(it, F["date"])))[:8], "%Y%m%d").date().isoformat(),
                 "result": "유찰" if failed else "낙찰",
                 "tag": "partner" if PARTNER.search(name) else "competitor",
