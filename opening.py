@@ -133,6 +133,9 @@ def main():
 
     try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
     except Exception: comps = []
+    before = len(comps)
+    comps = [c for c in comps if _sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[0] in ("OPEN","WATCH")]
+    if len(comps) != before: print(f"  · 누적 재필터: {before} → {len(comps)}건", file=sys.stderr)
     seen = {c["id"] for c in comps}
     try: est = {b.get("bidNo") or str(b["id"]).rsplit("-",1)[0]: b.get("amount") for b in json.load(open(f"{DATA}/bids.json", encoding="utf-8"))}
     except Exception: est = {}
@@ -142,8 +145,9 @@ def main():
         print(f"  {kind}: {len(items)}건")
         for it in items:
             name = str(pick(it, F["name"]))
-            if not _sg.anyk(name, STRONG): continue
-            if re.search(r"AITC\d|SCECM|DGX|GPU|서버|노트북|워크스테이션|장비 구매|라이선스", name): continue
+            # 입찰공고와 같은 필터 통과 건만 (OPEN 이 됐을 사업 = 우리가 경쟁했을 사업). 감리·연구(SIGNAL)·노이즈는 제외
+            b_, reason_, *_ = _sg.classify({"bidNtceNm": name, "presmptPrce": pick(it, F["amount"]), "dminsttNm": pick(it, F["inst"])}, kind, today)
+            if b_ not in ("OPEN", "WATCH"): continue
             no = str(pick(it, F["no"])); ord_ = str(pick(it, F["ord"]) or "000")
             cid = f"{no}-{ord_}"
             if cid in seen: continue

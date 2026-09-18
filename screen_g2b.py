@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916) · v0.6 공통키워드·1억 하한·하도급 표기(260917)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916) · v0.6 공통키워드·1억 하한·하도급 표기(260917) · v0.6.1 사용권·로봇 예외(260918)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -183,6 +183,11 @@ def classify(it, kind, today):
     # 물품 구매성
     if kind == "물품" and (re.search(r"구매|구입|임차|렌탈|설치|납품|도구", nm) or "수의" in meth) and not strong:
         return R("DROP", "N1 물품 구매")
+    # ── STRONG 보호 예외 (v0.6.1): 사용권·라이선스 구매, 물리 로봇·드론은 키워드가 있어도 DROP ──
+    if re.search(r"사용권|라이선스|라이센스", nm) and not re.search(r"구축|개발|시스템|플랫폼", nm):
+        return R("DROP", "N3 사용권·라이선스 구매")
+    if re.search(r"로봇|드론|휴머노이드", nm) and not re.search(r"챗봇|콜봇|상담", nm):
+        return R("DROP", "N8 물리 로봇·드론 도메인")
     # ── STRONG 보호: 아래 노이즈 필터 면제 ──
     if not strong:
         if any(k in midc for k in CLS_EDU) or anyk(nm, N4_EDU): return R("DROP", "N4 교육·행사·대행")
