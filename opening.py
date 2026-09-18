@@ -39,6 +39,10 @@ _sg = _iu.module_from_spec(_spec); _spec.loader.exec_module(_sg)
 STRONG = ["챗봇","콜봇","AICC","IPCC","생성형","LLM","RAG","OCR","콜센터","상담","음성인식","에이전트","Agent","AI","인공지능","비정형","문서","STT","TTS","민원"]
 PARTNER = re.compile(r"콜센터.*(운영|위탁)|상담센터.*(운영|위탁)|BPO|고객센터 운영")
 
+def _keep(bucket, reason):
+    """경쟁사 DB 기준: 노이즈 필터만 적용. 점수 미달·소액은 정보로 남긴다"""
+    return bucket in ("OPEN", "WATCH") or reason.startswith(("저점", "소액"))
+
 def pick(it, keys):
     for k in keys:
         v = it.get(k)
@@ -122,7 +126,7 @@ def main():
         comps = []
         try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
         except Exception: pass
-        back = 3
+        back = 30 if not comps else 3          # 첫 적재는 30일 소급
         try:
             last = dt.date.fromisoformat(max(c["fetchedOn"] for c in comps if c.get("fetchedOn")))
             back = max(3, min(14, (today - last).days + 1))
@@ -134,7 +138,7 @@ def main():
     try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
     except Exception: comps = []
     before = len(comps)
-    comps = [c for c in comps if _sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[0] in ("OPEN","WATCH")]
+    comps = [c for c in comps if _keep(*_sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[:2])]
     if len(comps) != before: print(f"  · 누적 재필터: {before} → {len(comps)}건", file=sys.stderr)
     seen = {c["id"] for c in comps}
     try: est = {b.get("bidNo") or str(b["id"]).rsplit("-",1)[0]: b.get("amount") for b in json.load(open(f"{DATA}/bids.json", encoding="utf-8"))}
@@ -147,7 +151,7 @@ def main():
             name = str(pick(it, F["name"]))
             # 입찰공고와 같은 필터 통과 건만 (OPEN 이 됐을 사업 = 우리가 경쟁했을 사업). 감리·연구(SIGNAL)·노이즈는 제외
             b_, reason_, *_ = _sg.classify({"bidNtceNm": name, "presmptPrce": pick(it, F["amount"]), "dminsttNm": pick(it, F["inst"])}, kind, today)
-            if b_ not in ("OPEN", "WATCH"): continue
+            if not _keep(b_, reason_): continue
             no = str(pick(it, F["no"])); ord_ = str(pick(it, F["ord"]) or "000")
             cid = f"{no}-{ord_}"
             if cid in seen: continue
