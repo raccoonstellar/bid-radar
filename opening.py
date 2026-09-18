@@ -11,13 +11,15 @@
       python3 opening.py --probe         # API 응답 필드명 1건 출력 (첫 연결 확인용)
 필요: data.go.kr 「조달청_나라장터 낙찰정보서비스」 활용신청 승인 + G2B_KEY
 """
-import os, sys, json, re, time, datetime as dt, urllib.parse, urllib.request
+import os, sys, json, re, time, datetime as dt, urllib.parse, urllib.request, urllib.error
 
 KEY = os.environ.get("G2B_KEY", "")
 DATA = "docs/data"
 # 낙찰정보서비스 — 신규(as) 경로 우선, 구 경로 폴백
-BASES = ["https://apis.data.go.kr/1230000/as/ScsbidInfoService", "https://apis.data.go.kr/1230000/ScsbidInfoService"]
-OPS = {"용역": "getScsbidListSttusServc", "물품": "getScsbidListSttusThng"}
+# 오퍼레이션 후보 — 낙찰정보서비스 1.1: 낙찰 목록(getScsbidListSttus*) / 개찰결과 목록(getOpengResultListInfo*). 첫 응답하는 것을 쓴다
+OPS = {"용역": ["getScsbidListSttusServc", "getOpengResultListInfoServc", "getScsbidListSttusServcPPSSrch"],
+       "물품": ["getScsbidListSttusThng", "getOpengResultListInfoThng", "getScsbidListSttusThngPPSSrch"]}
+BASES = ["https://apis.data.go.kr/1230000/as/ScsbidInfoService"]
 
 # 필드명 후보 (버전·오퍼레이션에 따라 다름) — 첫 매치 사용
 F = {
@@ -45,18 +47,39 @@ def money(v):
     try: return int(float(str(v).replace(",", "") or 0))
     except Exception: return 0
 
-def fetch(op, bgn, end, rows=200, max_pages=25, tries=6):
-    base_used, got, page, total, failed = None, [], 1, None, []
-    for base in BASES:
-        params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end, "pageNo": "1", "numOfRows": "1", "ServiceKey": KEY}
-        try:
-            with urllib.request.urlopen(f"{base}/{op}?" + urllib.parse.urlencode(params, safe=""), timeout=60) as r:
-                body = r.read().decode("utf-8", "replace")
-            if not body.lstrip().startswith("<") and json.loads(body).get("response", {}).get("header", {}).get("resultCode") in ("00", "0"):
-                base_used = base; break
-        except Exception: pass
+LAST_ERR = {}
+def _try(base, op, bgn, end):
+    params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end, "pageNo": "1", "numOfRows": "1", "ServiceKey": KEY}
+    url = f"{base}/{op}?" + urllib.parse.urlencode(params, safe="")
+    try:
+        with urllib.request.urlopen(url, timeout=60) as r: body = r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return None, f"HTTP {e.code} {e.read().decode('utf-8','replace')[:160]}"
+    except Exception as e:
+        return None, repr(e)[:160]
+    if body.lstrip().startswith("<"): return None, body[:160]
+    try: j = json.loads(body)
+    except Exception: return None, body[:160]
+    hdr = j.get("response", {}).get("header", {})
+    if hdr.get("resultCode") not in ("00", "0"): return None, f"{hdr.get('resultCode')} {hdr.get('resultMsg')}"
+    return j, ""
+
+def fetch(ops, bgn, end, rows=200, max_pages=25, tries=6):
+    """ops: 오퍼레이션 후보 리스트. 첫 성공 조합으로 페이징."""
+    base_used = op = None
+    for o in (ops if isinstance(ops, list) else [ops]):
+        for base in BASES:
+            for a in range(3):
+                j, err = _try(base, o, bgn, end)
+                if j is not None: base_used, op = base, o; break
+                LAST_ERR[o] = err; time.sleep(1.5 * (a + 1))
+                if err.startswith("HTTP 403") or "NOT_REGISTERED" in err or "NO_OPENAPI" in err: break
+            if base_used: break
+        if base_used: break
     if not base_used:
-        print(f"  ! {op}: 서비스 연결 실패 — 낙찰정보서비스 활용신청 승인 여부 확인", file=sys.stderr); return []
+        print(f"  ! 낙찰정보서비스 연결 실패 — " + " | ".join(f"{k}: {v}" for k, v in LAST_ERR.items()), file=sys.stderr); return []
+    print(f"  · 오퍼레이션 {op}", file=sys.stderr)
+    got, page, total, failed = [], 1, None, []
     while True:
         params = {"inqryDiv": "1", "type": "json", "inqryBgnDt": bgn, "inqryEndDt": end, "pageNo": str(page), "numOfRows": str(rows), "ServiceKey": KEY}
         url = f"{base_used}/{op}?" + urllib.parse.urlencode(params, safe="")
@@ -81,10 +104,12 @@ def fetch(op, bgn, end, rows=200, max_pages=25, tries=6):
 def main():
     if "--probe" in sys.argv:
         t = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date(); b = (t - dt.timedelta(days=2)).strftime("%Y%m%d") + "0000"; e = t.strftime("%Y%m%d") + "2359"
-        for kind, op in OPS.items():
-            items = fetch(op, b, e, rows=3, max_pages=1)
-            print(f"== {kind} {len(items)}건"); 
-            if items: print(json.dumps(items[0], ensure_ascii=False, indent=1)[:3000])
+        ok = False
+        for kind, ops in OPS.items():
+            items = fetch(ops, b, e, rows=3, max_pages=1)
+            print(f"== {kind} {len(items)}건")
+            if items: ok = True; print(json.dumps(items[0], ensure_ascii=False, indent=1)[:3000])
+        if not ok: print("PROBE FAILED — 위 오류 참고", file=sys.stderr); sys.exit(1)
         return
     if not KEY: print("G2B_KEY 없음", file=sys.stderr); sys.exit(2)
     today = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date()   # KST — 클라우드 컨테이너는 UTC
@@ -106,8 +131,8 @@ def main():
     except Exception: comps = []
     seen = {c["id"] for c in comps}
     added = 0
-    for kind, op in OPS.items():
-        items = fetch(op, bgn, end)
+    for kind, ops in OPS.items():
+        items = fetch(ops, bgn, end)
         print(f"  {kind}: {len(items)}건")
         for it in items:
             name = str(pick(it, F["name"]))
