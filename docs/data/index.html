@@ -1,0 +1,432 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>입찰 레이더</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#eef1f0; --surface:#fbfcfc; --surface-2:#f2f5f4; --line:#d4dcd9; --line-soft:#e3e9e7;
+  --ink:#131c1a; --ink-2:#3c4b47; --muted:#6b7d78;
+  --accent:#0d6b63; --accent-soft:#d7e8e5; --accent-ink:#07514b;
+  --hot:#b0331d; --hot-soft:#f7e0da;
+  --warm:#8a6111; --warm-soft:#f6ebd4;
+  --cool:#455a6b; --cool-soft:#e2e9ee;
+  --good:#1d6b41;
+  --shadow:0 1px 2px rgba(19,28,26,.06),0 8px 24px -16px rgba(19,28,26,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1413; --surface:#161e1c; --surface-2:#1c2524; --line:#2b3836; --line-soft:#222d2b;
+    --muted:#849691;
+    --accent:#4fb8ad; --accent-soft:#153330; --accent-ink:#7fd3c9;
+    --hot:#e8735a; --hot-soft:#331914;
+    --warm:#d6a54a; --warm-soft:#2e2412;
+    --cool:#8fa9bc; --cool-soft:#1b2429;
+    --good:#5cb384;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1413; --surface:#161e1c; --surface-2:#1c2524; --line:#2b3836; --line-soft:#222d2b;
+  --ink:#e8efed; --ink-2:#b6c4c0; --muted:#849691;
+  --accent:#4fb8ad; --accent-soft:#153330; --accent-ink:#7fd3c9;
+  --hot:#e8735a; --hot-soft:#331914;
+  --warm:#d6a54a; --warm-soft:#2e2412;
+  --cool:#8fa9bc; --cool-soft:#1b2429;
+  --good:#5cb384;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  font-weight:400; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+
+/* ── 헤더 ── */
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 24px;
+     padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.brand h1{margin:0;font-size:1.6rem;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.brand p{margin:5px 0 0;color:var(--muted);font-size:.82rem;letter-spacing:.01em}
+.runmeta{margin-left:auto;text-align:right;max-width:560px;font-size:.74rem;line-height:1.6;color:var(--muted);letter-spacing:.04em}
+.runmeta b{display:block;font-size:1.02rem;color:var(--ink);font-weight:600;letter-spacing:0}
+
+/* ── 요약 스트립 ── */
+.fnav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:50}
+.fnav a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:92px;padding:9px 12px;border-radius:10px;
+  font-size:.74rem;font-weight:600;letter-spacing:.06em;text-decoration:none;color:var(--tint);
+  background:color-mix(in srgb,var(--tint) 14%,var(--surface));border:1px solid color-mix(in srgb,var(--tint) 35%,transparent);
+  transition:transform .15s,background .15s,box-shadow .15s}
+.fnav a:hover{transform:translateX(-3px);background:color-mix(in srgb,var(--tint) 24%,var(--surface));box-shadow:0 6px 18px color-mix(in srgb,var(--tint) 25%,transparent)}
+.fnav a b{font-family:ui-monospace,monospace;font-size:.72rem;font-weight:700;color:#fff;background:var(--tint);padding:1px 7px;border-radius:999px}
+.fnav a b:empty{display:none}
+.fnav a.cur{background:var(--tint);color:#fff;border-color:var(--tint)}
+.fnav a.cur b{background:rgba(255,255,255,.28)}
+.fnav .c-up{--tint:#8a8f98}.fnav .c-open{--tint:#4f8ff7}.fnav .c-hot{--tint:#f0653a}.fnav .c-sig{--tint:#2fb37f}.fnav .c-watch{--tint:#9b6fe6}.fnav .c-comp{--tint:#d9a527}
+@media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row;flex-wrap:wrap;justify-content:center;max-width:calc(100vw - 24px)}.fnav a{min-width:0}}
+html{scroll-behavior:smooth}
+section{scroll-margin-top:16px}
+@media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row}.fnav a span{display:none}}
+.dropnote{font-size:.72rem;color:var(--muted);margin:-14px 0 14px;line-height:1.6;text-align:right}
+.dropnote b{color:var(--ink-2)}
+.strip{display:flex;flex-wrap:wrap;gap:2px;margin:0;border:1px solid var(--line);
+       border-radius:3px;overflow:hidden;background:var(--line-soft)}
+.cell{flex:1 1 140px;background:var(--surface);padding:13px 16px;display:flex;
+      flex-direction:column;gap:3px;min-width:0}
+.cell span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.cell b{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;line-height:1}
+.cell.hot b{color:var(--hot)}
+.cell small{font-size:.72rem;color:var(--muted)}
+
+/* ── 섹션 ── */
+section{margin-top:38px}
+.head{display:flex;align-items:baseline;gap:12px;margin-bottom:2px}
+.head h2{margin:0;font-size:.78rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-ink)}
+.head .rule{flex:1;height:1px;background:var(--line)}
+.head .n{font-size:.74rem;color:var(--muted)}
+.lede{margin:0 0 14px;font-size:.83rem;color:var(--muted);max-width:62ch}
+
+/* ── 공고 행 ── */
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{position:relative;display:grid;grid-template-columns:64px 1fr auto;gap:0 16px;
+     background:var(--surface);border:1px solid var(--line-soft);border-left:none;
+     border-radius:0 4px 4px 0;box-shadow:var(--shadow);overflow:hidden}
+.row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cool)}
+.row[data-urg="hot"]::before{background:var(--hot);width:6px}
+.row[data-urg="soon"]::before{background:var(--warm);width:5px}
+.row[data-urg="ok"]::before{background:var(--accent)}
+.dday{padding:14px 0 14px 16px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1px}
+.dday b{font-size:1.18rem;font-weight:600;letter-spacing:-.03em;line-height:1}
+.dday[data-urg="hot"] b{color:var(--hot)}
+.dday[data-urg="soon"] b{color:var(--warm)}
+.dday span{font-size:.64rem;color:var(--muted);letter-spacing:.05em}
+.body{padding:14px 0;min-width:0}
+.name{font-size:.95rem;font-weight:500;line-height:1.4;margin:0 0 5px;word-break:keep-all;text-wrap:pretty}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.76rem;color:var(--muted)}
+.meta .inst{color:var(--ink-2);font-weight:500}
+.gate{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.gate .g{font-size:.7rem;padding:2px 8px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2);background:var(--bg)}
+.gate .g.warn{border-color:var(--accent);color:var(--accent-ink)}
+.gate .g.ok{border-color:var(--ok, #4a8);color:var(--ink-2)}
+.gate .more{font-size:.7rem;color:var(--muted);cursor:pointer;text-decoration:underline dotted}
+.gate .none{font-size:.7rem;color:var(--muted)}
+.snips{margin:8px 0 0;padding:10px 12px;border-left:2px solid var(--line);font-size:.74rem;line-height:1.6;color:var(--ink-2);white-space:pre-wrap;background:var(--bg)}
+.snips b{color:var(--ink)}
+.lnk{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.lnk:hover{color:var(--accent-ink);border-bottom-color:var(--accent)}
+.doc{text-decoration:none;font-size:.85em;margin-left:4px}
+.why{margin:7px 0 0;font-size:.77rem;color:var(--ink-2);display:flex;gap:6px;align-items:flex-start}
+.why::before{content:"↳";color:var(--accent);flex:none}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.tag{font-size:.66rem;padding:1px 6px;border-radius:2px;background:var(--accent-soft);
+     color:var(--accent-ink);letter-spacing:.02em;font-weight:500}
+.side{padding:14px 16px 14px 0;display:flex;flex-direction:column;align-items:flex-end;gap:7px;justify-content:space-between}
+.score{font-size:.72rem;color:var(--muted);letter-spacing:.03em;white-space:nowrap}
+.score b{font-size:1rem;color:var(--ink);font-weight:600}
+.status{appearance:none;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);
+        font:inherit;font-size:.72rem;font-weight:500;padding:4px 9px;border-radius:2px;cursor:pointer;
+        letter-spacing:.02em;white-space:nowrap;transition:background .12s,border-color .12s}
+.status:hover{border-color:var(--accent);color:var(--accent-ink)}
+.status:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.status[data-s="검토중"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+.status[data-s="제안준비"]{background:var(--good);color:#fff;border-color:transparent}
+.status[data-s="드롭"]{background:transparent;color:var(--muted);text-decoration:line-through}
+
+/* ── SIGNAL ── */
+.sig{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.sig div{background:var(--surface);padding:11px 15px;display:flex;flex-wrap:wrap;gap:3px 12px;align-items:baseline}
+.sig .t{font-size:.87rem;font-weight:500;flex:1 1 240px;min-width:0;word-break:keep-all}
+.sig .r{font-size:.75rem;color:var(--warm);flex:none}
+
+/* ── 경쟁사 ── */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.81rem}
+th{text-align:left;font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+   font-weight:600;padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 14px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+td.num{text-align:right;white-space:nowrap}
+.vendor{font-weight:500}
+.bar{display:flex;align-items:center;gap:8px;min-width:118px}
+.bar i{flex:1;height:5px;background:var(--surface-2);border-radius:99px;overflow:hidden;display:block}
+.bar i b{display:block;height:100%;background:var(--hot);border-radius:99px}
+.bar em{font-style:normal;font-size:.78rem;color:var(--ink-2);width:48px;text-align:right}
+
+.empty{padding:34px 20px;text-align:center;color:var(--muted);font-size:.85rem;
+       border:1px dashed var(--line);border-radius:3px;background:var(--surface)}
+.imp{margin:0 0 26px;padding:14px 16px;border:1px dashed var(--line);border-radius:4px;background:var(--surface)}
+.imp summary{cursor:pointer;font-size:.8rem;letter-spacing:.06em;color:var(--ink-2);text-transform:uppercase}
+.imp textarea{width:100%;height:84px;margin-top:10px;padding:8px;font:.72rem/1.4 ui-monospace,monospace;
+  background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:3px;resize:vertical}
+.imp .bar{display:flex;gap:12px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.imp button{padding:7px 16px;font-size:.82rem;border:1px solid var(--line);border-radius:3px;background:var(--ink);color:var(--bg);cursor:pointer}
+.imp button:disabled{opacity:.4;cursor:default}
+.imp .msg{font-size:.78rem;color:var(--muted)}
+.imp .hint{font-size:.72rem;color:var(--muted);margin-top:6px;line-height:1.6}
+.pos{font-size:.72rem;color:var(--ink-2);margin-top:3px}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);
+       font-size:.74rem;color:var(--muted);line-height:1.7}
+footer b{color:var(--ink-2);font-weight:500}
+@media (max-width:620px){
+  .row{grid-template-columns:58px 1fr}
+  .side{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;
+        padding:0 16px 13px 16px}
+  .brand h1{font-size:1.35rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head><body>
+<nav class="fnav" id="fnav" aria-label="바로가기">
+  <a href="#top" class="c-up">맨 위</a>
+  <a href="#sec-open" class="c-open">검토<b id="fnOpen"></b></a>
+  <a href="#sec-open" class="c-hot" data-hot>D-7<b id="fnHot"></b></a>
+  <a href="#sec-signal" class="c-sig">사전영업<b id="fnSig"></b></a>
+  <a href="#sec-watch" class="c-watch">지켜볼 것<b id="fnWatch"></b></a>
+  <a href="#sec-comp" class="c-comp">낙찰<b id="fnComp"></b></a>
+</nav>
+<div class="wrap">
+  <header class="top" id="top">
+    <div class="brand">
+      <h1>입찰 레이더</h1>
+      <p>조달청·나라장터 일일 1차 스크리닝 · 기준 v0.2 / 필터 v0.6 · 매일 08:30 자동 수집</p>
+    </div>
+    <div class="runmeta"><b id="runDate">—</b><span id="runNote">불러오는 중</span></div>
+  </header>
+  <div class="dropnote" id="dropNote"></div>
+
+  <div class="strip" id="strip"></div>
+
+  <div class="imp" style="border-style:solid">
+    <div class="bar"><button id="csvBtn" type="button">엑셀(CSV) 내보내기</button><span class="msg" id="toolMsg">status·메모는 이 브라우저에만 저장됩니다 — 주 1회 내보내기로 백업하세요.</span></div>
+  </div>
+
+  <section id="sec-open">
+    <div class="head"><h2>검토 대상 — 이번 주 판단할 공고</h2><i class="rule"></i><span class="n" id="nOpen"></span></div>
+    <p class="lede">마감이 가까운 순. 제목을 누르면 나라장터 공고 상세로 이동, 📎는 공고서 첨부. 아래 칩은 공고서에서 자동 추출한 5분 게이트 항목(주황=주의) — 원문 보기로 근거 문장 확인. 좌측 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</p>
+    <div class="rows" id="openRows"></div>
+  </section>
+
+  <section id="sec-signal">
+    <div class="head"><h2>사전영업 — 본사업 발주가 예상되는 기관</h2><i class="rule"></i><span class="n" id="nSig"></span></div>
+    <p class="lede">지금 입찰할 건 아니지만, 감리·영향평가·ISP·연구용역이 뜬 기관은 곧 본사업을 낸다. 미리 찾아갈 곳.</p>
+    <div class="sig" id="sigRows"></div>
+  </section>
+
+  <section id="sec-watch">
+    <div class="head"><h2>지켜볼 것 — 재공고·컨소 구성 대기</h2><i class="rule"></i><span class="n" id="nWatch"></span></div>
+    <div class="rows" id="watchRows"></div>
+  </section>
+
+  <section id="sec-comp">
+    <div class="head"><h2>낙찰 현황 — 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
+    <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
+        <tbody id="compRows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <b>판정 기준</b> — OPEN은 노이즈 필터(N1~N9·품명분류) 통과 + 키워드 적합 + 10점 이상 + 추정가격 1억 이상. SIGNAL은 AI 동반 감리·영향평가·ISP·연구용역. WATCH는 취소공고 재공고 대기·AI 키워드 없는 ICT 구축/개발(1억↑). 금액은 컷이 아니라 단독/컨소 포지션 추천 — 13억 초과도 OPEN에 올리고 "구성사"로 표시.<br>
+    본 스크리닝은 공고 요약정보만 본 트리아지다. <b>RFP 원문 정독을 대체하지 않는다.</b>
+  </footer>
+</div>
+
+<script>
+const won = n => !n ? "금액 미표기" : (n >= 1e8 ? (n/1e8).toFixed(n>=1e9?0:2).replace(/\.00$/,"") + "억" : Math.round(n/1e4).toLocaleString() + "만") + "원";
+const parseDt = s => {
+  if(!s) return null;
+  const d = String(s).replace(/\D/g,"").slice(0,8);
+  if(d.length !== 8) return null;
+  const t = new Date(+d.slice(0,4), +d.slice(4,6)-1, +d.slice(6,8));
+  return isNaN(t) ? null : t;
+};
+const liveDday = row => {
+  const t = parseDt(row.closeDt);
+  if(!t) return (typeof row.dday === "number" ? row.dday : null);
+  const now = new Date(); now.setHours(0,0,0,0);
+  return Math.round((t - now) / 86400000);
+};
+const urg = d => d === null ? "none" : d <= 7 ? "hot" : d <= 14 ? "soon" : "ok";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const CYCLE = ["신규","검토중","제안준비","드롭"];
+const g2bUrl = r => {
+  if(r.url && /^https?:\/\//.test(r.url)) return r.url;
+  const parts = String(r.id||"").split("-"); const bidNo = r.bidNo || parts[0], ord = parts[1] || "000";
+  return bidNo ? `https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=${encodeURIComponent(bidNo)}&bidPbancOrd=${encodeURIComponent(ord)}` : "";
+};
+
+const STORE_KEY = "g2b_status_v1";
+const loadStatus = () => { try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch { return {}; } };
+const saveStatus = m => { try { localStorage.setItem(STORE_KEY, JSON.stringify(m)); } catch {} };
+let STATUS = loadStatus();
+let ROWS = [], RUNS = [], COMPS = [], GATE = {};
+
+function gateChips(r){
+  const g = GATE[r.id];
+  if(!g) return "";
+  if(g.status === "no-attachment") return `<div class="gate"><span class="none">첨부 없음 — 자체조달 가능성, 원문 직접 확인</span></div>`;
+  if(g.status !== "ok") return `<div class="gate"><span class="none">공고서 자동 확인 실패(${esc(g.status)}) — 수동</span></div>`;
+  const chips = [];
+  const c = (t, cls="") => chips.push(`<span class="g ${cls}">${esc(t)}</span>`);
+  if(g.joint === "불허") c("공동수급 불허", "warn"); else if(g.joint === "허용") c("공동수급 허용", "ok"); else c("공동수급 ?");
+  if(g.sub === "금지") c("하도급 금지", "warn"); else if(g.sub === "승인필요") c("하도급 승인필요"); else if(g.sub === "허용") c("하도급 허용", "ok"); else c("하도급 ?");
+  if(g.ratio) c("배점 " + g.ratio + (g.diff ? " · 차등제" : ""), g.diff ? "warn" : ""); else if(g.diff) c("차등제", "warn");
+  if(g.submit === "방문") c("방문제출", "warn"); else if(g.submit === "전자") c("전자제출", "ok");
+  if(g.big === "제한") c("대기업 제한", "ok"); else if(g.big === "허용") c("대기업 허용", "warn");
+  if(g.region) c("지역제한 언급", "warn");
+  if(g.perf) c("실적요건 언급");
+  return `<div class="gate">${chips.join("")}<span class="more" data-id="${esc(r.id)}">원문 보기</span></div><div class="snips" id="snip-${esc(r.id)}" hidden></div>`;
+}
+function bidRow(r){
+  const d = liveDday(r), u = urg(d);
+  const st = STATUS[r.id] || r.status || "신규";
+  const dtxt = d === null ? "—" : (d < 0 ? "마감" : "D-" + d);
+  return `<article class="row" data-urg="${u}">
+    <div class="dday mono" data-urg="${u}"><b>${dtxt}</b><span>${esc((r.closeDt||"").replace(/\D/g,"").slice(4,8).replace(/(\d\d)(\d\d)/,"$1.$2")) || "일정미정"}</span></div>
+    <div class="body">
+      <p class="name">${g2bUrl(r) ? `<a class="lnk" href="${esc(g2bUrl(r))}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}${r.docUrl ? ` <a class="doc" href="${esc(r.docUrl)}" target="_blank" rel="noopener" title="공고서 첨부">📎</a>` : ""}</p>
+      <div class="meta">
+        <span class="inst">${esc(r.inst) || "기관 미표기"}</span>
+        <span class="mono">${won(r.amount)}</span>
+        <span class="mono">${esc(r.bidNo) || ""}</span>
+      </div>
+      ${r.reason ? `<p class="why">${esc(r.reason)}</p>` : ""}
+      ${r.position ? `<p class="pos">→ ${esc(r.position)}${(r.flags||[]).length ? " · ⚑ " + esc((r.flags||[]).join(" / ")) : ""}</p>` : ""}
+      ${gateChips(r)}
+      ${(r.keywords||[]).length ? `<div class="tags">${r.keywords.slice(0,6).map(k=>`<span class="tag">${esc(k)}</span>`).join("")}</div>` : ""}
+    </div>
+    <div class="side">
+      <span class="score mono"><b>${r.score ?? "—"}</b>/20</span>
+      <button class="status" data-s="${esc(st)}" data-id="${esc(r.id)}" type="button">${esc(st)}</button>
+    </div>
+  </article>`;
+}
+
+function render(rows, runs, comps){
+  const by = b => rows.filter(r => r.bucket === b);
+  const open = by("OPEN").sort((a,b)=>{
+    const da = liveDday(a), db_ = liveDday(b);
+    return (da===null?999:da) - (db_===null?999:db_) || (b.score||0)-(a.score||0);
+  });
+  const sig = by("SIGNAL"), watch = by("WATCH");
+  const hot = open.filter(r => { const d = liveDday(r); return d !== null && d >= 0 && d <= 7; }).length;
+  const last = runs[0] || {};
+
+  // 오늘 수집 통계 (runs[0]) + 누적
+  const tb = last.buckets || {}, todayPass = (tb.OPEN||0)+(tb.SIGNAL||0)+(tb.WATCH||0);
+  const dropped = last.total ? last.total - todayPass : 0;
+  const cumTotal = runs.reduce((a, r) => a + (r.total || 0), 0);
+  const rangeTxt = last.range && last.range[0] ? `${last.range[0].slice(4,6)}/${last.range[0].slice(6,8)}~${last.range[1].slice(4,6)}/${last.range[1].slice(6,8)}` : "";
+  document.getElementById("runDate").textContent = last.date || "—";
+  document.getElementById("runNote").textContent = last.total
+    ? `오늘 수집 ${last.total.toLocaleString()}건 (${rangeTxt}) → 통과 ${todayPass}건 · 제외 ${dropped.toLocaleString()}건 (${last.total ? (dropped/last.total*100).toFixed(1) : 0}%) · 신규 ${last.added ?? 0} · 누적 보관 ${rows.length}건 · ${runs.length}일치 ${cumTotal.toLocaleString()}건 조회`
+    : "수집 기록 없음";
+  // 오늘 제외 사유 상위
+  const dropTop = Object.entries(last.drops || {}).sort((a,b) => b[1]-a[1]).slice(0, 6);
+  const dropEl = document.getElementById("dropNote");
+  if(dropEl) dropEl.innerHTML = dropTop.length ? "제외 사유 — " + dropTop.map(([k,v]) => `${esc(k)} <b class="mono">${v.toLocaleString()}</b>`).join(" · ") : "";
+
+  document.getElementById("strip").innerHTML = [
+    ["오늘 수집", last.total || 0, `통과 ${todayPass} · 제외 ${dropped.toLocaleString()}`],
+    ["검토 대상", open.length, "공고서 열어 판단"],
+    ["D-7", hot, "마감 일주일 이내", hot > 0],
+    ["사전영업", sig.length, "본사업 예상 기관"],
+    ["지켜볼 것", watch.length, "재공고·컨소 대기"],
+    ["낙찰 기록", comps.length, "경쟁사 누적"],
+  ].map(([l,v,s,isHot]) => `<div class="cell${isHot?" hot":""}"><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
+
+  document.getElementById("nOpen").textContent = open.length ? open.length + "건" : "";
+  const fn = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
+  fn("fnOpen", open.length || ""); fn("fnHot", hot || ""); fn("fnSig", sig.length || ""); fn("fnWatch", watch.length || ""); fn("fnComp", comps.length || "");
+  document.getElementById("nSig").textContent = sig.length ? sig.length + "건" : "";
+  document.getElementById("nWatch").textContent = watch.length ? watch.length + "건" : "";
+  document.getElementById("nComp").textContent = comps.length ? comps.length + "건" : "";
+
+  document.getElementById("openRows").innerHTML = open.length ? open.map(bidRow).join("")
+    : `<div class="empty">오늘 올라온 공고 중 OPEN 판정이 없습니다.</div>`;
+  document.getElementById("watchRows").innerHTML = watch.length ? watch.map(bidRow).join("")
+    : `<div class="empty">대기 중인 건이 없습니다.</div>`;
+  document.getElementById("sigRows").innerHTML = sig.length ? sig.map(r =>
+      `<div><span class="t">${g2bUrl(r) ? `<a class="lnk" href="${esc(g2bUrl(r))}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}</span><span class="r">${esc(r.reason)}</span><span class="mono" style="font-size:.74rem;color:var(--muted)">${esc(r.inst)||""}</span></div>`
+    ).join("") : `<div style="padding:22px;text-align:center;color:var(--muted);font-size:.85rem">신호 없음</div>`;
+
+  document.getElementById("compRows").innerHTML = comps.length ? comps.map(c => {
+    const ratio = c.ratio ?? c.rate ?? null, est = c.rateEst ?? null, shown = ratio ?? est, pct = Math.max(0, Math.min(100, shown || 0));
+    const vendor = c.vendor || c.winner || "";
+    const failed = c.result === "유찰" || (!vendor && !c.amount);
+    return `<tr>
+      <td>${esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}${c.inst ? `<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst)}</div>` : ""}</td>
+      <td class="vendor">${failed ? '<span style="color:var(--accent-ink)">유찰 — 재공고 대기</span>' : esc(vendor)}</td>
+      <td class="num mono">${failed ? "—" : won(c.amount)}</td>
+      <td>${shown ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${ratio ? "" : "≈"}${Number(shown).toFixed(1)}%</em></span>` : "—"}${c.bidders ? `<div style="font-size:.68rem;color:var(--muted)">참가 ${c.bidders}개사</div>` : ""}</td>
+      <td class="num mono" style="color:var(--muted)">${esc(c.date||"")}</td>
+    </tr>`;
+  }).join("") : `<tr><td colspan="5" style="padding:22px;text-align:center;color:var(--muted)">기록된 개찰결과가 없습니다.</td></tr>`;
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".status");
+  if(!b) return;
+  const next = CYCLE[(CYCLE.indexOf(b.dataset.s) + 1) % CYCLE.length];
+  b.dataset.s = next; b.textContent = next;
+  STATUS[b.dataset.id] = next; saveStatus(STATUS);
+});
+
+document.addEventListener("click", async e => {
+  const m = e.target.closest(".more"); if(!m) return;
+  const id = m.dataset.id, box = document.getElementById("snip-" + id);
+  if(!box.hidden){ box.hidden = true; return; }
+  box.textContent = "불러오는 중…"; box.hidden = false;
+  try {
+    const j = await (await fetch("data/notices/" + id.replace(/[^A-Za-z0-9_.:@+-]/g,"-") + ".json?t=" + Date.now())).json();
+    const parts = [];
+    for(const [k, v] of Object.entries(j.gate || {})){
+      if(!v.n) continue;
+      parts.push(`<b>${esc(k)}</b>${v.verdict ? " → " + esc(v.verdict) : ""}${v.ratio ? " " + esc(v.ratio) : ""}\n${v.snippets.map(s => "  · " + esc(s)).join("\n")}`);
+    }
+    parts.push(`<b>파일</b> ${(j.files||[]).map(f => esc(f.name || f.url || "") + (f.kind ? " (" + f.kind + ")" : "") + (f.error ? " ✗ " + esc(f.error) : "")).join(" / ")}`);
+    box.innerHTML = parts.join("\n\n") || "추출된 항목 없음";
+  } catch(err){ box.textContent = "원문 정보 없음"; }
+});
+
+// 스크롤 위치에 따라 현재 섹션 표시
+(() => {
+  const ids = ["sec-open","sec-signal","sec-watch","sec-comp"];
+  const links = [...document.querySelectorAll(".fnav a")];
+  const mark = () => {
+    let cur = null;
+    for(const id of ids){ const el = document.getElementById(id); if(el && el.getBoundingClientRect().top <= 120) cur = id; }
+    links.forEach(a => a.classList.toggle("cur", !!cur && a.getAttribute("href") === "#" + cur && !a.hasAttribute("data-hot")));
+  };
+  document.addEventListener("scroll", mark, {passive: true}); mark();
+})();
+
+document.getElementById("csvBtn").addEventListener("click", () => {
+  const cols = ["bucket","status","score","dday","closeDt","amount","name","inst","position","reason","keywords","flags","method","joint","arslt","kind","firstSeen","lastSeen","url"];
+  const q = v => '"' + String(Array.isArray(v) ? v.join(" / ") : (v ?? "")).replace(/"/g,'""') + '"';
+  const lines = [cols.join(",")].concat(ROWS.map(r => cols.map(c => q(c === "status" ? (STATUS[r.id] || r.status || "신규") : c === "dday" ? liveDday(r) : r[c])).join(",")));
+  const blob = new Blob(["\ufeff" + lines.join("\r\n")], {type: "text/csv;charset=utf-8"});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = "입찰레이더_" + new Date().toISOString().slice(0,10) + ".csv"; a.click();
+  document.getElementById("toolMsg").textContent = "CSV " + ROWS.length + "건 내보냄";
+});
+
+(async () => {
+  const get = async p => { const r = await fetch(p + "?t=" + Date.now(), {cache: "no-store"}); if(!r.ok) throw new Error(p); return r.json(); };
+  try {
+    [ROWS, RUNS, COMPS] = await Promise.all([get("data/bids.json"), get("data/runs.json"), get("data/competitors.json")]);
+    try { GATE = await get("data/notices/index.json"); } catch { GATE = {}; }
+    RUNS.sort((a,b) => String(b.date||"").localeCompare(String(a.date||"")));
+    COMPS.sort((a,b) => String(b.date||"").localeCompare(String(a.date||"")));
+    render(ROWS, RUNS, COMPS);
+  } catch(err){
+    document.getElementById("runNote").textContent = "데이터 없음 — 첫 수집 전";
+    document.getElementById("openRows").innerHTML = `<div class="empty">아직 수집 데이터가 없습니다. 첫 예약 실행 후 다시 열어주세요.</div>`;
+  }
+})();
+</script>
+
+</body></html>
