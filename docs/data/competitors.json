@@ -1,1 +1,323 @@
-[]
+[
+{
+"id":"R26BK01733953-000",
+"kind":"물품",
+"name":"인공지능 인지 성능 평가 장비",
+"inst":"한국자동차연구원",
+"winner":"주식회사 웰메이드컴퓨터",
+"amount":587050000,
+"budget":0,
+"rate":99.96,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 웰메이드컴퓨터",
+"sucsfbidAmt":"587050000",
+"sucsfbidRate":"99.959"
+}
+},
+{
+"id":"R26BK01715416-000",
+"kind":"물품",
+"name":"[대구광역시 AI대전환 사업]AMR RCS 통합패키지",
+"inst":"주식회사 유엔디",
+"winner":"주식회사대륙정공",
+"amount":165000000,
+"budget":0,
+"rate":null,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사대륙정공",
+"sucsfbidAmt":"165000000"
+}
+},
+{
+"id":"R26BK01736299-000",
+"kind":"물품",
+"name":"AI 비전 검사 시스템 2차 제작(수의시담)",
+"inst":"주식회사 루타스",
+"winner":"(주)에프시이엔지",
+"amount":297000000,
+"budget":0,
+"rate":100.0,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"(주)에프시이엔지",
+"sucsfbidAmt":"297000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01728088-000",
+"kind":"물품",
+"name":"SW·AI교육거점센터 교육용 물품(AI이미지변환시스템) 구입",
+"inst":"부산광역시교육청 부산광역시교육청교육연구정보원",
+"winner":"주식회사 내스타일",
+"amount":19500000,
+"budget":0,
+"rate":97.5,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 내스타일",
+"sucsfbidAmt":"19500000",
+"sucsfbidRate":"97.5"
+}
+},
+{
+"id":"R26BK01728020-000",
+"kind":"물품",
+"name":"SW·AI교육거점센터 교육용 물품(AI포토키오스크) 구입",
+"inst":"부산광역시교육청 부산광역시교육청교육연구정보원",
+"winner":"주식회사 내스타일",
+"amount":19500000,
+"budget":0,
+"rate":97.5,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 내스타일",
+"sucsfbidAmt":"19500000",
+"sucsfbidRate":"97.5"
+}
+},
+{
+"id":"R26BK01727902-000",
+"kind":"물품",
+"name":"AIT-XP 웨이퍼 결함 검출기 Solid State Laser 구매 ",
+"inst":"재단법인 한국나노기술원",
+"winner":"주식회사 피와이제이",
+"amount":58300000,
+"budget":0,
+"rate":97.19,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 피와이제이",
+"sucsfbidAmt":"58300000",
+"sucsfbidRate":"97.189"
+}
+},
+{
+"id":"R26BK01721914-000",
+"kind":"물품",
+"name":"조류인플루엔자(AI) 진단키트 구입(질병진단과)",
+"inst":"전북특별자치도 동물위생시험소",
+"winner":"오피스디포익산점",
+"amount":28090000,
+"budget":0,
+"rate":88.56,
+"date":"2026-09-17",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"오피스디포익산점",
+"sucsfbidAmt":"28090000",
+"sucsfbidRate":"88.561"
+}
+},
+{
+"id":"R26BK01713859-000",
+"kind":"물품",
+"name":" AI 모델 개발 및 검증용 연산 시스템",
+"inst":"주식회사 포인랩",
+"winner":"컴피아",
+"amount":44000000,
+"budget":0,
+"rate":null,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"컴피아",
+"sucsfbidAmt":"44000000"
+}
+},
+{
+"id":"R26BK01726489-000",
+"kind":"물품",
+"name":"계룡산 탐방안내소 AI동시통역기기 구매 ·설치",
+"inst":"국립공원공단계룡산국립공원사무소",
+"winner":"㈜ 코난테크놀로지",
+"amount":22000000,
+"budget":0,
+"rate":100.0,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"㈜ 코난테크놀로지",
+"sucsfbidAmt":"22000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01722705-000",
+"kind":"물품",
+"name":"상용SW 제3자단가계약((주)코난테크놀로지, Konan RAG-X v3.0)",
+"inst":"각 수요기관",
+"winner":"㈜ 코난테크놀로지",
+"amount":550000,
+"budget":0,
+"rate":100.0,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"㈜ 코난테크놀로지",
+"sucsfbidAmt":"550000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01725679-000",
+"kind":"물품",
+"name":"건설현장 AI 충돌방지장치 구매",
+"inst":"한국원자력환경공단",
+"winner":"주식회사 파트넷",
+"amount":8400000,
+"budget":0,
+"rate":100.0,
+"date":"2026-09-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 파트넷",
+"sucsfbidAmt":"8400000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01712671-000",
+"kind":"물품",
+"name":"2026년 조류인플루엔자(AI) 검진사업용 진단키트 등 구입(2차)",
+"inst":"충청북도",
+"winner":"(주)대한티앤에스",
+"amount":261690000,
+"budget":0,
+"rate":84.76,
+"date":"2026-09-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"(주)대한티앤에스",
+"sucsfbidAmt":"261690000",
+"sucsfbidRate":"84.764"
+}
+},
+{
+"id":"R26BK01685658-000",
+"kind":"물품",
+"name":"2026학년도 양산인공지능고등학교 AI자동제어시스템과 실험실습기자재 구입 ",
+"inst":"경상남도교육청 양산인공지능고등학교",
+"winner":"주식회사 티포러스",
+"amount":485510000,
+"budget":0,
+"rate":95.41,
+"date":"2026-09-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 티포러스",
+"sucsfbidAmt":"485510000",
+"sucsfbidRate":"95.405"
+}
+},
+{
+"id":"R26BK01706246-000",
+"kind":"물품",
+"name":"전공분야 보수교육 AI 서비스 사용권",
+"inst":"한국기술교육대학교",
+"winner":"오성",
+"amount":46515493,
+"budget":0,
+"rate":88.01,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"오성",
+"sucsfbidAmt":"46515493",
+"sucsfbidRate":"88.009"
+}
+},
+{
+"id":"R26BK01705257-001",
+"kind":"물품",
+"name":"AI 연산 노드 및 모니터링 시스템 구축 ",
+"inst":"광주과학기술원",
+"winner":"주식회사 인스페이스",
+"amount":178324300,
+"budget":0,
+"rate":98.32,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"주식회사 인스페이스",
+"sucsfbidAmt":"178324300",
+"sucsfbidRate":"98.317"
+}
+},
+{
+"id":"R26BK01700668-000",
+"kind":"물품",
+"name":"AI 에이전트 개발 도구(AI 가속기) 구매",
+"inst":"한국건설기술연구원",
+"winner":"(주)리더스시스템즈",
+"amount":40480000,
+"budget":0,
+"rate":90.89,
+"date":"2026-09-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"(주)리더스시스템즈",
+"sucsfbidAmt":"40480000",
+"sucsfbidRate":"90.895"
+}
+},
+{
+"id":"R26BK01689568-000",
+"kind":"물품",
+"name":"피지컬AI공장 교육훈련장비(단백질액체크로마토그래피) 구매",
+"inst":"한국폴리텍I대학성남캠퍼스",
+"winner":"(주)이효바이오싸이언스",
+"amount":139227990,
+"budget":0,
+"rate":97.68,
+"date":"2026-08-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-18",
+"raw":{
+"bidwinnrNm":"(주)이효바이오싸이언스",
+"sucsfbidAmt":"139227990",
+"sucsfbidRate":"97.683"
+}
+}
+]

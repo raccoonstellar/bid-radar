@@ -1,4 +1,17 @@
 {
+"R26BK01736325-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
+},
 "R26BK01715255-002": {
 "status": "extract-failed",
 "checkedAt": "2026-09-17T03:06:09",
@@ -63,6 +76,19 @@
 "region": false,
 "perf": false,
 "files": 2
+},
+"R26BK01735183-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
 },
 "R26BK01730107-000": {
 "status": "extract-failed",
@@ -155,6 +181,32 @@
 "perf": false,
 "files": 2
 },
+"R26BK01737251-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
+},
+"R26BK01736640-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
+},
 "R26BK01733558-000": {
 "status": "ok",
 "checkedAt": "2026-09-17T03:06:46",
@@ -167,6 +219,19 @@
 "region": true,
 "perf": true,
 "files": 4
+},
+"R26BK01730007-001": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
 },
 "R26BK01727277-000": {
 "status": "extract-failed",
@@ -219,6 +284,32 @@
 "region": false,
 "perf": false,
 "files": 3
+},
+"R26BK01736585-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
+},
+"R26BK01736829-000": {
+"status": "no-attachment",
+"checkedAt": "2026-09-18T07:34:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0
 },
 "R26BK01730007-000": {
 "status": "ok",
