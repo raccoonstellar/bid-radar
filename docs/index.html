@@ -53,6 +53,21 @@ body{
 .runmeta b{display:block;font-size:1.02rem;color:var(--ink);font-weight:600;letter-spacing:0}
 
 /* ── 요약 스트립 ── */
+.fnav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:50}
+.fnav a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:92px;padding:9px 12px;border-radius:10px;
+  font-size:.74rem;font-weight:600;letter-spacing:.06em;text-decoration:none;color:var(--tint);
+  background:color-mix(in srgb,var(--tint) 14%,var(--surface));border:1px solid color-mix(in srgb,var(--tint) 35%,transparent);
+  transition:transform .15s,background .15s,box-shadow .15s}
+.fnav a:hover{transform:translateX(-3px);background:color-mix(in srgb,var(--tint) 24%,var(--surface));box-shadow:0 6px 18px color-mix(in srgb,var(--tint) 25%,transparent)}
+.fnav a b{font-family:ui-monospace,monospace;font-size:.72rem;font-weight:700;color:#fff;background:var(--tint);padding:1px 7px;border-radius:999px}
+.fnav a b:empty{display:none}
+.fnav a.cur{background:var(--tint);color:#fff;border-color:var(--tint)}
+.fnav a.cur b{background:rgba(255,255,255,.28)}
+.fnav .c-up{--tint:#8a8f98}.fnav .c-open{--tint:#4f8ff7}.fnav .c-hot{--tint:#f0653a}.fnav .c-sig{--tint:#2fb37f}.fnav .c-watch{--tint:#9b6fe6}.fnav .c-comp{--tint:#d9a527}
+@media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row;flex-wrap:wrap;justify-content:center;max-width:calc(100vw - 24px)}.fnav a{min-width:0}}
+html{scroll-behavior:smooth}
+section{scroll-margin-top:16px}
+@media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row}.fnav a span{display:none}}
 .dropnote{font-size:.72rem;color:var(--muted);margin:-14px 0 14px;line-height:1.6;text-align:right}
 .dropnote b{color:var(--ink-2)}
 .strip{display:flex;flex-wrap:wrap;gap:2px;margin:0;border:1px solid var(--line);
@@ -161,8 +176,16 @@ footer b{color:var(--ink-2);font-weight:500}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head><body>
+<nav class="fnav" id="fnav" aria-label="바로가기">
+  <a href="#top" class="c-up">맨 위</a>
+  <a href="#sec-open" class="c-open">검토<b id="fnOpen"></b></a>
+  <a href="#sec-open" class="c-hot" data-hot>D-7<b id="fnHot"></b></a>
+  <a href="#sec-signal" class="c-sig">사전영업<b id="fnSig"></b></a>
+  <a href="#sec-watch" class="c-watch">지켜볼 것<b id="fnWatch"></b></a>
+  <a href="#sec-comp" class="c-comp">낙찰<b id="fnComp"></b></a>
+</nav>
 <div class="wrap">
-  <header class="top">
+  <header class="top" id="top">
     <div class="brand">
       <h1>입찰 레이더</h1>
       <p>조달청·나라장터 일일 1차 스크리닝 · 기준 v0.2 / 필터 v0.6 · 매일 08:30 자동 수집</p>
@@ -177,26 +200,26 @@ footer b{color:var(--ink-2);font-weight:500}
     <div class="bar"><button id="csvBtn" type="button">엑셀(CSV) 내보내기</button><span class="msg" id="toolMsg">status·메모는 이 브라우저에만 저장됩니다 — 주 1회 내보내기로 백업하세요.</span></div>
   </div>
 
-  <section>
-    <div class="head"><h2>OPEN — 공고서를 열어야 할 건</h2><i class="rule"></i><span class="n" id="nOpen"></span></div>
+  <section id="sec-open">
+    <div class="head"><h2>검토 대상 — 이번 주 판단할 공고</h2><i class="rule"></i><span class="n" id="nOpen"></span></div>
     <p class="lede">마감이 가까운 순. 제목을 누르면 나라장터 공고 상세로 이동, 📎는 공고서 첨부. 아래 칩은 공고서에서 자동 추출한 5분 게이트 항목(주황=주의) — 원문 보기로 근거 문장 확인. 좌측 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</p>
     <div class="rows" id="openRows"></div>
   </section>
 
-  <section>
-    <div class="head"><h2>SIGNAL — 사전영업 파이프라인</h2><i class="rule"></i><span class="n" id="nSig"></span></div>
-    <p class="lede">입찰 대상은 아니지만 본사업이 있다는 신호. 감리·개인정보영향평가·ISP가 떴다는 건 그 기관에 사업이 이미 돌고 있다는 뜻이다.</p>
+  <section id="sec-signal">
+    <div class="head"><h2>사전영업 — 본사업 발주가 예상되는 기관</h2><i class="rule"></i><span class="n" id="nSig"></span></div>
+    <p class="lede">지금 입찰할 건 아니지만, 감리·영향평가·ISP·연구용역이 뜬 기관은 곧 본사업을 낸다. 미리 찾아갈 곳.</p>
     <div class="sig" id="sigRows"></div>
   </section>
 
-  <section>
-    <div class="head"><h2>WATCH — 지금은 아니나 타이밍이 온다</h2><i class="rule"></i><span class="n" id="nWatch"></span></div>
+  <section id="sec-watch">
+    <div class="head"><h2>지켜볼 것 — 재공고·컨소 구성 대기</h2><i class="rule"></i><span class="n" id="nWatch"></span></div>
     <div class="rows" id="watchRows"></div>
   </section>
 
-  <section>
-    <div class="head"><h2>개찰결과 — 경쟁사·투찰률</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
-    <p class="lede">우리 Core 영역에서 낙찰된 건과 낙찰사 (낙찰정보서비스 자동 수집). 투찰률이 낮을수록 가격 경쟁이 붙었다는 뜻 (≈는 예정가격 미공개라 추정가격 대비로 계산). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
+  <section id="sec-comp">
+    <div class="head"><h2>낙찰 현황 — 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
+    <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
     <div class="tablewrap">
       <table>
         <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
@@ -308,14 +331,16 @@ function render(rows, runs, comps){
 
   document.getElementById("strip").innerHTML = [
     ["오늘 수집", last.total || 0, `통과 ${todayPass} · 제외 ${dropped.toLocaleString()}`],
-    ["OPEN 큐", open.length, "공고서 열 것"],
-    ["D-7 이내", hot, "오늘 판단 필요", hot > 0],
-    ["SIGNAL", sig.length, "사전영업 대상"],
-    ["WATCH", watch.length, "재공고·컨소 대기"],
-    ["경쟁사 기록", comps.length, "누적"],
+    ["검토 대상", open.length, "공고서 열어 판단"],
+    ["D-7", hot, "마감 일주일 이내", hot > 0],
+    ["사전영업", sig.length, "본사업 예상 기관"],
+    ["지켜볼 것", watch.length, "재공고·컨소 대기"],
+    ["낙찰 기록", comps.length, "경쟁사 누적"],
   ].map(([l,v,s,isHot]) => `<div class="cell${isHot?" hot":""}"><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
 
   document.getElementById("nOpen").textContent = open.length ? open.length + "건" : "";
+  const fn = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
+  fn("fnOpen", open.length || ""); fn("fnHot", hot || ""); fn("fnSig", sig.length || ""); fn("fnWatch", watch.length || ""); fn("fnComp", comps.length || "");
   document.getElementById("nSig").textContent = sig.length ? sig.length + "건" : "";
   document.getElementById("nWatch").textContent = watch.length ? watch.length + "건" : "";
   document.getElementById("nComp").textContent = comps.length ? comps.length + "건" : "";
@@ -366,6 +391,18 @@ document.addEventListener("click", async e => {
     box.innerHTML = parts.join("\n\n") || "추출된 항목 없음";
   } catch(err){ box.textContent = "원문 정보 없음"; }
 });
+
+// 스크롤 위치에 따라 현재 섹션 표시
+(() => {
+  const ids = ["sec-open","sec-signal","sec-watch","sec-comp"];
+  const links = [...document.querySelectorAll(".fnav a")];
+  const mark = () => {
+    let cur = null;
+    for(const id of ids){ const el = document.getElementById(id); if(el && el.getBoundingClientRect().top <= 120) cur = id; }
+    links.forEach(a => a.classList.toggle("cur", !!cur && a.getAttribute("href") === "#" + cur && !a.hasAttribute("data-hot")));
+  };
+  document.addEventListener("scroll", mark, {passive: true}); mark();
+})();
 
 document.getElementById("csvBtn").addEventListener("click", () => {
   const cols = ["bucket","status","score","dday","closeDt","amount","name","inst","position","reason","keywords","flags","method","joint","arslt","kind","firstSeen","lastSeen","url"];
