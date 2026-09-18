@@ -33,7 +33,7 @@ def main():
     src = sys.argv[1] if len(sys.argv) > 1 else (sorted(glob.glob("out/screen_*.json")) or [None])[-1]
     if not src: print("수집 결과 파일 없음 (out/screen_*.json)", file=sys.stderr); sys.exit(2)
     res = json.load(open(src, encoding="utf-8"))
-    date = res.get("date") or dt.date.today().isoformat()
+    date = res.get("date") or (dt.datetime.utcnow() + dt.timedelta(hours=9)).date().isoformat()
     today = dt.date.fromisoformat(date)
 
     bids = {b["id"]: b for b in load(f"{DATA}/bids.json", [])}
@@ -86,7 +86,7 @@ def main():
             k = (r.get("reason") or "").split("(")[0].strip(); drops[k] = drops.get(k, 0) + 1
     runs.append({"date": date, "range": res.get("range"), "total": len(res.get("rows", [])),
                  "pass": sum(buckets.values()), "buckets": buckets, "drops": drops,
-                 "added": added, "updated": updated, "same": same, "removed": removed, "builtAt": dt.datetime.now().isoformat(timespec="seconds")})
+                 "added": added, "updated": updated, "same": same, "removed": removed, "builtAt": (dt.datetime.utcnow() + dt.timedelta(hours=9)).isoformat(timespec="seconds") + "+09:00"})
     runs.sort(key=lambda x: x["date"], reverse=True)
     save(f"{DATA}/runs.json", runs[:90])
     save(f"{DATA}/latest.json", {k: res[k] for k in res if k != "rows"} | {"rows": [r for r in res.get("rows", []) if r.get("bucket") != "DROP"]})

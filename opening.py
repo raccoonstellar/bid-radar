@@ -80,14 +80,14 @@ def fetch(op, bgn, end, rows=200, max_pages=25, tries=6):
 
 def main():
     if "--probe" in sys.argv:
-        t = dt.date.today(); b = (t - dt.timedelta(days=2)).strftime("%Y%m%d") + "0000"; e = t.strftime("%Y%m%d") + "2359"
+        t = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date(); b = (t - dt.timedelta(days=2)).strftime("%Y%m%d") + "0000"; e = t.strftime("%Y%m%d") + "2359"
         for kind, op in OPS.items():
             items = fetch(op, b, e, rows=3, max_pages=1)
             print(f"== {kind} {len(items)}건"); 
             if items: print(json.dumps(items[0], ensure_ascii=False, indent=1)[:3000])
         return
     if not KEY: print("G2B_KEY 없음", file=sys.stderr); sys.exit(2)
-    today = dt.date.today()
+    today = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date()   # KST — 클라우드 컨테이너는 UTC
     if len(sys.argv) >= 3 and not sys.argv[1].startswith("--"): b, e = sys.argv[1], sys.argv[2]
     else:
         comps = []
