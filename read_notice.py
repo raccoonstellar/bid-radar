@@ -41,16 +41,22 @@ YESNO = {  # 라벨별 빠른 판정 힌트 (문맥에 이 단어가 있으면)
 
 def log(*a): print(*a, file=sys.stderr, flush=True)
 
-def download(url):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=90) as r:
-        cd = r.headers.get("Content-Disposition", "")
-        name = ""
-        m = re.search(r"filename\*?=(?:UTF-8'')?\"?([^\";]+)", cd, re.I)
-        if m: name = urllib.parse.unquote(m.group(1))
-        data = r.read(MAX_BYTES + 1)
-    if len(data) > MAX_BYTES: raise RuntimeError("파일 40MB 초과")
-    return data, name or os.path.basename(urllib.parse.urlparse(url).path)
+def download(url, tries=5):
+    last = None
+    for a in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=90) as r:
+                cd = r.headers.get("Content-Disposition", "")
+                name = ""
+                m = re.search(r"filename\*?=(?:UTF-8'')?\"?([^\";]+)", cd, re.I)
+                if m: name = urllib.parse.unquote(m.group(1))
+                data = r.read(MAX_BYTES + 1)
+            if len(data) > MAX_BYTES: raise RuntimeError("파일 40MB 초과")
+            return data, name or os.path.basename(urllib.parse.urlparse(url).path)
+        except Exception as e:
+            last = e; import time; time.sleep(2 * (a + 1))
+    raise RuntimeError(f"다운로드 실패({tries}회): {last}")
 
 def sniff(data, name):
     n = name.lower()
@@ -93,9 +99,14 @@ def text_pdf(data):
         return r.stdout.decode("utf-8", "replace")
     finally: os.unlink(p)
 
+import shutil
+HWP_TOOL = shutil.which("hwp5txt")
 def text_hwp(data):
-    t = run(["hwp5txt"], data, ".hwp")
-    if t.strip(): return t
+    if HWP_TOOL:
+        t = run([HWP_TOOL], data, ".hwp")
+        if len(t.strip()) > 100: return t
+    else:
+        log("  ! hwp5txt 없음 — pip install pyhwp 필요 (HWP 추출 불가, 폴백만)")
     # 폴백: 한글 조각이라도 긁어본다
     return "".join(ch for ch in data.decode("utf-16le", "ignore") if "\uac00" <= ch <= "\ud7a3" or ch in " \n0-9:%().,")
 
@@ -162,7 +173,8 @@ def process(bid, force=False):
         try:
             data, name = download(u); kind, text = extract_text(data, name)
             rec["files"].append({"url": u, "name": name, "kind": kind, "bytes": len(data), "chars": len(text)})
-            if text and not text.startswith("[추출 실패"): texts.append(f"\n\n##### {name} #####\n{text}")
+            if text and not text.startswith("[추출 실패") and len(text.strip()) >= 200: texts.append(f"\n\n##### {name} #####\n{text}")
+            elif text: rec["files"][-1]["error"] = f"텍스트 {len(text.strip())}자 — 추출 불충분({kind})"
         except Exception as e:
             rec["files"].append({"url": u, "error": str(e)[:200]})
     full = "".join(texts)
@@ -202,7 +214,7 @@ def main():
                     "files": len(j.get("files", []))}
             except Exception: pass
     json.dump(idx, open(f"{OUT}/index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    print(f"[공고서] 대상 {len(targets)}건 → {stat}")
+    print(f"[공고서] 대상 {len(targets)}건 → {stat} · hwp5txt={'있음' if HWP_TOOL else '없음'} · pdftotext={'있음' if shutil.which('pdftotext') else '없음'}")
 
 if __name__ == "__main__":
     main()

@@ -228,7 +228,7 @@ def main():
     if not KEY and not os.environ.get("G2B_FROM_FILE"):
         print("G2B_KEY 환경변수가 없습니다. data.go.kr 일반 인증키(Decoding)를 넣어주세요.", file=sys.stderr)
         sys.exit(2)
-    today = dt.date.today()
+    today = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date()   # KST — 클라우드 컨테이너는 UTC
     if len(sys.argv) >= 3: b, e = sys.argv[1], sys.argv[2]
     else:
         # 마지막 성공일 하루 전 ~ 오늘 (최소 3일, 최대 14일) — 며칠 건너뛰어도 다음 실행이 갭을 메운다
