@@ -21,6 +21,68 @@
 }
 },
 {
+"id":"R26BK01715416-000",
+"kind":"물품",
+"name":"[대구광역시 AI대전환 사업]AMR RCS 통합패키지",
+"inst":"주식회사 유엔디",
+"winner":"주식회사대륙정공",
+"amount":165000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"주식회사대륙정공",
+"sucsfbidAmt":"165000000"
+}
+},
+{
+"id":"R26BK01736299-000",
+"kind":"물품",
+"name":"AI 비전 검사 시스템 2차 제작(수의시담)",
+"inst":"주식회사 루타스",
+"winner":"(주)에프시이엔지",
+"amount":297000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"(주)에프시이엔지",
+"sucsfbidAmt":"297000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01730282-000",
+"kind":"물품",
+"name":"산업용 모터의 다중물리 해석을 위한 소프트웨어 (Altair)구독",
+"inst":"한국전기연구원",
+"winner":"재우기술(주)",
+"amount":38572600,
+"budget":0,
+"rate":99.71,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"재우기술(주)",
+"sucsfbidAmt":"38572600",
+"sucsfbidRate":"99.714"
+}
+},
+{
 "id":"R26BK01633521-000",
 "kind":"용역",
 "name":"AI 기반 현장 용접부 PAUT 검사 판정 자동화 기술 개발 연구",
