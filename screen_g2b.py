@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 조달청 나라장터 입찰공고 일일 수집·스크리닝
-기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916) · v0.6 공통키워드·1억 하한·하도급 표기(260917) · v0.6.1 사용권·로봇 예외(260918)
+기준 문서: 조달청_공고_1차스크리닝_기준_v0.2.md + v0.4 필터 개정(260914) · v0.4.2 페이징·재시도·상담회 오탐(260916) · v0.5 대형 건 OPEN(260916) · v0.6 공통키워드·1억 하한·하도급 표기(260917) · v0.6.1 사용권·로봇 예외(260918) · v0.6.3 D-7 미만 표시만(260921)
 
 사용:
   export G2B_KEY="<data.go.kr 일반 인증키(Decoding)>"
@@ -224,7 +224,8 @@ def classify(it, kind, today):
 
     if 0 < amt < MIN_AMT: return R("DROP", f"소액({amt/1e8:.2f}억 < 1억)", score)
     if "취소" in nm: return R("WATCH", "취소공고 — 재공고 대기", score)
-    if d is not None and d < 5: return R("DROP", "D4 마감 임박(D-5 이내)", score)
+    if d is not None and d < 0: return R("DROP", "D4 마감 지남", score)
+    if d is not None and d < 7: flags.append("D-7 미만 — 제안서 작성 시간 부족, 참고용")   # v0.6.3: 버리지 않고 표시만
     # v0.5: 금액으로 WATCH 보내지 않는다 — 컨소 구성사 실적(100억대 참여 이력)이 있으므로 대형 건도 OPEN, 포지션만 "구성사"
     if score <= 9: return R("DROP", f"저점({score}) Fit{s_fit}", score)   # 임계값 — 남혁님 리뷰 항목
     return R("OPEN", (" · ".join(why) or "키워드 적합"), score)

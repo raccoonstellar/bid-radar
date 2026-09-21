@@ -126,7 +126,7 @@ def main():
         comps = []
         try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
         except Exception: pass
-        back = 30 if not comps else 3          # 첫 적재는 30일 소급
+        back = 31 if not comps else 3          # 첫 적재는 한 달 소급
         try:
             last = dt.date.fromisoformat(max(c["fetchedOn"] for c in comps if c.get("fetchedOn")))
             back = max(3, min(14, (today - last).days + 1))
@@ -172,10 +172,14 @@ def main():
                 "raw": {k: it.get(k) for k in ("bidwinnrNm","sucsfbidAmt","sucsfbidRate","opengDt","progrsDivCdNm") if it.get(k) not in (None, "")},
             })
             seen.add(cid); added += 1
+    # 보관: 개찰일 기준 최근 30일 롤링 (날짜 없는 건은 수집일 기준)
+    KEEP_DAYS = 30
+    cutoff = (today - dt.timedelta(days=KEEP_DAYS)).isoformat()
+    comps = [c for c in comps if (c.get("date") or c.get("fetchedOn") or "") >= cutoff]
     comps.sort(key=lambda c: (c.get("date") or ""), reverse=True)
-    comps = comps[:400]
+    comps = comps[:2000]
     json.dump(comps, open(f"{DATA}/competitors.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0, separators=(",", ":"))
-    print(f"[개찰결과] 신규 {added}건 · 누적 {len(comps)}건 (유찰 {sum(1 for c in comps if c['result']=='유찰')})")
+    print(f"[개찰결과] 신규 {added}건 · 최근 30일 보관 {len(comps)}건 (유찰 {sum(1 for c in comps if c['result']=='유찰')})")
 
 if __name__ == "__main__":
     main()

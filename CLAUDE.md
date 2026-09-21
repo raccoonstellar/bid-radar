@@ -23,8 +23,8 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
 3. `git add docs/data && git commit -m "radar YYYY-MM-DD: 수집 N건 통과 M건" && git push origin claude/radar`
 4. 완료 보고: `docs/data/runs.json` 첫 항목(total·pass·buckets·drops) + OPEN 상위 5건(점수·D-day·금액·공고명·포지션) + 개찰결과 신규 건수(유찰 포함) + 공고서 확인 결과(`docs/data/notices/index.json`: ok/실패/첨부없음 건수, 공동수급 불허·차등제·방문제출로 잡힌 건 이름)
 
-## 환경 요구 (환경 Setup script 에 넣는다 — 루틴에서 매번 설치하지 않는다)
-`pip install pyhwp pypdf` · `apt-get install -y poppler-utils` (HWP·PDF 텍스트 추출). 없으면 공고서 확인 단계만 실패하고 수집은 정상.
+## 환경 요구
+없음. HWP·PDF 텍스트 추출기는 저장소에 동봉(`vendor/olefile`, `vendor/pypdf`, `hwp_text.py`)돼 있어 pip·apt 설치가 필요 없다. `vendor/`는 수정하지 않는다.
 
 ## 실패 처리
 - 스크립트가 페이지 단위로 6회 재시도하고 실패 페이지는 건너뛴다. stderr 에 "부분 수집" 경고가 있으면 보고에 실패 페이지 수를 적는다 (다음 실행이 겹침 범위로 메운다)
