@@ -162,3 +162,8 @@ for nm,kind,amt,clse,exp,extra in C7:
     b,r,sc,*_=s.classify({"bidNtceNm":nm,"presmptPrce":amt,"bidClseDt":clse,"dminsttNm":"",**extra},kind,TODAY)
     ok7+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:40]:<42} {r[:30]}")
 print(f"v0.6.1 회귀 {ok7}/{len(C7)}")
+
+print("\n── v0.6.3 마감 지남만 제외, D-7 미만은 플래그 ──")
+for nm,clse,exp in [("AI 챗봇 상담 시스템 구축","20260905","DROP"),("AI 챗봇 상담 시스템 구축","20260916","OPEN"),("AI 챗봇 상담 시스템 구축","20260925","OPEN")]:
+    b,r,*_=s.classify({"bidNtceNm":nm,"presmptPrce":300000000,"bidClseDt":clse,"dminsttNm":""},"용역",TODAY)
+    print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7} 마감 {clse} (D-{(dt.datetime.strptime(clse,'%Y%m%d').date()-TODAY).days}) {r[:24]}")

@@ -16,7 +16,7 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#0e1413; --surface:#161e1c; --surface-2:#1c2524; --line:#2b3836; --line-soft:#222d2b;
-    --muted:#849691;
+    --ink:#e8efed; --ink-2:#b6c4c0; --muted:#849691;
     --accent:#4fb8ad; --accent-soft:#153330; --accent-ink:#7fd3c9;
     --hot:#e8735a; --hot-soft:#331914;
     --warm:#d6a54a; --warm-soft:#2e2412;
@@ -45,8 +45,8 @@ body{
 .wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
 
 /* ── 헤더 ── */
-.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 24px;
-     padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 24px;
+     padding-bottom:16px;border-bottom:2px solid var(--ink)}
 .brand h1{margin:0;font-size:1.6rem;font-weight:600;letter-spacing:-.02em;line-height:1.1}
 .brand p{margin:5px 0 0;color:var(--muted);font-size:.82rem;letter-spacing:.01em}
 .runmeta{margin-left:auto;text-align:right;max-width:560px;font-size:.74rem;line-height:1.6;color:var(--muted);letter-spacing:.04em}
@@ -63,29 +63,43 @@ body{
 .fnav a b:empty{display:none}
 .fnav a.cur{background:var(--tint);color:#fff;border-color:var(--tint)}
 .fnav a.cur b{background:rgba(255,255,255,.28)}
-.fnav .c-up{--tint:#8a8f98}.fnav .c-open{--tint:#4f8ff7}.fnav .c-hot{--tint:#f0653a}.fnav .c-sig{--tint:#2fb37f}.fnav .c-watch{--tint:#9b6fe6}.fnav .c-comp{--tint:#d9a527}
+.fnav .c-up{--tint:var(--muted)}.fnav .c-open{--tint:var(--accent)}.fnav .c-hot{--tint:var(--hot)}.fnav .c-sig{--tint:var(--cool)}.fnav .c-watch{--tint:var(--warm)}.fnav .c-comp{--tint:var(--good)}
 @media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row;flex-wrap:wrap;justify-content:center;max-width:calc(100vw - 24px)}.fnav a{min-width:0}}
 html{scroll-behavior:smooth}
 section{scroll-margin-top:16px}
 @media (max-width:1180px){.fnav{top:auto;bottom:14px;right:50%;transform:translateX(50%);flex-direction:row}.fnav a span{display:none}}
-.dropnote{font-size:.72rem;color:var(--muted);margin:-14px 0 14px;line-height:1.6;text-align:right}
+.dropnote{flex-basis:100%;font-size:.72rem;color:var(--muted);margin:2px 0 0;line-height:1.6;text-align:right}
+.dropnote:empty{display:none}
 .dropnote b{color:var(--ink-2)}
-.strip{display:flex;flex-wrap:wrap;gap:2px;margin:0;border:1px solid var(--line);
+.strip{margin-top:22px;display:flex;flex-wrap:wrap;gap:2px;margin:0;border:1px solid var(--line);
        border-radius:3px;overflow:hidden;background:var(--line-soft)}
 .cell{flex:1 1 140px;background:var(--surface);padding:13px 16px;display:flex;
       flex-direction:column;gap:3px;min-width:0}
-.cell span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.cell b{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;line-height:1}
+.cell span{font-size:.74rem;color:var(--muted);font-weight:500}
+.cell b{font-size:1.55rem;font-weight:600;letter-spacing:-.02em;line-height:1}
+.cell.primary{background:var(--accent-soft)}
+.cell.primary span{color:var(--accent-ink)}
+.cell.primary b{font-size:1.9rem;color:var(--accent-ink)}
+.cell.dim b{color:var(--muted);font-size:1.25rem}
 .cell.hot b{color:var(--hot)}
 .cell small{font-size:.72rem;color:var(--muted)}
 
 /* ── 섹션 ── */
 section{margin-top:38px}
 .head{display:flex;align-items:baseline;gap:12px;margin-bottom:2px}
-.head h2{margin:0;font-size:.78rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-ink)}
+.head h2{margin:0;font-size:1.02rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .head .rule{flex:1;height:1px;background:var(--line)}
-.head .n{font-size:.74rem;color:var(--muted)}
+.head .n{font-size:.74rem;color:var(--accent-ink);background:var(--accent-soft);padding:2px 9px;border-radius:999px;font-weight:500}
+.head .n:empty{display:none}
 .lede{margin:0 0 14px;font-size:.83rem;color:var(--muted);max-width:62ch}
+.tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 12px}
+.tools input[type=search]{flex:1 1 220px;max-width:360px;padding:7px 10px;font:inherit;font-size:.82rem;border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink)}
+.tools input[type=search]:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{appearance:none;border:0;background:var(--surface);color:var(--ink-2);font:inherit;font-size:.76rem;padding:6px 11px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.tools label{font-size:.76rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
 
 /* ── 공고 행 ── */
 .rows{display:flex;flex-direction:column;gap:8px}
@@ -94,15 +108,28 @@ section{margin-top:38px}
      border-radius:0 4px 4px 0;box-shadow:var(--shadow);overflow:hidden}
 .row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cool)}
 .row[data-urg="hot"]::before{background:var(--hot);width:6px}
+.row[data-urg="late"]::before{background:var(--line)}
 .row[data-urg="soon"]::before{background:var(--warm);width:5px}
 .row[data-urg="ok"]::before{background:var(--accent)}
 .dday{padding:14px 0 14px 16px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1px}
 .dday b{font-size:1.18rem;font-weight:600;letter-spacing:-.03em;line-height:1}
 .dday[data-urg="hot"] b{color:var(--hot)}
+.dday[data-urg="late"] b{color:var(--muted);text-decoration:line-through}
 .dday[data-urg="soon"] b{color:var(--warm)}
 .dday span{font-size:.64rem;color:var(--muted);letter-spacing:.05em}
 .body{padding:14px 0;min-width:0}
-.name{font-size:.95rem;font-weight:500;line-height:1.4;margin:0 0 5px;word-break:keep-all;text-wrap:pretty}
+.name{font-size:1rem;font-weight:600;line-height:1.4;margin:0 0 5px;word-break:keep-all;text-wrap:pretty;letter-spacing:-.01em}
+.row.dropped{opacity:.55}
+.row.dropped .name{font-weight:400;font-size:.9rem}
+.row.dropped .why,.row.dropped .pos,.row.dropped .gate,.row.dropped .tags{display:none}
+.grp{margin:18px 0 8px;font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:10px}
+.grp::after{content:"";flex:1;height:1px;background:var(--line-soft)}
+.grp.hot{color:var(--hot)}
+.grp small{font-weight:400;color:var(--muted)}
+.late{margin-top:18px}
+.late summary{cursor:pointer;font-size:.78rem;color:var(--muted);padding:8px 0}
+.late .row{opacity:.6}
+.rows .grp:first-child{margin-top:0}
 .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.76rem;color:var(--muted)}
 .meta .inst{color:var(--ink-2);font-weight:500}
 .gate{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
@@ -132,6 +159,7 @@ section{margin-top:38px}
 .status[data-s="검토중"]{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
 .status[data-s="제안준비"]{background:var(--good);color:#fff;border-color:transparent}
 .status[data-s="드롭"]{background:transparent;color:var(--muted);text-decoration:line-through}
+.status[data-s="신규"]{border-color:var(--line)}
 
 /* ── SIGNAL ── */
 .sig{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:3px;overflow:hidden}
@@ -142,7 +170,7 @@ section{margin-top:38px}
 /* ── 경쟁사 ── */
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
 table{border-collapse:collapse;width:100%;min-width:560px;font-size:.81rem}
-th{text-align:left;font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+th{text-align:left;font-size:.72rem;color:var(--muted);
    font-weight:600;padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:11px 14px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
 tr:last-child td{border-bottom:none}
@@ -156,7 +184,7 @@ td.num{text-align:right;white-space:nowrap}
 .empty{padding:34px 20px;text-align:center;color:var(--muted);font-size:.85rem;
        border:1px dashed var(--line);border-radius:3px;background:var(--surface)}
 .imp{margin:0 0 26px;padding:14px 16px;border:1px dashed var(--line);border-radius:4px;background:var(--surface)}
-.imp summary{cursor:pointer;font-size:.8rem;letter-spacing:.06em;color:var(--ink-2);text-transform:uppercase}
+.imp summary{cursor:pointer;font-size:.8rem;color:var(--ink-2)}
 .imp textarea{width:100%;height:84px;margin-top:10px;padding:8px;font:.72rem/1.4 ui-monospace,monospace;
   background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:3px;resize:vertical}
 .imp .bar{display:flex;gap:12px;align-items:center;margin-top:8px;flex-wrap:wrap}
@@ -179,7 +207,7 @@ footer b{color:var(--ink-2);font-weight:500}
 <nav class="fnav" id="fnav" aria-label="바로가기">
   <a href="#top" class="c-up">맨 위</a>
   <a href="#sec-open" class="c-open">검토<b id="fnOpen"></b></a>
-  <a href="#sec-open" class="c-hot" data-hot>D-7<b id="fnHot"></b></a>
+  <a href="#sec-open" class="c-hot" data-hot>이번 주<b id="fnHot"></b></a>
   <a href="#sec-signal" class="c-sig">사전영업<b id="fnSig"></b></a>
   <a href="#sec-watch" class="c-watch">지켜볼 것<b id="fnWatch"></b></a>
   <a href="#sec-comp" class="c-comp">낙찰<b id="fnComp"></b></a>
@@ -191,8 +219,8 @@ footer b{color:var(--ink-2);font-weight:500}
       <p>조달청·나라장터 일일 1차 스크리닝 · 기준 v0.2 / 필터 v0.6 · 매일 08:30 자동 수집</p>
     </div>
     <div class="runmeta"><b id="runDate">—</b><span id="runNote">불러오는 중</span></div>
+    <div class="dropnote" id="dropNote"></div>
   </header>
-  <div class="dropnote" id="dropNote"></div>
 
   <div class="strip" id="strip"></div>
 
@@ -202,7 +230,12 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-open">
     <div class="head"><h2>검토 대상 — 이번 주 판단할 공고</h2><i class="rule"></i><span class="n" id="nOpen"></span></div>
-    <p class="lede">마감이 가까운 순. 제목을 누르면 나라장터 공고 상세로 이동, 📎는 공고서 첨부. 아래 칩은 공고서에서 자동 추출한 5분 게이트 항목(주황=주의) — 원문 보기로 근거 문장 확인. 좌측 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</p>
+    <p class="lede">마감이 가까운 순. 제안서에 최소 일주일이 필요하므로 D-7 미만은 판단 대상에서 빼고 맨 아래에 참고용으로 둔다. 제목을 누르면 나라장터 공고 상세로 이동, 📎는 공고서 첨부. 아래 칩은 공고서에서 자동 추출한 5분 게이트 항목(주황=주의) — 원문 보기로 근거 문장 확인. 좌측 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</p>
+    <div class="tools">
+      <input type="search" id="q" placeholder="사업명·기관 검색" aria-label="검색">
+      <div class="seg" role="group" aria-label="정렬"><button type="button" data-sort="dday" aria-pressed="true">마감순</button><button type="button" data-sort="score" aria-pressed="false">점수순</button></div>
+      <label><input type="checkbox" id="hideDrop" checked> 드롭 숨기기 <span id="nDrop" style="color:var(--muted)"></span></label>
+    </div>
     <div class="rows" id="openRows"></div>
   </section>
 
@@ -218,7 +251,7 @@ footer b{color:var(--ink-2);font-weight:500}
   </section>
 
   <section id="sec-comp">
-    <div class="head"><h2>낙찰 현황 — 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
+    <div class="head"><h2>낙찰 현황 — 최근 30일, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
     <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
     <div class="tablewrap">
       <table>
@@ -249,7 +282,7 @@ const liveDday = row => {
   const now = new Date(); now.setHours(0,0,0,0);
   return Math.round((t - now) / 86400000);
 };
-const urg = d => d === null ? "none" : d <= 7 ? "hot" : d <= 14 ? "soon" : "ok";
+const urg = d => d === null ? "none" : d < 7 ? "late" : d <= 14 ? "hot" : d <= 21 ? "soon" : "ok";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const CYCLE = ["신규","검토중","제안준비","드롭"];
 const g2bUrl = r => {
@@ -263,6 +296,7 @@ const loadStatus = () => { try { return JSON.parse(localStorage.getItem(STORE_KE
 const saveStatus = m => { try { localStorage.setItem(STORE_KEY, JSON.stringify(m)); } catch {} };
 let STATUS = loadStatus();
 let ROWS = [], RUNS = [], COMPS = [], GATE = {};
+let SORT = "dday", HIDE_DROP = true, QUERY = "";
 
 function gateChips(r){
   const g = GATE[r.id];
@@ -284,7 +318,7 @@ function bidRow(r){
   const d = liveDday(r), u = urg(d);
   const st = STATUS[r.id] || r.status || "신규";
   const dtxt = d === null ? "—" : (d < 0 ? "마감" : "D-" + d);
-  return `<article class="row" data-urg="${u}">
+  return `<article class="row${st === "드롭" ? " dropped" : ""}" data-urg="${u}" data-id="${esc(r.id)}">
     <div class="dday mono" data-urg="${u}"><b>${dtxt}</b><span>${esc((r.closeDt||"").replace(/\D/g,"").slice(4,8).replace(/(\d\d)(\d\d)/,"$1.$2")) || "일정미정"}</span></div>
     <div class="body">
       <p class="name">${g2bUrl(r) ? `<a class="lnk" href="${esc(g2bUrl(r))}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}${r.docUrl ? ` <a class="doc" href="${esc(r.docUrl)}" target="_blank" rel="noopener" title="공고서 첨부">📎</a>` : ""}</p>
@@ -305,6 +339,37 @@ function bidRow(r){
   </article>`;
 }
 
+function renderOpen(){
+  const q = QUERY.trim().toLowerCase();
+  const match = r => !q || (r.name||"").toLowerCase().includes(q) || (r.inst||"").toLowerCase().includes(q);
+  let open = ROWS.filter(r => r.bucket === "OPEN" && match(r));
+  const nDrop = open.filter(r => (STATUS[r.id] || r.status || "신규") === "드롭").length;
+  if(HIDE_DROP) open = open.filter(r => (STATUS[r.id] || r.status || "신규") !== "드롭");
+  open.sort((a,b) => {
+    const da = liveDday(a), db_ = liveDday(b);
+    if(SORT === "score") return (b.score||0)-(a.score||0) || (da===null?999:da)-(db_===null?999:db_);
+    return (da===null?999:da)-(db_===null?999:db_) || (b.score||0)-(a.score||0);
+  });
+  const el = document.getElementById("openRows");
+  document.getElementById("nDrop").textContent = nDrop ? `(${nDrop})` : "";
+  if(!open.length){ el.innerHTML = `<div class="empty">${q ? "검색 결과가 없습니다." : "판단할 공고가 없습니다."}</div>`; return; }
+  if(SORT !== "dday"){
+    const ok = open.filter(r => { const d = liveDday(r); return d === null || d >= 7; }), late = open.filter(r => { const d = liveDday(r); return d !== null && d < 7; });
+    el.innerHTML = ok.map(bidRow).join("") + (late.length ? `<details class="late" open><summary>제안서 쓸 시간이 없는 건 — D-7 미만 ${late.length}건 (참고용, 판단 대상 아님)</summary>${late.map(bidRow).join("")}</details>` : "");
+    return;
+  }
+  const grp = d => d === null ? "일정 미정" : d < 7 ? "시간 부족" : d <= 14 ? "이번 주 결정" : "그 이후";
+  const late = open.filter(r => grp(liveDday(r)) === "시간 부족"), live = open.filter(r => grp(liveDday(r)) !== "시간 부족");
+  let cur = null, out = [];
+  for(const r of live){
+    const g = grp(liveDday(r));
+    if(g !== cur){ cur = g; out.push(`<div class="grp${g === "이번 주 결정" ? " hot" : ""}">${g}${g === "이번 주 결정" ? " <small>— D-7~14, 지금 정해야 제안서 쓸 일주일이 남는다</small>" : ""}</div>`); }
+    out.push(bidRow(r));
+  }
+  if(late.length) out.push(`<details class="late" open><summary>제안서 쓸 시간이 없는 건 — D-7 미만 ${late.length}건 (참고용, 판단 대상 아님)</summary>${late.map(bidRow).join("")}</details>`);
+  el.innerHTML = out.join("");
+}
+
 function render(rows, runs, comps){
   const by = b => rows.filter(r => r.bucket === b);
   const open = by("OPEN").sort((a,b)=>{
@@ -312,7 +377,7 @@ function render(rows, runs, comps){
     return (da===null?999:da) - (db_===null?999:db_) || (b.score||0)-(a.score||0);
   });
   const sig = by("SIGNAL"), watch = by("WATCH");
-  const hot = open.filter(r => { const d = liveDday(r); return d !== null && d >= 0 && d <= 7; }).length;
+  const hot = open.filter(r => { const d = liveDday(r); return d !== null && d >= 7 && d <= 14; }).length;
   const last = runs[0] || {};
 
   // 오늘 수집 통계 (runs[0]) + 누적
@@ -330,13 +395,13 @@ function render(rows, runs, comps){
   if(dropEl) dropEl.innerHTML = dropTop.length ? "제외 사유 — " + dropTop.map(([k,v]) => `${esc(k)} <b class="mono">${v.toLocaleString()}</b>`).join(" · ") : "";
 
   document.getElementById("strip").innerHTML = [
-    ["오늘 수집", last.total || 0, `통과 ${todayPass} · 제외 ${dropped.toLocaleString()}`],
-    ["검토 대상", open.length, "공고서 열어 판단"],
-    ["D-7", hot, "마감 일주일 이내", hot > 0],
-    ["사전영업", sig.length, "본사업 예상 기관"],
-    ["지켜볼 것", watch.length, "재공고·컨소 대기"],
-    ["낙찰 기록", comps.length, "경쟁사 누적"],
-  ].map(([l,v,s,isHot]) => `<div class="cell${isHot?" hot":""}"><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
+    ["검토 대상", open.length, "공고서 열어 판단", "primary"],
+    ["이번 주 결정", hot, "D-7~14 · 지금 정해야 함", hot > 0 ? "hot" : "dim"],
+    ["사전영업", sig.length, "본사업 예상 기관", ""],
+    ["지켜볼 것", watch.length, "재공고·컨소 대기", ""],
+    ["낙찰 기록", comps.length, "최근 30일", ""],
+    ["오늘 수집", (last.total || 0).toLocaleString(), `통과 ${todayPass} · 제외 ${dropped.toLocaleString()}`, "dim"],
+  ].map(([l,v,s,cls]) => `<div class="cell ${cls}"><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
 
   document.getElementById("nOpen").textContent = open.length ? open.length + "건" : "";
   const fn = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
@@ -345,8 +410,7 @@ function render(rows, runs, comps){
   document.getElementById("nWatch").textContent = watch.length ? watch.length + "건" : "";
   document.getElementById("nComp").textContent = comps.length ? comps.length + "건" : "";
 
-  document.getElementById("openRows").innerHTML = open.length ? open.map(bidRow).join("")
-    : `<div class="empty">오늘 올라온 공고 중 OPEN 판정이 없습니다.</div>`;
+  renderOpen();
   document.getElementById("watchRows").innerHTML = watch.length ? watch.map(bidRow).join("")
     : `<div class="empty">대기 중인 건이 없습니다.</div>`;
   document.getElementById("sigRows").innerHTML = sig.length ? sig.map(r =>
@@ -373,6 +437,8 @@ document.addEventListener("click", e => {
   const next = CYCLE[(CYCLE.indexOf(b.dataset.s) + 1) % CYCLE.length];
   b.dataset.s = next; b.textContent = next;
   STATUS[b.dataset.id] = next; saveStatus(STATUS);
+  const art = b.closest(".row"); if(art) art.classList.toggle("dropped", next === "드롭");
+  if(next === "드롭" && HIDE_DROP) setTimeout(renderOpen, 350);
 });
 
 document.addEventListener("click", async e => {
@@ -403,6 +469,12 @@ document.addEventListener("click", async e => {
   };
   document.addEventListener("scroll", mark, {passive: true}); mark();
 })();
+
+document.getElementById("q").addEventListener("input", e => { QUERY = e.target.value; renderOpen(); });
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
+  SORT = b.dataset.sort; document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderOpen();
+}));
+document.getElementById("hideDrop").addEventListener("change", e => { HIDE_DROP = e.target.checked; renderOpen(); });
 
 document.getElementById("csvBtn").addEventListener("click", () => {
   const cols = ["bucket","status","score","dday","closeDt","amount","name","inst","position","reason","keywords","flags","method","joint","arslt","kind","firstSeen","lastSeen","url"];

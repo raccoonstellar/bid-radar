@@ -39,6 +39,10 @@ _sg = _iu.module_from_spec(_spec); _spec.loader.exec_module(_sg)
 STRONG = ["챗봇","콜봇","AICC","IPCC","생성형","LLM","RAG","OCR","콜센터","상담","음성인식","에이전트","Agent","AI","인공지능","비정형","문서","STT","TTS","민원"]
 PARTNER = re.compile(r"콜센터.*(운영|위탁)|상담센터.*(운영|위탁)|BPO|고객센터 운영")
 
+def _keep(bucket, reason):
+    """경쟁사 DB 기준: 노이즈 필터만 적용. 점수 미달·소액은 정보로 남긴다"""
+    return bucket in ("OPEN", "WATCH") or reason.startswith(("저점", "소액"))
+
 def pick(it, keys):
     for k in keys:
         v = it.get(k)
@@ -122,7 +126,7 @@ def main():
         comps = []
         try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
         except Exception: pass
-        back = 3
+        back = 31 if not comps else 3          # 첫 적재는 한 달 소급
         try:
             last = dt.date.fromisoformat(max(c["fetchedOn"] for c in comps if c.get("fetchedOn")))
             back = max(3, min(14, (today - last).days + 1))
@@ -134,7 +138,7 @@ def main():
     try: comps = json.load(open(f"{DATA}/competitors.json", encoding="utf-8"))
     except Exception: comps = []
     before = len(comps)
-    comps = [c for c in comps if _sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[0] in ("OPEN","WATCH")]
+    comps = [c for c in comps if _keep(*_sg.classify({"bidNtceNm": c.get("name",""), "presmptPrce": c.get("amount",0), "dminsttNm": c.get("inst","")}, c.get("kind","용역"), today)[:2])]
     if len(comps) != before: print(f"  · 누적 재필터: {before} → {len(comps)}건", file=sys.stderr)
     seen = {c["id"] for c in comps}
     try: est = {b.get("bidNo") or str(b["id"]).rsplit("-",1)[0]: b.get("amount") for b in json.load(open(f"{DATA}/bids.json", encoding="utf-8"))}
@@ -147,7 +151,7 @@ def main():
             name = str(pick(it, F["name"]))
             # 입찰공고와 같은 필터 통과 건만 (OPEN 이 됐을 사업 = 우리가 경쟁했을 사업). 감리·연구(SIGNAL)·노이즈는 제외
             b_, reason_, *_ = _sg.classify({"bidNtceNm": name, "presmptPrce": pick(it, F["amount"]), "dminsttNm": pick(it, F["inst"])}, kind, today)
-            if b_ not in ("OPEN", "WATCH"): continue
+            if not _keep(b_, reason_): continue
             no = str(pick(it, F["no"])); ord_ = str(pick(it, F["ord"]) or "000")
             cid = f"{no}-{ord_}"
             if cid in seen: continue
@@ -168,10 +172,14 @@ def main():
                 "raw": {k: it.get(k) for k in ("bidwinnrNm","sucsfbidAmt","sucsfbidRate","opengDt","progrsDivCdNm") if it.get(k) not in (None, "")},
             })
             seen.add(cid); added += 1
+    # 보관: 개찰일 기준 최근 30일 롤링 (날짜 없는 건은 수집일 기준)
+    KEEP_DAYS = 30
+    cutoff = (today - dt.timedelta(days=KEEP_DAYS)).isoformat()
+    comps = [c for c in comps if (c.get("date") or c.get("fetchedOn") or "") >= cutoff]
     comps.sort(key=lambda c: (c.get("date") or ""), reverse=True)
-    comps = comps[:400]
+    comps = comps[:2000]
     json.dump(comps, open(f"{DATA}/competitors.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0, separators=(",", ":"))
-    print(f"[개찰결과] 신규 {added}건 · 누적 {len(comps)}건 (유찰 {sum(1 for c in comps if c['result']=='유찰')})")
+    print(f"[개찰결과] 신규 {added}건 · 최근 30일 보관 {len(comps)}건 (유찰 {sum(1 for c in comps if c['result']=='유찰')})")
 
 if __name__ == "__main__":
     main()

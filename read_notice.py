@@ -14,6 +14,12 @@ docs/data/bids.json 의 OPEN 건에 대해 API 첨부(docUrl / docs)를 내려�
 필요: pip install pyhwp  (hwp5txt) · apt: poppler-utils (pdftotext)
 """
 import json, os, re, sys, io, zipfile, subprocess, tempfile, urllib.request, urllib.parse, datetime as dt, hashlib, shutil
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "vendor"))   # olefile·pypdf 동봉 (pip 불필요)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    import hwp_text   # 내장 HWP 5.0 파서
+except Exception as _e:
+    hwp_text = None
 
 DATA = "docs/data"; OUT = f"{DATA}/notices"
 UA = {"User-Agent": "Mozilla/5.0 (bid-radar; +https://github.com/raccoonstellar/bid-radar)"}
@@ -100,22 +106,27 @@ def text_pdf(data):
             t = r.stdout.decode("utf-8", "replace")
             if len(t.strip()) > 100: return t
         finally: os.unlink(p)
-    try:   # 순수 파이썬 폴백
+    try:   # 동봉 pypdf (vendor/)
         from pypdf import PdfReader
         rd = PdfReader(io.BytesIO(data)); return "\n".join((pg.extract_text() or "") for pg in rd.pages[:80])
     except Exception as e:
         return f"[추출 실패: pdftotext/pypdf 없음 — {e}]"
 
-import shutil
 HWP_TOOL = shutil.which("hwp5txt")
 def text_hwp(data):
+    # 1) 내장 파서 (설치 불필요)
+    if hwp_text:
+        try:
+            t, note = hwp_text.extract(data)
+            if len(t.strip()) > 100: return t
+            if note: log(f"    hwp 내장파서: {note}")
+        except Exception as e:
+            log(f"    hwp 내장파서 오류: {e}")
+    # 2) hwp5txt 가 있으면
     if HWP_TOOL:
         t = run([HWP_TOOL], data, ".hwp")
         if len(t.strip()) > 100: return t
-    else:
-        log("  ! hwp5txt 없음 — pip install pyhwp 필요 (HWP 추출 불가, 폴백만)")
-    # 폴백: 한글 조각이라도 긁어본다
-    return "".join(ch for ch in data.decode("utf-16le", "ignore") if "\uac00" <= ch <= "\ud7a3" or ch in " \n0-9:%().,")
+    return ""
 
 def extract_text(data, name):
     kind = sniff(data, name)
@@ -159,17 +170,25 @@ def scan(text):
     return found
 
 def urls_for(bid):
-    out = []
+    """첨부 URL 목록 — 나라장터는 HWP 원본과 PDF 변환본을 병행 등록하므로 PDF 를 앞에 둔다"""
+    urls = [u for u in (bid.get("docUrls") or []) if u and str(u).startswith("http")]
+    names = bid.get("docs") or []
+    pairs = list(zip(urls, names + [""] * (len(urls) - len(names))))
     for k in ("docUrl", "url1", "url2"):
-        if bid.get(k) and str(bid[k]).startswith("http"): out.append(bid[k])
-    for u in bid.get("docUrls") or []:
-        if u and u not in out: out.append(u)
-    return out
+        u = bid.get(k)
+        if u and str(u).startswith("http") and all(u != p[0] for p in pairs): pairs.append((u, ""))
+    rank = lambda p: (0 if str(p[1]).lower().endswith(".pdf") else 1 if str(p[1]).lower().endswith(".hwpx") else 2 if str(p[1]).lower().endswith(".docx") else 3)
+    pairs.sort(key=rank)
+    return [p[0] for p in pairs]
 
 def process(bid, force=False):
     bid_id = re.sub(r"[^A-Za-z0-9_.:@+-]", "-", bid["id"])
     path = f"{OUT}/{bid_id}.json"
-    if os.path.exists(path) and not force: return "skip"
+    if os.path.exists(path) and not force:
+        try:
+            prev = json.load(open(path, encoding="utf-8"))
+            if prev.get("status") in ("ok", "no-attachment"): return "skip"
+        except Exception: pass   # 깨진 기록이면 다시
     urls = urls_for(bid)
     rec = {"id": bid["id"], "name": bid.get("name"), "checkedAt": dt.datetime.now().isoformat(timespec="seconds"),
            "files": [], "gate": {}, "status": "no-attachment"}
@@ -177,6 +196,7 @@ def process(bid, force=False):
         json.dump(rec, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1); return "no-attachment"
     texts = []
     for u in urls[:5]:
+        if sum(len(t) for t in texts) > 8000: break   # 이미 충분히 읽음
         try:
             data, name = download(u); kind, text = extract_text(data, name)
             rec["files"].append({"url": u, "name": name, "kind": kind, "bytes": len(data), "chars": len(text)})
@@ -221,7 +241,7 @@ def main():
                     "files": len(j.get("files", []))}
             except Exception: pass
     json.dump(idx, open(f"{OUT}/index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    print(f"[공고서] 대상 {len(targets)}건 → {stat} · hwp5txt={'있음' if HWP_TOOL else '없음'} · pdftotext={'있음' if shutil.which('pdftotext') else '없음'}")
+    print(f"[공고서] 대상 {len(targets)}건 → {stat} · HWP파서={'내장' if hwp_text else ('hwp5txt' if HWP_TOOL else '없음')} · PDF={'pdftotext' if shutil.which('pdftotext') else 'pypdf(내장)'}")
 
 if __name__ == "__main__":
     main()
