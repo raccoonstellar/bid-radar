@@ -1,1 +1,64 @@
-[]
+[
+{
+"id":"R26BK01735175-000",
+"kind":"용역",
+"name":"『고위험 밀폐공간 재난예방형 맨홀 무인조사 시스템 사업화』 중 AI활용 맨홀 결함탐지 시스템 구축",
+"inst":"(주)한국지중정보",
+"winner":"주식회사 내가시스템",
+"amount":179685000,
+"budget":0,
+"rate":99.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"주식회사 내가시스템",
+"sucsfbidAmt":"179685000",
+"sucsfbidRate":"99"
+}
+},
+{
+"id":"R26BK01633521-000",
+"kind":"용역",
+"name":"AI 기반 현장 용접부 PAUT 검사 판정 자동화 기술 개발 연구",
+"inst":"한국지역난방공사",
+"winner":"전북대학교산학협력단",
+"amount":271251793,
+"budget":0,
+"rate":79.75,
+"rateEst":null,
+"bidders":4,
+"date":"2026-09-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"전북대학교산학협력단",
+"sucsfbidAmt":"271251793",
+"sucsfbidRate":"79.748"
+}
+},
+{
+"id":"R26BK01686579-000",
+"kind":"용역",
+"name":"[재공고] 2026년 AI특화 콘텐츠 인재 양성 성과공유회  위탁용역",
+"inst":"한국콘텐츠진흥원",
+"winner":"컬처코리아(주)",
+"amount":250000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-08-31",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-21",
+"raw":{
+"bidwinnrNm":"컬처코리아(주)",
+"sucsfbidAmt":"250000000"
+}
+}
+]

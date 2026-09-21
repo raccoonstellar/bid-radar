@@ -64,6 +64,19 @@
 "perf": false,
 "files": 3
 },
+"R26BK01736630-000": {
+"status": "ok",
+"checkedAt": "2026-09-21T02:46:52",
+"joint": "불허",
+"sub": "승인필요",
+"ratio": "90:10",
+"diff": false,
+"submit": "방문",
+"big": "",
+"region": false,
+"perf": false,
+"files": 2
+},
 "R26BK01725550-000": {
 "status": "extract-failed",
 "checkedAt": "2026-09-17T03:07:22",
@@ -236,6 +249,19 @@
 "R26BK01727277-000": {
 "status": "extract-failed",
 "checkedAt": "2026-09-17T03:08:19",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 5
+},
+"R26BK01736640-001": {
+"status": "ok",
+"checkedAt": "2026-09-21T02:47:15",
 "joint": "",
 "sub": "",
 "ratio": "",

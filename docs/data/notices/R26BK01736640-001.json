@@ -1,0 +1,101 @@
+{
+ "id": "R26BK01736640-001",
+ "name": "홍성의료원 의료영상 원격판독 용역 입찰 공고",
+ "checkedAt": "2026-09-21T02:47:15",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01736640&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "과업지시서-2026.hwp",
+   "kind": "hwp",
+   "bytes": 19968,
+   "chars": 2216
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01736640&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "홍성의료원 의료영상 원격판독 용역 입찰 공고.pdf",
+   "kind": "pdf",
+   "bytes": 99132,
+   "chars": 53,
+   "error": "텍스트 53자 — 추출 불충분(pdf)"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01736640&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "산출내역서(공급용)-2026.xlsx",
+   "kind": "unknown",
+   "bytes": 22616,
+   "chars": 0
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01736640&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "용역계약특수조건.hwp",
+   "kind": "hwp",
+   "bytes": 14336,
+   "chars": 1639
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01736640&bidPbancOrd=001&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "name": "청렴계약이행서약서(공급용).hwp",
+   "kind": "hwp",
+   "bytes": 16896,
+   "chars": 2008
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "하도급": {
+   "n": 2,
+   "verdict": "",
+   "snippets": [
+    "한 제재가 강화되는 추세에 맞추어 청렴계약 취지에 적극 호응하여 조달청에서 발주하는 모든 공사, 물품 및 용역 등의 입찰에 참여할 때 당사 및 하도급업체(하도급업체와 직간접적으로 업무를 수행하는 자를 포함)의 임직원과 대리인은 / . 입찰가격의 유지나 특정인의 낙찰을 위한 담합을 하거나 다른",
+    "강화되는 추세에 맞추어 청렴계약 취지에 적극 호응하여 조달청에서 발주하는 모든 공사, 물품 및 용역 등의 입찰에 참여할 때 당사 및 하도급업체(하도급업체와 직간접적으로 업무를 수행하는 자를 포함)의 임직원과 대리인은 / . 입찰가격의 유지나 특정인의 낙찰을 위한 담합을 하거나 다른 업체와 협"
+   ]
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 5952
+}
