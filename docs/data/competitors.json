@@ -62,6 +62,68 @@
 }
 },
 {
+"id":"R26BK01717040-000",
+"kind":"용역",
+"name":"「2026년 앵커사업」성인학습자 맞춤형 실용영어 AI연계 콘텐츠 개발 용역",
+"inst":"성운대학교 산학협력단",
+"winner":"주식회사 드림컴퍼니",
+"amount":135000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 드림컴퍼니",
+"sucsfbidAmt":"135000000"
+}
+},
+{
+"id":"R26BK01736318-000",
+"kind":"용역",
+"name":"[수의시담]「AI Pick 내 업무에 딱맞는 인공지능 활용」 과정 용역",
+"inst":"경기도 용인시",
+"winner":"발라흐연구소",
+"amount":21630000,
+"budget":0,
+"rate":88.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"발라흐연구소",
+"sucsfbidAmt":"21630000",
+"sucsfbidRate":"88.001"
+}
+},
+{
+"id":"R26BK01725707-000",
+"kind":"용역",
+"name":"2026년 영업점 기록물 이관",
+"inst":"서울신용보증재단",
+"winner":"에이비프로 주식회사",
+"amount":88000000,
+"budget":0,
+"rate":91.11,
+"rateEst":null,
+"bidders":3,
+"date":"2026-09-17",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"에이비프로 주식회사",
+"sucsfbidAmt":"88000000",
+"sucsfbidRate":"91.114"
+}
+},
+{
 "id":"R26BK01730282-000",
 "kind":"물품",
 "name":"산업용 모터의 다중물리 해석을 위한 소프트웨어 (Altair)구독",
@@ -80,6 +142,129 @@
 "bidwinnrNm":"재우기술(주)",
 "sucsfbidAmt":"38572600",
 "sucsfbidRate":"99.714"
+}
+},
+{
+"id":"R26BK01732510-000",
+"kind":"용역",
+"name":"비정형 화물의 매니퓰레이션을 위한 고송 운송 장치 시작품 제작",
+"inst":"한국철도기술연구원",
+"winner":"명지대학교 산학협력단",
+"amount":53500000,
+"budget":50000000,
+"rate":99.48,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"명지대학교 산학협력단",
+"sucsfbidAmt":"53500000",
+"sucsfbidRate":"99.483"
+}
+},
+{
+"id":"R26BK01729748-000",
+"kind":"용역",
+"name":"AX실증산단 데이터 수집·정제·관제 용역",
+"inst":"한국생산기술연구원",
+"winner":"아이티스코",
+"amount":11000000,
+"budget":0,
+"rate":97.25,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"아이티스코",
+"sucsfbidAmt":"11000000",
+"sucsfbidRate":"97.245"
+}
+},
+{
+"id":"R26BK01706837-001",
+"kind":"용역",
+"name":"겨레말큰사전 검색 시스템 개발(기반 구축)",
+"inst":"겨레말큰사전남북공동편찬사업회",
+"winner":"주식회사 크래프틱시스템즈",
+"amount":80000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-09-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 크래프틱시스템즈",
+"sucsfbidAmt":"80000000"
+}
+},
+{
+"id":"R26BK01716100-000",
+"kind":"용역",
+"name":"부산형 AI서비스 확대 구축",
+"inst":"부산광역시",
+"winner":"주식회사 클라이온",
+"amount":525964880,
+"budget":0,
+"rate":99.99,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 클라이온",
+"sucsfbidAmt":"525964880",
+"sucsfbidRate":"99.993"
+}
+},
+{
+"id":"R26BK01648099-000",
+"kind":"용역",
+"name":"한국교통안전공단 검사본부 AI시스템 구축 용역",
+"inst":"한국교통안전공단",
+"winner":"주식회사 씨씨케이솔루션",
+"amount":770000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":11,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 씨씨케이솔루션",
+"sucsfbidAmt":"770000000"
+}
+},
+{
+"id":"R26BK01688707-000",
+"kind":"용역",
+"name":"국민콜 110 기반 비긴급 신고 상담 전화 체계 구축을 위한 법령안 마련 연구",
+"inst":"국민권익위원회 정부합동민원센터",
+"winner":"주식회사 아이앤아이리서치",
+"amount":37600000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 아이앤아이리서치",
+"sucsfbidAmt":"37600000"
 }
 },
 {
@@ -121,6 +306,46 @@
 "raw":{
 "bidwinnrNm":"컬처코리아(주)",
 "sucsfbidAmt":"250000000"
+}
+},
+{
+"id":"R26BK01684335-000",
+"kind":"용역",
+"name":"연구행정 데이터 기반 AI 플랫폼 구축",
+"inst":"한국생명공학연구원",
+"winner":"주식회사 에이투엠",
+"amount":91300000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":10,
+"date":"2026-08-27",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 에이투엠",
+"sucsfbidAmt":"91300000"
+}
+},
+{
+"id":"R26BK01680386-000",
+"kind":"용역",
+"name":"AI 기반 전공 탐색 및 학업설계 통합 플랫폼(1단계) 구축",
+"inst":"서울특별시",
+"winner":"주식회사 유알피",
+"amount":710000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-08-25",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-23",
+"raw":{
+"bidwinnrNm":"주식회사 유알피",
+"sucsfbidAmt":"710000000"
 }
 }
 ]
