@@ -430,25 +430,5 @@
 "bidwinnrNm":"주식회사 에이투엠",
 "sucsfbidAmt":"91300000"
 }
-},
-{
-"id":"R26BK01680386-000",
-"kind":"용역",
-"name":"AI 기반 전공 탐색 및 학업설계 통합 플랫폼(1단계) 구축",
-"inst":"서울특별시",
-"winner":"주식회사 유알피",
-"amount":710000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-08-25",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-23",
-"raw":{
-"bidwinnrNm":"주식회사 유알피",
-"sucsfbidAmt":"710000000"
-}
 }
 ]
