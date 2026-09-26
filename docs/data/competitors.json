@@ -269,6 +269,27 @@
 }
 },
 {
+"id":"R26BK01718599-000",
+"kind":"용역",
+"name":"2026년 이인탄천, 계룡, 상습민원지구 등 3개 지구 도로 제설 용역",
+"inst":"충청남도 공주시",
+"winner":"(주)코아츠",
+"amount":96511618,
+"budget":0,
+"rate":99.18,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-27",
+"raw":{
+"bidwinnrNm":"(주)코아츠",
+"sucsfbidAmt":"96511618",
+"sucsfbidRate":"99.182"
+}
+},
+{
 "id":"R26BK01716100-000",
 "kind":"용역",
 "name":"부산형 AI서비스 확대 구축",
@@ -409,26 +430,6 @@
 "raw":{
 "bidwinnrNm":"컬처코리아(주)",
 "sucsfbidAmt":"250000000"
-}
-},
-{
-"id":"R26BK01684335-000",
-"kind":"용역",
-"name":"연구행정 데이터 기반 AI 플랫폼 구축",
-"inst":"한국생명공학연구원",
-"winner":"주식회사 에이투엠",
-"amount":91300000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":10,
-"date":"2026-08-27",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-23",
-"raw":{
-"bidwinnrNm":"주식회사 에이투엠",
-"sucsfbidAmt":"91300000"
 }
 }
 ]
