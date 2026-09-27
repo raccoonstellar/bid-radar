@@ -290,6 +290,27 @@
 }
 },
 {
+"id":"R26BK01684971-000",
+"kind":"물품",
+"name":"AI 딥러닝 및 생성형 AI 교육·연구용 GPU 서버 시스템",
+"inst":"전남대학교 산학협력단",
+"winner":"싸이버테크 주식회사",
+"amount":143280000,
+"budget":0,
+"rate":99.45,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-28",
+"raw":{
+"bidwinnrNm":"싸이버테크 주식회사",
+"sucsfbidAmt":"143280000",
+"sucsfbidRate":"99.452"
+}
+},
+{
 "id":"R26BK01716100-000",
 "kind":"용역",
 "name":"부산형 AI서비스 확대 구축",

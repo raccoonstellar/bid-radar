@@ -1,14 +1,57 @@
 {
-"date":"2026-09-27",
+"date":"2026-09-28",
 "range":[
-"202609240000",
-"202609272359"
+"202609250000",
+"202609282359"
 ],
 "stats":{
-"OPEN":0,
+"OPEN":1,
 "SIGNAL":0,
 "WATCH":0,
-"DROP":20
+"DROP":39
 },
-"rows":[]
+"rows":[
+{
+"id":"R26BK01744849-000",
+"bidNo":"R26BK01744849",
+"kind":"용역",
+"name":"AI 보증신청 및 챗봇 시스템 개발",
+"inst":"자본재공제조합",
+"amount":572727273,
+"closeDt":"2026-10-12 16:00:00",
+"dday":14,
+"bucket":"OPEN",
+"reason":"재공고(유찰 흔적) · 기술80:가격20 · 공동수급 허용",
+"score":16,
+"keywords":[
+"챗봇",
+"AI"
+],
+"position":"단독 · 공동수급 허용·분담이행 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"flags":[],
+"url":"https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01744849&bidPbancOrd=000",
+"collectedOn":"2026-09-28",
+"tech":"80",
+"method":"협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+"compete":"제한경쟁",
+"joint":"(수기)분담이행",
+"reNotice":"Y",
+"briefing":"",
+"qualDt":"",
+"contact":"02-369-7914",
+"docs":[
+"입찰공고(재재)_AI보증신청 및 챗봇 시스템 개발.pdf",
+"제안요청서(재재)_AI보증신청 및 챗봇 시스템 개발.hwp"
+],
+"docUrl":"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744849&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+"docUrls":[
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744849&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+"https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744849&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+],
+"clsfc":"정보시스템개발서비스",
+"clsLrg":"ICT 서비스",
+"arslt":"Y",
+"infoBiz":""
+}
+]
 }
