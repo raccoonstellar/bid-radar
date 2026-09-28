@@ -15,6 +15,10 @@ docs/data/bids.json 의 OPEN 건에 대해 API 첨부(docUrl / docs)를 내려�
 """
 import json, os, re, sys, io, zipfile, subprocess, tempfile, urllib.request, urllib.parse, datetime as dt, hashlib, shutil
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "vendor"))   # olefile·pypdf 동봉 (pip 불필요)
+# pypdf 는 import 시 시스템 cryptography 를 자동으로 불러온다. 컨테이너의 cryptography 가 깨져 있으면
+# 파이썬 예외가 아닌 러스트 패닉(BaseException)으로 프로세스가 죽으므로, 암호화 PDF 지원을 포기하고 차단한다.
+for _m in ("cryptography", "Crypto"):
+    sys.modules.setdefault(_m, None)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     import hwp_text   # 내장 HWP 5.0 파서
@@ -109,8 +113,9 @@ def text_pdf(data):
     try:   # 동봉 pypdf (vendor/)
         from pypdf import PdfReader
         rd = PdfReader(io.BytesIO(data)); return "\n".join((pg.extract_text() or "") for pg in rd.pages[:80])
-    except Exception as e:
-        return f"[추출 실패: pdftotext/pypdf 없음 — {e}]"
+    except (KeyboardInterrupt, SystemExit): raise
+    except BaseException as e:   # 러스트 패닉 등 비표준 예외까지
+        return f"[추출 실패: pypdf — {type(e).__name__}: {str(e)[:120]}]"
 
 HWP_TOOL = shutil.which("hwp5txt")
 def text_hwp(data):
@@ -142,8 +147,9 @@ def extract_text(data, name):
                 if re.search(r"\.(hwpx?|pdf|docx)$", nm, re.I):
                     k, t = extract_text(z.read(nm), nm); parts.append(f"\n\n===== {nm} =====\n{t}")
             return "zip", "".join(parts)
-    except Exception as e:
-        return kind, f"[추출 실패: {e}]"
+    except (KeyboardInterrupt, SystemExit): raise
+    except BaseException as e:
+        return kind, f"[추출 실패: {type(e).__name__}: {str(e)[:120]}]"
     return kind, ""
 
 def scan(text):
@@ -223,7 +229,8 @@ def main():
     stat = {}
     for b in targets:
         try: r = process(b, force)
-        except Exception as e: r = f"error: {e}"
+        except (KeyboardInterrupt, SystemExit): raise
+        except BaseException as e: r = f"error: {type(e).__name__}"
         stat[r.split(":")[0]] = stat.get(r.split(":")[0], 0) + 1
         log(f"  [{r}] {b['id']} {b.get('name','')[:40]}")
     # 인덱스
