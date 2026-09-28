@@ -1,21 +1,89 @@
 {
  "id": "R26BK01735784-000",
  "name": " 2026년 상생협력 실증 프로그램_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 ",
- "checkedAt": "2026-09-17T23:46:45",
+ "checkedAt": "2026-09-28T06:51:38",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=01",
-   "error": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=01",
-   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+   "name": "0.0 재공고문_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 .pdf",
+   "kind": "pdf",
+   "bytes": 47885,
+   "chars": 1502
   },
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=01",
-   "error": "<urlopen error [Errno 104] Connection reset by peer>"
+   "name": "인공지능기반 응집제 자동주입시스템 규격서.pdf",
+   "kind": "pdf",
+   "bytes": 225604,
+   "chars": 3454
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01735784&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=01",
+   "name": "0.0 재공고문_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 .hwp",
+   "kind": "hwp",
+   "bytes": 47104,
+   "chars": 1559
   }
  ],
- "gate": {},
- "status": "extract-failed"
+ "gate": {
+  "공동수급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 4,
+   "verdict": "",
+   "snippets": [
+    "액) / 협상에 의한 계약 / 기초금액 금 330,000,000원 / (부가세 포함) 입찰방식(가격) 전자입찰 / 전자입찰서(가격) / 접수 개시일시 2026.09.17.(목) 19:00 전자입찰서 / (가격)마감일시 / 2026.09.28.(월) 14:00 / 개찰일시 2026.09.28.(월) 15:00 개찰장소 국가종합전자조달시스템 / (나라장터) / 2.",
+    "세 포함) 입찰방식(가격) 전자입찰 / 전자입찰서(가격) / 접수 개시일시 2026.09.17.(목) 19:00 전자입찰서 / (가격)마감일시 / 2026.09.28.(월) 14:00 / 개찰일시 2026.09.28.(월) 15:00 개찰장소 국가종합전자조달시스템 / (나라장터) / 2. 입찰방법 / 가. 제한, 총액입찰, 전자입찰방식 / 나. 입찰 방식",
+    "가격) / 접수 개시일시 2026.09.17.(목) 19:00 전자입찰서 / (가격)마감일시 / 2026.09.28.(월) 14:00 / 개찰일시 2026.09.28.(월) 15:00 개찰장소 국가종합전자조달시스템 / (나라장터) / 2. 입찰방법 / 가. 제한, 총액입찰, 전자입찰방식 / 나. 입찰 방식 : 전자입찰 / 다. 제안서(견적서) 제출방식은",
+    "의한 계약 / 기초금액 / 금 330,000,000원 / (부가세 포함) / 입찰방식(가격) / 전자입찰 / 전자입찰서(가격) 접수 개시일시 / 2026.09.17.(목) 19:00 / 전자입찰서 / (가격)마감일시 / 2026.09.28.(월) 14:00 / 개찰일시 / 2026.09.28.(월) 15:00 / 개찰장소 / 국가종합전자조달시스템 / (나"
+   ],
+   "ratio": "90:10",
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 6766
 }

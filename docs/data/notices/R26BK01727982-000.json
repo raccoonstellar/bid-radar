@@ -1,27 +1,93 @@
 {
  "id": "R26BK01727982-000",
  "name": "AI 솔루션 고도화를 위한 통합 분석검증 인프라 및 데이터 구축 용역",
- "checkedAt": "2026-09-17T03:07:08",
+ "checkedAt": "2026-09-28T06:52:42",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
-   "error": "<urlopen error [Errno 104] Connection reset by peer>"
-  },
-  {
-   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
-   "name": "1.입찰공고문_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.hwp",
-   "kind": "hwp",
-   "bytes": 52224,
-   "chars": 55
+   "name": "1.입찰공고문_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.pdf",
+   "kind": "pdf",
+   "bytes": 87213,
+   "chars": 2353
   },
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
    "name": "3. 과업지시서_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.pdf",
    "kind": "pdf",
    "bytes": 50416,
-   "chars": 57
+   "chars": 1956
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01727982&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "1.입찰공고문_AI 솔루션 고도화를 위한 통합 분석·검증 인프라 및 데이터 구축 용역.hwp",
+   "kind": "hwp",
+   "bytes": 52224,
+   "chars": 2219
   }
  ],
- "gate": {},
- "status": "extract-failed"
+ "gate": {
+  "공동수급": {
+   "n": 2,
+   "verdict": "불허",
+   "snippets": [
+    "필요한 조직 및 인력을 보유한 자 / 바 . 공고 및 제안요청서에서 정한 제안서와 제출서류를 기한 내 제출한 자 / 사 . 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가 . 제출마감일 : 2026. 09. 28. 15:00 / 나 . 본 입",
+    "행에 필요한 조직 및 인력을 보유한 자 / 바. 공고 및 제안요청서에서 정한 제안서와 제출서류를 기한 내 제출한 자 / 사. 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가. 제출마감일: 2026. 09. 28. 15:00 / 나. 본 입찰은"
+   ]
+  },
+  "하도급": {
+   "n": 2,
+   "verdict": "금지",
+   "snippets": [
+    "수행에 필요한 조직 및 인력을 보유한 자 / 바 . 공고 및 제안요청서에서 정한 제안서와 제출서류를 기한 내 제출한 자 / 사 . 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가 . 제출마감일 : 2026. 09. 28. 15:00 / 나 . 본 입찰은 전자입찰로 진행함 / 다",
+    "업 수행에 필요한 조직 및 인력을 보유한 자 / 바. 공고 및 제안요청서에서 정한 제안서와 제출서류를 기한 내 제출한 자 / 사. 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가. 제출마감일: 2026. 09. 28. 15:00 / 나. 본 입찰은 전자입찰로 진행함 / 다. 제"
+   ]
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 2,
+   "verdict": "",
+   "snippets": [
+    "정한 제안서와 제출서류를 기한 내 제출한 자 / 사 . 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가 . 제출마감일 : 2026. 09. 28. 15:00 / 나 . 본 입찰은 전자입찰로 진행함 / 다 . 제안서는 전자조달시스템을 통한 첨부파일 형태로 제출하여야 함 / 라 . 가격개찰은 제안서 평가 완료 후 진행함",
+    "에서 정한 제안서와 제출서류를 기한 내 제출한 자 / 사. 공동수급 및 하도급은 불가함 / 5. 입찰 일정 및 접수 / 가. 제출마감일: 2026. 09. 28. 15:00 / 나. 본 입찰은 전자입찰로 진행함 / 다. 제안서는 전자조달시스템을 통한 첨부파일 형태로 제출하여야 함 / 라. 가격개찰은 제안서 평가 완료 후 진행함 /"
+   ],
+   "ratio": "15:00",
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 6727
 }

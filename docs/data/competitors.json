@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01738575-000",
+"kind":"물품",
+"name":"AI솔루션 개발실증 사업",
+"inst":"주식회사 태진시스템",
+"winner":"주식회사 스마트밸리",
+"amount":54950000,
+"budget":0,
+"rate":99.91,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-28",
+"raw":{
+"bidwinnrNm":"주식회사 스마트밸리",
+"sucsfbidAmt":"54950000",
+"sucsfbidRate":"99.909"
+}
+},
+{
 "id":"R26BK01733369-000",
 "kind":"용역",
 "name":"무인민원발급기 운영체제 및 하드웨어 성능 개선 용역",
@@ -18,6 +39,27 @@
 "bidwinnrNm":"(주)에니텍시스",
 "sucsfbidAmt":"38240000",
 "sucsfbidRate":"94.629"
+}
+},
+{
+"id":"R26BK01737255-001",
+"kind":"용역",
+"name":"AX만성질환_Scanox 기반 X-ray 모달리티 통신 프로세스 연동 및 검증 용역",
+"inst":"크리스타비전 주식회사",
+"winner":"주식회사 워크원오원",
+"amount":60000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-28",
+"raw":{
+"bidwinnrNm":"주식회사 워크원오원",
+"sucsfbidAmt":"60000000",
+"sucsfbidRate":"100"
 }
 },
 {
@@ -393,6 +435,27 @@
 }
 },
 {
+"id":"R26BK01702312-000",
+"kind":"물품",
+"name":"AI 모델 학습 추론용 스테이션",
+"inst":"한국기술교육대학교",
+"winner":"주식회사 램아이티",
+"amount":38984000,
+"budget":0,
+"rate":94.58,
+"rateEst":null,
+"bidders":70,
+"date":"2026-09-04",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-28",
+"raw":{
+"bidwinnrNm":"주식회사 램아이티",
+"sucsfbidAmt":"38984000",
+"sucsfbidRate":"94.577"
+}
+},
+{
 "id":"R26BK01686488-000",
 "kind":"용역",
 "name":"공단 AI시스템 구축 및 AI 민원 상담사 고도화 사업",
@@ -410,6 +473,27 @@
 "raw":{
 "bidwinnrNm":"주식회사  온피아",
 "sucsfbidAmt":"220000000"
+}
+},
+{
+"id":"R26BK01699055-000",
+"kind":"물품",
+"name":"(재공고)AI기반 실내공기질 통합관리시스템 구축(인천제2시립노인치매요양병원)",
+"inst":"인천광역시",
+"winner":"(주)인프라칩",
+"amount":41901000,
+"budget":0,
+"rate":85.33,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-28",
+"raw":{
+"bidwinnrNm":"(주)인프라칩",
+"sucsfbidAmt":"41901000",
+"sucsfbidRate":"85.33"
 }
 },
 {
