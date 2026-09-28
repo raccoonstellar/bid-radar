@@ -291,6 +291,26 @@
 }
 },
 {
+"id":"R26BK01709016-000",
+"kind":"용역",
+"name":"국민 AI 인식조사",
+"inst":"한국지능정보사회진흥원",
+"winner":"(주)날리지리서치그룹",
+"amount":36000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":8,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"(주)날리지리서치그룹",
+"sucsfbidAmt":"36000000"
+}
+},
+{
 "id":"R26BK01706837-001",
 "kind":"용역",
 "name":"겨레말큰사전 검색 시스템 개발(기반 구축)",
@@ -411,6 +431,46 @@
 "raw":{
 "bidwinnrNm":"주식회사 아이앤아이리서치",
 "sucsfbidAmt":"37600000"
+}
+},
+{
+"id":"R26BK01700386-000",
+"kind":"용역",
+"name":"초거대 천문우주 新 발견을 위한 AI 협력플랫폼 연구기획 용역",
+"inst":"한국천문연구원",
+"winner":"(주)메타로직컨설팅",
+"amount":66000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"(주)메타로직컨설팅",
+"sucsfbidAmt":"66000000"
+}
+},
+{
+"id":"R26BK01661488-000",
+"kind":"용역",
+"name":"K-BDS 바이오데이터 정합성 검증을 위한 AI 모델 개발 및 적용",
+"inst":"한국생명공학연구원",
+"winner":"주식회사 인실리코젠",
+"amount":485100000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-09-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"주식회사 인실리코젠",
+"sucsfbidAmt":"485100000"
 }
 },
 {
