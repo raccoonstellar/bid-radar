@@ -163,7 +163,15 @@ for nm,kind,amt,clse,exp,extra in C7:
     ok7+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:40]:<42} {r[:30]}")
 print(f"v0.6.1 회귀 {ok7}/{len(C7)}")
 
-print("\n── v0.6.3 마감 지남만 제외, D-7 미만은 플래그 ──")
-for nm,clse,exp in [("AI 챗봇 상담 시스템 구축","20260905","DROP"),("AI 챗봇 상담 시스템 구축","20260916","OPEN"),("AI 챗봇 상담 시스템 구축","20260925","OPEN")]:
-    b,r,*_=s.classify({"bidNtceNm":nm,"presmptPrce":300000000,"bidClseDt":clse,"dminsttNm":""},"용역",TODAY)
-    print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7} 마감 {clse} (D-{(dt.datetime.strptime(clse,'%Y%m%d').date()-TODAY).days}) {r[:24]}")
+print("\n── v0.6.4 마감 지남·영업일 5일 이내 제외 (기준일 2026-09-11 금) ──")
+ok8=0
+C8=[("20260905","DROP"),   # 마감 지남
+    ("20260916","DROP"),   # 영업일 3일 (월~수)
+    ("20260918","DROP"),   # 영업일 5일 (월~금)
+    ("20260921","OPEN"),   # 영업일 6일
+    ("20260925","OPEN")]
+for clse,exp in C8:
+    b,r,*_=s.classify({"bidNtceNm":"AI 챗봇 상담 시스템 구축","presmptPrce":300000000,"bidClseDt":clse,"dminsttNm":""},"용역",TODAY)
+    ok8+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7} 마감 {clse} 영업일 {s.bizdays(clse,TODAY)}일  {r[:30]}")
+assert s.bizdays("20261006", dt.date(2026,9,29)) == 4, "10/5 개천절 대체공휴일 반영"
+print(f"v0.6.4 회귀 {ok8}/{len(C8)}")

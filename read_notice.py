@@ -28,6 +28,7 @@ except Exception as _e:
 DATA = "docs/data"; OUT = f"{DATA}/notices"
 UA = {"User-Agent": "Mozilla/5.0 (bid-radar; +https://github.com/raccoonstellar/bid-radar)"}
 MAX_BYTES = 40 * 1024 * 1024
+PARSER = 2
 
 # ── 항목별 패턴: (라벨, 정규식, 앞뒤 문맥 길이) ──────────────────────────
 PATTERNS = {
@@ -156,9 +157,11 @@ def scan(text):
     t = re.sub(r"[ \t\u3000]+", " ", text)
     found = {}
     for label, (pat, ctx) in PATTERNS.items():
-        hits = []
+        hits, last_e = [], -1
         for m in re.finditer(pat, t):
+            if m.start() < last_e: continue          # 직전 문맥 창 안에 든 매치는 같은 문장 — 건너뛴다
             s, e = max(0, m.start() - ctx), min(len(t), m.end() + ctx)
+            last_e = e
             snippet = re.sub(r"\s*\n\s*", " / ", t[s:e]).strip()
             if snippet not in hits: hits.append(snippet)
             if len(hits) >= 4: break
@@ -193,10 +196,11 @@ def process(bid, force=False):
     if os.path.exists(path) and not force:
         try:
             prev = json.load(open(path, encoding="utf-8"))
-            if prev.get("status") in ("ok", "no-attachment"): return "skip"
+            # parser 2 = HWP 빈칸 복원·전 첨부 목록. 이전 기록은 한 번 다시 읽는다
+            if prev.get("status") in ("ok", "no-attachment") and prev.get("parser", 1) >= PARSER: return "skip"
         except Exception: pass   # 깨진 기록이면 다시
     urls = urls_for(bid)
-    rec = {"id": bid["id"], "name": bid.get("name"), "checkedAt": dt.datetime.now().isoformat(timespec="seconds"),
+    rec = {"id": bid["id"], "name": bid.get("name"), "parser": PARSER, "checkedAt": dt.datetime.now().isoformat(timespec="seconds"),
            "files": [], "gate": {}, "status": "no-attachment"}
     if not urls:
         json.dump(rec, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1); return "no-attachment"
@@ -210,6 +214,11 @@ def process(bid, force=False):
             elif text: rec["files"][-1]["error"] = f"텍스트 {len(text.strip())}자 — 추출 불충분({kind})"
         except Exception as e:
             rec["files"].append({"url": u, "error": str(e)[:200]})
+    # 읽지 않은 첨부도 대시보드에서 내려받을 수 있게 목록에 남긴다
+    names = dict(zip([u for u in (bid.get("docUrls") or [])], bid.get("docs") or []))
+    done = {f["url"] for f in rec["files"]}
+    for u in urls:
+        if u not in done: rec["files"].append({"url": u, "name": names.get(u) or "", "unread": True})
     full = "".join(texts)
     if full.strip():
         rec["gate"] = scan(full); rec["status"] = "ok"; rec["textChars"] = len(full)

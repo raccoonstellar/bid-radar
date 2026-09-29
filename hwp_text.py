@@ -25,8 +25,11 @@ def _para_text(payload: bytes) -> str:
         if code < 32:
             if code in _CHAR_1:
                 if code in (10, 13): out.append("\n")
+                elif code in (30, 31): out.append(" ")     # 묶음 빈칸·고정폭 빈칸 — 공문서 띄어쓰기에 많이 쓰임
+                elif code == 24: out.append("-")           # 하이픈
                 i += 2
             else:
+                if code == 9: out.append(" ")              # 탭
                 i += 16
             continue
         out.append(chr(code)) if 0xD800 > code or code > 0xDFFF else out.append(" ")

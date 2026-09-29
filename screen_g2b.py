@@ -106,6 +106,27 @@ def ddays(clse, today):
     try: return (dt.datetime.strptime(m, "%Y%m%d").date() - today).days
     except Exception: return None
 
+# ── 영업일 (v0.6.4) — 주말·공휴일 제외. 공휴일은 매년 말 다음 해 것을 추가 ──
+KR_HOLIDAYS = {
+  "20260928","20261003","20261005","20261009","20261225",                       # 2026 (추석 대체·개천절 대체 포함)
+  "20270101","20270206","20270207","20270208","20270209","20270301","20270505",
+  "20270513","20270606","20270815","20270816","20270914","20270915","20270916",
+  "20271003","20271004","20271009","20271011","20271225","20271227",            # 2027 (대체공휴일 포함)
+}
+BIZ_MIN = 5   # 투찰마감까지 영업일 5일 이내면 제외 — 제안서 쓸 시간이 없다
+def bizdays(clse, today):
+    """오늘 다음 날 ~ 마감일(포함) 사이 영업일 수. 마감 지남은 음수, 날짜 없으면 None"""
+    m = re.sub(r"\D", "", str(clse or ""))[:8]
+    if len(m) != 8: return None
+    try: end = dt.datetime.strptime(m, "%Y%m%d").date()
+    except Exception: return None
+    if end < today: return -1
+    n, cur = 0, today
+    while cur < end:
+        cur += dt.timedelta(days=1)
+        if cur.weekday() < 5 and cur.strftime("%Y%m%d") not in KR_HOLIDAYS: n += 1
+    return n
+
 _ASCII = re.compile(r"[A-Za-z]")
 def has(nm, tok):
     """짧은 영문 토큰(PC, AI, AX…)은 영문자 경계로만 매칭. 한글은 부분문자열."""
@@ -175,6 +196,9 @@ def classify(it, kind, today):
         if kind == "용역" and re.search(r"구축|개발", nm) and amt >= MIN_AMT \
            and ("ICT" in lrg or "SW" in lrg or "정보" in lrg) \
            and not anyk(nm, N3_LICENSE + N4_EDU + N5_NOT + N7_CIVIL + N8_HW):
+            bd = bizdays(clse, today)
+            if d is not None and d < 0: return R("DROP", "D4 마감 지남")
+            if bd is not None and bd <= BIZ_MIN: return R("DROP", f"D4 마감 임박(영업일 {bd}일)")
             return R("WATCH", "일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인", 6)
         return R("DROP", "키워드 미매칭")
     if anyk(nm, N7_CIVIL): return R("DROP", "N7 토목·설치공사")
@@ -225,7 +249,8 @@ def classify(it, kind, today):
     if 0 < amt < MIN_AMT: return R("DROP", f"소액({amt/1e8:.2f}억 < 1억)", score)
     if "취소" in nm: return R("WATCH", "취소공고 — 재공고 대기", score)
     if d is not None and d < 0: return R("DROP", "D4 마감 지남", score)
-    if d is not None and d < 7: flags.append("D-7 미만 — 제안서 작성 시간 부족, 참고용")   # v0.6.3: 버리지 않고 표시만
+    bd = bizdays(clse, today)   # v0.6.4: 영업일 5일 이내는 판단할 시간이 없으므로 제외 (D-7 참고 표시 폐지)
+    if bd is not None and bd <= BIZ_MIN: return R("DROP", f"D4 마감 임박(영업일 {bd}일)", score)
     # v0.5: 금액으로 WATCH 보내지 않는다 — 컨소 구성사 실적(100억대 참여 이력)이 있으므로 대형 건도 OPEN, 포지션만 "구성사"
     if score <= 9: return R("DROP", f"저점({score}) Fit{s_fit}", score)   # 임계값 — 남혁님 리뷰 항목
     return R("OPEN", (" · ".join(why) or "키워드 적합"), score)

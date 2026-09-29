@@ -19,9 +19,10 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
    - `screen_g2b.py`: API 수집 → `out/screen_YYYYMMDD.json` (범위: 마지막 성공일-1 ~ 오늘, 3~14일)
    - `build_data.py`: `docs/data/{bids,runs,latest}.json` 병합
    - `opening.py`: 낙찰정보서비스로 개찰결과 수집 → `docs/data/competitors.json` (Core 키워드 건만, 유찰·AICC 접점 태그). 활용신청 미승인이면 실패해도 무방
+   - `prespec.py`: 사전규격정보서비스로 본공고 전 사전규격 수집 → `docs/data/prespec.json` (입찰공고 필터 OPEN 건만, 45일 보관). 실패하면 run_daily.sh 가 `--probe` 결과를 출력하니 그 오류 문구를 보고에 그대로 적는다 (403·NOT_REGISTERED = 활용신청 필요, 404·NO_OPENAPI = 오퍼레이션명 확인 필요)
    - `read_notice.py`: OPEN 건 공고서 첨부를 내려받아 5분 게이트 항목(공동수급·하도급·실적·배점·제출방식·대기업제한) 추출 → `docs/data/notices/` (Stage 1.5, 실패해도 무방)
 3. `git add docs/data && git commit -m "radar YYYY-MM-DD: 수집 N건 통과 M건" && git push origin claude/radar`
-4. 완료 보고: `docs/data/runs.json` 첫 항목(total·pass·buckets·drops) + OPEN 상위 5건(점수·D-day·금액·공고명·포지션) + 개찰결과 신규 건수(유찰 포함) + 공고서 확인 결과(`docs/data/notices/index.json`: ok/실패/첨부없음 건수, 공동수급 불허·차등제·방문제출로 잡힌 건 이름)
+4. 완료 보고: `docs/data/runs.json` 첫 항목(total·pass·buckets·drops) + OPEN 상위 5건(점수·D-day·금액·공고명·포지션) + 개찰결과 신규 건수(유찰 포함) + 사전규격 신규·보관 건수(실패 시 probe 오류 문구) + 공고서 확인 결과(`docs/data/notices/index.json`: ok/실패/첨부없음 건수, 공동수급 불허·차등제·방문제출로 잡힌 건 이름)
 
 ## 환경 요구
 없음. HWP·PDF 텍스트 추출기는 저장소에 동봉(`vendor/olefile`, `vendor/pypdf`, `hwp_text.py`)돼 있어 pip·apt 설치가 필요 없다. `vendor/`는 수정하지 않는다.
@@ -30,6 +31,7 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
 - 스크립트가 페이지 단위로 6회 재시도하고 실패 페이지는 건너뛴다. stderr 에 "부분 수집" 경고가 있으면 보고에 실패 페이지 수를 적는다 (다음 실행이 겹침 범위로 메운다)
 - 총 수집 0건이면 "수집 실패 — 네트워크/키 확인"으로 보고하고 커밋하지 않는다
 - 0건 수집: 공휴일일 수 있음. `docs/data`는 건드리지 않고 보고만
+- 마감 지남·투찰마감까지 영업일 5일 이내(주말·공휴일 제외)는 DROP 이다 (v0.6.4). `screen_g2b.py` 의 KR_HOLIDAYS 에 다음 해 공휴일이 없으면(매년 12월) 보고에 "공휴일 목록 갱신 필요"를 적는다
 - 규칙 파일(`screen_g2b.py`)은 루틴에서 수정하지 않는다. 오탐이 보이면 보고에 적기만 한다
 
 ## 하지 않는 것

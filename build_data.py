@@ -64,6 +64,17 @@ def main():
     keep_ids = {v[1] for v in latest.values()}
     bids = {k: v for k, v in bids.items() if k in keep_ids}
 
+    # v0.6.4 마감 임박 제외 — 누적분도 매일 재계산 (어제 OPEN 이었어도 오늘 영업일 5일 이내면 뺀다). 취소공고 WATCH·SIGNAL 은 유지
+    import importlib.util as _iu
+    _sp = _iu.spec_from_file_location("screen_g2b", os.path.join(os.path.dirname(os.path.abspath(__file__)), "screen_g2b.py"))
+    _sg = _iu.module_from_spec(_sp); _sp.loader.exec_module(_sg)
+    near = 0
+    for k in list(bids):
+        b = bids[k]
+        if b.get("bucket") not in ("OPEN", "WATCH") or "취소" in (b.get("reason") or ""): continue
+        bd = _sg.bizdays(b.get("closeDt"), today)
+        if bd is not None and bd <= _sg.BIZ_MIN: del bids[k]; near += 1
+
     # 보관 규칙
     kept = []
     for b in bids.values():
@@ -86,11 +97,11 @@ def main():
             k = (r.get("reason") or "").split("(")[0].strip(); drops[k] = drops.get(k, 0) + 1
     runs.append({"date": date, "range": res.get("range"), "total": len(res.get("rows", [])),
                  "pass": sum(buckets.values()), "buckets": buckets, "drops": drops,
-                 "added": added, "updated": updated, "same": same, "removed": removed, "builtAt": (dt.datetime.utcnow() + dt.timedelta(hours=9)).isoformat(timespec="seconds") + "+09:00"})
+                 "added": added, "updated": updated, "same": same, "removed": removed, "nearClose": near, "builtAt": (dt.datetime.utcnow() + dt.timedelta(hours=9)).isoformat(timespec="seconds") + "+09:00"})
     runs.sort(key=lambda x: x["date"], reverse=True)
     save(f"{DATA}/runs.json", runs[:90])
     save(f"{DATA}/latest.json", {k: res[k] for k in res if k != "rows"} | {"rows": [r for r in res.get("rows", []) if r.get("bucket") != "DROP"]})
-    print(f"[병합] {date} 신규 {added} · 갱신 {updated} · 변동없음 {same} · 재판정 제거 {removed} · 보관 {len(kept)}건 · runs {len(runs)}행")
+    print(f"[병합] {date} 신규 {added} · 갱신 {updated} · 변동없음 {same} · 재판정 제거 {removed} · 마감 임박 제외 {near} · 보관 {len(kept)}건 · runs {len(runs)}행")
 
 if __name__ == "__main__":
     main()
