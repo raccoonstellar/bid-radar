@@ -1,7 +1,8 @@
 {
  "id": "R26BK01725700-001",
  "name": "통합제공체계, AI허브 기개방 데이터 개인정보 재검증 및 비식별 용역",
- "checkedAt": "2026-09-28T06:53:01",
+ "parser": 2,
+ "checkedAt": "2026-09-29T09:46:10",
  "files": [],
  "gate": {},
  "status": "no-attachment"

@@ -1,5 +1,47 @@
 [
 {
+"id":"R26BK01741334-000",
+"kind":"용역",
+"name":"AI심화시대 정보주체 관점에서의 개인정보 기능 수행체계 효율화 전략 연구",
+"inst":"개인정보보호위원회",
+"winner":"경북대학교 산학협력단",
+"amount":49000000,
+"budget":45454545,
+"rate":99.24,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"경북대학교 산학협력단",
+"sucsfbidAmt":"49000000",
+"sucsfbidRate":"99.24"
+}
+},
+{
+"id":"R26BK01748371-000",
+"kind":"물품",
+"name":"AI 에이전트 데이터수집 시스템 제작",
+"inst":"한국에너지기술연구원",
+"winner":"주식회사 한테크",
+"amount":123950000,
+"budget":0,
+"rate":98.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"주식회사 한테크",
+"sucsfbidAmt":"123950000",
+"sucsfbidRate":"97.996"
+}
+},
+{
 "id":"R26BK01738575-000",
 "kind":"물품",
 "name":"AI솔루션 개발실증 사업",
@@ -18,6 +60,46 @@
 "bidwinnrNm":"주식회사 스마트밸리",
 "sucsfbidAmt":"54950000",
 "sucsfbidRate":"99.909"
+}
+},
+{
+"id":"R26BK01728046-001",
+"kind":"용역",
+"name":"AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역",
+"inst":"주식회사 타이거 인공지능",
+"winner":"주식회사 애니버디즈스튜디오",
+"amount":51502000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"주식회사 애니버디즈스튜디오",
+"sucsfbidAmt":"51502000"
+}
+},
+{
+"id":"R26BK01727982-000",
+"kind":"용역",
+"name":"AI 솔루션 고도화를 위한 통합 분석검증 인프라 및 데이터 구축 용역",
+"inst":"주식회사 타이거 인공지능",
+"winner":"주식회사 잼머스",
+"amount":100000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"주식회사 잼머스",
+"sucsfbidAmt":"100000000"
 }
 },
 {
@@ -81,6 +163,27 @@
 "bidwinnrNm":"(주)지오스페이스",
 "sucsfbidAmt":"44650000",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01738238-000",
+"kind":"용역",
+"name":"[앵커사업] 조기 노화성 난청(ARHL) 핵심 타겟 발굴 및 뇌신경·항노화 약물 재창출(Drug Repurposing)을 위한 AI 분석 용역",
+"inst":"연세대학교 미래캠퍼스",
+"winner":"(주)사강랩사이언스",
+"amount":10450000,
+"budget":10000000,
+"rate":95.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"(주)사강랩사이언스",
+"sucsfbidAmt":"10450000",
+"sucsfbidRate":"95"
 }
 },
 {
@@ -308,6 +411,67 @@
 "raw":{
 "bidwinnrNm":"(주)날리지리서치그룹",
 "sucsfbidAmt":"36000000"
+}
+},
+{
+"id":"R26BK01712310-000",
+"kind":"용역",
+"name":"AX(딥러닝) 기반 수산자원조성사업 효과조사 기법을 통한 현존량 추정",
+"inst":"한국수산자원공단",
+"winner":"주식회사 지오시스템리서치",
+"amount":113000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"주식회사 지오시스템리서치",
+"sucsfbidAmt":"113000000"
+}
+},
+{
+"id":"R26BK01701257-003",
+"kind":"용역",
+"name":"AI-Science 데이터센터 신축사업 설계용역(전기)",
+"inst":"한국과학기술원",
+"winner":"신영이엔씨 주식회사",
+"amount":135165691,
+"budget":0,
+"rate":89.82,
+"rateEst":null,
+"bidders":18,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"신영이엔씨 주식회사",
+"sucsfbidAmt":"135165691",
+"sucsfbidRate":"89.816"
+}
+},
+{
+"id":"R26BK01709864-000",
+"kind":"용역",
+"name":"[국립대학육성사업] AI 맞춤형 장학 정보 제공 시스템 구축 사업",
+"inst":"충남대학교",
+"winner":"(주)싸이웍스",
+"amount":80000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":7,
+"date":"2026-09-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-09-29",
+"raw":{
+"bidwinnrNm":"(주)싸이웍스",
+"sucsfbidAmt":"80000000"
 }
 },
 {
