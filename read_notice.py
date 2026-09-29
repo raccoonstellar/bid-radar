@@ -156,7 +156,9 @@ def extract_text(data, name):
     return kind, ""
 
 def scan(text):
-    t = re.sub(r"[ \t\u3000]+", " ", text)
+    t = re.sub(r"[-–—_=─━~·.]{4,}", " ", text)                    # 구분선
+    t = re.sub(r"(?m)^\s*-\s*\d+\s*-\s*$", "", t)                 # 쪽번호 "- 9 -"
+    t = re.sub(r"[ \t\u3000]+", " ", t)
     found = {}
     for label, (pat, ctx) in PATTERNS.items():
         hits, last_e = [], -1

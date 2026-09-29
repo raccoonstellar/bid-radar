@@ -561,8 +561,12 @@ function snipHtml(list, rx){
   // 겹치는 창 제거 → 키워드가 든 칸 ±2칸만
   const seen = [], out = [];
   for(const raw of list || []){
-    const cells = String(raw).split(/\s+\/\s+/).map(x => x.trim()).filter(Boolean);
-    let k = cells.findIndex(c => rx.test(c)); if(k < 0) k = Math.floor(cells.length / 2);
+    // 구분선(-----)·쪽번호(- 9 -)·기호만 있는 칸 제거, 앞뒤 잘린 조각 칸 제거
+    let cells = String(raw).replace(/[-–—_=─━~·.]{4,}/g, " ").split(/\s+\/\s+/).map(x => x.replace(/\s{2,}/g, " ").trim())
+      .filter(c => c && !/^[\s\-–—_=~·•.|○◇◆□■●◐◑()\[\]\d]*$/.test(c));
+    if(cells.length >= 4){ if(!rx.test(cells[0])) cells = cells.slice(1); if(cells.length >= 4 && !rx.test(cells[cells.length-1])) cells = cells.slice(0, -1); }
+    const k = cells.findIndex(c => rx.test(c));
+    if(k < 0) continue;                          // 현재 규칙으로는 근거가 아닌 문장 (예: 설명회 시각 16:00)
     const lo = Math.max(0, k - 2), hi = Math.min(cells.length, k + 3);
     const key = cells[k] + "|" + (cells[k+1] || "");
     if(seen.includes(key)) continue; seen.push(key);
