@@ -160,6 +160,7 @@ section{margin-top:38px}
 .file .ext{flex:none;min-width:40px;text-align:center;font:600 .64rem/1 "IBM Plex Mono",monospace;padding:4px 6px;border-radius:3px;color:#fff;background:var(--cool)}
 .file .ext[data-k="pdf"]{background:var(--hot)}.file .ext[data-k="hwp"],.file .ext[data-k="hwpx"]{background:#2d6fb7}.file .ext[data-k="xlsx"],.file .ext[data-k="xls"]{background:var(--good)}.file .ext[data-k="zip"]{background:var(--warm)}
 .file .fn{flex:1;min-width:0;font-size:.78rem;overflow-wrap:anywhere}
+.file .doc-k{font-size:.66rem;font-weight:700;color:#fff;background:var(--accent);padding:1px 6px;border-radius:3px;margin-right:4px}
 .file .sz{flex:none;font-size:.68rem;color:var(--muted)}
 .file .dl{flex:none;font-size:.7rem;color:var(--accent-ink);font-weight:600}
 .file .bad{flex:none;font-size:.64rem;color:var(--muted)}
@@ -281,8 +282,8 @@ footer b{color:var(--ink-2);font-weight:500}
   </section>
 
   <section id="sec-pre">
-    <div class="head"><h2>사전규격 — 곧 공고될 사업</h2><i class="rule"></i><span class="n" id="nPre"></span></div>
-    <p class="lede">본공고 2~4주 전에 공개되는 과업·예산 초안. 제목을 누르면 나라장터 사전규격 상세, 원문 보기로 과업 내용·사업기간·공동수급 등 첨부 문서 발췌와 첨부파일 다운로드. 입찰공고와 같은 필터를 통과한 것만 모았다 — 지금부터 과업을 읽고 컨소·제안 준비를 시작할 수 있다. 의견 마감 전이면 규격 의견(독소조항 등)도 낼 수 있다. 본공고가 뜨면 목록에서 빠지고(검토 대상으로 넘어감), 45일이 지나도 자동 제거.</p>
+    <div class="head"><h2>사전규격 — 본공고 전에 먼저 찾아갈 사업</h2><i class="rule"></i><span class="n" id="nPre"></span></div>
+    <p class="lede"><b>사전영업 대상.</b> 본공고 2~4주 전에 공개되는 과업·예산 초안 중 우리 영역에 맞는 것만 골랐다. 담당자에게 먼저 연락해 요구사항을 파악하고, 의견 마감 전이면 규격 의견(불리한 조건 완화)을 내고, 컨소·제안 준비를 시작한다. 점수 높은 순 → 의견 마감 임박 순. 제목은 나라장터 사전규격 상세, 원문 보기는 과업 내용·사업기간 발췌와 첨부 다운로드. 본공고가 나오면 목록에서 빠진다.</p>
     <div class="pre" id="preRows"></div>
   </section>
 
@@ -369,11 +370,17 @@ function gateChips(r){
   const c = (t, cls="") => chips.push(`<span class="g ${cls}">${esc(t)}</span>`);
   if(g.joint === "불허") c("공동수급 불허", "warn"); else if(g.joint === "허용") c("공동수급 허용", "ok"); else c("공동수급 ?");
   if(g.sub === "금지") c("하도급 금지", "warn"); else if(g.sub === "승인필요") c("하도급 승인필요"); else if(g.sub === "허용") c("하도급 허용", "ok"); else c("하도급 ?");
-  if(g.ratio) c("배점 " + g.ratio + (g.diff ? " · 차등제" : ""), g.diff ? "warn" : ""); else if(g.diff) c("차등제", "warn");
+  // 배점: 기술:가격 → 정성·정량 → 협상적격 컷 → 차등점수제
+  if(g.ratio){ const t = +g.ratio.split(":")[0]; c("기술:가격 " + g.ratio, t >= 90 ? "ok" : t <= 70 ? "warn" : ""); }
+  else c("배점 ? — 원문 확인");
+  if(g.qual || g.quant) c(`정성 ${g.qual || "?"} · 정량 ${g.quant || "?"}`, +(g.quant||0) >= 20 ? "warn" : "");
+  if(g.cutoff) c(`협상적격 ${g.cutoff}↑`);
+  if(g.diff) c("차등점수제", "warn");
   if(g.submit === "방문") c("방문제출", "warn"); else if(g.submit === "전자") c("전자제출", "ok");
   if(g.big === "제한") c("대기업 제한", "ok"); else if(g.big === "허용") c("대기업 허용", "warn");
   if(g.region) c("지역제한 언급", "warn");
   if(g.perf) c("실적요건 언급");
+  if(g.rfp) c(`제안요청서 ${g.rfp}`, "ok");
   return `<div class="gate">${chips.join("")}<span class="more" data-id="${esc(r.id)}">원문 보기</span></div><div class="snips" id="snip-${esc(r.id)}" hidden></div>`;
 }
 function bidRow(r){
@@ -427,12 +434,13 @@ function renderOpen(){
 }
 
 function fileLinks(files){
-  return (files || []).filter(f => f.url).map(f => `<a class="file" href="${esc(f.url)}" download="${esc(f.name || "")}" rel="noopener" title="${esc(f.name || "")} 다운로드"><span class="ext" data-k="${esc(fext(f))}">${esc(fext(f).toUpperCase())}</span><span class="fn">${esc(f.name || "첨부파일")}</span>${f.error ? `<span class="bad">자동 읽기 실패</span>` : ""}<span class="sz mono">${fsize(f.bytes)}</span><span class="dl">↓</span></a>`).join("");
+  return (files || []).filter(f => f.url).map(f => `<a class="file" href="${esc(f.url)}" download="${esc(f.name || "")}" rel="noopener" title="${esc(f.name || "")} 다운로드"><span class="ext" data-k="${esc(fext(f))}">${esc(fext(f).toUpperCase())}</span><span class="fn">${f.doc && f.doc !== "공고" ? `<b class="doc-k">${esc(f.doc)}</b> ` : ""}${esc(f.name || "첨부파일")}</span>${f.error ? `<span class="bad">자동 읽기 실패</span>` : ""}<span class="sz mono">${fsize(f.bytes)}</span><span class="dl">↓</span></a>`).join("");
 }
 function renderPre(){
   const el = document.getElementById("preRows");
   if(PRE === null){ el.innerHTML = `<div class="pre-empty">첫 수집 전 — 다음 아침 자동 수집부터 채워집니다.</div>`; return; }
-  const list = PRE.filter(p => !(p.bidNos||[]).length).sort((a,b) => String(b.rgst||"").localeCompare(String(a.rgst||"")));
+  // 사전영업 우선순위: 점수 높은 순 → 의견 마감 임박 순
+  const list = PRE.filter(p => !(p.bidNos||[]).length).sort((a,b) => (b.score||0)-(a.score||0) || String(a.opnClse||"9").localeCompare(String(b.opnClse||"9")));
   const live = list.length;
   document.getElementById("nPre").textContent = live ? live + "건" : "";
   const fp = document.getElementById("fnPre"); if(fp) fp.textContent = live || "";
@@ -561,8 +569,12 @@ function snipHtml(list, rx){
   // 겹치는 창 제거 → 키워드가 든 칸 ±2칸만
   const seen = [], out = [];
   for(const raw of list || []){
-    const cells = String(raw).split(/\s+\/\s+/).map(x => x.trim()).filter(Boolean);
-    let k = cells.findIndex(c => rx.test(c)); if(k < 0) k = Math.floor(cells.length / 2);
+    // 구분선(-----)·쪽번호(- 9 -)·기호만 있는 칸 제거, 앞뒤 잘린 조각 칸 제거
+    let cells = String(raw).replace(/[\u0000-\u0008\u000b-\u001f\u00a0\u200b\u3000]/g, " ").replace(/[-–—_=─━~·.]{4,}/g, " ").split(/\s+\/\s+/).map(x => x.replace(/\s{2,}/g, " ").trim())
+      .filter(c => c && !/^[\s\-–—_=~·•.|○◇◆□■●◐◑()\[\]\d]*$/.test(c));
+    if(cells.length >= 4){ if(!rx.test(cells[0])) cells = cells.slice(1); if(cells.length >= 4 && !rx.test(cells[cells.length-1])) cells = cells.slice(0, -1); }
+    const k = cells.findIndex(c => rx.test(c));
+    if(k < 0) continue;                          // 현재 규칙으로는 근거가 아닌 문장 (예: 설명회 시각 16:00)
     const lo = Math.max(0, k - 2), hi = Math.min(cells.length, k + 3);
     const key = cells[k] + "|" + (cells[k+1] || "");
     if(seen.includes(key)) continue; seen.push(key);
@@ -594,7 +606,10 @@ document.addEventListener("click", async e => {
       const vtxt = v.verdict ? (LABEL_NOTE[k] ? LABEL_NOTE[k](v.verdict) : v.verdict) : "";
       const chips = [vtxt && `<span class="sn-v ${VERDICT_CLS[v.verdict] || ""}">${esc(vtxt)}</span>`,
                      v.ratio && `<span class="sn-v">기술:가격 ${esc(v.ratio)}</span>`,
-                     v["차등제"] && `<span class="sn-v warn">차등제</span>`].filter(Boolean).join("");
+                     (v.qual || v.quant) && `<span class="sn-v">정성 ${esc(v.qual || "?")} · 정량 ${esc(v.quant || "?")}</span>`,
+                     v.cutoff && `<span class="sn-v">협상적격 ${esc(v.cutoff)}↑</span>`,
+                     v.method && `<span class="sn-v">${esc(v.method)}</span>`,
+                     v["차등제"] && `<span class="sn-v warn">차등점수제</span>`].filter(Boolean).join("");
       const lis = items.map((h, i) => i < 2 ? h : h.replace("<li>", "<li hidden>")).join("");
       groups.push(`<div class="sn-g"><div class="sn-h"><b>${esc(k)}</b>${chips}<span class="sn-c">근거 ${items.length}곳</span></div><ul>${lis}</ul>${items.length > 2 ? `<button type="button" class="sn-more">+ ${items.length - 2}곳 더 보기</button>` : ""}</div>`);
     }
