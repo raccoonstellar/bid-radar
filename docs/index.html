@@ -134,8 +134,8 @@ section{margin-top:38px}
 .meta .inst{color:var(--ink-2);font-weight:500}
 .gate{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
 .gate .g{font-size:.7rem;padding:2px 8px;border:1px solid var(--line);border-radius:3px;color:var(--ink-2);background:var(--bg)}
-.gate .g.warn{border-color:var(--accent);color:var(--accent-ink)}
-.gate .g.ok{border-color:var(--ok, #4a8);color:var(--ink-2)}
+.gate .g.warn{border-color:color-mix(in srgb,var(--warm) 55%,transparent);color:var(--warm);background:var(--warm-soft);font-weight:600}
+.gate .g.ok{border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent-ink)}
 .gate .more{font-size:.7rem;color:var(--muted);cursor:pointer;text-decoration:underline dotted}
 .gate .none{font-size:.7rem;color:var(--muted)}
 .snips{margin:10px 0 2px;padding:4px 0;border:1px solid var(--line-soft);border-radius:4px;background:var(--bg);font-size:.78rem;line-height:1.7;color:var(--ink-2)}
@@ -428,7 +428,7 @@ function fileLinks(files){
 }
 function renderPre(){
   const el = document.getElementById("preRows");
-  if(PRE === null){ el.innerHTML = `<div class="pre-empty">사전규격 수집 준비 중 — 공공데이터포털 「조달청_나라장터 사전규격정보서비스」 활용신청 승인 후 다음 날 아침부터 채워집니다.</div>`; return; }
+  if(PRE === null){ el.innerHTML = `<div class="pre-empty">첫 수집 전 — 다음 아침 자동 수집부터 채워집니다.</div>`; return; }
   const list = PRE.slice().sort((a,b) => (a.bidNos||[]).length - (b.bidNos||[]).length || String(b.rgst||"").localeCompare(String(a.rgst||"")));
   const live = list.filter(p => !(p.bidNos||[]).length).length;
   document.getElementById("nPre").textContent = live ? live + "건" : "";
