@@ -1,12 +1,13 @@
 {
  "id": "R26BD00275689",
  "name": "대전보훈병원 의료영상(MRI) 외주판독 용역",
- "parser": 3,
- "checkedAt": "2026-09-29T10:12:19",
+ "parser": 4,
+ "checkedAt": "2026-09-29T23:42:38",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=1",
    "name": "1. 구매규격 사전공개 공고문.hwp",
+   "doc": "공고",
    "kind": "hwp",
    "bytes": 16384,
    "chars": 491
@@ -14,6 +15,7 @@
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=2",
    "name": "2. 용역 및 과업내역서.hwp",
+   "doc": "공고",
    "kind": "hwp",
    "bytes": 35328,
    "chars": 9586
@@ -21,6 +23,7 @@
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=3",
    "name": "사전규격 첨부 3",
+   "doc": "공고",
    "unread": true
   }
  ],

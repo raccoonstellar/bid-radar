@@ -1,12 +1,13 @@
 {
  "id": "R26BD00270096",
  "name": "AI의료 기술 개발 고도화 관련 임상연구정보검색시스템(CDW) 구축",
- "parser": 3,
- "checkedAt": "2026-09-29T10:12:12",
+ "parser": 4,
+ "checkedAt": "2026-09-29T23:42:33",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270096&fileType=BFDTL&fileSeq=1",
    "name": "CDW_용역과업개요.hwpx.hwp",
+   "doc": "공고",
    "kind": "hwp",
    "bytes": 105472,
    "chars": 2785

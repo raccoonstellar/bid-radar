@@ -1,12 +1,13 @@
 {
  "id": "R26BD00272153",
  "name": "온디바이스 AI 기반 자율제조 실증 기반구축사업 설계용역",
- "parser": 3,
- "checkedAt": "2026-09-29T10:14:40",
+ "parser": 4,
+ "checkedAt": "2026-09-29T23:43:06",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272153&fileType=BFDTL&fileSeq=1",
    "name": "3. 과업지시서.hwp",
+   "doc": "공고",
    "kind": "hwp",
    "bytes": 269312,
    "chars": 38286

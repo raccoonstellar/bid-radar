@@ -91,6 +91,409 @@
 2026년  9월  29일
 대구경북과학기술원(DGIST) 총 장
 
+##### 붙임3. 도면.pdf #####
+PS/AD
+신발장(행잉타입)
+SCALE
+DATE
+1
+SHEET NO.
+TITLE
+NOTE
+MERAKI DESIGN
+FLOOR PLAN
+1 / 80
+경북 과학 기술원
+신발장(미드웨이타입)
+안방파우더룸드레스룸주방1
+화장실펜트리
+주방2
+공부방 세탁실&보조주방 거실
+하부장
+LG오브제컬렉션 냉장고(4도어+1도어+김치냉장고)
+식기세척기식기세척기
+침대(퀸사이즈)
+home bar
+세탁기
+시스템헹거 화장대
+지정 사각타입 강마루 마감.
+지정색 3.2T PVC장판 마감.
+지정 600각 대리석타일 마감.
+지정 600각 데코타일 마감.
+지정 600각 포쉐린타일 마감.
+산학협력관
+101호,102호
+지정 광폭 강마루 마감.
+지정색 600각 포쉐린 타일 마감.
+바닥경계
+기존벽체
+신설벽체
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_TO
+P
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+현관
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+현관
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+거실
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+거실
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+거실
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+거실
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+펜
+트리
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+거실
+,
+복도
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+복도
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+복도
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+주방
+1
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+주방
+2
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+안방
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+화장대
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+드레스룸
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+안방
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+안방
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+안방
+욕실
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+공부방
+
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+공부방
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+공부방
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+보조주방
+겸
+ 세탁실
+DESIGN STUDIO MERAKI
+CONCEPT IMAGE
+  
+I 
+경북과학기술원
+산학협력관
+101,102
+ 호
+ 주거환경
+구축
+3D 
+이미지
+_
+보조주방
+겸
+ 세탁실
+
+
 ##### 붙임2. 제안요청서.hwp #####
 Physical AI Robot Arena 조성을 위한 가정환경 구축 용역 
 
@@ -126,7 +529,7 @@ Physical AI Robot Arena 조성을 위한 가정환경 구축 용역
 
 ❏ 추진 목적 및 방향 
 
- ㅇ (사업목적) DGIST R7 101호~102호 내 실제 아파트와 유사한 가정환경을 조성하여 휴머노이드, 이동형 로봇, 로봇암 등 다양한 로봇 플랫폼이 실제 생활환경에서 수행하는 다양한 동작과 상호작용을 연구 및 실증 할 수 있는 공간(Physical Model House)​을 구축하고자 함.
+ ㅇ (사업목적) DGIST R7 101호~102호 내 실제 아파트와 유사한 가정환경을 조성하여 휴머노이드, 이동형 로봇, 로봇암 등 다양한 로봇 플랫폼이 실제 생활환경에서 수행하는 다양한 동작과 상호작용을 연구 및 실증 할 수 있는 공간(Physical Model House) 을 구축하고자 함.
 
  ㅇ (추진방향) 본 공사는 기 완료된 설계도면을 기반으로 주방, 거실, 안방, 드레스룸, 파우더룸, 펜트리, 화장실, 세탁실 및 보조주방 등 실제 주거환경과 유사한 공간을 구축하는 인테리어 공사임.
 
@@ -368,7 +771,7 @@ R7 101호 및 102호 내 기존 사무실·실험실의 가구, 칸막이, 마�
 
 세부 품목, 규격 및 수량은 최종 설계도면과 발주기관 협의를 통해 확정
 
-냉장고, 세탁기, 건조기, 식기세척기 등 가전제품은 본 공사 납품범위에서 제외​하며 발주기관에서 별도 구매·설치
+냉장고, 세탁기, 건조기, 식기세척기 등 가전제품은 본 공사 납품범위에서 제외 하며 발주기관에서 별도 구매·설치
 
 구분
 

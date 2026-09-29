@@ -1,12 +1,13 @@
 {
  "id": "R26BK01744163-000",
  "name": "사옥 이전에 따른 기록물 정리 및 서고 이송 용역",
- "parser": 3,
- "checkedAt": "2026-09-29T10:08:40",
+ "parser": 4,
+ "checkedAt": "2026-09-29T23:40:32",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744163&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
    "name": "입찰공고문_사옥 이전에 따른 기록물 정리 및 서고 이송 용역.pdf",
+   "doc": "공고",
    "kind": "pdf",
    "bytes": 683694,
    "chars": 8047
@@ -14,21 +15,25 @@
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744163&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
    "name": "입찰공고문_사옥 이전에 따른 기록물 정리 및 서고 이송 용역.hwpx",
+   "doc": "공고",
    "unread": true
   },
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744163&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
    "name": "4. 제안요청서(서고정리 및 기록물 이송).hwp",
+   "doc": "공고",
    "unread": true
   },
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744163&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
    "name": "공정경쟁 및 청렴계약 이행각서 및 유의서.hwp",
+   "doc": "공고",
    "unread": true
   },
   {
    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01744163&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
    "name": "근로자 권리보호 이행 서약서.hwp",
+   "doc": "공고",
    "unread": true
   }
  ],
@@ -53,11 +58,16 @@
    "snippets": []
   },
   "배점": {
-   "n": 0,
+   "n": 2,
    "verdict": "",
-   "snippets": [],
+   "snippets": [
+    "이 / 선택된 4 개의 예비가격을 산술평균한 금액으로 결정합니다 . / 나 . 기술능력 (80 점 ) 과 가격평가점수 (20 점 ) 를 합산 하여 종합평가한 결과 합산점수가 / 70 점 이상인 자 를 협상적격자로 선정하고 고득점자 순으로 협상을 실시합니다 . / 다 . 종합평점이 동일한 경우에는 기술능력평가점수가 높은 제안자를 선순위자로 하고 , / 기술능력평가점수가 동일한 경우에는 추첨으로 정합니다 .",
+    "협상을 실시합니다 . / 다 . 종합평점이 동일한 경우에는 기술능력평가점수가 높은 제안자를 선순위자로 하고 , / 기술능력평가점수가 동일한 경우에는 추첨으로 정합니다 . / 라 . 종합평점 산정결과 협상적격자 ( 합산점수 70 점 이상 ) 가 없는 경우 유찰된 것으로 / 처리합니다 . / 마 . 협상순위 결정 후 협상대상자가 제안한 사업내용 및 이행일정 등 제안서 내용과 / 제시가격을 대상으로 협상을 실"
+   ],
    "ratio": "80:20",
-   "차등제": false
+   "cutoff": "70%",
+   "차등제": false,
+   "method": "협상"
   },
   "제출방식": {
    "n": 1,

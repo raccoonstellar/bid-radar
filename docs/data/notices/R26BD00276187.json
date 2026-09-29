@@ -1,12 +1,13 @@
 {
  "id": "R26BD00276187",
  "name": "AI 기반 교통관리시스템 구축 사업관리 용역",
- "parser": 3,
- "checkedAt": "2026-09-29T10:14:42",
+ "parser": 4,
+ "checkedAt": "2026-09-29T23:43:08",
  "files": [
   {
    "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276187&fileType=BFDTL&fileSeq=1",
    "name": "(과업지시서) AI 기반 교통관리시스템 구축 사업관리 용역.hwpx",
+   "doc": "공고",
    "kind": "hwpx",
    "bytes": 121588,
    "chars": 16151

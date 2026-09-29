@@ -734,5 +734,37 @@
 "div":"일반용역",
 "chg":"2026-09-29 14:34",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279145"
+},
+{
+"id":"R26BD00279373",
+"name":"(긴급) 제조현장 산업안전 AI 솔루션 학습용 데이터 가공 정제 용역",
+"inst":"주식회사 마음에이아이",
+"order":"주식회사 마음에이아이",
+"amount":176000000,
+"rgst":"2026-09-29 21:21",
+"opnClse":"2026-10-02 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김한결",
+"tel":"",
+"dlvr":"2027-11-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-09-29 21:21",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279373",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279373&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"긴급(경쟁 참여율 하락)",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-09-30"
 }
 ]
