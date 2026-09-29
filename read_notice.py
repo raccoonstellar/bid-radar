@@ -28,20 +28,22 @@ except Exception as _e:
 DATA = "docs/data"; OUT = f"{DATA}/notices"
 UA = {"User-Agent": "Mozilla/5.0 (bid-radar; +https://github.com/raccoonstellar/bid-radar)"}
 MAX_BYTES = 40 * 1024 * 1024
-PARSER = 2
+PARSER = 3
 
 # ── 항목별 패턴: (라벨, 정규식, 앞뒤 문맥 길이) ──────────────────────────
 PATTERNS = {
   "공동수급": (r"공동\s*수급|공동\s*도급|공동\s*계약|공동이행|분담이행|주계약자", 70),
   "하도급":   (r"하도급|하수급|재하도급|하청", 80),
   "실적요건": (r"(유사|동종|동일)\s*(용역|사업|실적)|실적\s*(증명|요건|제한|기준)|수행\s*실적|납품\s*실적|최근\s*\d+\s*년", 90),
-  "배점":     (r"기술\s*(능력)?\s*평가\s*(\d{2,3})\s*[%점]|가격\s*평가\s*(\d{1,2})\s*[%점]|기술\s*[:：]\s*가격|(\d{2})\s*[:：]\s*(\d{2})|차등\s*(점수|평가|제)|배점\s*(기준|표)", 90),
+  "배점":     (r"기술\s*(능력)?\s*평가\s*(\d{2,3})\s*[%점]|가격\s*평가\s*(\d{1,2})\s*[%점]|기술\s*[:：]\s*가격|(기술|가격|배점|평가)[^0-9\n]{0,10}\d{2}\s*[:：]\s*\d{2}(?!\s*[:：~]|\s*까지)|차등\s*(점수|평가|제)|배점\s*(기준|표)", 90),
   "제출방식": (r"방문\s*제출|직접\s*제출|우편\s*제출|전자\s*제출|나라장터\s*(를 통해|로)\s*제출|제출\s*(방법|장소|부수)|인쇄본|USB|CD|날인|간인", 80),
   "대기업":   (r"대기업\s*(참여|입찰)\s*(제한|불가)|중소기업\s*(간|자간)\s*경쟁|중견기업|소프트웨어\s*진흥법\s*제?\s*48|상호출자제한", 80),
   "지역제한": (r"지역\s*(제한|의무)|소재지\s*(제한|기준)|본점\s*소재|관내\s*업체", 70),
   "사업설명회": (r"사업\s*설명회|제안\s*설명회|현장\s*설명회", 70),
   "직접생산": (r"직접\s*생산\s*확인|직접생산증명", 70),
   "제안서마감": (r"제안서\s*(제출|접수)\s*(마감|기한|일시)", 70),
+  "사업기간": (r"(사업|계약|용역|과업|수행)\s*기간", 60),
+  "과업내용": (r"과업\s*(범위|내용|개요)|사업\s*(개요|목적|범위)|주요\s*(과업|내용|기능)", 140),
 }
 YESNO = {  # 라벨별 빠른 판정 힌트 (문맥에 이 단어가 있으면)
   "공동수급": {"허용": r"허용|가능|인정", "불허": r"불허|불가|허용하지\s*않|금지"},
@@ -173,8 +175,8 @@ def scan(text):
         found[label] = {"n": len(hits), "verdict": verdict, "snippets": hits}
     # 배점 숫자 추출 (기술:가격)
     m = re.search(r"기술[^0-9]{0,12}(\d{2,3})\s*[%점][^0-9]{0,20}가격[^0-9]{0,12}(\d{1,2})\s*[%점]", t) or \
-        re.search(r"(\d{2})\s*[:：]\s*(\d{2})", " ".join(found["배점"]["snippets"]))
-    if m: found["배점"]["ratio"] = f"{m.group(1)}:{m.group(2)}"
+        re.search(r"(?:기술|배점|평가)[^0-9]{0,12}(\d{2})\s*[:：]\s*(\d{2})(?!\s*[:：~])", " ".join(found["배점"]["snippets"]))
+    if m and int(m.group(1)) + int(m.group(2)) == 100: found["배점"]["ratio"] = f"{m.group(1)}:{m.group(2)}"   # 시각(16:00) 오인 방지
     found["배점"]["차등제"] = bool(re.search(r"차등", " ".join(found["배점"]["snippets"])))
     return found
 
@@ -196,7 +198,7 @@ def process(bid, force=False):
     if os.path.exists(path) and not force:
         try:
             prev = json.load(open(path, encoding="utf-8"))
-            # parser 2 = HWP 빈칸 복원·전 첨부 목록. 이전 기록은 한 번 다시 읽는다
+            # parser 3 = HWP 빈칸 복원·전 첨부 목록·사업기간·과업내용·배점 시각 오인 수정. 이전 기록은 한 번 다시 읽는다
             if prev.get("status") in ("ok", "no-attachment") and prev.get("parser", 1) >= PARSER: return "skip"
         except Exception: pass   # 깨진 기록이면 다시
     urls = urls_for(bid)
@@ -235,6 +237,13 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     bids = json.load(open(f"{DATA}/bids.json", encoding="utf-8"))
     targets = [b for b in bids if b.get("bucket") == "OPEN" and (not only or b["id"] in only)]
+    # 사전규격 — 본공고 전 과업 초안. 본공고가 아직 안 난 건만
+    try: pre = json.load(open(f"{DATA}/prespec.json", encoding="utf-8"))
+    except Exception: pre = []
+    for p_ in pre:
+        if p_.get("bidNos") or (only and p_["id"] not in only): continue
+        fs = [f for f in p_.get("files", []) if f.get("url")]
+        targets.append({"id": p_["id"], "name": p_.get("name"), "docUrls": [f["url"] for f in fs], "docs": [f.get("name", "") for f in fs]})
     stat = {}
     for b in targets:
         try: r = process(b, force)
@@ -254,7 +263,8 @@ def main():
                     "ratio": g.get("배점", {}).get("ratio", ""), "diff": g.get("배점", {}).get("차등제", False),
                     "submit": g.get("제출방식", {}).get("verdict", ""), "big": g.get("대기업", {}).get("verdict", ""),
                     "region": g.get("지역제한", {}).get("n", 0) > 0, "perf": g.get("실적요건", {}).get("n", 0) > 0,
-                    "files": len(j.get("files", []))}
+                    "files": len(j.get("files", [])),
+                    "period": (g.get("사업기간", {}).get("snippets") or [""])[0][:160]}
             except Exception: pass
     json.dump(idx, open(f"{OUT}/index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(f"[공고서] 대상 {len(targets)}건 → {stat} · HWP파서={'내장' if hwp_text else ('hwp5txt' if HWP_TOOL else '없음')} · PDF={'pdftotext' if shutil.which('pdftotext') else 'pypdf(내장)'}")

@@ -191,6 +191,9 @@ section{margin-top:38px}
 .pre .pn{font-size:.95rem;font-weight:600;line-height:1.4;margin:0;word-break:keep-all;letter-spacing:-.01em}
 .pre .pm{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.76rem;color:var(--muted)}
 .pre .pm .inst{color:var(--ink-2);font-weight:500}
+.pre .pf{margin-top:3px}
+.pre .pf span:not(:last-child)::after{content:"";display:inline-block}
+.pre .sw{color:var(--accent-ink);font-weight:600}
 .pre .pr{grid-column:1/-1}
 .pre .pd{text-align:right;font-size:.72rem;color:var(--muted);white-space:nowrap}
 .pre .pd b{display:block;font-size:.95rem;color:#6b53a8;font-weight:600}
@@ -279,7 +282,7 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-pre">
     <div class="head"><h2>사전규격 — 곧 공고될 사업</h2><i class="rule"></i><span class="n" id="nPre"></span></div>
-    <p class="lede">본공고 2~4주 전에 공개되는 과업·예산 초안. 입찰공고와 같은 필터를 통과한 것만 모았다 — 지금부터 과업을 읽고 컨소·제안 준비를 시작할 수 있다. 의견 마감 전이면 규격 의견(독소조항 등)도 낼 수 있다. 본공고가 뜨면 표시되고 45일 뒤 자동 제거.</p>
+    <p class="lede">본공고 2~4주 전에 공개되는 과업·예산 초안. 제목을 누르면 나라장터 사전규격 상세, 원문 보기로 과업 내용·사업기간·공동수급 등 첨부 문서 발췌와 첨부파일 다운로드. 입찰공고와 같은 필터를 통과한 것만 모았다 — 지금부터 과업을 읽고 컨소·제안 준비를 시작할 수 있다. 의견 마감 전이면 규격 의견(독소조항 등)도 낼 수 있다. 본공고가 뜨면 목록에서 빠지고(검토 대상으로 넘어감), 45일이 지나도 자동 제거.</p>
     <div class="pre" id="preRows"></div>
   </section>
 
@@ -429,8 +432,8 @@ function fileLinks(files){
 function renderPre(){
   const el = document.getElementById("preRows");
   if(PRE === null){ el.innerHTML = `<div class="pre-empty">첫 수집 전 — 다음 아침 자동 수집부터 채워집니다.</div>`; return; }
-  const list = PRE.slice().sort((a,b) => (a.bidNos||[]).length - (b.bidNos||[]).length || String(b.rgst||"").localeCompare(String(a.rgst||"")));
-  const live = list.filter(p => !(p.bidNos||[]).length).length;
+  const list = PRE.filter(p => !(p.bidNos||[]).length).sort((a,b) => String(b.rgst||"").localeCompare(String(a.rgst||"")));
+  const live = list.length;
   document.getElementById("nPre").textContent = live ? live + "건" : "";
   const fp = document.getElementById("fnPre"); if(fp) fp.textContent = live || "";
   if(!list.length){ el.innerHTML = `<div class="pre-empty">필터를 통과한 사전규격이 없습니다.</div>`; return; }
@@ -438,12 +441,23 @@ function renderPre(){
   el.innerHTML = list.map(p => {
     const oc = parseDt(p.opnClse), od = oc ? Math.round((oc - today)/86400000) : null;
     const linked = (p.bidNos||[]).length > 0;
+    const g = GATE[p.id];
+    const facts = [
+      p.div && `<span>${esc(p.div)}</span>`,
+      p.sw === "Y" && `<span class="sw">SW사업</span>`,
+      p.dlvrDays ? `<span>수행기간 ${p.dlvrDays}일</span>` : (p.dlvr ? `<span>납품기한 ${esc(p.dlvr.slice(0,10))}</span>` : ""),
+      p.order && p.order !== p.inst && `<span>발주 ${esc(p.order)}</span>`,
+      p.ofcl && `<span>담당 ${esc(p.ofcl)}${p.tel ? " " + esc(p.tel) : ""}</span>`,
+    ].filter(Boolean).join("");
     return `<article class="${linked ? "linked" : ""}">
-      <div><p class="pn">${esc(p.name)} ${linked ? `<span class="badge">본공고 나옴 · ${esc(p.bidNos[0])}</span>` : ""}</p>
-        <div class="pm"><span class="inst">${esc(p.inst) || "기관 미표기"}</span><span class="mono">${won(p.amount)}</span><span class="mono">공개 ${esc((p.rgst||"").slice(0,10))}</span>${p.ofcl ? `<span>담당 ${esc(p.ofcl)}${p.tel ? " " + esc(p.tel) : ""}</span>` : ""}</div></div>
-      <div class="pd">${od === null ? "" : od >= 0 ? `<b class="mono">D-${od}</b>의견 마감` : `<b class="mono" style="color:var(--muted)">종료</b>의견 마감`}</div>
-      ${p.position || p.reason ? `<p class="pos pr">→ ${esc(p.position || "")}${p.reason ? " · " + esc(p.reason) : ""}</p>` : ""}
-      ${(p.files||[]).length ? `<div class="files">${fileLinks(p.files)}</div>` : ""}
+      <div><p class="pn">${p.url ? `<a class="lnk" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)} ${linked ? `<span class="badge">본공고 나옴 · ${esc(p.bidNos[0])}</span>` : ""}</p>
+        <div class="pm"><span class="inst">${esc(p.inst) || "기관 미표기"}</span><span class="mono">배정예산 ${won(p.amount)}</span><span class="mono">공개 ${esc((p.rgst||"").slice(0,10))}</span></div>
+        ${facts ? `<div class="pm pf">${facts}</div>` : ""}</div>
+      <div class="pd">${od === null ? "" : od >= 0 ? `<b class="mono">D-${od}</b>의견 마감` : `<b class="mono" style="color:var(--muted)">종료</b>의견 마감`}${p.score != null ? `<div class="score mono" style="margin-top:6px"><b>${p.score}</b>/20</div>` : ""}</div>
+      ${g && g.period ? `<p class="why pr">사업기간 — ${esc(g.period.replace(/\s*\/\s*/g, " · ").slice(0,110))}</p>` : ""}
+      ${p.position || p.reason ? `<p class="pos pr">→ ${esc(p.position || "")}${p.reason && p.reason !== "키워드 적합" ? " · " + esc(p.reason) : ""}</p>` : ""}
+      ${(p.keywords||[]).length ? `<div class="tags pr">${p.keywords.slice(0,6).map(k=>`<span class="tag">${esc(k)}</span>`).join("")}</div>` : ""}
+      ${g ? `<div class="pr">${gateChips(p)}</div>` : ((p.files||[]).length ? `<div class="files">${fileLinks(p.files)}</div>` : "")}
     </article>`;
   }).join("");
 }
@@ -525,14 +539,17 @@ const GATE_RX = {
   "공동수급": /공동\s*수급|공동\s*도급|공동\s*계약|공동이행|분담이행|주계약자/,
   "하도급": /하도급|하수급|재하도급|하청/,
   "실적요건": /(유사|동종|동일)\s*(용역|사업|실적)|실적\s*(증명|요건|제한|기준)|수행\s*실적|납품\s*실적|최근\s*\d+\s*년/,
-  "배점": /기술\s*(능력)?\s*평가\s*\d{2,3}\s*[%점]|가격\s*평가\s*\d{1,2}\s*[%점]|기술\s*[:：]\s*가격|\d{2}\s*[:：]\s*\d{2}|차등\s*(점수|평가|제)|배점\s*(기준|표)/,
+  "배점": /기술\s*(능력)?\s*평가\s*\d{2,3}\s*[%점]|가격\s*평가\s*\d{1,2}\s*[%점]|기술\s*[:：]\s*가격|(기술|가격|배점|평가)[^0-9]{0,10}\d{2}\s*[:：]\s*\d{2}|차등\s*(점수|평가|제)|배점\s*(기준|표)/,
   "제출방식": /방문\s*제출|직접\s*제출|우편\s*제출|전자\s*제출|나라장터\s*(를 통해|로)\s*제출|제출\s*(방법|장소|부수)|인쇄본|USB|CD|날인|간인/,
   "대기업": /대기업\s*(참여|입찰)\s*(제한|불가)|중소기업\s*(간|자간)\s*경쟁|중견기업|소프트웨어\s*진흥법\s*제?\s*48|상호출자제한/,
   "지역제한": /지역\s*(제한|의무)|소재지\s*(제한|기준)|본점\s*소재|관내\s*업체/,
   "사업설명회": /사업\s*설명회|제안\s*설명회|현장\s*설명회/,
   "직접생산": /직접\s*생산\s*확인|직접생산증명/,
   "제안서마감": /제안서\s*(제출|접수)\s*(마감|기한|일시)/,
+  "사업기간": /(사업|계약|용역|과업|수행)\s*기간/,
+  "과업내용": /과업\s*(범위|내용|개요)|사업\s*(개요|목적|범위)|주요\s*(과업|내용|기능)/,
 };
+const GATE_ORDER = ["과업내용","사업기간","공동수급","하도급","실적요건","배점","대기업","제출방식","지역제한","사업설명회","직접생산","제안서마감"];
 const VERDICT_CLS = {"불허":"warn","금지":"warn","승인필요":"warn","방문":"warn","허용":"ok","전자":"ok","제한":"ok"};
 const LABEL_NOTE = {"대기업": v => v === "제한" ? "대기업 참여 제한" : v === "허용" ? "대기업 참여 가능" : v};
 const markRx = (txt, rx) => {
@@ -568,7 +585,8 @@ document.addEventListener("click", async e => {
   try {
     const j = await (await fetch("data/notices/" + id.replace(/[^A-Za-z0-9_.:@+-]/g,"-") + ".json?t=" + Date.now())).json();
     const groups = [];
-    for(const [k, v] of Object.entries(j.gate || {})){
+    const ents = Object.entries(j.gate || {}).sort((a,b) => (GATE_ORDER.indexOf(a[0])+99)%99 - (GATE_ORDER.indexOf(b[0])+99)%99);
+    for(const [k, v] of ents){
       if(!v || !v.n) continue;
       const rx = GATE_RX[k] || /$^/;
       const items = snipHtml(v.snippets, rx);

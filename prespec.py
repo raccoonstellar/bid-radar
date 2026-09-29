@@ -5,7 +5,7 @@
 본공고 2~4주 전에 뜨는 사전규격(과업·예산 초안)을 입찰공고와 같은 필터로 걸러, 제안서 준비 시간을 번다.
  - 용역만 수집 (물품은 우리 사업 아님)
  - 입찰공고 필터(screen_g2b.classify)에서 OPEN 이 되는 건만 보관 = 본공고가 뜨면 검토 대상이 될 사업
- - 본공고 번호가 연결되면 "본공고 나옴" 표시, 등록일 45일 지나면 자동 제거
+ - 본공고 번호가 연결되면 제거(검토 대상에 이미 올라왔거나 끝난 건), 등록일 45일 지나도 자동 제거
 
 사용: python3 prespec.py                  # 마지막 성공일-1 ~ 오늘 (첫 실행은 30일 소급)
       python3 prespec.py 20260901 20260929
@@ -35,7 +35,11 @@ F = {
   "tel":    ["ofclTelNo"],
   "dlvr":   ["dlvrTmlmtDt", "dlvrDaynum"],
   "ref":    ["refNo"],
+  "div":    ["bsnsDivNm"],
+  "dlvrDays": ["dlvrDaynum"],
+  "chg":    ["chgDt"],
 }
+DETAIL = "https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo={}"   # 나라장터 사전규격 상세
 
 import importlib.util as _iu
 _spec = _iu.spec_from_file_location("screen_g2b", os.path.join(os.path.dirname(os.path.abspath(__file__)), "screen_g2b.py"))
@@ -156,22 +160,25 @@ def main():
             "id": no, "name": name, "inst": inst, "order": str(pick(it, F["order"])),
             "amount": budget, "rgst": iso(pick(it, F["rgst"])), "opnClse": iso(pick(it, F["opnClse"])),
             "bidNos": bid_nos, "sw": str(pick(it, F["sw"])), "ofcl": str(pick(it, F["ofcl"])), "tel": str(pick(it, F["tel"])),
-            "dlvr": str(pick(it, F["dlvr"])), "files": files,
+            "dlvr": iso(it.get("dlvrTmlmtDt")) or "", "dlvrDays": money(pick(it, F["dlvrDays"])),
+            "div": str(pick(it, F["div"])), "chg": iso(pick(it, F["chg"])),
+            "url": DETAIL.format(urllib.parse.quote(no)), "files": files,
             "bucket": bucket, "reason": reason, "score": score, "keywords": hit, "position": pos,
             "fetchedOn": today.isoformat(),
         }
-        if bucket != "OPEN":
-            by.pop(no, None); continue            # 재판정으로 빠진 건은 누적에서도 제거
+        if bucket != "OPEN" or bid_nos:
+            # 재판정으로 빠진 건, 본공고가 나온 건(검토 대상 목록에 이미 있거나 끝난 건)은 제거
+            if bid_nos and no in by: linked += 1
+            by.pop(no, None); continue
         if no in by:
-            if bid_nos and not by[no].get("bidNos"): linked += 1
             by[no].update({k: v for k, v in rec.items() if k not in ("fetchedOn",)})
         else:
             by[no] = rec; added += 1
     cutoff = (today - dt.timedelta(days=KEEP_DAYS)).isoformat()
-    out = [c for c in by.values() if (c.get("rgst") or c.get("fetchedOn") or "")[:10] >= cutoff]
+    out = [c for c in by.values() if not c.get("bidNos") and (c.get("rgst") or c.get("fetchedOn") or "")[:10] >= cutoff]
     out.sort(key=lambda c: (bool(c.get("bidNos")), -(c.get("score") or 0), c.get("rgst") or ""), reverse=False)
     json.dump(out, open(f"{DATA}/prespec.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0, separators=(",", ":"))
-    print(f"[사전규격] 조회 {seen_n}건 → 신규 {added} · 본공고 연결 {linked} · 보관 {len(out)}건 (최근 {KEEP_DAYS}일)")
+    print(f"[사전규격] 조회 {seen_n}건 → 신규 {added} · 본공고 나와 제거 {linked} · 보관 {len(out)}건 (최근 {KEEP_DAYS}일)")
 
 if __name__ == "__main__":
     main()
