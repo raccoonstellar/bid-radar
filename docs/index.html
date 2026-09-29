@@ -299,7 +299,7 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-comp">
     <div class="head"><h2>낙찰 현황 — 최근 30일, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
-    <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</p>
+    <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보. 사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</p>
     <div class="tablewrap">
       <table>
         <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
@@ -515,7 +515,7 @@ function render(rows, runs, comps){
     const vendor = c.vendor || c.winner || "";
     const failed = c.result === "유찰" || (!vendor && !c.amount);
     return `<tr>
-      <td>${esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}${c.inst ? `<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst)}</div>` : ""}</td>
+      <td>${g2bUrl({id: c.id}) ? `<a class="lnk" href="${esc(g2bUrl({id: c.id}))}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}${c.inst ? `<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst)}</div>` : ""}</td>
       <td class="vendor">${failed ? '<span style="color:var(--accent-ink)">유찰 — 재공고 대기</span>' : esc(vendor)}</td>
       <td class="num mono">${failed ? "—" : won(c.amount)}</td>
       <td>${shown ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${ratio ? "" : "≈"}${Number(shown).toFixed(1)}%</em></span>` : "—"}${c.bidders ? `<div style="font-size:.68rem;color:var(--muted)">참가 ${c.bidders}개사</div>` : ""}</td>
