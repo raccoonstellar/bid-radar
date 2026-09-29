@@ -28,14 +28,14 @@ except Exception as _e:
 DATA = "docs/data"; OUT = f"{DATA}/notices"
 UA = {"User-Agent": "Mozilla/5.0 (bid-radar; +https://github.com/raccoonstellar/bid-radar)"}
 MAX_BYTES = 40 * 1024 * 1024
-PARSER = 3
+PARSER = 4
 
 # ── 항목별 패턴: (라벨, 정규식, 앞뒤 문맥 길이) ──────────────────────────
 PATTERNS = {
   "공동수급": (r"공동\s*수급|공동\s*도급|공동\s*계약|공동이행|분담이행|주계약자", 70),
   "하도급":   (r"하도급|하수급|재하도급|하청", 80),
   "실적요건": (r"(유사|동종|동일)\s*(용역|사업|실적)|실적\s*(증명|요건|제한|기준)|수행\s*실적|납품\s*실적|최근\s*\d+\s*년", 90),
-  "배점":     (r"기술\s*(능력)?\s*평가\s*(\d{2,3})\s*[%점]|가격\s*평가\s*(\d{1,2})\s*[%점]|기술\s*[:：]\s*가격|(기술|가격|배점|평가)[^0-9\n]{0,10}\d{2}\s*[:：]\s*\d{2}(?!\s*[:：~]|\s*까지)|차등\s*(점수|평가|제)|배점\s*(기준|표)", 90),
+  "배점":     (r"기술\s*(능력)?\s*평가\s*(\d{2,3})\s*[%점]|가격\s*평가\s*(\d{1,2})\s*[%점]|기술\s*[:：]\s*가격|(기술|가격|배점|평가)[^0-9\n]{0,10}\d{2}\s*[:：]\s*\d{2}(?!\s*[:：~]|\s*까지)|차등\s*(점수|평가|제)|배점\s*(기준|표|한도)|정성\s*평가|정량\s*평가|협상\s*적격|평가\s*항목", 110),
   "제출방식": (r"방문\s*제출|직접\s*제출|우편\s*제출|전자\s*제출|나라장터\s*(를 통해|로)\s*제출|제출\s*(방법|장소|부수)|인쇄본|USB|CD|날인|간인", 80),
   "대기업":   (r"대기업\s*(참여|입찰)\s*(제한|불가)|중소기업\s*(간|자간)\s*경쟁|중견기업|소프트웨어\s*진흥법\s*제?\s*48|상호출자제한", 80),
   "지역제한": (r"지역\s*(제한|의무)|소재지\s*(제한|기준)|본점\s*소재|관내\s*업체", 70),
@@ -53,6 +53,45 @@ YESNO = {  # 라벨별 빠른 판정 힌트 (문맥에 이 단어가 있으면)
 }
 
 def log(*a): print(*a, file=sys.stderr, flush=True)
+
+# ── 제안요청서(e-발주) 첨부 — 공고 첨부(ntceSpecDocUrl)와 별도 오퍼레이션 ──────────
+# 입찰공고정보서비스 getBidPblancListInfoEorderAtchFileInfo: 공고번호 단건 조회 불가 → 날짜 구간(최대 30일)으로 받아 공고번호로 붙인다
+EORDER = "https://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoEorderAtchFileInfo"
+def eorder_attachments(bgn: dt.date, end: dt.date):
+    key = os.environ.get("G2B_KEY", "")
+    out = {}
+    if not key: return out
+    cur = bgn
+    while cur <= end:
+        stop = min(end, cur + dt.timedelta(days=29))
+        page, total = 1, None
+        while True:
+            q = {"inqryDiv": "1", "type": "json", "inqryBgnDt": cur.strftime("%Y%m%d") + "0000", "inqryEndDt": stop.strftime("%Y%m%d") + "2359",
+                 "pageNo": str(page), "numOfRows": "500", "ServiceKey": key}
+            j = None
+            for a in range(5):
+                try:
+                    with urllib.request.urlopen(EORDER + "?" + urllib.parse.urlencode(q, safe=""), timeout=60) as r:
+                        j = json.loads(r.read().decode("utf-8", "replace")); break
+                except Exception as e:
+                    last = e; import time; time.sleep(2 * (a + 1))
+            if j is None: log(f"  ! 제안요청서 첨부 조회 실패 {cur}~{stop} p{page}"); break
+            hdr = j.get("response", {}).get("header", {})
+            if hdr.get("resultCode") not in ("00", "0"): log(f"  ! 제안요청서 첨부 {hdr.get('resultCode')} {hdr.get('resultMsg')}"); break
+            bd = j.get("response", {}).get("body", {}) or {}
+            items = bd.get("items") or []
+            if isinstance(items, dict): items = items.get("item", []) or []
+            if isinstance(items, dict): items = [items]
+            for it in items:
+                u = it.get("eorderAtchFileUrl")
+                if not u: continue
+                bid = f'{it.get("bidNtceNo","")}-{str(it.get("bidNtceOrd") or "000").zfill(3)}'
+                out.setdefault(bid, []).append({"url": u, "name": it.get("eorderAtchFileNm") or "", "doc": it.get("eorderDocDivNm") or "제안요청서", "sno": it.get("atchSno")})
+            total = int(bd.get("totalCount") or 0)
+            if page * 500 >= total or page >= 20: break
+            page += 1
+        cur = stop + dt.timedelta(days=1)
+    return out
 
 def download(url, tries=5):
     last = None
@@ -136,7 +175,7 @@ def text_hwp(data):
         if len(t.strip()) > 100: return t
     return ""
 
-def extract_text(data, name):
+def _extract_text(data, name):
     kind = sniff(data, name)
     try:
         if kind == "pdf":  return kind, text_pdf(data)
@@ -154,6 +193,15 @@ def extract_text(data, name):
     except BaseException as e:
         return kind, f"[추출 실패: {type(e).__name__}: {str(e)[:120]}]"
     return kind, ""
+
+_CTRL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\u00a0\u2000-\u200b\u3000\ufeff]")
+def clean_text(t):
+    """NUL·제어문자·특수 공백 → 일반 공백 (PDF·HWP 일부가 띄어쓰기를 \\x00 로 내보냄)"""
+    return _CTRL.sub(" ", t or "")
+
+def extract_text(data, name):
+    kind, text = _extract_text(data, name)
+    return kind, clean_text(text)
 
 def scan(text):
     t = re.sub(r"[-–—_=─━~·.]{4,}", " ", text)                    # 구분선
@@ -175,24 +223,70 @@ def scan(text):
             for v, vp in YESNO[label].items():
                 if re.search(vp, joined): verdict = v; break
         found[label] = {"n": len(hits), "verdict": verdict, "snippets": hits}
-    # 배점 숫자 추출 (기술:가격)
-    m = re.search(r"기술[^0-9]{0,12}(\d{2,3})\s*[%점][^0-9]{0,20}가격[^0-9]{0,12}(\d{1,2})\s*[%점]", t) or \
-        re.search(r"(?:기술|배점|평가)[^0-9]{0,12}(\d{2})\s*[:：]\s*(\d{2})(?!\s*[:：~])", " ".join(found["배점"]["snippets"]))
-    if m and int(m.group(1)) + int(m.group(2)) == 100: found["배점"]["ratio"] = f"{m.group(1)}:{m.group(2)}"   # 시각(16:00) 오인 방지
-    found["배점"]["차등제"] = bool(re.search(r"차등", " ".join(found["배점"]["snippets"])))
+    found["배점"].update(parse_score(t))
     return found
 
+# ── 배점 해석 (v2) — 숫자는 합이 맞을 때만 채택, 시각·날짜 오인 방지 ──────────────
+_N = r"(\d{1,3}(?:\.\d)?)"
+def _num(x):
+    try: return float(x)
+    except Exception: return None
+def parse_score(t):
+    out = {}
+    T = re.sub(r"\s+", " ", clean_text(t))
+    T = re.sub(r"(?<=\d) (?=\d)", "", T)                 # "9 0 점" → "90점" (HWP 글자 간격)
+    T = re.sub(r"\( (?=\d)|(?<=[점%]) \)", lambda m: m.group(0).replace(" ", ""), T)
+    # 1) 기술:가격 — "기술능력평가 90점 … 가격평가 10점", "기술(90%) 가격(10%)", "기술:가격 = 80:20"
+    cands = []
+    for m in re.finditer(r"기술\s*(?:능력)?\s*(?:평가)?\s*(?:점수|배점)?\s*[(:：]?\s*" + _N + r"\s*(?:점|%|％)[^가]{0,60}?가격\s*(?:제안)?\s*(?:평가)?\s*(?:점수|배점)?\s*[(:：]?\s*" + _N + r"\s*(?:점|%|％)", T):
+        cands.append((m.group(1), m.group(2)))
+    for m in re.finditer(r"가격\s*(?:평가)?\s*(?:점수|배점)?\s*[(:：]?\s*" + _N + r"\s*(?:점|%|％)[^기]{0,40}?기술\s*(?:능력)?\s*(?:평가)?\s*(?:점수|배점)?\s*[(:：]?\s*" + _N + r"\s*(?:점|%|％)", T):
+        cands.append((m.group(2), m.group(1)))
+    for m in re.finditer(r"기술[^.。]{0,40}?가격[^.。0-9]{0,20}?비율\s*(?:은|는|이)?\s*[:：]?\s*(\d{2})\s*[:：]\s*(\d{1,2})", T):
+        cands.append((m.group(1), m.group(2)))
+    for m in re.finditer(r"기술\s*[:：]\s*가격\s*[=＝]?\s*[(（]?\s*(\d{2})\s*[:：]\s*(\d{1,2})", T):
+        cands.append((m.group(1), m.group(2)))
+    for a, b in cands:
+        a, b = _num(a), _num(b)
+        if a and b is not None and abs(a + b - 100) < 0.01 and a >= 50:
+            out["ratio"] = f"{a:g}:{b:g}"; break
+    # 2) 정성·정량 (기술평가 내부 구성)
+    q1 = re.search(r"정성\s*(?:적)?\s*평가\s*[(:：]?\s*" + _N + r"\s*점", T)
+    q2 = re.search(r"정량\s*(?:적)?\s*평가\s*[(:：]?\s*" + _N + r"\s*점", T)
+    if q1 and 0 < _num(q1.group(1)) <= 100: out["qual"] = f"{_num(q1.group(1)):g}"
+    if q2 and 0 < _num(q2.group(1)) <= 100: out["quant"] = f"{_num(q2.group(1)):g}"
+    if "ratio" not in out and out.get("qual") and out.get("quant"):
+        tech = _num(out["qual"]) + _num(out["quant"])
+        if 60 <= tech <= 95: out["ratio"] = f"{tech:g}:{100 - tech:g}"
+    # 3) 협상적격 기준 — "기술능력평가 점수가 배점한도의 85% 이상"
+    c = re.search(r"(?:기술\s*(?:능력)?\s*평가\s*(?:점수|결과)?[^.。]{0,30}?(?:배점\s*한도|배점)의?\s*)(\d{2})\s*(?:%|％|퍼센트)\s*이상", T) or \
+        re.search(r"협상\s*적격[^.。]{0,40}?(\d{2})\s*(?:%|％|점)\s*이상", T)
+    if c and 50 <= int(c.group(1)) <= 95: out["cutoff"] = c.group(1) + "%"
+    # 4) 차등점수제 / 계약방식
+    out["차등제"] = bool(re.search(r"차등\s*점수", T))
+    if re.search(r"협상에\s*의한\s*계약", T): out["method"] = "협상"
+    elif re.search(r"2\s*단계\s*경쟁", T): out["method"] = "2단계경쟁"
+    elif re.search(r"적격\s*심사", T): out["method"] = "적격심사"
+    return out
+
 def urls_for(bid):
-    """첨부 URL 목록 — 나라장터는 HWP 원본과 PDF 변환본을 병행 등록하므로 PDF 를 앞에 둔다"""
+    """첨부 목록 [(url, name, doc)] — 공고문 PDF 변환본, 제안요청서(배점표), 나머지 순으로 읽는다"""
     urls = [u for u in (bid.get("docUrls") or []) if u and str(u).startswith("http")]
     names = bid.get("docs") or []
-    pairs = list(zip(urls, names + [""] * (len(urls) - len(names))))
+    items = [(u, n, "공고") for u, n in zip(urls, names + [""] * (len(urls) - len(names)))]
     for k in ("docUrl", "url1", "url2"):
         u = bid.get(k)
-        if u and str(u).startswith("http") and all(u != p[0] for p in pairs): pairs.append((u, ""))
-    rank = lambda p: (0 if str(p[1]).lower().endswith(".pdf") else 1 if str(p[1]).lower().endswith(".hwpx") else 2 if str(p[1]).lower().endswith(".docx") else 3)
-    pairs.sort(key=rank)
-    return [p[0] for p in pairs]
+        if u and str(u).startswith("http") and all(u != p[0] for p in items): items.append((u, "", "공고"))
+    for f in bid.get("rfp") or []:
+        if all(f["url"] != p[0] for p in items): items.append((f["url"], f.get("name", ""), f.get("doc") or "제안요청서"))
+    ext = lambda n: str(n).lower().rsplit(".", 1)[-1] if "." in str(n) else ""
+    def rank(p):
+        u, n, d = p
+        if d == "공고" and ext(n) == "pdf": return 0
+        if d != "공고" and re.search(r"제안요청|과업|RFP", d + n, re.I): return 1
+        if ext(n) in ("pdf", "hwpx", "docx"): return 2
+        return 3
+    return sorted(items, key=rank)
 
 def process(bid, force=False):
     bid_id = re.sub(r"[^A-Za-z0-9_.:@+-]", "-", bid["id"])
@@ -201,28 +295,34 @@ def process(bid, force=False):
         try:
             prev = json.load(open(path, encoding="utf-8"))
             # parser 3 = HWP 빈칸 복원·전 첨부 목록·사업기간·과업내용·배점 시각 오인 수정. 이전 기록은 한 번 다시 읽는다
-            if prev.get("status") in ("ok", "no-attachment") and prev.get("parser", 1) >= PARSER: return "skip"
+            have = {f.get("url") for f in prev.get("files", [])}
+            new_rfp = any(f["url"] not in have for f in bid.get("rfp") or [])   # 제안요청서가 뒤늦게 올라온 경우 다시 읽는다
+            if prev.get("status") in ("ok", "no-attachment") and prev.get("parser", 1) >= PARSER and not new_rfp: return "skip"
         except Exception: pass   # 깨진 기록이면 다시
-    urls = urls_for(bid)
+    items = urls_for(bid); urls = [p[0] for p in items]; meta = {p[0]: p for p in items}
     rec = {"id": bid["id"], "name": bid.get("name"), "parser": PARSER, "checkedAt": dt.datetime.now().isoformat(timespec="seconds"),
            "files": [], "gate": {}, "status": "no-attachment"}
     if not urls:
         json.dump(rec, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1); return "no-attachment"
-    texts = []
-    for u in urls[:5]:
-        if sum(len(t) for t in texts) > 8000: break   # 이미 충분히 읽음
+    texts, read_rfp = [], False
+    has_rfp = any(p[2] != "공고" for p in items)
+    for u in urls[:7]:
+        # 충분히 읽었어도 제안요청서(배점표)는 꼭 읽는다
+        if sum(len(t) for t in texts) > 8000 and (read_rfp or not has_rfp): break
+        _, nm0, doc = meta[u]
+        if sum(len(t) for t in texts) > 8000 and doc == "공고": continue
         try:
-            data, name = download(u); kind, text = extract_text(data, name)
-            rec["files"].append({"url": u, "name": name, "kind": kind, "bytes": len(data), "chars": len(text)})
-            if text and not text.startswith("[추출 실패") and len(text.strip()) >= 200: texts.append(f"\n\n##### {name} #####\n{text}")
+            data, name = download(u); kind, text = extract_text(data, name or nm0)
+            rec["files"].append({"url": u, "name": name or nm0, "doc": doc, "kind": kind, "bytes": len(data), "chars": len(text)})
+            if text and not text.startswith("[추출 실패") and len(text.strip()) >= 200:
+                texts.append(f"\n\n##### {name or nm0} #####\n{text}"); read_rfp = read_rfp or doc != "공고"
             elif text: rec["files"][-1]["error"] = f"텍스트 {len(text.strip())}자 — 추출 불충분({kind})"
         except Exception as e:
-            rec["files"].append({"url": u, "error": str(e)[:200]})
+            rec["files"].append({"url": u, "name": nm0, "doc": doc, "error": str(e)[:200]})
     # 읽지 않은 첨부도 대시보드에서 내려받을 수 있게 목록에 남긴다
-    names = dict(zip([u for u in (bid.get("docUrls") or [])], bid.get("docs") or []))
     done = {f["url"] for f in rec["files"]}
     for u in urls:
-        if u not in done: rec["files"].append({"url": u, "name": names.get(u) or "", "unread": True})
+        if u not in done: rec["files"].append({"url": u, "name": meta[u][1] or "", "doc": meta[u][2], "unread": True})
     full = "".join(texts)
     if full.strip():
         rec["gate"] = scan(full); rec["status"] = "ok"; rec["textChars"] = len(full)
@@ -246,6 +346,16 @@ def main():
         if p_.get("bidNos") or (only and p_["id"] not in only): continue
         fs = [f for f in p_.get("files", []) if f.get("url")]
         targets.append({"id": p_["id"], "name": p_.get("name"), "docUrls": [f["url"] for f in fs], "docs": [f.get("name", "") for f in fs]})
+    # 제안요청서 첨부 — OPEN 건 중 가장 먼저 본 날 -3일 ~ 오늘 (최대 60일, 30일 단위 조회)
+    today = (dt.datetime.utcnow() + dt.timedelta(hours=9)).date()
+    try: first = min(dt.date.fromisoformat(b["firstSeen"]) for b in targets if b.get("firstSeen"))
+    except ValueError: first = today
+    bgn = max(today - dt.timedelta(days=60), first - dt.timedelta(days=3))
+    rfp = eorder_attachments(bgn, today)
+    n_rfp = 0
+    for b in targets:
+        if b["id"] in rfp: b["rfp"] = rfp[b["id"]]; n_rfp += 1
+    log(f"  · 제안요청서 첨부: 조회 {sum(len(v) for v in rfp.values())}건 · OPEN 중 {n_rfp}건에 붙음")
     stat = {}
     for b in targets:
         try: r = process(b, force)
@@ -263,6 +373,9 @@ def main():
                 idx[j["id"]] = {"status": j["status"], "checkedAt": j["checkedAt"],
                     "joint": g.get("공동수급", {}).get("verdict", ""), "sub": g.get("하도급", {}).get("verdict", ""),
                     "ratio": g.get("배점", {}).get("ratio", ""), "diff": g.get("배점", {}).get("차등제", False),
+                    "qual": g.get("배점", {}).get("qual", ""), "quant": g.get("배점", {}).get("quant", ""),
+                    "cutoff": g.get("배점", {}).get("cutoff", ""), "method": g.get("배점", {}).get("method", ""),
+                    "rfp": sum(1 for f in j.get("files", []) if f.get("doc") and f.get("doc") != "공고"),
                     "submit": g.get("제출방식", {}).get("verdict", ""), "big": g.get("대기업", {}).get("verdict", ""),
                     "region": g.get("지역제한", {}).get("n", 0) > 0, "perf": g.get("실적요건", {}).get("n", 0) > 0,
                     "files": len(j.get("files", [])),

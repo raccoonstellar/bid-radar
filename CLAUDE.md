@@ -20,7 +20,7 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
    - `build_data.py`: `docs/data/{bids,runs,latest}.json` 병합
    - `opening.py`: 낙찰정보서비스로 개찰결과 수집 → `docs/data/competitors.json` (Core 키워드 건만, 유찰·AICC 접점 태그). 활용신청 미승인이면 실패해도 무방
    - `prespec.py`: 사전규격정보서비스로 본공고 전 사전규격 수집 → `docs/data/prespec.json` (입찰공고 필터 OPEN 건만, 45일 보관). 실패하면 run_daily.sh 가 `--probe` 결과를 출력하니 그 오류 문구를 보고에 그대로 적는다 (403·NOT_REGISTERED = 활용신청 필요, 404·NO_OPENAPI = 오퍼레이션명 확인 필요)
-   - `read_notice.py`: OPEN 건 공고서 첨부를 내려받아 5분 게이트 항목(공동수급·하도급·실적·배점·제출방식·대기업제한) 추출 → `docs/data/notices/` (Stage 1.5, 실패해도 무방)
+   - `read_notice.py`: OPEN 건·사전규격의 공고서 첨부 + 제안요청서(e-발주 첨부, getBidPblancListInfoEorderAtchFileInfo)를 내려받아 5분 게이트 항목(공동수급·하도급·실적·배점[기술:가격·정성/정량·협상적격·차등점수제]·제출방식·대기업제한·과업내용·사업기간) 추출 → `docs/data/notices/` (Stage 1.5, 실패해도 무방)
 3. `git add docs/data && git commit -m "radar YYYY-MM-DD: 수집 N건 통과 M건" && git push origin claude/radar`
 4. 완료 보고: `docs/data/runs.json` 첫 항목(total·pass·buckets·drops) + OPEN 상위 5건(점수·D-day·금액·공고명·포지션) + 개찰결과 신규 건수(유찰 포함) + 사전규격 신규·보관 건수(실패 시 probe 오류 문구) + 공고서 확인 결과(`docs/data/notices/index.json`: ok/실패/첨부없음 건수, 공동수급 불허·차등제·방문제출로 잡힌 건 이름)
 
