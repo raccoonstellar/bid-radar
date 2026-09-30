@@ -1,5 +1,89 @@
 [
 {
+"id":"R26BK01742616-000",
+"kind":"용역",
+"name":"2026년 10~12월 조류인플루엔자(AI) 차단방역 이동통제초소 운영 용역",
+"inst":"경상북도 칠곡군",
+"winner":"에코시스템",
+"amount":38748370,
+"budget":0,
+"rate":88.27,
+"rateEst":null,
+"bidders":6,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"에코시스템",
+"sucsfbidAmt":"38748370",
+"sucsfbidRate":"88.271"
+}
+},
+{
+"id":"R26BK01751725-000",
+"kind":"용역",
+"name":"도시문제해결사 AI 에이전트 교육 프로그램 운영",
+"inst":"서울특별시 서울시립대학교 산학협력단",
+"winner":"주식회사 피플데이터랩",
+"amount":50960000,
+"budget":0,
+"rate":98.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"주식회사 피플데이터랩",
+"sucsfbidAmt":"50960000",
+"sucsfbidRate":"98"
+}
+},
+{
+"id":"R26BK01742631-000",
+"kind":"용역",
+"name":"아프리카돼지열병, 구제역, AI차단방역 거점소독시설 운영 용역(2026. 10~12월)",
+"inst":"경상북도 칠곡군",
+"winner":"금오방역",
+"amount":87242200,
+"budget":0,
+"rate":88.05,
+"rateEst":null,
+"bidders":6,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"금오방역",
+"sucsfbidAmt":"87242200",
+"sucsfbidRate":"88.05"
+}
+},
+{
+"id":"R26BK01748404-000",
+"kind":"용역",
+"name":"[지역주도형 AI대전환사업]AI솔루션 구축사업",
+"inst":"에스엘피주식회사",
+"winner":"한솔피엔에스주식회사",
+"amount":209500000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"한솔피엔에스주식회사",
+"sucsfbidAmt":"209500000",
+"sucsfbidRate":"99.997"
+}
+},
+{
 "id":"R26BK01741334-000",
 "kind":"용역",
 "name":"AI심화시대 정보주체 관점에서의 개인정보 기능 수행체계 효율화 전략 연구",
@@ -100,6 +184,27 @@
 "raw":{
 "bidwinnrNm":"주식회사 잼머스",
 "sucsfbidAmt":"100000000"
+}
+},
+{
+"id":"R26BK01741735-000",
+"kind":"용역",
+"name":"신재생에너지 발전소 O&M을 위한 에이전트 기반 지능형 발전설비 운영관리 시스템 구축",
+"inst":"한국과학기술정보연구원",
+"winner":"주식회사 티이에프",
+"amount":98560000,
+"budget":0,
+"rate":99.56,
+"rateEst":null,
+"bidders":1,
+"date":"2026-09-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"주식회사 티이에프",
+"sucsfbidAmt":"98560000",
+"sucsfbidRate":"99.555"
 }
 },
 {
@@ -207,6 +312,26 @@
 }
 },
 {
+"id":"R26BK01701699-000",
+"kind":"용역",
+"name":"「2026년 경기도 AI디지털배움터 사업」 ‘산업전문가 AI이노베이터 양성 프로젝트’ 용역 ",
+"inst":"(재)경기도경제과학진흥원",
+"winner":"주식회사 엑스퍼트컨설팅",
+"amount":131590000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":7,
+"date":"2026-09-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"주식회사 엑스퍼트컨설팅",
+"sucsfbidAmt":"131590000"
+}
+},
+{
 "id":"R26BK01735175-000",
 "kind":"용역",
 "name":"『고위험 밀폐공간 재난예방형 맨홀 무인조사 시스템 사업화』 중 AI활용 맨홀 결함탐지 시스템 구축",
@@ -307,6 +432,26 @@
 "bidwinnrNm":"발라흐연구소",
 "sucsfbidAmt":"21630000",
 "sucsfbidRate":"88.001"
+}
+},
+{
+"id":"R26BK01715636-000",
+"kind":"용역",
+"name":"AI 스마트돈사 운영 용역",
+"inst":"제주대학교 산학협력단",
+"winner":"세인트원 주식회사",
+"amount":23166000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"세인트원 주식회사",
+"sucsfbidAmt":"23166000"
 }
 },
 {
@@ -537,6 +682,26 @@
 }
 },
 {
+"id":"R26BK01692338-001",
+"kind":"용역",
+"name":"「K-거상 관광루트 상품화 지원사업」 K-거상 스토리텔링 아카이브 개발 용역 ",
+"inst":"재단법인 경상남도 관광재단",
+"winner":"주식회사 아이액츠",
+"amount":138200000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-09-10",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"주식회사 아이액츠",
+"sucsfbidAmt":"138200000"
+}
+},
+{
 "id":"R26BK01716100-000",
 "kind":"용역",
 "name":"부산형 AI서비스 확대 구축",
@@ -721,6 +886,26 @@
 }
 },
 {
+"id":"R26BK01649516-000",
+"kind":"용역",
+"name":"JDC 사내 생성형 AI 언어모델(SLLM) 구축 사업",
+"inst":"제주국제자유도시개발센터",
+"winner":"(주)이스트소프트",
+"amount":719748000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":10,
+"date":"2026-09-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-01",
+"raw":{
+"bidwinnrNm":"(주)이스트소프트",
+"sucsfbidAmt":"719748000"
+}
+},
+{
 "id":"R26BK01633521-000",
 "kind":"용역",
 "name":"AI 기반 현장 용접부 PAUT 검사 판정 자동화 기술 개발 연구",
@@ -739,26 +924,6 @@
 "bidwinnrNm":"전북대학교산학협력단",
 "sucsfbidAmt":"271251793",
 "sucsfbidRate":"79.748"
-}
-},
-{
-"id":"R26BK01686579-000",
-"kind":"용역",
-"name":"[재공고] 2026년 AI특화 콘텐츠 인재 양성 성과공유회  위탁용역",
-"inst":"한국콘텐츠진흥원",
-"winner":"컬처코리아(주)",
-"amount":250000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-08-31",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-21",
-"raw":{
-"bidwinnrNm":"컬처코리아(주)",
-"sucsfbidAmt":"250000000"
 }
 }
 ]

@@ -379,6 +379,42 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279189"
 },
 {
+"id":"R26BD00279128",
+"name":"2027년 경기도 광역이동지원센터 콜센터 운영 용역",
+"inst":"경기교통공사",
+"order":"경기교통공사",
+"amount":5308000000,
+"rgst":"2026-09-30 13:13",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"오중곤",
+"tel":"031-870-9354",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-09-30 13:13",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279128",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279128&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279128&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"콜센터"
+],
+"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
 "id":"R26BD00272104",
 "name":"그룹웨어 및 기록물관리 시스템 개선 사업",
 "inst":"인천국제공항공사",
@@ -766,5 +802,197 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-09-30"
+},
+{
+"id":"R26BD00279661",
+"name":"2027~2028년 KTV 아카이브 콘텐츠 운영 관리 용역",
+"inst":"문화체육관광부 한국정책방송원",
+"order":"조달청",
+"amount":798962120,
+"rgst":"2026-09-30 15:19",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"정희경",
+"tel":"070-4056-7245",
+"dlvr":"2028-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-09-30 15:19",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279661",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279661&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"아카이브"
+],
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00279754",
+"name":"순천향대학교 AI의료융합데이터센터 플랫폼 구축 사업",
+"inst":"순천향대학교",
+"order":"순천향대학교",
+"amount":596200000,
+"rgst":"2026-09-30 17:03",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"권나은",
+"tel":"",
+"dlvr":"",
+"dlvrDays":150,
+"div":"일반용역",
+"chg":"2026-09-30 17:03",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279754",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279754&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00279766",
+"name":"하수,재이용,바이오가스시설 통합운영관리 소프트웨어 개발을 위한 AI 예측모델 개발 및 검증 용역",
+"inst":"(주)그린텍아이엔씨",
+"order":"(주)그린텍아이엔씨",
+"amount":106000000,
+"rgst":"2026-09-30 17:09",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김정건",
+"tel":"032-323-3968",
+"dlvr":"2026-12-11 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-09-30 17:09",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279766",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279766&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00279847",
+"name":"북극항로 AI-ready 데이터 기반 지식체계 구축 사업(R& D) 기획연구",
+"inst":"해양수산과학기술진흥원",
+"order":"해양수산과학기술진흥원",
+"amount":100000000,
+"rgst":"2026-09-30 18:26",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이찬영",
+"tel":"02-3460-0382",
+"dlvr":"",
+"dlvrDays":240,
+"div":"일반용역",
+"chg":"2026-09-30 18:26",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279847",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279847&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00279855",
+"name":"AI 파운데이션 모델 기반 해양데이터 분석·예측 기술개발 사업(R&D) 기획연구",
+"inst":"해양수산과학기술진흥원",
+"order":"해양수산과학기술진흥원",
+"amount":150000000,
+"rgst":"2026-09-30 18:35",
+"opnClse":"2026-10-05 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이찬영",
+"tel":"02-3460-0382",
+"dlvr":"",
+"dlvrDays":240,
+"div":"일반용역",
+"chg":"2026-09-30 18:35",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279855",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279855&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00279887",
+"name":"인공지능 학습용 데이터 구축을 위한 도로 포장 데이터 수집/가공 플랫폼 용역",
+"inst":"주식회사 무한정보기술",
+"order":"주식회사 무한정보기술",
+"amount":176000000,
+"rgst":"2026-10-01 08:16",
+"opnClse":"2026-10-06 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"박성건",
+"tel":"",
+"dlvr":"2026-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-01 08:16",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279887",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279887&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"인공지능"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-01"
 }
 ]
