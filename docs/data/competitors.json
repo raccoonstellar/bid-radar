@@ -1,5 +1,68 @@
 [
 {
+"id":"R26BK01746540-000",
+"kind":"용역",
+"name":"AI신기술 체험·전시 용역",
+"inst":"경북대학교 첨단정보통신융합산업기술원",
+"winner":"반사",
+"amount":52000000,
+"budget":0,
+"rate":99.46,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-01",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"반사",
+"sucsfbidAmt":"52000000",
+"sucsfbidRate":"99.464"
+}
+},
+{
+"id":"R26BK01748852-000",
+"kind":"용역",
+"name":"특허기반 정량평가모델 설계와 기술가치 평가 연계를 통한 바이오AX 분야 종합분석",
+"inst":"한국산업기술기획평가원",
+"winner":"유미특허법인",
+"amount":104718500,
+"budget":100209091,
+"rate":95.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-01",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"유미특허법인",
+"sucsfbidAmt":"104718500",
+"sucsfbidRate":"95"
+}
+},
+{
+"id":"R26BK01749456-000",
+"kind":"용역",
+"name":"2026년 기록물 정수점검 및 정비 용역 ",
+"inst":"한국국제협력단",
+"winner":"주식회사 진소프트",
+"amount":48000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-01",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"주식회사 진소프트",
+"sucsfbidAmt":"48000000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01742616-000",
 "kind":"용역",
 "name":"2026년 10~12월 조류인플루엔자(AI) 차단방역 이동통제초소 운영 용역",
@@ -292,6 +355,46 @@
 }
 },
 {
+"id":"R26BK01713507-000",
+"kind":"용역",
+"name":"국가자격검정 시험문제 AI 검토 시스템 구축",
+"inst":"한국방송통신전파진흥원",
+"winner":"주식회사 제이씨지",
+"amount":33250000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"주식회사 제이씨지",
+"sucsfbidAmt":"33250000"
+}
+},
+{
+"id":"R26BK01718657-000",
+"kind":"용역",
+"name":"지능형 홈 온디바이스AI 모델 검증 소프트웨어 개발 용역",
+"inst":"한국정보통신기술협회",
+"winner":"주식회사 노타",
+"amount":45000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"주식회사 노타",
+"sucsfbidAmt":"45000000"
+}
+},
+{
 "id":"R26BK01721686-001",
 "kind":"용역",
 "name":"AX 스프린트 사업 실증 기관용 통합 대시보드 구축 및 소프트웨어 패키지화 용역",
@@ -473,6 +576,26 @@
 "bidwinnrNm":"에이비프로 주식회사",
 "sucsfbidAmt":"88000000",
 "sucsfbidRate":"91.114"
+}
+},
+{
+"id":"R26BK01705850-000",
+"kind":"용역",
+"name":"(긴급)AI 서·논술형 평가지원시스템 솔루션 도입 및 운영",
+"inst":"부산광역시교육청",
+"winner":"(주)엔에스데블",
+"amount":480000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-09-17",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"(주)엔에스데블",
+"sucsfbidAmt":"480000000"
 }
 },
 {
@@ -924,6 +1047,26 @@
 "bidwinnrNm":"전북대학교산학협력단",
 "sucsfbidAmt":"271251793",
 "sucsfbidRate":"79.748"
+}
+},
+{
+"id":"R26BK01628568-000",
+"kind":"용역",
+"name":"HF AI 기반 지원시스템 통합 고도화 사업",
+"inst":"한국주택금융공사",
+"winner":"(주)가온아이",
+"amount":2778000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-09-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-02",
+"raw":{
+"bidwinnrNm":"(주)가온아이",
+"sucsfbidAmt":"2778000000"
 }
 }
 ]

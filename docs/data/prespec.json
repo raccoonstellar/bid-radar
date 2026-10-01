@@ -175,6 +175,39 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278810"
 },
 {
+"id":"R26BD00280134",
+"name":"2027년 과학기술정보 AI 학습데이터 및 학술정보 DB구축",
+"inst":"한국과학기술정보연구원",
+"order":"조달청",
+"amount":1259110000,
+"rgst":"2026-10-01 14:21",
+"opnClse":"2026-10-06 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"박병훈",
+"tel":"070-4056-7377",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-01 14:21",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280134",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280134&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":12,
+"keywords":[
+"학습데이터",
+"AI"
+],
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-02"
+},
+{
 "id":"R26BD00270096",
 "name":"AI의료 기술 개발 고도화 관련 임상연구정보검색시스템(CDW) 구축",
 "inst":"원광대학교 광주한방병원, 원광병원",
@@ -351,34 +384,6 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278402"
 },
 {
-"id":"R26BD00279189",
-"name":"아웃바운드(콜센터) 상담원 및 검진안내 용역 입찰",
-"inst":"한국건강관리협회 광주전라남도지부",
-"order":"한국건강관리협회 광주전라남도지부",
-"amount":0,
-"rgst":"2026-09-29 15:35",
-"opnClse":"2026-10-04 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"정제현",
-"tel":"062-610-3035",
-"dlvr":"2026-11-10 00:00",
-"files":[],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"콜센터",
-"상담"
-],
-"position":"금액 미공개 — 공고서 확인 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-29 15:35",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279189"
-},
-{
 "id":"R26BD00279128",
 "name":"2027년 경기도 광역이동지원센터 콜센터 운영 용역",
 "inst":"경기교통공사",
@@ -413,6 +418,47 @@
 ],
 "position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00280084",
+"name":"채무상담 대표번호(1375) 콜센터 운영 위탁 용역",
+"inst":"신용회복위원회",
+"order":"신용회복위원회",
+"amount":11283000000,
+"rgst":"2026-10-01 16:29",
+"opnClse":"2026-10-06 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김종철",
+"tel":"02-750-1118",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-01 16:29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280084",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"콜센터",
+"상담"
+],
+"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-02"
 },
 {
 "id":"R26BD00272104",
@@ -850,7 +896,7 @@
 "dlvr":"",
 "dlvrDays":150,
 "div":"일반용역",
-"chg":"2026-09-30 17:03",
+"chg":"2026-10-01 09:02",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279754",
 "files":[
 {
@@ -994,5 +1040,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-01"
+},
+{
+"id":"R26BD00280489",
+"name":"화학 Vertical AI 도입을 위한 화학 데이터 표준화 체계 정립 및 시범 구축 용역",
+"inst":"한국화학연구원",
+"order":"조달청 대전지방조달청",
+"amount":166564000,
+"rgst":"2026-10-02 08:19",
+"opnClse":"2026-10-07 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"최세은",
+"tel":"070-4056-8326",
+"dlvr":"",
+"dlvrDays":45,
+"div":"일반용역",
+"chg":"2026-10-02 08:19",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280489",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280489&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-02"
 }
 ]
