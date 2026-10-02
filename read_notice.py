@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "ven
 for _m in ("cryptography", "Crypto"):
     sys.modules.setdefault(_m, None)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import rfp_brief
 try:
     import hwp_text   # 내장 HWP 5.0 파서
 except Exception as _e:
@@ -334,6 +335,7 @@ def process(bid, force=False):
     return rec["status"]
 
 def main():
+    if "--brief-only" in sys.argv: build_briefs(); return
     force = "--force" in sys.argv
     only = [a for a in sys.argv[1:] if not a.startswith("--")]
     os.makedirs(OUT, exist_ok=True)
@@ -382,7 +384,26 @@ def main():
                     "period": (g.get("사업기간", {}).get("snippets") or [""])[0][:160]}
             except Exception: pass
     json.dump(idx, open(f"{OUT}/index.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    build_briefs()
     print(f"[공고서] 대상 {len(targets)}건 → {stat} · HWP파서={'내장' if hwp_text else ('hwp5txt' if HWP_TOOL else '없음')} · PDF={'pdftotext' if shutil.which('pdftotext') else 'pypdf(내장)'}")
+
+def build_briefs():
+    """공고서 텍스트 → 영업용 요약. 사전규격·OPEN 건만 docs/data/briefs.json 로 (대시보드가 바로 읽음)"""
+    want = {}
+    try: want.update({b["id"]: b.get("inst", "") for b in json.load(open(f"{DATA}/bids.json", encoding="utf-8")) if b.get("bucket") == "OPEN"})
+    except Exception: pass
+    try: want.update({p["id"]: p.get("inst", "") for p in json.load(open(f"{DATA}/prespec.json", encoding="utf-8"))})
+    except Exception: pass
+    out = {}
+    for bid_id, inst in want.items():
+        fn = f"{OUT}/text/{re.sub(r'[^A-Za-z0-9_.:@+-]', '-', bid_id)}.txt"
+        if not os.path.exists(fn): continue
+        try:
+            b = rfp_brief.brief(open(fn, encoding="utf-8").read(), inst)
+            if b: out[bid_id] = b
+        except Exception as e: log(f"  ! brief {bid_id}: {e}")
+    json.dump(out, open(f"{DATA}/briefs.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"[요약] {len(out)}/{len(want)}건")
 
 if __name__ == "__main__":
     main()

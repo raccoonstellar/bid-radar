@@ -175,6 +175,14 @@ def main():
         else:
             by[no] = rec; added += 1
     cutoff = (today - dt.timedelta(days=KEEP_DAYS)).isoformat()
+    for k in list(by):                                      # 규칙 변경 반영 — 누적분도 다시 판정
+        c = by[k]
+        if _sg.classify({"bidNtceNm": c.get("name", ""), "presmptPrce": c.get("amount", 0), "dminsttNm": c.get("inst", "")}, "용역", today)[0] != "OPEN":
+            del by[k]
+    for c in by.values():                                   # 예전 레코드 보정
+        c["url"] = DETAIL.format(urllib.parse.quote(c["id"]))
+        d = str(c.get("dlvr") or "")
+        if re.fullmatch(r"\d{1,4}", d): c["dlvrDays"] = int(d); c["dlvr"] = ""
     out = [c for c in by.values() if not c.get("bidNos") and (c.get("rgst") or c.get("fetchedOn") or "")[:10] >= cutoff]
     out.sort(key=lambda c: (bool(c.get("bidNos")), -(c.get("score") or 0), c.get("rgst") or ""), reverse=False)
     json.dump(out, open(f"{DATA}/prespec.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0, separators=(",", ":"))
