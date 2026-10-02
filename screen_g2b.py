@@ -23,11 +23,15 @@ OPS = {"용역": "getBidPblancListInfoServc", "물품": "getBidPblancListInfoThn
 
 # ── v0.4 (260914) 키워드 3단계 — 토큰 경계 매칭 ───────────────────────
 # 규칙 요약: ① 품명분류로 먼저 자른다 ② STRONG 키워드는 노이즈 필터 면제 ③ 금액은 컷이 아니라 포지션 추천
-KW_STRONG = ["챗봇","콜봇","AICC","IPCC","생성형","LLM","RAG","OCR","콜센터","상담","음성인식","에이전트","Agent"]
-KW_MID    = ["ECM","EDMS","전자문서","기록물","아카이브","지식관리","비정형","문서","STT","TTS","민원","자연어",
-             "학습데이터","디지털전환","AX","튜터","LMS","검색","콘텐츠관리","NER","텍스트","판독","SaaS","구독"]
+# v0.8 — 포지큐브 Core(company-data DB-1): AI 챗봇·콜봇·AICC·AI Assistant·AI Agent·GenAI/RAG·OCR·문서지능.
+#   콜센터·상담·민원·IPCC·문서 같은 "업무 영역" 단어는 AI가 함께 있어야 우리 사업. 혼자면 Partner 영역(IPCC·BPO) 또는 일반 SI.
+KW_STRONG = ["robi","챗봇","콜봇","보이스봇","AICC","생성형","LLM","sLLM","RAG","GPT","OCR","에이전트","Agent","어시스턴트","문서지능","VLM","초거대"]
+KW_MID    = ["STT","TTS","음성인식","음성합성","자연어","지능형","머신러닝","딥러닝","AX"]
+KW_CTX    = ["콜센터","상담","민원","IPCC","ECM","EDMS","전자문서","기록물","아카이브","지식관리","비정형","문서",
+             "학습데이터","디지털전환","튜터","LMS","검색","콘텐츠관리","NER","텍스트","판독","SaaS","구독"]
 KW_WEAK   = ["AI","인공지능"]
-KW_CORE   = KW_STRONG + KW_MID + KW_WEAK
+CTX_CALL  = {"콜센터","상담","민원","IPCC"}
+KW_CORE   = KW_STRONG + KW_MID + KW_CTX + KW_WEAK
 
 # ── 노이즈 필터 (STRONG 매칭 시 N2·N3·N4·N8·N9 면제) ──────────────────
 N2_DEVICE  = ["GPU","서버","워크스테이션","노트북","모니터","스토리지","카메라","로봇","항온항습기","변압기","클램프",
@@ -177,8 +181,11 @@ def classify(it, kind, today):
     d    = ddays(clse, today)
     lrg  = it.get("pubPrcrmntLrgClsfcNm", "") or ""
     midc = it.get("pubPrcrmntMidClsfcNm", "") or ""
-    strong = anyk(nm, KW_STRONG); midk = anyk(nm, KW_MID); weak = anyk(nm, KW_WEAK)
-    hit = strong + midk + weak
+    strong = anyk(nm, KW_STRONG); midk = anyk(nm, KW_MID); weak = anyk(nm, KW_WEAK); ctx = anyk(nm, KW_CTX)
+    hit = strong + midk + ctx + weak
+    ai_present = bool(strong or midk or weak)
+    if not strong and weak and set(ctx) & CTX_CALL:          # "AI 상담", "민원 AI" = AICC 영역 → Core 와 동급 보호
+        strong = ["AI+" + "·".join(sorted(set(ctx) & CTX_CALL))]
     why, flags = [], []
     tech  = money(it.get("techAbltEvlRt") or 0)
     joint = it.get("cmmnSpldmdMethdNm", "") or ""
@@ -198,7 +205,7 @@ def classify(it, kind, today):
     # 감리·영평·ISP → AI 키워드 동반 시에만 SIGNAL
     if anyk(nm, N5_SIGNAL):
         if anyk(nm, N5_NOT): return R("DROP", "N5 비IT 감리·평가")
-        if hit: return R("SIGNAL", "N5 감리·영향평가 = 본사업 존재 신호")
+        if ai_present: return R("SIGNAL", "N5 감리·영향평가 = 본사업 존재 신호")
         return R("DROP", "N5 일반 SI 감리 — AI 키워드 없음")
     if not hit:
         # v0.6 공통키워드: 구축·개발·SaaS 만 걸린 건 — ICT 분류 + 1억 이상이면 WATCH (과업 내 AI 요건 확인용, OPEN 아님)
@@ -210,6 +217,17 @@ def classify(it, kind, today):
             if bd is not None and bd <= BIZ_MIN: return R("DROP", f"D4 마감 임박(영업일 {bd}일)")
             return R("WATCH", "일반 SI 구축·개발 — 과업 내 AI·비정형 요건 확인", 6)
         return R("DROP", "키워드 미매칭")
+    # v0.8 AI 없이 업무영역 단어만 걸린 건 — 우리 Core 아님
+    if not ai_present:
+        if set(ctx) & CTX_CALL:
+            return R("DROP", "P1 AI 없는 콜센터·상담·민원 시스템 — Partner 영역(IPCC·운영)")
+        if kind == "용역" and re.search(r"구축|개발|시스템|플랫폼", nm) and amt >= MIN_AMT \
+           and not anyk(nm, N3_LICENSE + N4_EDU + N5_NOT + N7_CIVIL + N8_HW):
+            bd = bizdays(clse, today)
+            if d is not None and d < 0: return R("DROP", "D4 마감 지남")
+            if bd is not None and bd <= BIZ_MIN: return R("DROP", f"D4 마감 임박(영업일 {bd}일)")
+            return R("WATCH", "AI 요소 미확인 — 과업에 AI·OCR·챗봇 요건 있으면 검토", 6)
+        return R("DROP", "P2 AI 요소 없음")
     if anyk(nm, N7_CIVIL): return R("DROP", "N7 토목·설치공사")
     # 연구조사 분류 → SIGNAL
     if any(k in lrg for k in CLS_STUDY) and not strong: return R("SIGNAL", "C2 연구조사 분류 = 본사업 선행 신호")
@@ -242,9 +260,9 @@ def classify(it, kind, today):
         if anyk(nm, N4_EDU): flags.append("교육·대행 요소 포함 — 과업 비중 확인")
 
     # ── 스코어 20점: Fit 8 · Win 4 · 배점 2 · 여력 4 · 장벽 2 ──
-    s_fit = 6 if strong else 4 if midk else 2
+    s_fit = 6 if strong else 5 if (weak and set(ctx) & CTX_CALL) else 4 if (midk or ctx) else 2
     if re.search(r"구축|개발|시스템", nm): s_fit += 2
-    if not strong and not midk: s_fit = min(s_fit, 3)          # AI만 걸린 건은 상한 3
+    if not strong and not midk and not ctx: s_fit = min(s_fit, 3)          # AI만 걸린 건은 상한 3
     s_fit = min(8, s_fit)
     s_win = 2
     if re_y: s_win += 1; why.append(GAIN["재공고"])

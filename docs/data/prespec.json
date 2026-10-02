@@ -90,35 +90,6 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00271098"
 },
 {
-"id":"R26BD00276890",
-"name":"금연상담전화 콜 인프라 개선",
-"inst":"한국건강증진개발원",
-"order":"조달청 서울지방조달청",
-"amount":232058000,
-"rgst":"2026-09-21 15:49",
-"opnClse":"2026-09-28 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"임한빈",
-"tel":"070-4056-8881",
-"dlvr":"2026-12-11 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276890&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"기존 구축사 존재 추정(F2)",
-"score":12,
-"keywords":[
-"상담"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276890"
-},
-{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
@@ -242,35 +213,6 @@
 "fetchedOn":"2026-09-29",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00273148",
 "dlvrDays":365
-},
-{
-"id":"R26BD00272104",
-"name":"그룹웨어 및 기록물관리 시스템 개선 사업",
-"inst":"인천국제공항공사",
-"order":"인천국제공항공사",
-"amount":2427634000,
-"rgst":"2026-09-07 17:52",
-"opnClse":"2026-09-12 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272104&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"기존 구축사 존재 추정(F2)",
-"score":10,
-"keywords":[
-"기록물"
-],
-"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00272104"
 },
 {
 "id":"R26BD00276932",
