@@ -64,6 +64,39 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279313"
 },
 {
+"id":"R26BD00280785",
+"name":"헬프데스크 AI 상담지원시스템 구축 사업",
+"inst":"인천국제공항공사",
+"order":"인천국제공항공사",
+"amount":629300000,
+"rgst":"2026-10-02 14:30",
+"opnClse":"2026-10-07 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280785",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280785&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"상담",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-03"
+},
+{
 "id":"R26BD00271098",
 "name":"「Agentic AI 기반 구축 및 생성형 AI 고도화」사업",
 "inst":"한국가스공사",
@@ -132,7 +165,7 @@
 "bidNos":[],
 "sw":"Y",
 "ofcl":"박병훈",
-"tel":"070-4056-7377",
+"tel":"070-4056-6479",
 "dlvr":"2027-12-31 00:00",
 "dlvrDays":0,
 "div":"일반용역",
