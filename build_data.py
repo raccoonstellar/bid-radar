@@ -72,6 +72,9 @@ def main():
     for k in list(bids):
         b = bids[k]
         if b.get("bucket") not in ("OPEN", "WATCH") or "취소" in (b.get("reason") or ""): continue
+        # v0.7 사업영역 규칙(공고명만으로 판정)은 누적분에도 매일 다시 적용
+        _r = _sg.classify({"bidNtceNm": b.get("name", ""), "presmptPrce": b.get("amount", 0), "dminsttNm": b.get("inst", "")}, b.get("kind", "용역"), today)[1]
+        if _r.startswith(("N10", "N11", "N12")): del bids[k]; near += 1; continue
         bd = _sg.bizdays(b.get("closeDt"), today)
         if bd is not None and bd <= _sg.BIZ_MIN: del bids[k]; near += 1
 

@@ -11,7 +11,7 @@
 "sw":"Y",
 "ofcl":"정희경",
 "tel":"070-4056-7245",
-"dlvr":"210",
+"dlvr":"",
 "files":[
 {
 "url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276784&fileType=BFDTL&fileSeq=1",
@@ -26,7 +26,9 @@
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276784",
+"dlvrDays":210
 },
 {
 "id":"R26BD00279313",
@@ -84,7 +86,8 @@
 "AI"
 ],
 "position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00271098"
 },
 {
 "id":"R26BD00276890",
@@ -112,35 +115,8 @@
 "상담"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00277134",
-"name":"2027년 세법상담 위탁운영",
-"inst":"국세청 국세상담센터",
-"order":"조달청",
-"amount":1196768180,
-"rgst":"2026-09-22 09:31",
-"opnClse":"2026-09-27 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"정조은",
-"tel":"070-4056-6130",
-"dlvr":"2027-07-30 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277134&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":12,
-"keywords":[
-"상담"
-],
-"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276890"
 },
 {
 "id":"R26BD00278810",
@@ -234,7 +210,8 @@
 "AI"
 ],
 "position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00270096"
 },
 {
 "id":"R26BD00273148",
@@ -248,7 +225,7 @@
 "sw":"Y",
 "ofcl":"서지수",
 "tel":"070-4056-7977",
-"dlvr":"365",
+"dlvr":"",
 "files":[
 {
 "url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273148&fileType=BFDTL&fileSeq=1",
@@ -262,203 +239,9 @@
 "AX"
 ],
 "position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00275689",
-"name":"대전보훈병원 의료영상(MRI) 외주판독 용역",
-"inst":"한국보훈복지의료공단 대전보훈병원",
-"order":"한국보훈복지의료공단 대전보훈병원",
-"amount":145050000,
-"rgst":"2026-09-17 09:46",
-"opnClse":"2026-09-28 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"최경구",
-"tel":"042-939-0162",
-"dlvr":"2028-10-31 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275689&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"판독"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00276567",
-"name":"(26G044-H)영상 기반 학습데이터 구축 자동화",
-"inst":"국방부 국군재정관리단",
-"order":"국방부 국군재정관리단",
-"amount":1399340090,
-"rgst":"2026-09-18 18:57",
-"opnClse":"2026-09-23 00:00",
-"bidNos":[],
-"sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"0",
-"files":[],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"학습데이터"
-],
-"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00277692",
-"name":"2027년~2028년 홈택스 상담 위탁운영",
-"inst":"국세청 국세상담센터",
-"order":"조달청",
-"amount":16488407120,
-"rgst":"2026-09-23 08:51",
-"opnClse":"2026-09-28 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"장성주",
-"tel":"070-4056-6131",
-"dlvr":"2028-12-31 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277692&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"상담"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00278402",
-"name":"2026년 중요기록물 전산화 사업",
-"inst":"서울특별시 구로구",
-"order":"조달청 서울지방조달청",
-"amount":230247080,
-"rgst":"2026-09-28 08:50",
-"opnClse":"2026-10-03 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"임한빈",
-"tel":"070-4056-8881",
-"dlvr":"",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278402&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"기록물"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-09-29",
-"dlvrDays":180,
-"div":"일반용역",
-"chg":"2026-09-28 08:50",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278402"
-},
-{
-"id":"R26BD00279128",
-"name":"2027년 경기도 광역이동지원센터 콜센터 운영 용역",
-"inst":"경기교통공사",
-"order":"경기교통공사",
-"amount":5308000000,
-"rgst":"2026-09-30 13:13",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"오중곤",
-"tel":"031-870-9354",
-"dlvr":"2027-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-30 13:13",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279128",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279128&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279128&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"콜센터"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00280084",
-"name":"채무상담 대표번호(1375) 콜센터 운영 위탁 용역",
-"inst":"신용회복위원회",
-"order":"신용회복위원회",
-"amount":11283000000,
-"rgst":"2026-10-01 16:29",
-"opnClse":"2026-10-06 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김종철",
-"tel":"02-750-1118",
-"dlvr":"2027-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-01 16:29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280084",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280084&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"콜센터",
-"상담"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-02"
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00273148",
+"dlvrDays":365
 },
 {
 "id":"R26BD00272104",
@@ -486,151 +269,8 @@
 "기록물"
 ],
 "position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00272153",
-"name":"온디바이스 AI 기반 자율제조 실증 기반구축사업 설계용역",
-"inst":"한국로봇융합연구원",
-"order":"조달청 대구지방조달청",
-"amount":199643400,
-"rgst":"2026-09-07 21:48",
-"opnClse":"2026-09-14 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이나영",
-"tel":"070-4056-7921",
-"dlvr":"120",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272153&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00276187",
-"name":"AI 기반 교통관리시스템 구축 사업관리 용역",
-"inst":"부산광역시",
-"order":"부산광역시",
-"amount":462000000,
-"rgst":"2026-09-18 09:43",
-"opnClse":"2026-09-23 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"조예지",
-"tel":"",
-"dlvr":"450",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276187&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00276674",
-"name":"AI 통합관제 데이터 연계 및 중계 환경 구축 용역",
-"inst":"해양경찰청",
-"order":"조달청 인천지방조달청",
-"amount":202013000,
-"rgst":"2026-09-21 10:14",
-"opnClse":"2026-09-26 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"김준권",
-"tel":"070-4056-7872",
-"dlvr":"70",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276674&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00276742",
-"name":"AI 기반주차 수요예측 .자동감면 서비스 개발 용역",
-"inst":"주식회사 동성아이텍 ",
-"order":"주식회사 동성아이텍 ",
-"amount":273570000,
-"rgst":"2026-09-21 12:13",
-"opnClse":"2026-09-26 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"이용석",
-"tel":"031-732-1981",
-"dlvr":"160",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276742&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276742&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00276749",
-"name":"2026년 초·중등 AI 활용 교과 수업모형·지도안 영상 및 교사 안내용 콘텐츠 개발·보급 위탁 용역",
-"inst":"한국교원대학교 산학협력단",
-"order":"조달청 충북지방조달청",
-"amount":201830000,
-"rgst":"2026-09-21 13:08",
-"opnClse":"2026-09-26 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"윤재용",
-"tel":"070-4056-8570",
-"dlvr":"2027-02-19 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276749&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00272104"
 },
 {
 "id":"R26BD00276932",
@@ -658,40 +298,8 @@
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
-},
-{
-"id":"R26BD00277397",
-"name":"AI 기반의 X-ray 고도화 및 HPAI 의심축 부검이미지 판독 시스템 구축 사업",
-"inst":"농림축산식품부 농림축산검역본부",
-"order":"조달청 대구지방조달청",
-"amount":3273651600,
-"rgst":"2026-09-22 15:27",
-"opnClse":"2026-09-27 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"구현영",
-"tel":"070-4056-7992",
-"dlvr":"150",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277397&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277397&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"기존 구축사 존재 추정(F2)",
-"score":10,
-"keywords":[
-"판독",
-"AI"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276932"
 },
 {
 "id":"R26BD00277458",
@@ -723,7 +331,8 @@
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00277458"
 },
 {
 "id":"R26BD00278050",
@@ -751,7 +360,8 @@
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29"
+"fetchedOn":"2026-09-29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278050"
 },
 {
 "id":"R26BD00278861",
@@ -786,102 +396,6 @@
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278861"
 },
 {
-"id":"R26BD00279145",
-"name":"환경오염피해구제 AI 체계 구축 방안 연구",
-"inst":"한국환경산업기술원",
-"order":"한국환경산업기술원",
-"amount":100000000,
-"rgst":"2026-09-29 14:34",
-"opnClse":"2026-10-04 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김용주",
-"tel":"02-2284-1143",
-"dlvr":"",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279145&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"dlvrDays":213,
-"div":"일반용역",
-"chg":"2026-09-29 14:34",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279145"
-},
-{
-"id":"R26BD00279373",
-"name":"(긴급) 제조현장 산업안전 AI 솔루션 학습용 데이터 가공 정제 용역",
-"inst":"주식회사 마음에이아이",
-"order":"주식회사 마음에이아이",
-"amount":176000000,
-"rgst":"2026-09-29 21:21",
-"opnClse":"2026-10-02 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김한결",
-"tel":"",
-"dlvr":"2027-11-30 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-29 21:21",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279373",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279373&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"긴급(경쟁 참여율 하락)",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-30"
-},
-{
-"id":"R26BD00279661",
-"name":"2027~2028년 KTV 아카이브 콘텐츠 운영 관리 용역",
-"inst":"문화체육관광부 한국정책방송원",
-"order":"조달청",
-"amount":798962120,
-"rgst":"2026-09-30 15:19",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"정희경",
-"tel":"070-4056-7245",
-"dlvr":"2028-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-30 15:19",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279661",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279661&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"아카이브"
-],
-"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
 "id":"R26BD00279754",
 "name":"순천향대학교 AI의료융합데이터센터 플랫폼 구축 사업",
 "inst":"순천향대학교",
@@ -912,165 +426,5 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00279766",
-"name":"하수,재이용,바이오가스시설 통합운영관리 소프트웨어 개발을 위한 AI 예측모델 개발 및 검증 용역",
-"inst":"(주)그린텍아이엔씨",
-"order":"(주)그린텍아이엔씨",
-"amount":106000000,
-"rgst":"2026-09-30 17:09",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김정건",
-"tel":"032-323-3968",
-"dlvr":"2026-12-11 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-30 17:09",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279766",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279766&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00279847",
-"name":"북극항로 AI-ready 데이터 기반 지식체계 구축 사업(R& D) 기획연구",
-"inst":"해양수산과학기술진흥원",
-"order":"해양수산과학기술진흥원",
-"amount":100000000,
-"rgst":"2026-09-30 18:26",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이찬영",
-"tel":"02-3460-0382",
-"dlvr":"",
-"dlvrDays":240,
-"div":"일반용역",
-"chg":"2026-09-30 18:26",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279847",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279847&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00279855",
-"name":"AI 파운데이션 모델 기반 해양데이터 분석·예측 기술개발 사업(R&D) 기획연구",
-"inst":"해양수산과학기술진흥원",
-"order":"해양수산과학기술진흥원",
-"amount":150000000,
-"rgst":"2026-09-30 18:35",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이찬영",
-"tel":"02-3460-0382",
-"dlvr":"",
-"dlvrDays":240,
-"div":"일반용역",
-"chg":"2026-09-30 18:35",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279855",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279855&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00279887",
-"name":"인공지능 학습용 데이터 구축을 위한 도로 포장 데이터 수집/가공 플랫폼 용역",
-"inst":"주식회사 무한정보기술",
-"order":"주식회사 무한정보기술",
-"amount":176000000,
-"rgst":"2026-10-01 08:16",
-"opnClse":"2026-10-06 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"박성건",
-"tel":"",
-"dlvr":"2026-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-01 08:16",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279887",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279887&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"인공지능"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
-"id":"R26BD00280489",
-"name":"화학 Vertical AI 도입을 위한 화학 데이터 표준화 체계 정립 및 시범 구축 용역",
-"inst":"한국화학연구원",
-"order":"조달청 대전지방조달청",
-"amount":166564000,
-"rgst":"2026-10-02 08:19",
-"opnClse":"2026-10-07 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"최세은",
-"tel":"070-4056-8326",
-"dlvr":"",
-"dlvrDays":45,
-"div":"일반용역",
-"chg":"2026-10-02 08:19",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280489",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280489&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-02"
 }
 ]

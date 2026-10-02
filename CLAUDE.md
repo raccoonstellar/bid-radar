@@ -41,6 +41,7 @@ GitHub Pages 대시보드도 이 브랜치의 `/docs`를 본다. `main`은 코�
 - `main` 브랜치에 push
 
 ## 파일
-- `screen_g2b.py` 필터 v0.4 (기준 문서 `조달청_공고_1차스크리닝_기준_v0.2.md` 기반)
+- `screen_g2b.py` 필터 v0.7 (기준 문서 `조달청_공고_1차스크리닝_기준_v0.2.md` 기반)
 - `test_filter.py` 회귀 67케이스 — 규칙 수정 시 반드시 실행
 - `docs/` GitHub Pages 대시보드 (`docs/data/*.json` 을 읽음)
+- `rfp_brief.py` 제안요청서 → 영업용 요약(목적·주요 과업·요구사항·참가자격·우리 접점) → `docs/data/briefs.json` (read_notice 가 생성)

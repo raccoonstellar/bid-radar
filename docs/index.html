@@ -93,7 +93,9 @@ section{margin-top:38px}
 .head .rule{flex:1;height:1px;background:var(--line)}
 .head .n{font-size:.74rem;color:var(--accent-ink);background:var(--accent-soft);padding:2px 9px;border-radius:999px;font-weight:500}
 .head .n:empty{display:none}
-.lede{margin:0 0 14px;font-size:.83rem;color:var(--muted);max-width:none;line-height:1.65}
+.lede{margin:2px 0 14px;padding:0 0 0 1.1em;font-size:.82rem;color:var(--muted);line-height:1.7}
+.lede li{margin:0}
+.lede li::marker{color:var(--line)}
 .tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 12px}
 .tools input[type=search]{flex:1 1 220px;max-width:360px;padding:7px 10px;font:inherit;font-size:.82rem;border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink)}
 .tools input[type=search]:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
@@ -195,6 +197,21 @@ section{margin-top:38px}
 .pre .pm{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.76rem;color:var(--muted)}
 .pre .pm .inst{color:var(--ink-2);font-weight:500}
 .pre .pf{margin-top:3px}
+.pre .pbody{grid-column:1/-1;margin-top:6px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;margin:6px 0 4px;font-size:.78rem}
+.kv dt{color:var(--muted);font-weight:500}
+.kv dd{margin:0;color:var(--ink-2);word-break:keep-all}
+.blk{margin-top:10px}
+.blk h4{margin:0 0 4px;font-size:.76rem;font-weight:600;color:var(--ink)}
+.blk h4 small{font-weight:400;color:var(--muted);margin-left:6px}
+.blk ul{margin:0;padding-left:1.1em;font-size:.79rem;line-height:1.65;color:var(--ink-2)}
+.blk li{word-break:keep-all}
+.reqs,.posi{display:flex;flex-wrap:wrap;gap:4px}
+.reqs span{font-size:.72rem;padding:2px 8px;border-radius:3px;background:var(--surface-2);border:1px solid var(--line-soft);color:var(--ink-2)}
+.pk{font-size:.72rem;padding:2px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent-ink)}
+.pk b{font-family:"IBM Plex Mono",monospace;font-weight:600}
+.pk.hi{background:var(--accent);color:#fff}
+.cos{margin:6px 0 0;font-size:.74rem;color:var(--muted)}
 .pre .pf span:not(:last-child)::after{content:"";display:inline-block}
 .pre .sw{color:var(--accent-ink);font-weight:600}
 .pre .pr{grid-column:1/-1}
@@ -260,7 +277,7 @@ footer b{color:var(--ink-2);font-weight:500}
   <header class="top" id="top">
     <div class="brand">
       <h1>입찰 레이더</h1>
-      <p>조달청·나라장터 일일 1차 스크리닝 · 기준 v0.2 / 필터 v0.6.4 · 매일 08:30 자동 수집</p>
+      <p>조달청·나라장터 일일 1차 스크리닝 · 기준 v0.2 / 필터 v0.7 · 매일 08:30 자동 수집</p>
     </div>
     <div class="runmeta"><b id="runDate">—</b><span id="runNote">불러오는 중</span></div>
     <div class="dropnote" id="dropNote"></div>
@@ -274,7 +291,7 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-open">
     <div class="head"><h2>검토 대상 — 이번 주 판단할 공고</h2><i class="rule"></i><span class="n" id="nOpen"></span></div>
-    <p class="lede">마감이 가까운 순. 제안서에 최소 일주일이 필요하므로 마감이 지났거나 영업일 5일 이내로 남은 공고는 목록에서 뺀다. 제목을 누르면 나라장터 공고 상세로 이동, 📎는 공고서 다운로드. 아래 칩은 공고서에서 자동 추출한 5분 게이트 항목(주황=주의) — 원문 보기로 근거 문장 확인. 좌측 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</p>
+    <ul class="lede"><li>마감이 가까운 순으로 보여준다.</li><li>마감이 지났거나 영업일 5일 이내로 남은 공고는 제안서 쓸 시간이 없어 목록에서 뺀다.</li><li>제목을 누르면 나라장터 공고 상세, 📎를 누르면 공고서 다운로드.</li><li>칩은 공고서에서 자동으로 뽑은 항목이다. 주황 = 주의, 청록 = 유리. 원문 보기로 근거 문장을 확인한다.</li><li>왼쪽 색띠는 투찰 마감까지 남은 날, 점수는 20점 만점.</li></ul>
     <div class="tools">
       <input type="search" id="q" placeholder="사업명·기관 검색" aria-label="검색">
       <div class="seg" role="group" aria-label="정렬"><button type="button" data-sort="dday" aria-pressed="true">마감순</button><button type="button" data-sort="score" aria-pressed="false">점수순</button></div>
@@ -285,13 +302,13 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-pre">
     <div class="head"><h2>사전규격 — 본공고 전에 먼저 찾아갈 사업</h2><i class="rule"></i><span class="n" id="nPre"></span></div>
-    <p class="lede"><b>사전영업 대상.</b> 본공고 2~4주 전에 공개되는 과업·예산 초안 중 우리 영역에 맞는 것만 골랐다. 담당자에게 먼저 연락해 요구사항을 파악하고, 의견 마감 전이면 규격 의견(불리한 조건 완화)을 내고, 컨소·제안 준비를 시작한다. 점수 높은 순 → 의견 마감 임박 순. 제목은 나라장터 사전규격 상세, 원문 보기는 과업 내용·사업기간 발췌와 첨부 다운로드. 본공고가 나오면 목록에서 빠진다.</p>
+    <ul class="lede"><li><b>사전영업 대상</b> — 본공고 2~4주 전에 공개되는 과업·예산 초안 중 우리 영역에 맞는 것만 골랐다.</li><li>담당자에게 먼저 연락해 요구사항을 파악하고, 의견 마감 전이면 규격 의견(불리한 조건 완화)을 낸다.</li><li>카드의 목적·주요 과업·요구사항·우리 접점은 첨부된 제안요청서에서 자동으로 뽑은 것이다.</li><li>점수 높은 순 → 의견 마감 임박 순. 본공고가 나오면 목록에서 빠진다.</li></ul>
     <div class="pre" id="preRows"></div>
   </section>
 
   <section id="sec-signal">
     <div class="head"><h2>사전영업 — 본사업 발주가 예상되는 기관</h2><i class="rule"></i><span class="n" id="nSig"></span></div>
-    <p class="lede">지금 입찰할 건 아니지만, 감리·영향평가·ISP·연구용역이 뜬 기관은 곧 본사업을 낸다. 미리 찾아갈 곳.</p>
+    <ul class="lede"><li>지금 입찰할 건 아니지만, 감리·영향평가·ISP·연구용역이 뜬 기관은 곧 본사업을 낸다.</li><li>미리 찾아갈 곳.</li></ul>
     <div class="sig" id="sigRows"></div>
   </section>
 
@@ -302,7 +319,7 @@ footer b{color:var(--ink-2);font-weight:500}
 
   <section id="sec-comp">
     <div class="head"><h2>낙찰 현황 — 최근 30일, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
-    <p class="lede">우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률. 투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보. 사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</p>
+    <ul class="lede"><li>우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률.</li><li>투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비).</li><li>유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</li><li>사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</li></ul>
     <div class="tablewrap">
       <table>
         <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
@@ -312,7 +329,7 @@ footer b{color:var(--ink-2);font-weight:500}
   </section>
 
   <footer>
-    <b>판정 기준</b> — OPEN은 노이즈 필터(N1~N9·품명분류) 통과 + 키워드 적합 + 10점 이상 + 추정가격 1억 이상. SIGNAL은 AI 동반 감리·영향평가·ISP·연구용역. WATCH는 취소공고 재공고 대기·AI 키워드 없는 ICT 구축/개발(1억↑). 마감 지남·투찰마감까지 영업일 5일 이내(주말·공휴일 제외)는 제외. 금액은 컷이 아니라 단독/컨소 포지션 추천 — 13억 초과도 OPEN에 올리고 "구성사"로 표시.<br>
+    <b>판정 기준</b> — OPEN은 노이즈 필터(N1~N9·품명분류) 통과 + 키워드 적합 + 10점 이상 + 추정가격 1억 이상. SIGNAL은 AI 동반 감리·영향평가·ISP·연구용역. WATCH는 취소공고 재공고 대기·AI 키워드 없는 ICT 구축/개발(1억↑). 마감 지남·투찰마감까지 영업일 5일 이내(주말·공휴일 제외)는 제외. 콜센터·상담 인력 위탁(BPO), 기록물 정리·이송·스캔, AI만 걸린 비전·예측·관제·제조 등 비도메인 건은 제외(v0.7). 금액은 컷이 아니라 단독/컨소 포지션 추천 — 13억 초과도 OPEN에 올리고 "구성사"로 표시.<br>
     본 스크리닝은 공고 요약정보만 본 트리아지다. <b>RFP 원문 정독을 대체하지 않는다.</b>
   </footer>
 </div>
@@ -360,7 +377,7 @@ const loadStatus = () => { try { return JSON.parse(localStorage.getItem(STORE_KE
 const saveStatus = m => { try { localStorage.setItem(STORE_KEY, JSON.stringify(m)); } catch {} };
 let STATUS = loadStatus();
 let ROWS = [], RUNS = [], COMPS = [], GATE = {};
-let NEAR = 0, PRE = null;
+let NEAR = 0, PRE = null, BRIEFS = {};
 let SORT = "dday", HIDE_DROP = true, QUERY = "";
 
 function gateChips(r){
@@ -450,27 +467,44 @@ function renderPre(){
   const today = new Date(); today.setHours(0,0,0,0);
   el.innerHTML = list.map(p => {
     const oc = parseDt(p.opnClse), od = oc ? Math.round((oc - today)/86400000) : null;
-    const linked = (p.bidNos||[]).length > 0;
-    const g = GATE[p.id];
-    const facts = [
-      p.div && `<span>${esc(p.div)}</span>`,
-      p.sw === "Y" && `<span class="sw">SW사업</span>`,
-      p.dlvrDays ? `<span>수행기간 ${p.dlvrDays}일</span>` : (p.dlvr ? `<span>납품기한 ${esc(p.dlvr.slice(0,10))}</span>` : ""),
-      p.order && p.order !== p.inst && `<span>발주 ${esc(p.order)}</span>`,
-      p.ofcl && `<span>담당 ${esc(p.ofcl)}${p.tel ? " " + esc(p.tel) : ""}</span>`,
-    ].filter(Boolean).join("");
-    return `<article class="${linked ? "linked" : ""}">
-      <div><p class="pn">${p.url ? `<a class="lnk" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)} ${linked ? `<span class="badge">본공고 나옴 · ${esc(p.bidNos[0])}</span>` : ""}</p>
-        <div class="pm"><span class="inst">${esc(p.inst) || "기관 미표기"}</span><span class="mono">배정예산 ${won(p.amount)}</span><span class="mono">공개 ${esc((p.rgst||"").slice(0,10))}</span></div>
-        ${facts ? `<div class="pm pf">${facts}</div>` : ""}</div>
+    const url = p.url || `https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=${encodeURIComponent(p.id)}`;
+    const B = BRIEFS[p.id] || {};
+    const days = p.dlvrDays || (/^\d+$/.test(String(p.dlvr||"")) ? +p.dlvr : 0);
+    const kv = [
+      ["사업기간", B.period || (days ? `${days}일` : (p.dlvr ? `~ ${String(p.dlvr).slice(0,10)}` : ""))],
+      ["예산", B.budget || won(p.amount)],
+      ["계약방법", B.method],
+      ["참가자격", (B.qual||[])[0]],
+      ["설명회", B.briefing],
+      ["담당자", p.ofcl ? `${p.ofcl}${p.tel ? " · " + p.tel : ""}` : ""],
+    ].filter(x => x[1]);
+    const list_ = (arr, n) => (arr||[]).slice(0, n).map(x => `<li>${esc(x)}</li>`).join("");
+    const req = B.reqCount ? Object.entries(B.reqCount).sort((a,b)=>b[1]-a[1]) : [];
+    const reqTotal = req.reduce((a,x)=>a+x[1],0);
+    const posi = (B.posi||[]).map(([k,n]) => `<span class="pk${n >= 10 ? " hi" : ""}">${esc(k)} <b>${n}</b></span>`).join("");
+    const warn = [B.hw && `<span class="g warn">HW 도입 포함 (GPU·서버 언급 ${B.hw}회)</span>`,
+                  B.closedInfo && `<span class="g">현행 시스템 비공개 — 방문 열람</span>`,
+                  p.sw === "Y" && `<span class="g ok">SW사업</span>`].filter(Boolean).join("");
+    return `<article>
+      <div class="ph">
+        <p class="pn"><a class="lnk" href="${esc(url)}" target="_blank" rel="noopener">${esc(p.name)}</a></p>
+        <div class="pm"><span class="inst">${esc(p.inst) || "기관 미표기"}</span><span class="mono">${won(p.amount)}</span><span class="mono">공개 ${esc((p.rgst||"").slice(0,10))}</span>${p.order && p.order !== p.inst ? `<span>발주 ${esc(p.order)}</span>` : ""}</div>
+      </div>
       <div class="pd">${od === null ? "" : od >= 0 ? `<b class="mono">D-${od}</b>의견 마감` : `<b class="mono" style="color:var(--muted)">종료</b>의견 마감`}${p.score != null ? `<div class="score mono" style="margin-top:6px"><b>${p.score}</b>/20</div>` : ""}</div>
-      ${g && g.period ? `<p class="why pr">사업기간 — ${esc(g.period.replace(/\s*\/\s*/g, " · ").slice(0,110))}</p>` : ""}
-      ${p.position || p.reason ? `<p class="pos pr">→ ${esc(p.position || "")}${p.reason && p.reason !== "키워드 적합" ? " · " + esc(p.reason) : ""}</p>` : ""}
-      ${(p.keywords||[]).length ? `<div class="tags pr">${p.keywords.slice(0,6).map(k=>`<span class="tag">${esc(k)}</span>`).join("")}</div>` : ""}
-      ${g ? `<div class="pr">${gateChips(p)}</div>` : ((p.files||[]).length ? `<div class="files">${fileLinks(p.files)}</div>` : "")}
+      <div class="pbody">
+        ${kv.length ? `<dl class="kv">${kv.map(([k,v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
+        ${(B.purpose||[]).length ? `<div class="blk"><h4>사업 목적</h4><ul>${list_(B.purpose, 2)}</ul></div>` : ""}
+        ${(B.scope||[]).length ? `<div class="blk"><h4>주요 과업</h4><ul>${list_(B.scope, 5)}</ul></div>` : ""}
+        ${reqTotal ? `<div class="blk"><h4>요구사항 ${reqTotal}개 <small>${req.map(([k,n]) => `${k} ${n}`).join(" · ")}</small></h4>${(B.reqNames||[]).length ? `<div class="reqs">${B.reqNames.map(x => `<span>${esc(x)}</span>`).join("")}</div>` : ""}</div>` : ""}
+        ${posi || (B.companies||[]).length ? `<div class="blk"><h4>우리 접점 <small>제안요청서 언급 횟수</small></h4><div class="posi">${posi || '<span class="pk">핵심 키워드 언급 없음</span>'}</div>${(B.companies||[]).length ? `<p class="cos">언급 업체(기존 사업자·제품 후보): ${B.companies.map(esc).join(", ")}</p>` : ""}</div>` : ""}
+        ${!Object.keys(B).length ? `<p class="cos">첨부 문서 요약 없음 — ${(p.files||[]).length ? "첨부를 아직 읽지 못함(다음 수집 때 재시도)" : "첨부 없음, 제목을 눌러 원문 확인"}</p>` : ""}
+        ${warn ? `<div class="gate">${warn}</div>` : ""}
+        ${GATE[p.id] ? gateChips(p) : ((p.files||[]).length ? `<div class="files">${fileLinks(p.files)}</div>` : "")}
+      </div>
     </article>`;
   }).join("");
 }
+
 
 function render(rows, runs, comps){
   const by = b => rows.filter(r => r.bucket === b);
@@ -599,6 +633,11 @@ document.addEventListener("click", async e => {
   try {
     const j = await (await fetch("data/notices/" + id.replace(/[^A-Za-z0-9_.:@+-]/g,"-") + ".json?t=" + Date.now())).json();
     const groups = [];
+    const B = BRIEFS[id] || {};
+    if(B.purpose || B.scope || B.reqNames){
+      const li = (a, n) => (a||[]).slice(0, n).map(x => `<li>${esc(x)}</li>`).join("");
+      groups.push(`<div class="sn-g blk">${B.purpose ? `<h4>사업 목적</h4><ul>${li(B.purpose,2)}</ul>` : ""}${B.scope ? `<h4 style="margin-top:8px">주요 과업</h4><ul>${li(B.scope,5)}</ul>` : ""}${(B.reqNames||[]).length ? `<h4 style="margin-top:8px">기능 요구사항</h4><div class="reqs">${B.reqNames.map(x=>`<span>${esc(x)}</span>`).join("")}</div>` : ""}</div>`);
+    }
     const ents = Object.entries(j.gate || {}).sort((a,b) => (GATE_ORDER.indexOf(a[0])+99)%99 - (GATE_ORDER.indexOf(b[0])+99)%99);
     for(const [k, v] of ents){
       if(!v || !v.n) continue;
@@ -657,6 +696,7 @@ document.getElementById("csvBtn").addEventListener("click", () => {
     [ROWS, RUNS, COMPS] = await Promise.all([get("data/bids.json"), get("data/runs.json"), get("data/competitors.json")]);
     try { GATE = await get("data/notices/index.json"); } catch { GATE = {}; }
     try { PRE = await get("data/prespec.json"); } catch { PRE = null; }
+    try { BRIEFS = await get("data/briefs.json"); } catch { BRIEFS = {}; }
     RUNS.sort((a,b) => String(b.date||"").localeCompare(String(a.date||"")));
     COMPS.sort((a,b) => String(b.date||"").localeCompare(String(a.date||"")));
     NEAR = ROWS.filter(tooLate).length; ROWS = ROWS.filter(r => !tooLate(r));
