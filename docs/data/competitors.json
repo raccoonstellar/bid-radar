@@ -842,26 +842,5 @@
 "bidwinnrNm":"주식회사 인실리코젠",
 "sucsfbidAmt":"485100000"
 }
-},
-{
-"id":"R26BK01702312-000",
-"kind":"물품",
-"name":"AI 모델 학습 추론용 스테이션",
-"inst":"한국기술교육대학교",
-"winner":"주식회사 램아이티",
-"amount":38984000,
-"budget":0,
-"rate":94.58,
-"rateEst":null,
-"bidders":70,
-"date":"2026-09-04",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-28",
-"raw":{
-"bidwinnrNm":"주식회사 램아이티",
-"sucsfbidAmt":"38984000",
-"sucsfbidRate":"94.577"
-}
 }
 ]
