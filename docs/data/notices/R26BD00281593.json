@@ -1,0 +1,83 @@
+{
+ "id": "R26BD00281593",
+ "name": "연암공과대학교 AI Professor 시스템 개발 용역",
+ "parser": 4,
+ "checkedAt": "2026-10-06T23:39:53",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00281593&fileType=BFDTL&fileSeq=1",
+   "name": "[사전규격공개] 연암공과대학교 AI프로페서시스템 개발 용역.pdf",
+   "doc": "공고",
+   "kind": "pdf",
+   "bytes": 65388,
+   "chars": 1922
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업기간": {
+   "n": 1,
+   "verdict": "",
+   "snippets": [
+    "체계 고도화 및 학생 24시간 교육피드백 시스템 기반 마련 / ❍ 추진 방법 : 외부 시스템 개발 용역 / ❍ 과업 기간 : 2026년 10월 ~ 2027년 2월 / 2. 추진 계획 / 가. 추진내용 / ❍ AI 프로페서 통합 플랫"
+   ]
+  },
+  "과업내용": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 1973
+}

@@ -1,5 +1,25 @@
 [
 {
+"id":"R26BK01736960-001",
+"kind":"용역",
+"name":"생성형 AI 실감콘텐츠 전시 공간 조성 용역(재공고)",
+"inst":"주식회사 레벨나인",
+"winner":"유프스튜디오",
+"amount":94050000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"유프스튜디오",
+"sucsfbidAmt":"94050000"
+}
+},
+{
 "id":"R26BK01748821-000",
 "kind":"용역",
 "name":"나노복합 웨어링 및 AI 기반 자율진단 기술이 적용된 중대형 펌프 개발을 위한 AI부 자율진단 개발",
@@ -251,6 +271,26 @@
 }
 },
 {
+"id":"R26BK01707365-000",
+"kind":"용역",
+"name":"우선순위 감염병 치료제 라이브러리 구축용 AI 기반 구조기반 가상탐색·MD 통합분석",
+"inst":"한국생명공학연구원",
+"winner":"주식회사 인실리콕스",
+"amount":140000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"주식회사 인실리콕스",
+"sucsfbidAmt":"140000000"
+}
+},
+{
 "id":"R26BK01738575-000",
 "kind":"물품",
 "name":"AI솔루션 개발실증 사업",
@@ -375,6 +415,46 @@
 }
 },
 {
+"id":"R26BK01712731-000",
+"kind":"용역",
+"name":"생성형 AI 기반 한국의료 글로벌 홍보 진단 및 전략 수립 컨설팅",
+"inst":"한국보건산업진흥원",
+"winner":"주식회사 망고스타코리아",
+"amount":27070000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-09-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"주식회사 망고스타코리아",
+"sucsfbidAmt":"27070000"
+}
+},
+{
+"id":"R26BK01716629-000",
+"kind":"용역",
+"name":"AI 활용 국가자격시험 문제 출제 시스템 구축 용역",
+"inst":"한국교통안전공단",
+"winner":"망고클라우드 주식회사",
+"amount":236500000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-09-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"망고클라우드 주식회사",
+"sucsfbidAmt":"236500000"
+}
+},
+{
 "id":"R26BK01738238-000",
 "kind":"용역",
 "name":"[앵커사업] 조기 노화성 난청(ARHL) 핵심 타겟 발굴 및 뇌신경·항노화 약물 재창출(Drug Repurposing)을 위한 AI 분석 용역",
@@ -473,6 +553,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 엑스퍼트컨설팅",
 "sucsfbidAmt":"131590000"
+}
+},
+{
+"id":"R26BK01722092-000",
+"kind":"용역",
+"name":"(AID사업) 2026년 데이터 기반 학생성공  AI-Care 365 시스템 구축 운영  ",
+"inst":"전주비전대학 산학협력단",
+"winner":"주식회사 나우리",
+"amount":47300000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"주식회사 나우리",
+"sucsfbidAmt":"47300000"
 }
 },
 {
@@ -718,6 +818,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 에이엑스",
 "sucsfbidAmt":"63630000"
+}
+},
+{
+"id":"R26BK01697082-000",
+"kind":"용역",
+"name":"자동차 배출가스 종합전산시스템 AI+OCR 기능 구축",
+"inst":"한국환경공단",
+"winner":"주식회사 자몽컴퍼니",
+"amount":341000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-09-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-07",
+"raw":{
+"bidwinnrNm":"주식회사 자몽컴퍼니",
+"sucsfbidAmt":"341000000"
 }
 },
 {
