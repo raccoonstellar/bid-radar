@@ -1,5 +1,87 @@
 [
 {
+"id":"R26BK01720335-000",
+"kind":"용역",
+"name":"건설 데이터 개인정보·고유정보 비식별화 처리 기준 및 현장 적용형 AI 학습·소형화 요구사항 설계",
+"inst":"한국건설기술연구원",
+"winner":"재단법인 차세대융합기술연구원",
+"amount":40000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"재단법인 차세대융합기술연구원",
+"sucsfbidAmt":"40000000"
+}
+},
+{
+"id":"R26BK01710670-000",
+"kind":"용역",
+"name":"ACT통합 AI-WMS 및 CSV 문서관리체계 구축 용역 ",
+"inst":"(주)에이씨티",
+"winner":"에이윈소프트",
+"amount":108117900,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"에이윈소프트",
+"sucsfbidAmt":"108117900"
+}
+},
+{
+"id":"R26BK01751347-000",
+"kind":"물품",
+"name":"SW 3자단가(CLIP report v6.0 for AX (주)한컴이노스트림)",
+"inst":"각 수요기관",
+"winner":"주식회사 한컴이노스트림",
+"amount":30866000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 한컴이노스트림",
+"sucsfbidAmt":"30866000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01751348-000",
+"kind":"물품",
+"name":"SW 3자단가(CLIP e-form v6.0 for AX (주)한컴이노스트림)",
+"inst":"각 수요기관",
+"winner":"주식회사 한컴이노스트림",
+"amount":46530000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 한컴이노스트림",
+"sucsfbidAmt":"46530000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01736960-001",
 "kind":"용역",
 "name":"생성형 AI 실감콘텐츠 전시 공간 조성 용역(재공고)",
@@ -17,6 +99,90 @@
 "raw":{
 "bidwinnrNm":"유프스튜디오",
 "sucsfbidAmt":"94050000"
+}
+},
+{
+"id":"R26BK01746008-000",
+"kind":"용역",
+"name":"국립광주과학관 인공지능관 리뉴얼 연계 「AI 융합체험존」 시범운영 용역",
+"inst":"국립광주과학관",
+"winner":"주식회사 풍선껌",
+"amount":29983667,
+"budget":0,
+"rate":90.4,
+"rateEst":null,
+"bidders":6,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 풍선껌",
+"sucsfbidAmt":"29983667",
+"sucsfbidRate":"90.397"
+}
+},
+{
+"id":"R26BK01717746-000",
+"kind":"물품",
+"name":"AI 기반 초고속 3D 형광 이미징 시스템",
+"inst":"한국화학연구원",
+"winner":"(주)바이오플러스",
+"amount":283192470,
+"budget":0,
+"rate":98.61,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"(주)바이오플러스",
+"sucsfbidAmt":"283192470",
+"sucsfbidRate":"98.606"
+}
+},
+{
+"id":"R26BK01747722-000",
+"kind":"물품",
+"name":"글로벌 공급망 위기 사전감지 AI에이전트 구축 사업 연구를 위한 데스크탑(1대) 구매",
+"inst":"한국과학기술정보연구원",
+"winner":"주식회사 투비와이드",
+"amount":5588000,
+"budget":0,
+"rate":88.09,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 투비와이드",
+"sucsfbidAmt":"5588000",
+"sucsfbidRate":"88.091"
+}
+},
+{
+"id":"R26BK01756238-000",
+"kind":"물품",
+"name":"『AX시대의 신라 기와 연구, 어떻게 접근할 것인가』 한국고고학회 공동 학술 워크숍 발표 자료집 발간",
+"inst":"국가유산청 국립문화유산연구원 국립경주문화유산연구소",
+"winner":"디자인잇오앤오 주식회사",
+"amount":10785000,
+"budget":0,
+"rate":97.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"디자인잇오앤오 주식회사",
+"sucsfbidAmt":"10785000",
+"sucsfbidRate":"96.997"
 }
 },
 {
@@ -122,6 +288,26 @@
 "bidwinnrNm":"유미특허법인",
 "sucsfbidAmt":"104718500",
 "sucsfbidRate":"95"
+}
+},
+{
+"id":"R26BK01730483-000",
+"kind":"용역",
+"name":"건국대학교 [ANCHOR사업단_18과제] KU 캠퍼스타운 AI 글로벌 해커톤 프로그램 ",
+"inst":"건국대학교 산학협력단",
+"winner":"주식회사 슘페터",
+"amount":38000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-01",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 슘페터",
+"sucsfbidAmt":"38000000"
 }
 },
 {
@@ -452,6 +638,26 @@
 "raw":{
 "bidwinnrNm":"망고클라우드 주식회사",
 "sucsfbidAmt":"236500000"
+}
+},
+{
+"id":"R26BK01716223-000",
+"kind":"용역",
+"name":"AI(딥러닝) 기반 공동 탐지 및 분석 프로그램 개발",
+"inst":"국토안전관리원",
+"winner":"주식회사 아이리스테크놀로지",
+"amount":56715000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-09-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 아이리스테크놀로지",
+"sucsfbidAmt":"56715000"
 }
 },
 {
@@ -838,6 +1044,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 자몽컴퍼니",
 "sucsfbidAmt":"341000000"
+}
+},
+{
+"id":"R26BK01660091-000",
+"kind":"용역",
+"name":"영상정보 지능형 선별관제시스템 구축 사업",
+"inst":"김포골드라인에스알에스 주식회사",
+"winner":"주식회사 포딕스시스템",
+"amount":984000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-08",
+"raw":{
+"bidwinnrNm":"주식회사 포딕스시스템",
+"sucsfbidAmt":"984000000"
 }
 },
 {
