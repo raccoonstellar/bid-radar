@@ -472,25 +472,52 @@
 "fetchedOn":"2026-10-04"
 },
 {
-"id":"R26BD00281593",
-"name":"연암공과대학교 AI Professor 시스템 개발 용역",
-"inst":"연암공과대학교산학협력단",
-"order":"연암공과대학교산학협력단",
-"amount":150000000,
-"rgst":"2026-10-06 17:31",
-"opnClse":"2026-10-09 23:59",
+"id":"R26BD00282420",
+"name":"26년 AI기반 구술형 정신전력평가체계 개발 실증",
+"inst":"국방부 국군재정관리단",
+"order":"국방부 국군재정관리단",
+"amount":100000000,
+"rgst":"2026-10-08 08:47",
+"opnClse":"2026-10-13 00:00",
 "bidNos":[],
 "sw":"N",
-"ofcl":"최영난",
-"tel":"055-751-2026",
-"dlvr":"2027-02-05 00:00",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
 "dlvrDays":0,
 "div":"일반용역",
-"chg":"2026-10-06 17:31",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00281593",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00282420",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-09"
+},
+{
+"id":"R26BD00282953",
+"name":"엣지 AI 캐리어보드 개발 및 생산 용역",
+"inst":"주식회사 티아이랩",
+"order":"주식회사 티아이랩",
+"amount":130000000,
+"rgst":"2026-10-08 16:45",
+"opnClse":"2026-10-13 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"홍민영",
+"tel":"",
+"dlvr":"2027-01-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-08 16:45",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00282953",
 "files":[
 {
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00281593&fileType=BFDTL&fileSeq=1",
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00282953&fileType=BFDTL&fileSeq=1",
 "name":"사전규격 첨부 1"
 }
 ],
@@ -501,6 +528,6 @@
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-07"
+"fetchedOn":"2026-10-09"
 }
 ]

@@ -1,5 +1,47 @@
 [
 {
+"id":"R26BK01761623-000",
+"kind":"용역",
+"name":"서울 캠퍼스타운 AI+X Connect Forum 운영 용역",
+"inst":"서울특별시 서울시립대학교 산학협력단",
+"winner":"주식회사 프로젝트여름",
+"amount":8817050,
+"budget":0,
+"rate":97.97,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-09",
+"raw":{
+"bidwinnrNm":"주식회사 프로젝트여름",
+"sucsfbidAmt":"8817050",
+"sucsfbidRate":"97.967"
+}
+},
+{
+"id":"R26BK01761813-000",
+"kind":"용역",
+"name":"청주시 생성형 AI 업무비서 서비스 도입",
+"inst":"충청북도 청주시",
+"winner":"주식회사 에이아이쓰리",
+"amount":27000000,
+"budget":0,
+"rate":90.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-09",
+"raw":{
+"bidwinnrNm":"주식회사 에이아이쓰리",
+"sucsfbidAmt":"27000000",
+"sucsfbidRate":"90"
+}
+},
+{
 "id":"R26BK01720335-000",
 "kind":"용역",
 "name":"건설 데이터 개인정보·고유정보 비식별화 처리 기준 및 현장 적용형 AI 학습·소형화 요구사항 설계",
@@ -79,6 +121,26 @@
 "bidwinnrNm":"주식회사 한컴이노스트림",
 "sucsfbidAmt":"46530000",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01718594-000",
+"kind":"용역",
+"name":"지능형 에너지진단 체계 도입을 위한 제도 개선 연구",
+"inst":"한국에너지공단",
+"winner":"주식회사 이지솔루션즈",
+"amount":38500000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-09",
+"raw":{
+"bidwinnrNm":"주식회사 이지솔루션즈",
+"sucsfbidAmt":"38500000"
 }
 },
 {
@@ -1126,67 +1188,6 @@
 "bidwinnrNm":"주식회사 핀텔",
 "sucsfbidAmt":"853144600",
 "sucsfbidRate":"81.776"
-}
-},
-{
-"id":"R26BK01716100-000",
-"kind":"용역",
-"name":"부산형 AI서비스 확대 구축",
-"inst":"부산광역시",
-"winner":"주식회사 클라이온",
-"amount":525964880,
-"budget":0,
-"rate":99.99,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-08",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-23",
-"raw":{
-"bidwinnrNm":"주식회사 클라이온",
-"sucsfbidAmt":"525964880",
-"sucsfbidRate":"99.993"
-}
-},
-{
-"id":"R26BK01700386-000",
-"kind":"용역",
-"name":"초거대 천문우주 新 발견을 위한 AI 협력플랫폼 연구기획 용역",
-"inst":"한국천문연구원",
-"winner":"(주)메타로직컨설팅",
-"amount":66000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-08",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-29",
-"raw":{
-"bidwinnrNm":"(주)메타로직컨설팅",
-"sucsfbidAmt":"66000000"
-}
-},
-{
-"id":"R26BK01661488-000",
-"kind":"용역",
-"name":"K-BDS 바이오데이터 정합성 검증을 위한 AI 모델 개발 및 적용",
-"inst":"한국생명공학연구원",
-"winner":"주식회사 인실리코젠",
-"amount":485100000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-09-08",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-29",
-"raw":{
-"bidwinnrNm":"주식회사 인실리코젠",
-"sucsfbidAmt":"485100000"
 }
 }
 ]
