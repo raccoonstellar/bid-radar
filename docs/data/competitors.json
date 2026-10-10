@@ -1148,46 +1148,5 @@
 "sucsfbidAmt":"143280000",
 "sucsfbidRate":"99.452"
 }
-},
-{
-"id":"R26BK01692338-001",
-"kind":"용역",
-"name":"「K-거상 관광루트 상품화 지원사업」 K-거상 스토리텔링 아카이브 개발 용역 ",
-"inst":"재단법인 경상남도 관광재단",
-"winner":"주식회사 아이액츠",
-"amount":138200000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-09-10",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"주식회사 아이액츠",
-"sucsfbidAmt":"138200000"
-}
-},
-{
-"id":"R26BK01640617-000",
-"kind":"물품",
-"name":"인천공항 지능형 영상분석시스템 구축사업",
-"inst":"인천국제공항공사",
-"winner":"주식회사 핀텔",
-"amount":853144600,
-"budget":0,
-"rate":81.78,
-"rateEst":null,
-"bidders":5,
-"date":"2026-09-10",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-03",
-"raw":{
-"bidwinnrNm":"주식회사 핀텔",
-"sucsfbidAmt":"853144600",
-"sucsfbidRate":"81.776"
-}
 }
 ]
