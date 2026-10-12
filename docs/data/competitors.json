@@ -1,5 +1,88 @@
 [
 {
+"id":"R26BK01743087-000",
+"kind":"용역",
+"name":"(채혈 없이 실시간 저전력 온디바이스 혈당값 추론이 가능한 광음향 비침습 혈당측정기) AX 디바이스용 AI 학습 데이터 라벨링 용역",
+"inst":"한국화학융합시험연구원",
+"winner":"주식회사 크라우드웍스",
+"amount":206839600,
+"budget":188181818,
+"rate":null,
+"rateEst":109.9,
+"bidders":2,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 크라우드웍스",
+"sucsfbidAmt":"206839600"
+}
+},
+{
+"id":"R26BK01747588-000",
+"kind":"용역",
+"name":"[육성] 교수자 인공지능 활용 지원을 위한 인공지능 서비스 구독권 제공",
+"inst":"한국교원대학교",
+"winner":"주식회사 소사이어티",
+"amount":22403332,
+"budget":0,
+"rate":88.17,
+"rateEst":null,
+"bidders":10,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 소사이어티",
+"sucsfbidAmt":"22403332",
+"sucsfbidRate":"88.167"
+}
+},
+{
+"id":"R26BK01734970-000",
+"kind":"용역",
+"name":"택배상자 송장위치 검출 및 원근변환과 송장 내용 OCR 검출시스템 제작 및 테스트",
+"inst":"한국철도기술연구원",
+"winner":"주식회사 지미션",
+"amount":80586000,
+"budget":0,
+"rate":98.88,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 지미션",
+"sucsfbidAmt":"80586000",
+"sucsfbidRate":"98.882"
+}
+},
+{
+"id":"R26BK01752163-000",
+"kind":"물품",
+"name":"[2026 앵커(신산업)] 연성대학교 LLM 서버 구입",
+"inst":"연성대학교 산학협력단",
+"winner":"(주)오픈네트웍시스템",
+"amount":52140000,
+"budget":0,
+"rate":87.02,
+"rateEst":null,
+"bidders":5,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"(주)오픈네트웍시스템",
+"sucsfbidAmt":"52140000",
+"sucsfbidRate":"87.015"
+}
+},
+{
 "id":"R26BK01761623-000",
 "kind":"용역",
 "name":"서울 캠퍼스타운 AI+X Connect Forum 운영 용역",
@@ -39,6 +122,68 @@
 "bidwinnrNm":"주식회사 에이아이쓰리",
 "sucsfbidAmt":"27000000",
 "sucsfbidRate":"90"
+}
+},
+{
+"id":"R26BK01730063-000",
+"kind":"용역",
+"name":"태양광열(PVT) 복합 모듈 전용 지능형 운영관리 및 고장진단 플랫폼 개발",
+"inst":"한국에너지기술연구원",
+"winner":"주식회사 제이케이코어(JKCORE Co.,Ltd.)",
+"amount":39353000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 제이케이코어(JKCORE Co.,Ltd.)",
+"sucsfbidAmt":"39353000"
+}
+},
+{
+"id":"R26BK01750779-000",
+"kind":"용역",
+"name":"관평지구 산업단지 개발사업 AI기반 기본계획수립용역",
+"inst":"대전도시공사",
+"winner":"주식회사 동양엔지니어링",
+"amount":40125640,
+"budget":0,
+"rate":88.61,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 동양엔지니어링",
+"sucsfbidAmt":"40125640",
+"sucsfbidRate":"88.607"
+}
+},
+{
+"id":"R26BK01753341-000",
+"kind":"물품",
+"name":"국방모델 전용 폐쇄 LLM 개발 및 성능 평가를 위한 전용 소형 PC 구매",
+"inst":"한국과학기술정보연구원",
+"winner":"(주)아이와이시스템",
+"amount":18100000,
+"budget":0,
+"rate":92.72,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"(주)아이와이시스템",
+"sucsfbidAmt":"18100000",
+"sucsfbidRate":"92.723"
 }
 },
 {
@@ -457,6 +602,26 @@
 }
 },
 {
+"id":"R26BK01709093-000",
+"kind":"용역",
+"name":"2027 AI ICT 산업전망 컨퍼런스 운영대행 용역",
+"inst":"한국연구재단 정보통신기획평가원",
+"winner":"주식회사 마이스피플",
+"amount":279000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"주식회사 마이스피플",
+"sucsfbidAmt":"279000000"
+}
+},
+{
 "id":"R26BK01741334-000",
 "kind":"용역",
 "name":"AI심화시대 정보주체 관점에서의 개인정보 기능 수행체계 효율화 전략 연구",
@@ -841,6 +1006,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 나우리",
 "sucsfbidAmt":"47300000"
+}
+},
+{
+"id":"R26BK01702723-000",
+"kind":"용역",
+"name":"인천 AI 서.논술형 평가지원시스템 구축 사업",
+"inst":"인천광역시교육청 인천광역시교육청AI융합교육원",
+"winner":"(주)엔에스데블",
+"amount":480000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":6,
+"date":"2026-09-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-13",
+"raw":{
+"bidwinnrNm":"(주)엔에스데블",
+"sucsfbidAmt":"480000000"
 }
 },
 {

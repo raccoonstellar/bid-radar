@@ -281,6 +281,42 @@
 "dlvrDays":365
 },
 {
+"id":"R26BD00283207",
+"name":"지능형 포렌식센터 프라이빗 클라우드 도입 및 구축",
+"inst":"한국인터넷진흥원",
+"order":"조달청 광주지방조달청",
+"amount":3017510000,
+"rgst":"2026-10-12 09:21",
+"opnClse":"2026-10-17 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"김진영",
+"tel":"070-4056-8281",
+"dlvr":"2026-12-15 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-12 09:21",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00283207",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283207&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283207&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"지능형"
+],
+"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-13"
+},
+{
 "id":"R26BD00276932",
 "name":"2026년 평가정보 자동수집·활용을 위한 AI 모델 개발 용역",
 "inst":"한국발명진흥회",
@@ -529,5 +565,81 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-09"
+},
+{
+"id":"R26BD00282810",
+"name":"동국대학교 AI기반 맞춤형 학습지원 서비스 운영 인프라 구축 사업자 선정",
+"inst":"동국대학교",
+"order":"동국대학교",
+"amount":371800000,
+"rgst":"2026-10-12 09:18",
+"opnClse":"2026-10-15 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"하정수",
+"tel":"02-2260-3091",
+"dlvr":"",
+"dlvrDays":60,
+"div":"일반용역",
+"chg":"2026-10-12 09:18",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00282810",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00282810&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00282810&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-13"
+},
+{
+"id":"R26BD00283570",
+"name":"정부광고 AI 솔루션 구축을 위한 기초연구 용역",
+"inst":"한국언론진흥재단",
+"order":"한국언론진흥재단",
+"amount":154000000,
+"rgst":"2026-10-12 15:59",
+"opnClse":"2026-10-15 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"박의연",
+"tel":"02-2001-7723",
+"dlvr":"2026-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-12 16:04",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00283570",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-13"
 }
 ]
