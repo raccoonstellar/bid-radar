@@ -641,5 +641,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-13"
+},
+{
+"id":"R26BD00284173",
+"name":"AI-LXP(AI 개인화 학습성장 플랫폼) 구축 및 일학습병행과정 컨텐츠 개발 사업",
+"inst":"영남이공대학교 산학협력단",
+"order":"영남이공대학교 산학협력단",
+"amount":400000000,
+"rgst":"2026-10-13 16:06",
+"opnClse":"2026-10-18 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"반병탁",
+"tel":"053-650-9163",
+"dlvr":"2027-02-28 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-13 16:06",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284173",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284173&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-14"
 }
 ]

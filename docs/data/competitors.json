@@ -1,5 +1,25 @@
 [
 {
+"id":"R26BK01753188-000",
+"kind":"용역",
+"name":"[2026년 경상남도 앵커 사업] AI 기반 낙상예측 프로그램 개발연구 용역 ",
+"inst":"가야대학교",
+"winner":"아이움",
+"amount":45000000,
+"budget":40909091,
+"rate":null,
+"rateEst":110.0,
+"bidders":2,
+"date":"2026-10-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"아이움",
+"sucsfbidAmt":"45000000"
+}
+},
+{
 "id":"R26BK01743087-000",
 "kind":"용역",
 "name":"(채혈 없이 실시간 저전력 온디바이스 혈당값 추론이 가능한 광음향 비침습 혈당측정기) AX 디바이스용 AI 학습 데이터 라벨링 용역",
@@ -80,6 +100,67 @@
 "bidwinnrNm":"(주)오픈네트웍시스템",
 "sucsfbidAmt":"52140000",
 "sucsfbidRate":"87.015"
+}
+},
+{
+"id":"R26BK01732373-000",
+"kind":"용역",
+"name":"한국섬유소재연구원 지능형 염색공정 데이터수집 인프라 및  ERP/SCADA 기반 구축",
+"inst":"한국섬유소재연구원",
+"winner":"(주)평화아이씨티",
+"amount":79970000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"(주)평화아이씨티",
+"sucsfbidAmt":"79970000"
+}
+},
+{
+"id":"R26BK01749095-000",
+"kind":"용역",
+"name":"한양대학교 산학협력단 2026년 글로벌 AI 인재양성 해외 파견 프로그램 지원 용역",
+"inst":"한양대학교 산학협력단",
+"winner":"(주)리키항공",
+"amount":69850000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"(주)리키항공",
+"sucsfbidAmt":"69850000"
+}
+},
+{
+"id":"R26BK01728112-000",
+"kind":"용역",
+"name":"[한남대학교 산학협력단]철도 도메인 특화 RAG 기반 AI 실시간 안전교관 시스템 구축 및 연동 용역",
+"inst":"한남대학교 산학협력단",
+"winner":"주식회사 새임",
+"amount":125400000,
+"budget":0,
+"rate":96.28,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"주식회사 새임",
+"sucsfbidAmt":"125400000",
+"sucsfbidRate":"96.277"
 }
 },
 {
@@ -456,6 +537,46 @@
 }
 },
 {
+"id":"R26BK01699669-000",
+"kind":"용역",
+"name":"특수교 계측기 이상신호 분석을 위한 인공지능 적용성 검증",
+"inst":"국토안전관리원",
+"winner":"유니콘스(주)",
+"amount":217855000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"유니콘스(주)",
+"sucsfbidAmt":"217855000"
+}
+},
+{
+"id":"R26BK01715921-000",
+"kind":"용역",
+"name":"AI 지능형 병원정보시스템(AI Native HIS) 기획",
+"inst":"한국보건산업진흥원",
+"winner":"서울대학교 산학협력단",
+"amount":100000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"서울대학교 산학협력단",
+"sucsfbidAmt":"100000000"
+}
+},
+{
 "id":"R26BK01746540-000",
 "kind":"용역",
 "name":"AI신기술 체험·전시 용역",
@@ -619,6 +740,27 @@
 "raw":{
 "bidwinnrNm":"주식회사 마이스피플",
 "sucsfbidAmt":"279000000"
+}
+},
+{
+"id":"R26BK01744508-000",
+"kind":"용역",
+"name":"2026년 소나무재선충병 무인항공기 예찰 AI 분석 용역",
+"inst":"경상북도 안동시",
+"winner":"주식회사 스마트지오",
+"amount":98546432,
+"budget":0,
+"rate":87.98,
+"rateEst":null,
+"bidders":13,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"주식회사 스마트지오",
+"sucsfbidAmt":"98546432",
+"sucsfbidRate":"87.983"
 }
 },
 {
@@ -1129,6 +1271,26 @@
 "bidwinnrNm":"삼성에스디에스 주식회사",
 "sucsfbidAmt":"6505000000",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01639098-000",
+"kind":"용역",
+"name":"AI 기반 업무 혁신 플랫폼 구축 사업",
+"inst":"주택도시보증공사",
+"winner":"(주)와이즈넛",
+"amount":1989900000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":8,
+"date":"2026-09-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-14",
+"raw":{
+"bidwinnrNm":"(주)와이즈넛",
+"sucsfbidAmt":"1989900000"
 }
 },
 {
