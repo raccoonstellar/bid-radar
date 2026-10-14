@@ -97,6 +97,73 @@
 "fetchedOn":"2026-10-03"
 },
 {
+"id":"R26BD00284697",
+"name":"교육혁신본부 AX를 위한 AI 에이전트 플랫폼 구축",
+"inst":"부산대학교",
+"order":"조달청 부산지방조달청",
+"amount":545421600,
+"rgst":"2026-10-14 14:07",
+"opnClse":"2026-10-19 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"윤태영",
+"tel":"070-4056-6581",
+"dlvr":"2027-02-19 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-14 14:07",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284697",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284697&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"에이전트",
+"AX",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-15"
+},
+{
+"id":"R26BD00284958",
+"name":"AI 기반 통합 학생·취업지원 챗봇 서비스 구축 고도화",
+"inst":"인하대학교 산학협력단",
+"order":"인하대학교 산학협력단",
+"amount":100000000,
+"rgst":"2026-10-14 17:37",
+"opnClse":"2026-10-19 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"서효선",
+"tel":"032-860-8097",
+"dlvr":"",
+"dlvrDays":90,
+"div":"일반용역",
+"chg":"2026-10-14 17:37",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284958",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284958&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"기존 구축사 존재 추정(F2)",
+"score":14,
+"keywords":[
+"챗봇",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-15"
+},
+{
 "id":"R26BD00281191",
 "name":"전남대학교 AI 기반 지능형 플랫폼(e클래스2.0) 구축",
 "inst":"전남대학교 교육혁신본부",
@@ -315,6 +382,71 @@
 ],
 "position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-13"
+},
+{
+"id":"R26BD00284963",
+"name":"첨단 AI 기반 디지털의료기기 신속제품화 지원사업(AX-Sprint 300) - 디지털의료기기 신속 인허가의 규제 대응을 위한 기술 지원",
+"inst":"주식회사 알에스리햅",
+"order":"주식회사 알에스리햅",
+"amount":278300000,
+"rgst":"2026-10-14 17:40",
+"opnClse":"2026-10-19 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이혜원",
+"tel":"",
+"dlvr":"2027-05-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-14 17:40",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284963",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284963&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-15"
+},
+{
+"id":"R26BD00284974",
+"name":"광양만권 철강·금속 기업  AX 기술지원(기초단계) 용역",
+"inst":"한국산업기술시험원",
+"order":"조달청 경남지방조달청",
+"amount":141374000,
+"rgst":"2026-10-14 17:50",
+"opnClse":"2026-10-19 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"서정욱",
+"tel":"070-4056-6756",
+"dlvr":"2027-01-15 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-14 17:50",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284974",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284974&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-15"
 },
 {
 "id":"R26BD00276932",
@@ -673,5 +805,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-14"
+},
+{
+"id":"R26BD00284910",
+"name":"AI 기반 지역혁신 데이터 플랫폼 구축",
+"inst":"부산대학교 산학협력단",
+"order":"조달청 부산지방조달청",
+"amount":302590000,
+"rgst":"2026-10-14 16:51",
+"opnClse":"2026-10-19 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"윤태영",
+"tel":"070-4056-6581",
+"dlvr":"",
+"dlvrDays":90,
+"div":"일반용역",
+"chg":"2026-10-14 16:51",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284910",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284910&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-15"
 }
 ]
