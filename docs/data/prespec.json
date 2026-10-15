@@ -131,6 +131,39 @@
 "fetchedOn":"2026-10-15"
 },
 {
+"id":"R26BD00285426",
+"name":"한국해양과학기술원 연구·행정 지원 AI Agent 개발 및 적용",
+"inst":"한국해양과학기술원",
+"order":"한국해양과학기술원",
+"amount":150000000,
+"rgst":"2026-10-15 15:31",
+"opnClse":"2026-10-20 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이소명",
+"tel":"051-664-9143",
+"dlvr":"",
+"dlvrDays":150,
+"div":"일반용역",
+"chg":"2026-10-15 15:31",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00285426",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00285426&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"Agent",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-16"
+},
+{
 "id":"R26BD00284958",
 "name":"AI 기반 통합 학생·취업지원 챗봇 서비스 구축 고도화",
 "inst":"인하대학교 산학협력단",
@@ -195,6 +228,33 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-07"
+},
+{
+"id":"R26BD00285234",
+"name":"지능형통합관제시스템 경비용역 입찰",
+"inst":"경기도교육청 용인한국외국어대학교부설고등학교",
+"order":"경기도교육청 용인한국외국어대학교부설고등학교",
+"amount":289450000,
+"rgst":"2026-10-15 11:38",
+"opnClse":"2026-10-20 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이원형",
+"tel":"031-324-0011",
+"dlvr":"2029-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-15 11:38",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00285234",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-16"
 },
 {
 "id":"R26BD00271098",
