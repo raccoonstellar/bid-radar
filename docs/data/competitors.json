@@ -412,6 +412,27 @@
 }
 },
 {
+"id":"R26BK01738166-000",
+"kind":"용역",
+"name":"대한민국농구협회 통합정보시스템 AI 에이전트 구축(재공고)",
+"inst":"사단법인 대한민국농구협회",
+"winner":"진진시스템(주)",
+"amount":194000000,
+"budget":0,
+"rate":96.64,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-17",
+"raw":{
+"bidwinnrNm":"진진시스템(주)",
+"sucsfbidAmt":"194000000",
+"sucsfbidRate":"96.642"
+}
+},
+{
 "id":"R26BK01720335-000",
 "kind":"용역",
 "name":"건설 데이터 개인정보·고유정보 비식별화 처리 기준 및 현장 적용형 AI 학습·소형화 요구사항 설계",
@@ -615,6 +636,26 @@
 "bidwinnrNm":"디자인잇오앤오 주식회사",
 "sucsfbidAmt":"10785000",
 "sucsfbidRate":"96.997"
+}
+},
+{
+"id":"R26BK01721025-000",
+"kind":"용역",
+"name":"2026년 AI활용 초기상담정보시스템 업무 편의성 개선",
+"inst":"한국사회보장정보원",
+"winner":"주식회사 케이원",
+"amount":367990000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-10-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-17",
+"raw":{
+"bidwinnrNm":"주식회사 케이원",
+"sucsfbidAmt":"367990000"
 }
 },
 {

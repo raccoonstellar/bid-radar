@@ -197,6 +197,44 @@
 "fetchedOn":"2026-10-15"
 },
 {
+"id":"R26BD00285841",
+"name":"2027~2028년 AI 민원상담시스템 유지관리 용역",
+"inst":"서울특별시 서울아리수본부",
+"order":"서울특별시 서울아리수본부",
+"amount":756482000,
+"rgst":"2026-10-16 10:45",
+"opnClse":"2026-10-21 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"정영희",
+"tel":"02-3146-1555",
+"dlvr":"2028-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-16 10:47",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00285841",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00285841&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00285841&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":14,
+"keywords":[
+"상담",
+"민원",
+"AI"
+],
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-17"
+},
+{
 "id":"R26BD00281191",
 "name":"전남대학교 AI 기반 지능형 플랫폼(e클래스2.0) 구축",
 "inst":"전남대학교 교육혁신본부",
@@ -255,6 +293,38 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-16"
+},
+{
+"id":"R26BD00285952",
+"name":"「AICC 도입방안 수립 컨설팅」",
+"inst":"국민연금공단",
+"order":"국민연금공단",
+"amount":251000000,
+"rgst":"2026-10-16 13:50",
+"opnClse":"2026-10-23 18:00",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이우림",
+"tel":"",
+"dlvr":"2026-10-23 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-16 13:50",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00285952",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00285952&fileType=BFDTL&fileSeq=4",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"AICC"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-17"
 },
 {
 "id":"R26BD00271098",
