@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01771291-000",
+"kind":"물품",
+"name":"지능형 에너지안전관리 통합플랫폼 2차 고도화",
+"inst":"주식회사 윌코모시스템즈",
+"winner":"주식회사 에프에스",
+"amount":109792100,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-17",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-18",
+"raw":{
+"bidwinnrNm":"주식회사 에프에스",
+"sucsfbidAmt":"109792100",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01770159-000",
 "kind":"용역",
 "name":"국내 전력망 데이터를 활용한 물리정보 기반 AI-SCUC 시작품 제작",
@@ -1556,26 +1577,6 @@
 "raw":{
 "bidwinnrNm":"(주)와이즈넛",
 "sucsfbidAmt":"1989900000"
-}
-},
-{
-"id":"R26BK01705850-000",
-"kind":"용역",
-"name":"(긴급)AI 서·논술형 평가지원시스템 솔루션 도입 및 운영",
-"inst":"부산광역시교육청",
-"winner":"(주)엔에스데블",
-"amount":480000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-09-17",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-02",
-"raw":{
-"bidwinnrNm":"(주)엔에스데블",
-"sucsfbidAmt":"480000000"
 }
 }
 ]

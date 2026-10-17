@@ -418,36 +418,6 @@
 "fetchedOn":"2026-10-02"
 },
 {
-"id":"R26BD00270096",
-"name":"AI의료 기술 개발 고도화 관련 임상연구정보검색시스템(CDW) 구축",
-"inst":"원광대학교 광주한방병원, 원광병원",
-"order":"원광대학교 광주한방병원, 원광병원",
-"amount":1070500000,
-"rgst":"2026-09-02 09:35",
-"opnClse":"2026-09-07 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김상우",
-"tel":"062-670-6825",
-"dlvr":"2030-12-31 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270096&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"기존 구축사 존재 추정(F2)",
-"score":11,
-"keywords":[
-"검색",
-"AI"
-],
-"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00270096"
-},
-{
 "id":"R26BD00273148",
 "name":"KEIT AX 기반 구축 사업",
 "inst":"한국산업기술기획평가원",
@@ -967,5 +937,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-15"
+},
+{
+"id":"R26BD00286373",
+"name":"AI기반 경륜경주 부정징후 탐지시스템 구축",
+"inst":"서울올림픽기념국민체육진흥공단 경륜경정총괄본부",
+"order":"서울올림픽기념국민체육진흥공단 경륜경정총괄본부",
+"amount":199940000,
+"rgst":"2026-10-17 11:15",
+"opnClse":"2026-10-22 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김남호",
+"tel":"02-2067-5413",
+"dlvr":"",
+"dlvrDays":150,
+"div":"일반용역",
+"chg":"2026-10-17 11:15",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00286373",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286373&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-18"
 }
 ]
