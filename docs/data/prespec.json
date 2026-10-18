@@ -327,32 +327,6 @@
 "fetchedOn":"2026-10-17"
 },
 {
-"id":"R26BD00271098",
-"name":"「Agentic AI 기반 구축 및 생성형 AI 고도화」사업",
-"inst":"한국가스공사",
-"order":"한국가스공사",
-"amount":2681704300,
-"rgst":"2026-09-03 18:28",
-"opnClse":"2026-09-08 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"2027-09-08 00:00:00",
-"files":[],
-"bucket":"OPEN",
-"reason":"기존 구축사 존재 추정(F2)",
-"score":12,
-"keywords":[
-"생성형",
-"Agent",
-"AI"
-],
-"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00271098"
-},
-{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
