@@ -164,6 +164,39 @@
 "fetchedOn":"2026-10-16"
 },
 {
+"id":"R26BD00286939",
+"name":"ISTANS 인공지능 챗봇 구축 사업",
+"inst":"산업연구원",
+"order":"산업연구원",
+"amount":100000000,
+"rgst":"2026-10-19 16:45",
+"opnClse":"2026-10-24 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"곽진",
+"tel":"",
+"dlvr":"2026-12-22 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-19 16:45",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00286939",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286939&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"챗봇",
+"인공지능"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
+},
+{
 "id":"R26BD00284958",
 "name":"AI 기반 통합 학생·취업지원 챗봇 서비스 구축 고도화",
 "inst":"인하대학교 산학협력단",
@@ -325,6 +358,42 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-17"
+},
+{
+"id":"R26BD00287177",
+"name":"탄자니아 이링가 통합물관리센터 지능형 운영지원 S/W 개발 용역",
+"inst":"한국수자원공사",
+"order":"한국수자원공사",
+"amount":380000000,
+"rgst":"2026-10-19 23:50",
+"opnClse":"2026-10-24 00:00",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287177",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287177&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287177&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
 },
 {
 "id":"R26BD00278810",
@@ -521,6 +590,82 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-15"
+},
+{
+"id":"R26BD00286820",
+"name":"CES2027 KOREA-M.AX Alliance 공동관 운영 용역",
+"inst":"한국로봇산업진흥원",
+"order":"한국로봇산업진흥원",
+"amount":149856870,
+"rgst":"2026-10-19 15:42",
+"opnClse":"2026-10-22 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"류주리",
+"tel":"",
+"dlvr":"2027-02-28 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-19 15:42",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00286820",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286820&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286820&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286820&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
+},
+{
+"id":"R26BD00286868",
+"name":"CES 2027 KOREA-M.AX ALLIANCE 공동관 조성·운영",
+"inst":"한국산업기술기획평가원",
+"order":"한국산업기술기획평가원",
+"amount":295000000,
+"rgst":"2026-10-19 17:06",
+"opnClse":"2026-10-22 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김주영",
+"tel":"053-718-8745",
+"dlvr":"2027-02-28 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-19 17:06",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00286868",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286868&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286868&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
 },
 {
 "id":"R26BD00276932",
@@ -943,5 +1088,73 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-18"
+},
+{
+"id":"R26BD00286460",
+"name":"피지컬AI 실증단지 구축사업 공공건축 기획용역",
+"inst":"재단법인 전북테크노파크",
+"order":"조달청 전북지방조달청",
+"amount":138005413,
+"rgst":"2026-10-19 09:30",
+"opnClse":"2026-10-22 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이성우",
+"tel":"070-4056-8923",
+"dlvr":"",
+"dlvrDays":120,
+"div":"기술용역",
+"chg":"2026-10-19 14:34",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00286460",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286460&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00286460&fileType=BFDTL&fileSeq=4",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
+},
+{
+"id":"R26BD00287014",
+"name":"AI기반 조사 데이터 구조화 및 분석 기술 개발",
+"inst":"기후에너지환경부 국립생물자원관",
+"order":"조달청 인천지방조달청",
+"amount":200822400,
+"rgst":"2026-10-19 17:28",
+"opnClse":"2026-10-24 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이민정",
+"tel":"070-4056-7870",
+"dlvr":"",
+"dlvrDays":180,
+"div":"일반용역",
+"chg":"2026-10-19 17:28",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287014",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287014&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-20"
 }
 ]

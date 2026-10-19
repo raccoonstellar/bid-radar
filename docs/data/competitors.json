@@ -1,5 +1,66 @@
 [
 {
+"id":"R26BK01664051-000",
+"kind":"용역",
+"name":"2026년 과학기술인 AI 역량강화 해외연수 기획·운영 지원 용역",
+"inst":"국가과학기술인력개발원",
+"winner":"지엔코리아 주식회사",
+"amount":214003000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-19",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"지엔코리아 주식회사",
+"sucsfbidAmt":"214003000"
+}
+},
+{
+"id":"R26BK01755090-001",
+"kind":"용역",
+"name":"(변경공고)K-FAST 채널 송출용 AI 더빙 콘텐츠 음성 편집 및 믹싱 용역",
+"inst":"(주)허드슨에이아이",
+"winner":"(주)미디어큐브",
+"amount":74690000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-19",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"(주)미디어큐브",
+"sucsfbidAmt":"74690000"
+}
+},
+{
+"id":"R26BK01776540-000",
+"kind":"물품",
+"name":"로컬 LLM 환경 구축을 위한 AI 워크스테이션 전자시담",
+"inst":"한국광기술원",
+"winner":"주식회사 엔에스지",
+"amount":19300000,
+"budget":0,
+"rate":99.74,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-19",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 엔에스지",
+"sucsfbidAmt":"19300000",
+"sucsfbidRate":"99.741"
+}
+},
+{
 "id":"R26BK01754241-000",
 "kind":"용역",
 "name":"AI/DX 글로벌 협력 거버넌스 연계 지역 DX 역량강화 통합 운영",
@@ -38,6 +99,26 @@
 "bidwinnrNm":"주식회사 에프에스",
 "sucsfbidAmt":"109792100",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01736293-000",
+"kind":"용역",
+"name":"[정보화/중앙/바이오빅데이터과] 국가 의과학 지식자원 RAG 기반 지능형 서비스 구축",
+"inst":"질병관리청 국립보건연구원",
+"winner":"(주)다이퀘스트",
+"amount":113400000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"(주)다이퀘스트",
+"sucsfbidAmt":"113400000"
 }
 },
 {
@@ -80,6 +161,26 @@
 "bidwinnrNm":"호서대학교 산학협력단",
 "sucsfbidAmt":"53900000",
 "sucsfbidRate":"99.336"
+}
+},
+{
+"id":"R26BK01752693-000",
+"kind":"용역",
+"name":"지능형홈·글로벌융합클러스터 성과분석 및 AX 전략 연구 용역",
+"inst":"한국정보통신기술협회",
+"winner":"(사)한국에이아이사물인터넷협회",
+"amount":36000000,
+"budget":36363636,
+"rate":null,
+"rateEst":99.0,
+"bidders":3,
+"date":"2026-10-15",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"(사)한국에이아이사물인터넷협회",
+"sucsfbidAmt":"36000000"
 }
 },
 {
@@ -145,6 +246,67 @@
 }
 },
 {
+"id":"R26BK01740849-000",
+"kind":"용역",
+"name":"국립민속박물관 AI 학습데이터 구축 기반 아카이브 자료 디지털화 사업",
+"inst":"문화체육관광부 국립민속박물관",
+"winner":"주식회사 레스온",
+"amount":53000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 레스온",
+"sucsfbidAmt":"53000000"
+}
+},
+{
+"id":"R26BK01745574-000",
+"kind":"용역",
+"name":"외식업 특화 LLM 기반  AI Agent 시스템 통합·안정화·운영지원 용역",
+"inst":"주식회사 낭만상회",
+"winner":"도시혁신그룹 무브먼트 주식회사",
+"amount":50000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":6,
+"date":"2026-10-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"도시혁신그룹 무브먼트 주식회사",
+"sucsfbidAmt":"50000000"
+}
+},
+{
+"id":"R26BK01759415-000",
+"kind":"물품",
+"name":"ScienceON AI 에이전트 서비스 개발을 위한 모니터 구매",
+"inst":"한국과학기술정보연구원",
+"winner":"주식회사 투비와이드",
+"amount":3025000,
+"budget":0,
+"rate":88.03,
+"rateEst":null,
+"bidders":8,
+"date":"2026-10-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 투비와이드",
+"sucsfbidAmt":"3025000",
+"sucsfbidRate":"88.028"
+}
+},
+{
 "id":"R26BK01753188-000",
 "kind":"용역",
 "name":"[2026년 경상남도 앵커 사업] AI 기반 낙상예측 프로그램 개발연구 용역 ",
@@ -162,6 +324,26 @@
 "raw":{
 "bidwinnrNm":"아이움",
 "sucsfbidAmt":"45000000"
+}
+},
+{
+"id":"R26BK01730521-000",
+"kind":"용역",
+"name":"AI 기반 섬 정보통계플랫폼 구축 용역(1차년도)",
+"inst":"한국섬진흥원",
+"winner":"주식회사 선도소프트",
+"amount":1296900000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":6,
+"date":"2026-10-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 선도소프트",
+"sucsfbidAmt":"1296900000"
 }
 },
 {
@@ -474,6 +656,46 @@
 }
 },
 {
+"id":"R26BK01743487-000",
+"kind":"용역",
+"name":"2026 부천대학교 AI·DX취업박람회 시행 용역",
+"inst":"부천대학교 산학협력단",
+"winner":"(주)링크스타트",
+"amount":50000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"(주)링크스타트",
+"sucsfbidAmt":"50000000"
+}
+},
+{
+"id":"R26BK01701747-000",
+"kind":"용역",
+"name":"국립군산대 신규 학습관리시스템(LMS) 구축 용역",
+"inst":"국립군산대학교",
+"winner":"(주)유비온",
+"amount":400000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"(주)유비온",
+"sucsfbidAmt":"400000000"
+}
+},
+{
 "id":"R26BK01720335-000",
 "kind":"용역",
 "name":"건설 데이터 개인정보·고유정보 비식별화 처리 기준 및 현장 적용형 AI 학습·소형화 요구사항 설계",
@@ -573,6 +795,27 @@
 "raw":{
 "bidwinnrNm":"주식회사 이지솔루션즈",
 "sucsfbidAmt":"38500000"
+}
+},
+{
+"id":"R26BK01749501-000",
+"kind":"용역",
+"name":"[대학혁신지원사업]협성대학교 기초학력진단 및 AI 기반 개인 맞춤형 학습지원 시스템 구축 용역 재공고입찰(긴급)",
+"inst":"협성대학교",
+"winner":"주식회사 프리윌린",
+"amount":53900000,
+"budget":0,
+"rate":98.27,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 프리윌린",
+"sucsfbidAmt":"53900000",
+"sucsfbidRate":"98.27"
 }
 },
 {
@@ -1027,6 +1270,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 상상력집단",
 "sucsfbidAmt":"32600000"
+}
+},
+{
+"id":"R26BK01718593-000",
+"kind":"용역",
+"name":"마운트 에이전트 개발을 위한 DB 구축 용역",
+"inst":"한국기계연구원",
+"winner":"주식회사 수퍼센츄리",
+"amount":92400000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-20",
+"raw":{
+"bidwinnrNm":"주식회사 수퍼센츄리",
+"sucsfbidAmt":"92400000"
 }
 },
 {
