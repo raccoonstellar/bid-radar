@@ -197,6 +197,43 @@
 "fetchedOn":"2026-10-20"
 },
 {
+"id":"R26BD00287674",
+"name":"(동의대학교 산학협력단) 2026학년도 동의대학교 AI부트캠프 소프트웨어(AI Agent 개발 솔루션) 플랫폼 구축 및 운영지원",
+"inst":"동의대학교 산학협력단",
+"order":"동의대학교 산학협력단",
+"amount":120000000,
+"rgst":"2026-10-20 17:00",
+"opnClse":"2026-10-27 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"서지웅",
+"tel":"051-890-2402",
+"dlvr":"2027-02-28 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-20 17:00",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287674",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287674&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287674&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"Agent",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
+},
+{
 "id":"R26BD00284958",
 "name":"AI 기반 통합 학생·취업지원 챗봇 서비스 구축 고도화",
 "inst":"인하대학교 산학협력단",
@@ -461,6 +498,38 @@
 "fetchedOn":"2026-10-02"
 },
 {
+"id":"R26BD00287609",
+"name":"이화여자대학교 지능형학생지원시스템 E-벗 기능 개선",
+"inst":"이화여자대학교",
+"order":"이화여자대학교",
+"amount":100000000,
+"rgst":"2026-10-20 16:19",
+"opnClse":"2026-10-25 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"임희진",
+"tel":"",
+"dlvr":"2027-01-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-20 16:19",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287609",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287609&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"기존 구축사 존재 추정(F2)",
+"score":12,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
+},
+{
 "id":"R26BD00273148",
 "name":"KEIT AX 기반 구축 사업",
 "inst":"한국산업기술기획평가원",
@@ -666,6 +735,103 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-20"
+},
+{
+"id":"R26BD00287517",
+"name":"지능형 무역투자 플랫폼 구축",
+"inst":"대한무역투자진흥공사",
+"order":"조달청 서울지방조달청",
+"amount":20790905200,
+"rgst":"2026-10-20 15:17",
+"opnClse":"2026-10-26 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"장기순",
+"tel":"02-590-8884",
+"dlvr":"2028-09-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-20 15:28",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287517",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287517&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"지능형"
+],
+"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00287576",
+"name":"첨단 AI 기반 디지털의료기기 신속제품화 지원사업(AX-Sprint 300) - 디지털의료기기 신속 인허가를 위한 임상시험 수탁(CRO) 용역 (RS-SWALLOW · RS-SLEEP)",
+"inst":"주식회사 알에스리햅",
+"order":"주식회사 알에스리햅",
+"amount":211042700,
+"rgst":"2026-10-20 16:14",
+"opnClse":"2026-10-25 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이혜원",
+"tel":"",
+"dlvr":"2027-05-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-20 16:14",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287576",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287576&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00287685",
+"name":"2026년 지역AX R&D 사업 성과 분석 용역",
+"inst":"정보통신산업진흥원",
+"order":"조달청 충북지방조달청",
+"amount":151595000,
+"rgst":"2026-10-20 17:04",
+"opnClse":"2026-10-25 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"송화원",
+"tel":"070-4056-8572",
+"dlvr":"2027-02-28 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-20 17:04",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287685",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287685&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
 },
 {
 "id":"R26BD00276932",
@@ -1156,5 +1322,41 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-20"
+},
+{
+"id":"R26BD00287650",
+"name":"경북 학생평가 전환을 위한 AI  기반 서·논술형 평가지원시스템 도입 및 운영",
+"inst":"경상북도교육청",
+"order":"조달청 대구지방조달청",
+"amount":504521000,
+"rgst":"2026-10-20 16:43",
+"opnClse":"2026-10-25 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"구현영",
+"tel":"070-4056-7992",
+"dlvr":"",
+"dlvrDays":395,
+"div":"일반용역",
+"chg":"2026-10-20 16:43",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287650",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287650&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287650&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-21"
 }
 ]

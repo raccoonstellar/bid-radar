@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01768274-000",
+"kind":"물품",
+"name":" 2026년 상생협력 실증 프로그램_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 ",
+"inst":"에코피스 주식회사",
+"winner":"주식회사 에이아이이와이",
+"amount":330000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-20",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-21",
+"raw":{
+"bidwinnrNm":"주식회사 에이아이이와이",
+"sucsfbidAmt":"330000000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01664051-000",
 "kind":"용역",
 "name":"2026년 과학기술인 AI 역량강화 해외연수 기획·운영 지원 용역",
@@ -58,6 +79,27 @@
 "bidwinnrNm":"주식회사 엔에스지",
 "sucsfbidAmt":"19300000",
 "sucsfbidRate":"99.741"
+}
+},
+{
+"id":"R26BK01754338-000",
+"kind":"용역",
+"name":"공주교대 AI 통합플랫폼 서비스 도입사업 규격·가격 동시 입찰 공고",
+"inst":"공주교육대학교",
+"winner":"주식회사 아름정보",
+"amount":49000000,
+"budget":0,
+"rate":99.01,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-19",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-21",
+"raw":{
+"bidwinnrNm":"주식회사 아름정보",
+"sucsfbidAmt":"49000000",
+"sucsfbidRate":"99.006"
 }
 },
 {
@@ -511,6 +553,26 @@
 }
 },
 {
+"id":"R26BK01709561-000",
+"kind":"용역",
+"name":"AI 기반 업무지원 강화를 위한 LLM 프로토타입 및 RAG 시스템 구축",
+"inst":"국토교통과학기술진흥원",
+"winner":"주식회사 엠큐닉",
+"amount":128144000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":12,
+"date":"2026-10-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-21",
+"raw":{
+"bidwinnrNm":"주식회사 엠큐닉",
+"sucsfbidAmt":"128144000"
+}
+},
+{
 "id":"R26BK01761623-000",
 "kind":"용역",
 "name":"서울 캠퍼스타운 AI+X Connect Forum 운영 용역",
@@ -816,6 +878,27 @@
 "bidwinnrNm":"주식회사 프리윌린",
 "sucsfbidAmt":"53900000",
 "sucsfbidRate":"98.27"
+}
+},
+{
+"id":"R26BK01759668-000",
+"kind":"용역",
+"name":"자율운항 피지컬 AI 모델 개발 및 활용 - 제어 AI 모델 개발",
+"inst":"한국해양과학기술원 부설 선박해양플랜트연구소",
+"winner":"국립부경대학교 산학협력단",
+"amount":79600000,
+"budget":72727273,
+"rate":99.5,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-21",
+"raw":{
+"bidwinnrNm":"국립부경대학교 산학협력단",
+"sucsfbidAmt":"79600000",
+"sucsfbidRate":"99.5"
 }
 },
 {
@@ -1596,6 +1679,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 아이리스테크놀로지",
 "sucsfbidAmt":"56715000"
+}
+},
+{
+"id":"R26BK01659989-000",
+"kind":"용역",
+"name":"[2026 대학혁신지원사업] 학부 학사정보시스템 고도화 사업(AI기반 중도탈락 예측 시스템과 학생 졸업요건자가진단 시스템의 웹서비스 연계 등)",
+"inst":"세종대학교",
+"winner":"주식회사 연은테크",
+"amount":258000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-21",
+"raw":{
+"bidwinnrNm":"주식회사 연은테크",
+"sucsfbidAmt":"258000000"
 }
 },
 {
