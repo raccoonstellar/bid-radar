@@ -403,7 +403,7 @@
 "order":"한국수자원공사",
 "amount":380000000,
 "rgst":"2026-10-19 23:50",
-"opnClse":"2026-10-24 00:00",
+"opnClse":"2026-10-23 13:00",
 "bidNos":[],
 "sw":"Y",
 "ofcl":"",
@@ -411,7 +411,7 @@
 "dlvr":"",
 "dlvrDays":0,
 "div":"일반용역",
-"chg":"",
+"chg":"2026-10-21 11:23",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287177",
 "files":[
 {
@@ -1358,5 +1358,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00288102",
+"name":"국회 업무용 AI 음성 기록 앱 개발 사업(통합발주)",
+"inst":"국회 국회사무처",
+"order":"조달청 서울지방조달청",
+"amount":577564040,
+"rgst":"2026-10-21 13:43",
+"opnClse":"2026-10-26 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"장민우",
+"tel":"02-590-8886",
+"dlvr":"",
+"dlvrDays":120,
+"div":"일반용역",
+"chg":"2026-10-21 13:43",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00288102",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288102&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-22"
 }
 ]

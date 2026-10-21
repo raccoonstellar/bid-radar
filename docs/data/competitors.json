@@ -1,5 +1,87 @@
 [
 {
+"id":"R26BK01763411-000",
+"kind":"용역",
+"name":"선문대학교 산학협력단 2026 충남 온(ON)누리 AI· SW 학생동아리 한마당  용역 ",
+"inst":"선문대학교 산학협력단",
+"winner":"우리시스템",
+"amount":43500000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"우리시스템",
+"sucsfbidAmt":"43500000"
+}
+},
+{
+"id":"R26BK01779286-000",
+"kind":"용역",
+"name":"[연구,196] 2026년 AI 인체감염증 등 바이러스 4종 검출을 위한 전용 카트리지형 신속 PCR-POCT 플랫폼 기반 진단시약 비상생산 표준체계 마련",
+"inst":"질병관리청",
+"winner":"에스디 바이오센서 주식회사",
+"amount":45000000,
+"budget":40909091,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"에스디 바이오센서 주식회사",
+"sucsfbidAmt":"45000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01759687-000",
+"kind":"용역",
+"name":"2026년 산업체 AI R&BD 프로젝트 운영",
+"inst":"부산과학기술대학교 산학협력단",
+"winner":"주식회사 에코디자인센터",
+"amount":87120000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"주식회사 에코디자인센터",
+"sucsfbidAmt":"87120000"
+}
+},
+{
+"id":"R26BK01781418-000",
+"kind":"물품",
+"name":"VLM 모델추론용 GPU",
+"inst":"한국건설기술연구원",
+"winner":"주식회사 이노에프앤지",
+"amount":27900000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"주식회사 이노에프앤지",
+"sucsfbidAmt":"27900000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01768274-000",
 "kind":"물품",
 "name":" 2026년 상생협력 실증 프로그램_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 ",
@@ -386,6 +468,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 선도소프트",
 "sucsfbidAmt":"1296900000"
+}
+},
+{
+"id":"R26BK01685823-000",
+"kind":"용역",
+"name":"당뇨질환 치료제 유효성 데이터 AI 활용 수집용역",
+"inst":"한국생명공학연구원",
+"winner":"국민대학교산학협력단",
+"amount":163300000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"국민대학교산학협력단",
+"sucsfbidAmt":"163300000"
 }
 },
 {
@@ -899,6 +1001,26 @@
 "bidwinnrNm":"국립부경대학교 산학협력단",
 "sucsfbidAmt":"79600000",
 "sucsfbidRate":"99.5"
+}
+},
+{
+"id":"R26BK01732564-000",
+"kind":"용역",
+"name":"울산항 정보공유 AI 서비스 구축 PoC 용역",
+"inst":"울산항만공사",
+"winner":"주식회사 파란샘",
+"amount":196602000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":20,
+"date":"2026-10-07",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"주식회사 파란샘",
+"sucsfbidAmt":"196602000"
 }
 },
 {
@@ -1498,6 +1620,26 @@
 }
 },
 {
+"id":"R26BK01715519-000",
+"kind":"용역",
+"name":"디자인 산업 특화 멀티모달 AI 데이터 구축 및 품질관리 가이드라인 조사·검증 및 개발",
+"inst":"한국디자인진흥원",
+"winner":"주식회사 에스에스엘",
+"amount":332500000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-22",
+"raw":{
+"bidwinnrNm":"주식회사 에스에스엘",
+"sucsfbidAmt":"332500000"
+}
+},
+{
 "id":"R26BK01738575-000",
 "kind":"물품",
 "name":"AI솔루션 개발실증 사업",
@@ -1760,86 +1902,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 노타",
 "sucsfbidAmt":"45000000"
-}
-},
-{
-"id":"R26BK01721686-001",
-"kind":"용역",
-"name":"AX 스프린트 사업 실증 기관용 통합 대시보드 구축 및 소프트웨어 패키지화 용역",
-"inst":"주식회사 정션메드",
-"winner":"주식회사 왓위케어",
-"amount":220000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-09-21",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-24",
-"raw":{
-"bidwinnrNm":"주식회사 왓위케어",
-"sucsfbidAmt":"220000000"
-}
-},
-{
-"id":"R26BK01701699-000",
-"kind":"용역",
-"name":"「2026년 경기도 AI디지털배움터 사업」 ‘산업전문가 AI이노베이터 양성 프로젝트’ 용역 ",
-"inst":"(재)경기도경제과학진흥원",
-"winner":"주식회사 엑스퍼트컨설팅",
-"amount":131590000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":7,
-"date":"2026-09-21",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"주식회사 엑스퍼트컨설팅",
-"sucsfbidAmt":"131590000"
-}
-},
-{
-"id":"R26BK01722092-000",
-"kind":"용역",
-"name":"(AID사업) 2026년 데이터 기반 학생성공  AI-Care 365 시스템 구축 운영  ",
-"inst":"전주비전대학 산학협력단",
-"winner":"주식회사 나우리",
-"amount":47300000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-21",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-07",
-"raw":{
-"bidwinnrNm":"주식회사 나우리",
-"sucsfbidAmt":"47300000"
-}
-},
-{
-"id":"R26BK01702723-000",
-"kind":"용역",
-"name":"인천 AI 서.논술형 평가지원시스템 구축 사업",
-"inst":"인천광역시교육청 인천광역시교육청AI융합교육원",
-"winner":"(주)엔에스데블",
-"amount":480000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":6,
-"date":"2026-09-21",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"(주)엔에스데블",
-"sucsfbidAmt":"480000000"
 }
 }
 ]
