@@ -1,5 +1,41 @@
 [
 {
+"id":"R26BD00289130",
+"name":"(긴급) 2027년 챗봇 서울톡 시스템 유지관리 용역",
+"inst":"서울특별시",
+"order":"서울특별시",
+"amount":573630000,
+"rgst":"2026-10-22 17:16",
+"opnClse":"2026-10-25 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"장래현",
+"tel":"",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-22 17:16",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00289130",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00289130&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00289130&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"긴급(경쟁 참여율 하락)",
+"score":16,
+"keywords":[
+"챗봇"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-23"
+},
+{
 "id":"R26BD00276784",
 "name":"AI 인프라 및 생성형 AI 구축 사업",
 "inst":"신용보증재단중앙회",
@@ -1390,5 +1426,77 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-22"
+},
+{
+"id":"R26BD00288778",
+"name":"AI기반 수중물체 탐지체계 개발을 위한 수중타겟 실해역 설치 및 측면주사소나를 이용한 학습용 수중음향 데이터 취득 용역",
+"inst":"한국해양과학기술원 부설 선박해양플랜트연구소",
+"order":"조달청",
+"amount":332818000,
+"rgst":"2026-10-22 12:28",
+"opnClse":"2026-10-27 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"정지혜",
+"tel":"070-4056-7426",
+"dlvr":"2027-12-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-22 12:28",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00288778",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288778&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288778&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-23"
+},
+{
+"id":"R26BD00288843",
+"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
+"inst":"(주)한국가스기술공사",
+"order":"(주)한국가스기술공사",
+"amount":227040000,
+"rgst":"2026-10-22 14:01",
+"opnClse":"2026-10-27 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"우경제",
+"tel":"",
+"dlvr":"2027-08-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-22 14:01",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00288843",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288843&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288843&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-23"
 }
 ]

@@ -1,5 +1,68 @@
 [
 {
+"id":"R26BK01778307-000",
+"kind":"용역",
+"name":"AI OCR 고도화 기술 컨설팅 용역",
+"inst":"(주)리빗",
+"winner":"포항공과대학교 산학협력단",
+"amount":55000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"포항공과대학교 산학협력단",
+"sucsfbidAmt":"55000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01771867-000",
+"kind":"물품",
+"name":"96GB ECC 메모리 기반 고성능 AI 연산용 그래픽 처리장치",
+"inst":"광주과학기술원",
+"winner":"쌔미쌔미",
+"amount":41530030,
+"budget":0,
+"rate":88.03,
+"rateEst":null,
+"bidders":50,
+"date":"2026-10-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"쌔미쌔미",
+"sucsfbidAmt":"41530030",
+"sucsfbidRate":"88.027"
+}
+},
+{
+"id":"R26BK01761621-000",
+"kind":"물품",
+"name":"AI 제어기반 Ga₂O₃ 단결정 성장 시스템(4인치Ga₂O₃ VB 성장로)",
+"inst":"한국기초과학지원연구원",
+"winner":"주식회사 케이엑스티",
+"amount":960000000,
+"budget":0,
+"rate":98.3,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"주식회사 케이엑스티",
+"sucsfbidAmt":"960000000",
+"sucsfbidRate":"98.298"
+}
+},
+{
 "id":"R26BK01763411-000",
 "kind":"용역",
 "name":"선문대학교 산학협력단 2026 충남 온(ON)누리 AI· SW 학생동아리 한마당  용역 ",
@@ -100,6 +163,27 @@
 "bidwinnrNm":"주식회사 에이아이이와이",
 "sucsfbidAmt":"330000000",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01741088-000",
+"kind":"용역",
+"name":"AI Agent 기반 다이캐스팅 공정데이터 수집분석전처리 체계 구축 용역",
+"inst":"한국생산기술연구원",
+"winner":"주식회사 제오노스 (Xeonos Inc.)",
+"amount":27620000,
+"budget":0,
+"rate":96.92,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-20",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"주식회사 제오노스 (Xeonos Inc.)",
+"sucsfbidAmt":"27620000",
+"sucsfbidRate":"96.915"
 }
 },
 {
@@ -857,6 +941,46 @@
 "raw":{
 "bidwinnrNm":"(주)유비온",
 "sucsfbidAmt":"400000000"
+}
+},
+{
+"id":"R26BK01736829-000",
+"kind":"용역",
+"name":"2026년 미디어 AI플랫폼 고도화",
+"inst":"한국언론진흥재단",
+"winner":"티쓰리큐 주식회사",
+"amount":385000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"티쓰리큐 주식회사",
+"sucsfbidAmt":"385000000"
+}
+},
+{
+"id":"R26BK01719764-000",
+"kind":"용역",
+"name":"AI 기반 지능형 업무처리 시스템 구축 사업",
+"inst":"한국철도기술연구원",
+"winner":"주식회사 써밋소프트",
+"amount":194000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-08",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-23",
+"raw":{
+"bidwinnrNm":"주식회사 써밋소프트",
+"sucsfbidAmt":"194000000"
 }
 },
 {
@@ -1841,67 +1965,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 연은테크",
 "sucsfbidAmt":"258000000"
-}
-},
-{
-"id":"R26BK01738238-000",
-"kind":"용역",
-"name":"[앵커사업] 조기 노화성 난청(ARHL) 핵심 타겟 발굴 및 뇌신경·항노화 약물 재창출(Drug Repurposing)을 위한 AI 분석 용역",
-"inst":"연세대학교 미래캠퍼스",
-"winner":"(주)사강랩사이언스",
-"amount":10450000,
-"budget":10000000,
-"rate":95.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-22",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-29",
-"raw":{
-"bidwinnrNm":"(주)사강랩사이언스",
-"sucsfbidAmt":"10450000",
-"sucsfbidRate":"95"
-}
-},
-{
-"id":"R26BK01713507-000",
-"kind":"용역",
-"name":"국가자격검정 시험문제 AI 검토 시스템 구축",
-"inst":"한국방송통신전파진흥원",
-"winner":"주식회사 제이씨지",
-"amount":33250000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-22",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-02",
-"raw":{
-"bidwinnrNm":"주식회사 제이씨지",
-"sucsfbidAmt":"33250000"
-}
-},
-{
-"id":"R26BK01718657-000",
-"kind":"용역",
-"name":"지능형 홈 온디바이스AI 모델 검증 소프트웨어 개발 용역",
-"inst":"한국정보통신기술협회",
-"winner":"주식회사 노타",
-"amount":45000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-22",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-02",
-"raw":{
-"bidwinnrNm":"주식회사 노타",
-"sucsfbidAmt":"45000000"
 }
 }
 ]
