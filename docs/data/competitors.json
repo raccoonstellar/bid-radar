@@ -1,5 +1,25 @@
 [
 {
+"id":"R26BK01763750-000",
+"kind":"용역",
+"name":" K-LXP 생성형 AI 이용자원 통합 공급 및 관리 용역 ",
+"inst":"한국기술교육대학교",
+"winner":"주식회사 블루소프트",
+"amount":90000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-24",
+"raw":{
+"bidwinnrNm":"주식회사 블루소프트",
+"sucsfbidAmt":"90000000"
+}
+},
+{
 "id":"R26BK01778307-000",
 "kind":"용역",
 "name":"AI OCR 고도화 기술 컨설팅 용역",
@@ -327,6 +347,27 @@
 "raw":{
 "bidwinnrNm":"(주)다이퀘스트",
 "sucsfbidAmt":"113400000"
+}
+},
+{
+"id":"R26BK01759021-000",
+"kind":"용역",
+"name":"2026년 인공지능집적단지 경비·미화·시설관리 용역",
+"inst":"인공지능산업융합사업단",
+"winner":"능우개발주식회사",
+"amount":612910160,
+"budget":0,
+"rate":90.0,
+"rateEst":null,
+"bidders":789,
+"date":"2026-10-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-24",
+"raw":{
+"bidwinnrNm":"능우개발주식회사",
+"sucsfbidAmt":"612910160",
+"sucsfbidRate":"89.995"
 }
 },
 {
@@ -1843,128 +1884,6 @@
 "bidwinnrNm":"주식회사 티이에프",
 "sucsfbidAmt":"98560000",
 "sucsfbidRate":"99.555"
-}
-},
-{
-"id":"R26BK01737255-001",
-"kind":"용역",
-"name":"AX만성질환_Scanox 기반 X-ray 모달리티 통신 프로세스 연동 및 검증 용역",
-"inst":"크리스타비전 주식회사",
-"winner":"주식회사 워크원오원",
-"amount":60000000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-28",
-"raw":{
-"bidwinnrNm":"주식회사 워크원오원",
-"sucsfbidAmt":"60000000",
-"sucsfbidRate":"100"
-}
-},
-{
-"id":"R26BK01706954-000",
-"kind":"용역",
-"name":"[용역/일반평가]중앙도서관/[대혁]이화여자대학교 중앙도서관 지능형 학술정보 시스템 구축 사업",
-"inst":"이화여자대학교",
-"winner":"(주)아이네크",
-"amount":190500000,
-"budget":0,
-"rate":82.86,
-"rateEst":null,
-"bidders":3,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-03",
-"raw":{
-"bidwinnrNm":"(주)아이네크",
-"sucsfbidAmt":"190500000",
-"sucsfbidRate":"82.862"
-}
-},
-{
-"id":"R26BK01712731-000",
-"kind":"용역",
-"name":"생성형 AI 기반 한국의료 글로벌 홍보 진단 및 전략 수립 컨설팅",
-"inst":"한국보건산업진흥원",
-"winner":"주식회사 망고스타코리아",
-"amount":27070000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":5,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-07",
-"raw":{
-"bidwinnrNm":"주식회사 망고스타코리아",
-"sucsfbidAmt":"27070000"
-}
-},
-{
-"id":"R26BK01716629-000",
-"kind":"용역",
-"name":"AI 활용 국가자격시험 문제 출제 시스템 구축 용역",
-"inst":"한국교통안전공단",
-"winner":"망고클라우드 주식회사",
-"amount":236500000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-07",
-"raw":{
-"bidwinnrNm":"망고클라우드 주식회사",
-"sucsfbidAmt":"236500000"
-}
-},
-{
-"id":"R26BK01716223-000",
-"kind":"용역",
-"name":"AI(딥러닝) 기반 공동 탐지 및 분석 프로그램 개발",
-"inst":"국토안전관리원",
-"winner":"주식회사 아이리스테크놀로지",
-"amount":56715000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"주식회사 아이리스테크놀로지",
-"sucsfbidAmt":"56715000"
-}
-},
-{
-"id":"R26BK01659989-000",
-"kind":"용역",
-"name":"[2026 대학혁신지원사업] 학부 학사정보시스템 고도화 사업(AI기반 중도탈락 예측 시스템과 학생 졸업요건자가진단 시스템의 웹서비스 연계 등)",
-"inst":"세종대학교",
-"winner":"주식회사 연은테크",
-"amount":258000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-23",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-21",
-"raw":{
-"bidwinnrNm":"주식회사 연은테크",
-"sucsfbidAmt":"258000000"
 }
 }
 ]

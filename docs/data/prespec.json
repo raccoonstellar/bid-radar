@@ -36,6 +36,42 @@
 "fetchedOn":"2026-10-23"
 },
 {
+"id":"R26BD00289712",
+"name":"(긴급) 2027년 챗봇 서울톡 시스템 유지관리 용역",
+"inst":"서울특별시",
+"order":"서울특별시",
+"amount":562265000,
+"rgst":"2026-10-23 16:05",
+"opnClse":"2026-10-26 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"장래현",
+"tel":"",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-23 16:06",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00289712",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00289712&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00289712&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"긴급(경쟁 참여율 하락)",
+"score":16,
+"keywords":[
+"챗봇"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-24"
+},
+{
 "id":"R26BD00276784",
 "name":"AI 인프라 및 생성형 AI 구축 사업",
 "inst":"신용보증재단중앙회",
@@ -1498,5 +1534,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-23"
+},
+{
+"id":"R26BD00289804",
+"name":"기업용 AI 통합 이용환경 구축",
+"inst":"한국마사회",
+"order":"한국마사회",
+"amount":100000000,
+"rgst":"2026-10-23 17:18",
+"opnClse":"2026-10-28 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"박하준",
+"tel":"",
+"dlvr":"",
+"dlvrDays":45,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00289804",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00289804&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-24"
 }
 ]
