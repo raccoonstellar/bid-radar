@@ -602,36 +602,6 @@
 "fetchedOn":"2026-10-21"
 },
 {
-"id":"R26BD00273148",
-"name":"KEIT AX 기반 구축 사업",
-"inst":"한국산업기술기획평가원",
-"order":"조달청 대구지방조달청",
-"amount":1978796200,
-"rgst":"2026-09-10 08:50",
-"opnClse":"2026-09-20 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"서지수",
-"tel":"070-4056-7977",
-"dlvr":"",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273148&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"AX"
-],
-"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00273148",
-"dlvrDays":365
-},
-{
 "id":"R26BD00283207",
 "name":"지능형 포렌식센터 프라이빗 클라우드 도입 및 구축",
 "inst":"한국인터넷진흥원",

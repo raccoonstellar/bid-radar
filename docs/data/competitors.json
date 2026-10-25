@@ -556,6 +556,26 @@
 }
 },
 {
+"id":"R26BK01748836-000",
+"kind":"용역",
+"name":"AI·GPR 활용 스마트 지반조사 체계 구축 사업(협상)",
+"inst":"인천광역시 연수구",
+"winner":"셀파이엔씨(주)",
+"amount":752700000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-14",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-26",
+"raw":{
+"bidwinnrNm":"셀파이엔씨(주)",
+"sucsfbidAmt":"752700000"
+}
+},
+{
 "id":"R26BK01753188-000",
 "kind":"용역",
 "name":"[2026년 경상남도 앵커 사업] AI 기반 낙상예측 프로그램 개발연구 용역 ",
