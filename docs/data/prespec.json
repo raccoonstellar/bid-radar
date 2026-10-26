@@ -1536,5 +1536,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-24"
+},
+{
+"id":"R26BD00290104",
+"name":"2026년 중장년 정책 AI 시스템 도입 사업",
+"inst":"재단법인 서울특별시 50플러스재단",
+"order":"재단법인 서울특별시 50플러스재단",
+"amount":327904000,
+"rgst":"2026-10-26 11:02",
+"opnClse":"2026-11-02 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"최윤두",
+"tel":"02-460-5034",
+"dlvr":"2027-05-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-26 11:02",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00290104",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00290104&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-27"
 }
 ]
