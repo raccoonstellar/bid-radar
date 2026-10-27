@@ -1,0 +1,136 @@
+{
+ "id": "R26BK01792917-000",
+ "name": "CES 2027 KOREA-M.AX ALLIANCE 공동관 조성·운영",
+ "parser": 4,
+ "checkedAt": "2026-10-27T23:40:09",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03",
+   "name": "입찰공고.pdf",
+   "doc": "공고",
+   "kind": "pdf",
+   "bytes": 239111,
+   "chars": 1796
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03",
+   "name": "긴급입찰사유서.pdf",
+   "doc": "공고",
+   "kind": "pdf",
+   "bytes": 112212,
+   "chars": 62,
+   "error": "텍스트 62자 — 추출 불충분(pdf)"
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03",
+   "name": "입찰공고.hwp",
+   "doc": "공고",
+   "kind": "hwp",
+   "bytes": 656896,
+   "chars": 1497
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03",
+   "name": "입찰유의서.hwp",
+   "doc": "공고",
+   "kind": "hwp",
+   "bytes": 60416,
+   "chars": 5233
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03",
+   "name": "입찰참가신청서.hwp",
+   "doc": "공고",
+   "unread": true
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03",
+   "name": "제안요청서.hwp",
+   "doc": "공고",
+   "unread": true
+  },
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792917&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03",
+   "name": "청렴계약특별유의서.hwp",
+   "doc": "공고",
+   "unread": true
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 2,
+   "verdict": "",
+   "snippets": [
+    "제안서 / - 법인등기부등본 - 입찰보증금(보증보험증권) / - 법인(개인)인감증명서(필요시 사용인감계) - 사업자등록증 / - 공동수급표준협정서(해당 경우, 전자협정) - 입찰유의서 / - 청렴계약특별유의서 - 경쟁입찰참가자등록증 / - 중소기업 확인서 - 직접생",
+    "안서 / - 법인등기부등본 / - 입찰보증금(보증보험증권) / - 법인(개인)인감증명서(필요시 사용인감계) / - 사업자등록증 / - 공동수급표준협정서(해당 경우, 전자협정) / - 입찰유의서 / - 청렴계약특별유의서 / 경쟁입찰참가자등록증 / 중소기업 확인서 / 직접생산"
+   ]
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false,
+   "method": "협상"
+  },
+  "제출방식": {
+   "n": 4,
+   "verdict": "방문",
+   "snippets": [
+    "서류 / ② 제1항의 규정에 의거 입찰관련서류를 제출할 경우에는 원본을 제출하거나 사본에 “원본과 같음”을 명기하고 법인 또는 대표자 인감으로 날인하여 제출하여야 한다. / 제4조(입찰에관한서류) ① 입찰에 참가하고자 하는 자는 다음 각 호의 서류(이하 “입찰에관한서류”라 한다)를 열람할 수",
+    "은 입찰참가신청서 제출시 신고한 인감으로 하여야 한다. / ④ 입찰서의 기재사항중 말소 또는 정정한 곳이 있을 때에는 입찰에 사용하는 인감으로 날인하여야 한다. / ⑤ 입찰서는 입찰공고 또는 입찰참가통지서등에 별도로 규정한 경우를 제외하고는 한글로 작성하여야하고 입찰금액의 통화는 원화로 하",
+    "6.동일사항에 대하여 타인의 대리를 겸하거나 2인 이상을 대리한 입찰 / 7.입찰서의 입찰금액 등 중요한 부분이 불분명하거나 정정한 후 정정 날인을 누락한 입찰 / 8.담합하거나 타인의 경쟁참가를 방해 또는 기획평가원의 업무집행을 방해한 자의 입찰 / 9.입찰가의 기명날인이 없는 입찰(입",
+    "참가를 방해 또는 기획평가원의 업무집행을 방해한 자의 입찰 / 9.입찰가의 기명날인이 없는 입찰(입찰참가신청서 제출시 신고한 인감으로 입찰서에 날인되지 아니한 경우도 포함한다.) / 10.입찰서에 기재한 중요부분에 착오가 있음을 이유로 개찰현장에서 입찰자가 입찰의 취소의사를 표시한 것으로서"
+   ]
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 2,
+   "verdict": "",
+   "snippets": [
+    "동수급표준협정서(해당 경우, 전자협정) - 입찰유의서 / - 청렴계약특별유의서 - 경쟁입찰참가자등록증 / - 중소기업 확인서 - 직접생산확인증명서 / 9. 상생결제제도 안내 / 가. 본 계약 관련하여 위·수탁기업간 사전협의를 통한 검토 후 상생결제제도(전자적 대금결제",
+    "공동수급표준협정서(해당 경우, 전자협정) / - 입찰유의서 / - 청렴계약특별유의서 / 경쟁입찰참가자등록증 / 중소기업 확인서 / 직접생산확인증명서 / 9. 상생결제제도 안내 / 가. 본 계약 관련하여 위·수탁기업간 사전협의를 통한 검토 후 상생결제제도(전자적 대금결제"
+   ]
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업기간": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "과업내용": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 8596
+}

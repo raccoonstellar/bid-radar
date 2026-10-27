@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01793176-000",
+"kind":"용역",
+"name":"인공지능, 창조산업 기반 대학 공공기술 발굴·매칭 및 사업화",
+"inst":"서울특별시 서울시립대학교 산학협력단",
+"winner":"주식회사 에프엔피파트너스",
+"amount":21560000,
+"budget":0,
+"rate":98.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-27",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-28",
+"raw":{
+"bidwinnrNm":"주식회사 에프엔피파트너스",
+"sucsfbidAmt":"21560000",
+"sucsfbidRate":"98"
+}
+},
+{
 "id":"R26BK01704565-000",
 "kind":"용역",
 "name":"한동대학교 AI기반 학생지원 통합시스템 구축 개발 용역",
@@ -80,6 +101,27 @@
 "bidwinnrNm":"(주)에이치피씨랩",
 "sucsfbidAmt":"29315000",
 "sucsfbidRate":"99.71"
+}
+},
+{
+"id":"R26BK01788063-000",
+"kind":"용역",
+"name":"[앵커사업] (스케일업)AI 지식검색·문헌분석 플랫폼 구축 용역",
+"inst":"연세대학교 미래캠퍼스",
+"winner":"주식회사 옥토버스",
+"amount":10450000,
+"budget":0,
+"rate":95.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-28",
+"raw":{
+"bidwinnrNm":"주식회사 옥토버스",
+"sucsfbidAmt":"10450000",
+"sucsfbidRate":"95"
 }
 },
 {
@@ -1946,6 +1988,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 에스에스엘",
 "sucsfbidAmt":"332500000"
+}
+},
+{
+"id":"R26BK01659421-000",
+"kind":"용역",
+"name":"사법부 AI 기반 형사재판 및 양형지원을 위한 지능형 플랫폼 구축",
+"inst":"대법원",
+"winner":"주식회사 엘지씨엔에스",
+"amount":10282140000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-09-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-28",
+"raw":{
+"bidwinnrNm":"주식회사 엘지씨엔에스",
+"sucsfbidAmt":"10282140000"
 }
 },
 {

@@ -505,6 +505,70 @@
 "fetchedOn":"2026-10-20"
 },
 {
+"id":"R26BD00291069",
+"name":"AX가상실증공장 시뮬레이션 플랫폼 구축 용역",
+"inst":"한국화학융합시험연구원",
+"order":"한국화학융합시험연구원",
+"amount":220000000,
+"rgst":"2026-10-27 15:51",
+"opnClse":"2026-11-01 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이명구",
+"tel":"02-2164-0054",
+"dlvr":"2026-12-18 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-27 15:51",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291069",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291069&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-28"
+},
+{
+"id":"R26BD00291077",
+"name":"고속 신호처리 및 지능형 영상처리 시스템 개발",
+"inst":"한국천문연구원",
+"order":"한국천문연구원",
+"amount":262531000,
+"rgst":"2026-10-27 15:57",
+"opnClse":"2026-11-01 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"한주혜",
+"tel":"042-865-3390",
+"dlvr":"2028-10-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-27 15:57",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291077",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291077&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-28"
+},
+{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
@@ -1568,5 +1632,41 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-27"
+},
+{
+"id":"R26BD00291234",
+"name":"『텍스타일 트랜스포메이션(TX) 구현을 위한 섬유 명장 경험 데이터 기반 AI 모델 및 직물설계 지원 기술 개발』직물설계 암묵지 데이터 구조화 및 학습용 데이터셋 구축 용역",
+"inst":"한국섬유개발연구원",
+"order":"한국섬유개발연구원",
+"amount":100000000,
+"rgst":"2026-10-27 17:52",
+"opnClse":"2026-11-01 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이민석",
+"tel":"",
+"dlvr":"2027-01-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-27 17:52",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291234",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291234&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291234&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-28"
 }
 ]
