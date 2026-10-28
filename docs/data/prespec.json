@@ -569,6 +569,47 @@
 "fetchedOn":"2026-10-28"
 },
 {
+"id":"R26BD00291461",
+"name":"2027년 서울시 생성형 AI 서비스 운영 및 유지관리",
+"inst":"서울특별시",
+"order":"서울특별시",
+"amount":234622000,
+"rgst":"2026-10-28 11:01",
+"opnClse":"2026-11-01 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이은혜",
+"tel":"02-2133-2964",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-28 11:01",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291461",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291461&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291461&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291461&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"생성형",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-29"
+},
+{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
@@ -1668,5 +1709,59 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-28"
+},
+{
+"id":"R26BD00291709",
+"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
+"inst":"(주)한국가스기술공사",
+"order":"(주)한국가스기술공사",
+"amount":227040000,
+"rgst":"2026-10-28 15:50",
+"opnClse":"2026-10-27 00:00",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"2027-08-31 00:00",
+"dlvrDays":0,
+"div":"기술용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291709",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-29"
+},
+{
+"id":"R26BD00291912",
+"name":"(26G057-H)AI기반 문진,진료보조체계 개발 실증 용역",
+"inst":"국방부 국군재정관리단",
+"order":"국방부 국군재정관리단",
+"amount":453000000,
+"rgst":"2026-10-28 21:12",
+"opnClse":"2026-11-03 00:00",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291912",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-29"
 }
 ]

@@ -1,5 +1,67 @@
 [
 {
+"id":"R26BK01795113-000",
+"kind":"용역",
+"name":"국가 농업AX플랫폼 구축 사업 변경 재무 모델 검토 용역",
+"inst":"한국농어촌공사",
+"winner":"회계법인 나무",
+"amount":20377500,
+"budget":0,
+"rate":95.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"회계법인 나무",
+"sucsfbidAmt":"20377500",
+"sucsfbidRate":"95"
+}
+},
+{
+"id":"R26BK01792951-000",
+"kind":"용역",
+"name":"UOS Physical AI·Robot Lab 운영 용역",
+"inst":"서울특별시 서울시립대학교 산학협력단",
+"winner":"주식회사 플라즈마큐어링",
+"amount":17560000,
+"budget":0,
+"rate":97.56,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"주식회사 플라즈마큐어링",
+"sucsfbidAmt":"17560000",
+"sucsfbidRate":"97.555"
+}
+},
+{
+"id":"R26BK01756748-000",
+"kind":"용역",
+"name":"건설현장 순회점검 영상 기반 VLM 학습데이터 구축 방안 연구",
+"inst":"한국건설기술연구원",
+"winner":"주식회사 자유로운소프트",
+"amount":94490000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-10-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"주식회사 자유로운소프트",
+"sucsfbidAmt":"94490000"
+}
+},
+{
 "id":"R26BK01793176-000",
 "kind":"용역",
 "name":"인공지능, 창조산업 기반 대학 공공기술 발굴·매칭 및 사업화",
@@ -18,6 +80,47 @@
 "bidwinnrNm":"주식회사 에프엔피파트너스",
 "sucsfbidAmt":"21560000",
 "sucsfbidRate":"98"
+}
+},
+{
+"id":"R26BK01762144-000",
+"kind":"용역",
+"name":"2026학년도 전문대학 혁신사업 해외 AI선진사례 벤치마킹 용역",
+"inst":"계명문화대학 산학협력단",
+"winner":"(사)한국능률협회",
+"amount":40000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-27",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(사)한국능률협회",
+"sucsfbidAmt":"40000000"
+}
+},
+{
+"id":"R26BK01760105-000",
+"kind":"용역",
+"name":"[재공고] 2026년 특별기획(가제)「빛,사진 그리고 AI 」전시체험전 위탁 용역 입찰 공고",
+"inst":"전북특별자치도교육청 전북특별자치도교육청과학교육원",
+"winner":"(주)훌리악",
+"amount":79200000,
+"budget":0,
+"rate":99.32,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-27",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(주)훌리악",
+"sucsfbidAmt":"79200000",
+"sucsfbidRate":"99.322"
 }
 },
 {
@@ -122,6 +225,47 @@
 "bidwinnrNm":"주식회사 옥토버스",
 "sucsfbidAmt":"10450000",
 "sucsfbidRate":"95"
+}
+},
+{
+"id":"R26BK01749340-001",
+"kind":"용역",
+"name":"기금통합관리시스템(NSFMS) 챗봇 인텐트 지식추가 및 개선 용역",
+"inst":"한국원자력안전재단",
+"winner":"(주)큐비트엑스",
+"amount":73875000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(주)큐비트엑스",
+"sucsfbidAmt":"73875000"
+}
+},
+{
+"id":"R26BK01773988-000",
+"kind":"물품",
+"name":"AI기반 실내공기질 통합관리시스템 구축 사업(2차)",
+"inst":"인천광역시",
+"winner":"(주)인프라칩",
+"amount":32775000,
+"budget":0,
+"rate":94.73,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(주)인프라칩",
+"sucsfbidAmt":"32775000",
+"sucsfbidRate":"94.727"
 }
 },
 {
@@ -373,6 +517,26 @@
 }
 },
 {
+"id":"R26BK01739019-000",
+"kind":"용역",
+"name":"2026년 인공지능 활용 역량 강화를 위한 교사 글로벌 연수 운영",
+"inst":"한국교육학술정보원",
+"winner":"(사)한국능률협회",
+"amount":570000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":7,
+"date":"2026-10-20",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(사)한국능률협회",
+"sucsfbidAmt":"570000000"
+}
+},
+{
 "id":"R26BK01664051-000",
 "kind":"용역",
 "name":"2026년 과학기술인 AI 역량강화 해외연수 기획·운영 지원 용역",
@@ -534,6 +698,26 @@
 "bidwinnrNm":"능우개발주식회사",
 "sucsfbidAmt":"612910160",
 "sucsfbidRate":"89.995"
+}
+},
+{
+"id":"R26BK01737533-000",
+"kind":"용역",
+"name":"취업역량강화 AI역량검사 및 취업지원플랫폼 운영 용역",
+"inst":"국방전직교육원",
+"winner":"(주)마이다스인",
+"amount":111000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-10-29",
+"raw":{
+"bidwinnrNm":"(주)마이다스인",
+"sucsfbidAmt":"111000000"
 }
 },
 {
@@ -2008,88 +2192,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 엘지씨엔에스",
 "sucsfbidAmt":"10282140000"
-}
-},
-{
-"id":"R26BK01738575-000",
-"kind":"물품",
-"name":"AI솔루션 개발실증 사업",
-"inst":"주식회사 태진시스템",
-"winner":"주식회사 스마트밸리",
-"amount":54950000,
-"budget":0,
-"rate":99.91,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-28",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-28",
-"raw":{
-"bidwinnrNm":"주식회사 스마트밸리",
-"sucsfbidAmt":"54950000",
-"sucsfbidRate":"99.909"
-}
-},
-{
-"id":"R26BK01728046-001",
-"kind":"용역",
-"name":"AI 솔루션 현장 운영 프로그램 개발 및 추가 적용환경 구축 용역",
-"inst":"주식회사 타이거 인공지능",
-"winner":"주식회사 애니버디즈스튜디오",
-"amount":51502000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-28",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-29",
-"raw":{
-"bidwinnrNm":"주식회사 애니버디즈스튜디오",
-"sucsfbidAmt":"51502000"
-}
-},
-{
-"id":"R26BK01727982-000",
-"kind":"용역",
-"name":"AI 솔루션 고도화를 위한 통합 분석검증 인프라 및 데이터 구축 용역",
-"inst":"주식회사 타이거 인공지능",
-"winner":"주식회사 잼머스",
-"amount":100000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-28",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-09-29",
-"raw":{
-"bidwinnrNm":"주식회사 잼머스",
-"sucsfbidAmt":"100000000"
-}
-},
-{
-"id":"R26BK01741735-000",
-"kind":"용역",
-"name":"신재생에너지 발전소 O&M을 위한 에이전트 기반 지능형 발전설비 운영관리 시스템 구축",
-"inst":"한국과학기술정보연구원",
-"winner":"주식회사 티이에프",
-"amount":98560000,
-"budget":0,
-"rate":99.56,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-28",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"주식회사 티이에프",
-"sucsfbidAmt":"98560000",
-"sucsfbidRate":"99.555"
 }
 }
 ]
