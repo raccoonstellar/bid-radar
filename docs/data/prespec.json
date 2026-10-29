@@ -1763,5 +1763,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-29"
+},
+{
+"id":"R26BD00292172",
+"name":"AI 시제품 개발·제작 지원 플랫폼 구축 용역",
+"inst":"(재)원주의료기기산업진흥원",
+"order":"(재)원주의료기기산업진흥원",
+"amount":460000000,
+"rgst":"2026-10-29 13:24",
+"opnClse":"2026-11-01 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"정현정",
+"tel":"033-760-6105",
+"dlvr":"2027-06-30 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-10-29 13:24",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00292172",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00292172&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-10-30"
 }
 ]
