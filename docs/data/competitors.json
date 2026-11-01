@@ -1,5 +1,47 @@
 [
 {
+"id":"R26BK01791922-000",
+"kind":"용역",
+"name":"AI 응용제품 신속 상용화(만성질환관리)_AI Scribe 솔루션 도입 및 실증 운영 지원 용역",
+"inst":"주식회사 메라키플레이스",
+"winner":"스튜디오키코 주식회사",
+"amount":77000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-02",
+"raw":{
+"bidwinnrNm":"스튜디오키코 주식회사",
+"sucsfbidAmt":"77000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01792922-000",
+"kind":"물품",
+"name":"상용SW 제3자단가계약(SAMI GPT v1.0 (주)사미텍)",
+"inst":"각 수요기관",
+"winner":"주식회사 사미텍",
+"amount":8000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-02",
+"raw":{
+"bidwinnrNm":"주식회사 사미텍",
+"sucsfbidAmt":"8000000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01796470-000",
 "kind":"용역",
 "name":"머신러닝 기반 파라미터 튜닝을 위한 데이터 처리",
@@ -616,6 +658,26 @@
 "raw":{
 "bidwinnrNm":"셀렉트스타 주식회사",
 "sucsfbidAmt":"86800000"
+}
+},
+{
+"id":"R26BK01748119-000",
+"kind":"용역",
+"name":"스마트K팩토리 반월시화 AX플랫폼 기능 고도화 용역",
+"inst":"한국산업단지공단",
+"winner":"주식회사 인터로이드 ",
+"amount":99000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-21",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-02",
+"raw":{
+"bidwinnrNm":"주식회사 인터로이드 ",
+"sucsfbidAmt":"99000000"
 }
 },
 {
@@ -1844,356 +1906,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 케이원",
 "sucsfbidAmt":"367990000"
-}
-},
-{
-"id":"R26BK01748821-000",
-"kind":"용역",
-"name":"나노복합 웨어링 및 AI 기반 자율진단 기술이 적용된 중대형 펌프 개발을 위한 AI부 자율진단 개발",
-"inst":"(유)한성산기",
-"winner":"(주)애드아임",
-"amount":70400000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-03",
-"raw":{
-"bidwinnrNm":"(주)애드아임",
-"sucsfbidAmt":"70400000",
-"sucsfbidRate":"100"
-}
-},
-{
-"id":"R26BK01751555-000",
-"kind":"용역",
-"name":"나노복합 웨어링 및 AI 기반 자율진단 기술이 적용된 중대형 펌프 개발을 위한 제품 가공",
-"inst":"(유)한성산기",
-"winner":"유한회사 대성기계",
-"amount":67540000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-03",
-"raw":{
-"bidwinnrNm":"유한회사 대성기계",
-"sucsfbidAmt":"67540000",
-"sucsfbidRate":"100"
-}
-},
-{
-"id":"R26BK01749107-000",
-"kind":"물품",
-"name":"나노복합 웨어링 및 AI 기반 자율진단 기술이 적용된 중대형 펌프 개발을 위한 웨어링부 자재 수급 및 제작",
-"inst":"(유)한성산기",
-"winner":"(주)아이엠씨에스",
-"amount":71500000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-03",
-"raw":{
-"bidwinnrNm":"(주)아이엠씨에스",
-"sucsfbidAmt":"71500000",
-"sucsfbidRate":"100"
-}
-},
-{
-"id":"R26BK01699669-000",
-"kind":"용역",
-"name":"특수교 계측기 이상신호 분석을 위한 인공지능 적용성 검증",
-"inst":"국토안전관리원",
-"winner":"유니콘스(주)",
-"amount":217855000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"유니콘스(주)",
-"sucsfbidAmt":"217855000"
-}
-},
-{
-"id":"R26BK01715921-000",
-"kind":"용역",
-"name":"AI 지능형 병원정보시스템(AI Native HIS) 기획",
-"inst":"한국보건산업진흥원",
-"winner":"서울대학교 산학협력단",
-"amount":100000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":4,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"서울대학교 산학협력단",
-"sucsfbidAmt":"100000000"
-}
-},
-{
-"id":"R26BK01704406-000",
-"kind":"용역",
-"name":"Agentic AI 교육 프로그램 기획 및 운영 지원 용역",
-"inst":"서울특별시 서울시립대학교 산학협력단",
-"winner":"클라우드스퀘어 주식회사",
-"amount":61710000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-02",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-16",
-"raw":{
-"bidwinnrNm":"클라우드스퀘어 주식회사",
-"sucsfbidAmt":"61710000"
-}
-},
-{
-"id":"R26BK01746540-000",
-"kind":"용역",
-"name":"AI신기술 체험·전시 용역",
-"inst":"경북대학교 첨단정보통신융합산업기술원",
-"winner":"반사",
-"amount":52000000,
-"budget":0,
-"rate":99.46,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-01",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-02",
-"raw":{
-"bidwinnrNm":"반사",
-"sucsfbidAmt":"52000000",
-"sucsfbidRate":"99.464"
-}
-},
-{
-"id":"R26BK01748852-000",
-"kind":"용역",
-"name":"특허기반 정량평가모델 설계와 기술가치 평가 연계를 통한 바이오AX 분야 종합분석",
-"inst":"한국산업기술기획평가원",
-"winner":"유미특허법인",
-"amount":104718500,
-"budget":100209091,
-"rate":95.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-01",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-02",
-"raw":{
-"bidwinnrNm":"유미특허법인",
-"sucsfbidAmt":"104718500",
-"sucsfbidRate":"95"
-}
-},
-{
-"id":"R26BK01730483-000",
-"kind":"용역",
-"name":"건국대학교 [ANCHOR사업단_18과제] KU 캠퍼스타운 AI 글로벌 해커톤 프로그램 ",
-"inst":"건국대학교 산학협력단",
-"winner":"주식회사 슘페터",
-"amount":38000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-01",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"주식회사 슘페터",
-"sucsfbidAmt":"38000000"
-}
-},
-{
-"id":"R26BK01742616-000",
-"kind":"용역",
-"name":"2026년 10~12월 조류인플루엔자(AI) 차단방역 이동통제초소 운영 용역",
-"inst":"경상북도 칠곡군",
-"winner":"에코시스템",
-"amount":38748370,
-"budget":0,
-"rate":88.27,
-"rateEst":null,
-"bidders":6,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"에코시스템",
-"sucsfbidAmt":"38748370",
-"sucsfbidRate":"88.271"
-}
-},
-{
-"id":"R26BK01751725-000",
-"kind":"용역",
-"name":"도시문제해결사 AI 에이전트 교육 프로그램 운영",
-"inst":"서울특별시 서울시립대학교 산학협력단",
-"winner":"주식회사 피플데이터랩",
-"amount":50960000,
-"budget":0,
-"rate":98.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"주식회사 피플데이터랩",
-"sucsfbidAmt":"50960000",
-"sucsfbidRate":"98"
-}
-},
-{
-"id":"R26BK01742631-000",
-"kind":"용역",
-"name":"아프리카돼지열병, 구제역, AI차단방역 거점소독시설 운영 용역(2026. 10~12월)",
-"inst":"경상북도 칠곡군",
-"winner":"금오방역",
-"amount":87242200,
-"budget":0,
-"rate":88.05,
-"rateEst":null,
-"bidders":6,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"금오방역",
-"sucsfbidAmt":"87242200",
-"sucsfbidRate":"88.05"
-}
-},
-{
-"id":"R26BK01748404-000",
-"kind":"용역",
-"name":"[지역주도형 AI대전환사업]AI솔루션 구축사업",
-"inst":"에스엘피주식회사",
-"winner":"한솔피엔에스주식회사",
-"amount":209500000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-01",
-"raw":{
-"bidwinnrNm":"한솔피엔에스주식회사",
-"sucsfbidAmt":"209500000",
-"sucsfbidRate":"99.997"
-}
-},
-{
-"id":"R26BK01709093-000",
-"kind":"용역",
-"name":"2027 AI ICT 산업전망 컨퍼런스 운영대행 용역",
-"inst":"한국연구재단 정보통신기획평가원",
-"winner":"주식회사 마이스피플",
-"amount":279000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":5,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"주식회사 마이스피플",
-"sucsfbidAmt":"279000000"
-}
-},
-{
-"id":"R26BK01744508-000",
-"kind":"용역",
-"name":"2026년 소나무재선충병 무인항공기 예찰 AI 분석 용역",
-"inst":"경상북도 안동시",
-"winner":"주식회사 스마트지오",
-"amount":98546432,
-"budget":0,
-"rate":87.98,
-"rateEst":null,
-"bidders":13,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"주식회사 스마트지오",
-"sucsfbidAmt":"98546432",
-"sucsfbidRate":"87.983"
-}
-},
-{
-"id":"R26BK01724246-000",
-"kind":"용역",
-"name":"AI 특화 공동훈련센터 산업 범용 AI 직무·훈련 표준모델 개발 용역",
-"inst":"인공지능산업융합사업단",
-"winner":"주식회사 상상력집단",
-"amount":32600000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-16",
-"raw":{
-"bidwinnrNm":"주식회사 상상력집단",
-"sucsfbidAmt":"32600000"
-}
-},
-{
-"id":"R26BK01718593-000",
-"kind":"용역",
-"name":"마운트 에이전트 개발을 위한 DB 구축 용역",
-"inst":"한국기계연구원",
-"winner":"주식회사 수퍼센츄리",
-"amount":92400000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-09-30",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-20",
-"raw":{
-"bidwinnrNm":"주식회사 수퍼센츄리",
-"sucsfbidAmt":"92400000"
 }
 }
 ]
