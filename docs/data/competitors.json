@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01802564-000",
+"kind":"용역",
+"name":"2026년 AI+X 실전 문제해결 프로젝트 2기 운영 용역",
+"inst":"서울특별시 서울시립대학교 산학협력단",
+"winner":"(주)데이터스케쳐스",
+"amount":21560000,
+"budget":0,
+"rate":98.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"(주)데이터스케쳐스",
+"sucsfbidAmt":"21560000",
+"sucsfbidRate":"98"
+}
+},
+{
 "id":"R26BK01791922-000",
 "kind":"용역",
 "name":"AI 응용제품 신속 상용화(만성질환관리)_AI Scribe 솔루션 도입 및 실증 운영 지원 용역",
@@ -39,6 +60,26 @@
 "bidwinnrNm":"주식회사 사미텍",
 "sucsfbidAmt":"8000000",
 "sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01761868-000",
+"kind":"용역",
+"name":"지역산업 AX촉진을 위한 강원형 데이터 활용체계 전력 수립용역",
+"inst":"강원대학교 산학협력단",
+"winner":"주식회사코넥",
+"amount":98450000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"주식회사코넥",
+"sucsfbidAmt":"98450000"
 }
 },
 {
@@ -102,6 +143,47 @@
 "bidwinnrNm":"제타시스",
 "sucsfbidAmt":"8725200",
 "sucsfbidRate":"94.994"
+}
+},
+{
+"id":"R26BK01726242-000",
+"kind":"용역",
+"name":"연암공과대학교 AI Agent 성과관리 및 회계/구매 시스템 구축 ",
+"inst":"연암공과대학교산학협력단",
+"winner":"주식회사 넥스트클라우드",
+"amount":350000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-10-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"주식회사 넥스트클라우드",
+"sucsfbidAmt":"350000000"
+}
+},
+{
+"id":"R26BK01797851-000",
+"kind":"물품",
+"name":"학교 AI 비상벨 시스템 도입",
+"inst":"충청북도교육청",
+"winner":"(주)본시스",
+"amount":119990000,
+"budget":0,
+"rate":99.99,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"(주)본시스",
+"sucsfbidAmt":"119990000",
+"sucsfbidRate":"99.991"
 }
 },
 {
@@ -496,6 +578,26 @@
 }
 },
 {
+"id":"R26BK01739045-000",
+"kind":"용역",
+"name":"2026년 AI 기반 엔드프로덕트 상용화 지원사업 우수사례 및 성과지표 발굴 용역",
+"inst":"정보통신산업진흥원",
+"winner":"(주)인사이트코리아",
+"amount":121000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":6,
+"date":"2026-10-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"(주)인사이트코리아",
+"sucsfbidAmt":"121000000"
+}
+},
+{
 "id":"R26BK01778307-000",
 "kind":"용역",
 "name":"AI OCR 고도화 기술 컨설팅 용역",
@@ -556,6 +658,26 @@
 "bidwinnrNm":"주식회사 케이엑스티",
 "sucsfbidAmt":"960000000",
 "sucsfbidRate":"98.298"
+}
+},
+{
+"id":"R26BK01751330-000",
+"kind":"용역",
+"name":"안양시 인공지능 기본 및 종합계획 수립 용역",
+"inst":"경기도 안양시",
+"winner":"주식회사 영국씨앤피",
+"amount":91000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-22",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-03",
+"raw":{
+"bidwinnrNm":"주식회사 영국씨앤피",
+"sucsfbidAmt":"91000000"
 }
 },
 {

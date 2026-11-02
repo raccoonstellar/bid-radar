@@ -1795,5 +1795,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-30"
+},
+{
+"id":"R26BD00293288",
+"name":"국민인공지능서비스혁신추진단 온프레미스SW 개발 환경 구성 용역",
+"inst":"과학기술정보통신부",
+"order":"조달청 대전지방조달청",
+"amount":165712040,
+"rgst":"2026-11-02 09:59",
+"opnClse":"2026-11-07 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"박수경",
+"tel":"070-4056-8383",
+"dlvr":"",
+"dlvrDays":30,
+"div":"일반용역",
+"chg":"2026-11-02 09:59",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00293288",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00293288&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"인공지능"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-03"
 }
 ]
