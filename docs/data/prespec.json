@@ -610,6 +610,38 @@
 "fetchedOn":"2026-10-29"
 },
 {
+"id":"R26BD00294185",
+"name":"온라인 AX 수준진단 솔루션 개발 용역",
+"inst":"(재)구미전자정보기술원",
+"order":"조달청 대구지방조달청",
+"amount":201830000,
+"rgst":"2026-11-03 14:24",
+"opnClse":"2026-11-08 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"박현민",
+"tel":"070-4056-7986",
+"dlvr":"",
+"dlvrDays":90,
+"div":"일반용역",
+"chg":"2026-11-03 14:24",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00294185",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294185&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"AX"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-04"
+},
+{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
@@ -979,6 +1011,46 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00294490",
+"name":"’27~’28년 농업 AX 데이터 구축 및  스마트팜코리아 플랫폼 운영",
+"inst":"농림수산식품교육문화정보원",
+"order":"농림수산식품교육문화정보원",
+"amount":4600000000,
+"rgst":"2026-11-03 17:58",
+"opnClse":"2026-11-08 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"강구남",
+"tel":"044-861-8743",
+"dlvr":"2028-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-03 17:58",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00294490",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"AX"
+],
+"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-04"
 },
 {
 "id":"R26BD00276932",
@@ -1827,5 +1899,41 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-03"
+},
+{
+"id":"R26BD00294478",
+"name":"AI 기반 완전자율형 스마트양식 제어 플랫폼 개발",
+"inst":"전북특별자치도",
+"order":"전북특별자치도",
+"amount":287504000,
+"rgst":"2026-11-03 17:49",
+"opnClse":"2026-11-06 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"전미연",
+"tel":"063-280-2329",
+"dlvr":"2028-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-03 17:49",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00294478",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294478&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294478&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-04"
 }
 ]

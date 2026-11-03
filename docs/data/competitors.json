@@ -1,5 +1,46 @@
 [
 {
+"id":"R26BK01773679-000",
+"kind":"용역",
+"name":"엣지 AI 캐리어보드 개발 및 생산 용역",
+"inst":"주식회사 티아이랩",
+"winner":"제피로스일렉트로닉주식회사",
+"amount":135850000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"제피로스일렉트로닉주식회사",
+"sucsfbidAmt":"135850000"
+}
+},
+{
+"id":"R26BK01759092-000",
+"kind":"물품",
+"name":"지능형 농기계 작업부하 성능시험 장치 1식",
+"inst":"한국농업기술진흥원",
+"winner":"주식회사 쓰리알",
+"amount":2790000000,
+"budget":0,
+"rate":95.21,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"주식회사 쓰리알",
+"sucsfbidAmt":"2790000000",
+"sucsfbidRate":"95.211"
+}
+},
+{
 "id":"R26BK01802564-000",
 "kind":"용역",
 "name":"2026년 AI+X 실전 문제해결 프로젝트 2기 운영 용역",
@@ -270,6 +311,26 @@
 }
 },
 {
+"id":"R26BK01762882-000",
+"kind":"용역",
+"name":"미래 유망기술 기획보고서의 AI 평가시스템 PoC 모델 개발 연구 용역",
+"inst":"한국기계연구원",
+"winner":"주식회사 한국데이터소프트",
+"amount":96572000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"주식회사 한국데이터소프트",
+"sucsfbidAmt":"96572000"
+}
+},
+{
 "id":"R26BK01793176-000",
 "kind":"용역",
 "name":"인공지능, 창조산업 기반 대학 공공기술 발굴·매칭 및 사업화",
@@ -514,6 +575,46 @@
 "bidwinnrNm":"(주)인프라칩",
 "sucsfbidAmt":"32775000",
 "sucsfbidRate":"94.727"
+}
+},
+{
+"id":"R26BK01749239-000",
+"kind":"용역",
+"name":"Physical AI Robot Arena 조성을 위한 가정환경 구축 용역",
+"inst":"대구경북과학기술원",
+"winner":"(주)피스페이스",
+"amount":119400000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"(주)피스페이스",
+"sucsfbidAmt":"119400000"
+}
+},
+{
+"id":"R26BK01753444-000",
+"kind":"용역",
+"name":"KRICT AI 성숙도 진단 모델 개발 용역",
+"inst":"한국화학연구원",
+"winner":"주식회사 세명소프트",
+"amount":76500000,
+"budget":81818182,
+"rate":null,
+"rateEst":93.5,
+"bidders":5,
+"date":"2026-10-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"주식회사 세명소프트",
+"sucsfbidAmt":"76500000"
 }
 },
 {
@@ -1331,6 +1432,27 @@
 "raw":{
 "bidwinnrNm":"국민대학교산학협력단",
 "sucsfbidAmt":"163300000"
+}
+},
+{
+"id":"R26BK01761171-000",
+"kind":"물품",
+"name":"시각언어모델(VLM) AI 관제 GPU 서버 구매",
+"inst":"서울특별시",
+"winner":"주식회사 인텔리빅스",
+"amount":102960000,
+"budget":0,
+"rate":90.44,
+"rateEst":null,
+"bidders":11,
+"date":"2026-10-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-04",
+"raw":{
+"bidwinnrNm":"주식회사 인텔리빅스",
+"sucsfbidAmt":"102960000",
+"sucsfbidRate":"90.444"
 }
 },
 {
