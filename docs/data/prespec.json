@@ -1935,5 +1935,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-04"
+},
+{
+"id":"R26BD00295037",
+"name":"2026학년도 AI 기반 차세대 학습경험플랫폼(LXP) 구축",
+"inst":"덕성여자대학교",
+"order":"덕성여자대학교",
+"amount":220000000,
+"rgst":"2026-11-04 16:40",
+"opnClse":"2026-11-09 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"정화석",
+"tel":"02-901-8066",
+"dlvr":"2027-02-27 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-04 16:40",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00295037",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00295037&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-05"
 }
 ]

@@ -1,5 +1,67 @@
 [
 {
+"id":"R26BK01760029-000",
+"kind":"용역",
+"name":"정책연구용역(금융권 AI 에이전트 도입을 위한 규율체계 마련)",
+"inst":"금융위원회",
+"winner":"(주)이언컨설팅그룹",
+"amount":24000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-11-04",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"(주)이언컨설팅그룹",
+"sucsfbidAmt":"24000000"
+}
+},
+{
+"id":"R26BK01807501-000",
+"kind":"물품",
+"name":"[수의시담] AI agent 기반 자율공정 통합운영시스템",
+"inst":"한국기초과학지원연구원",
+"winner":"주식회사코트랩",
+"amount":125500000,
+"budget":0,
+"rate":99.27,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-04",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"주식회사코트랩",
+"sucsfbidAmt":"125500000",
+"sucsfbidRate":"99.272"
+}
+},
+{
+"id":"R26BK01804589-000",
+"kind":"물품",
+"name":"선박용 AI 상황인식 어라운드뷰 시스템 ",
+"inst":"한국해양과학기술원 부설 선박해양플랜트연구소",
+"winner":"씨드로닉스 주식회사",
+"amount":280000000,
+"budget":0,
+"rate":99.82,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-04",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"씨드로닉스 주식회사",
+"sucsfbidAmt":"280000000",
+"sucsfbidRate":"99.821"
+}
+},
+{
 "id":"R26BK01773679-000",
 "kind":"용역",
 "name":"엣지 AI 캐리어보드 개발 및 생산 용역",
@@ -38,6 +100,27 @@
 "bidwinnrNm":"주식회사 쓰리알",
 "sucsfbidAmt":"2790000000",
 "sucsfbidRate":"95.211"
+}
+},
+{
+"id":"R26BK01805469-000",
+"kind":"용역",
+"name":"2026년 AI 평가시스템 문항 출제위원 역량강화 연수용역(수의시담)",
+"inst":"전북특별자치도교육청",
+"winner":"이비에스미디어주식회사",
+"amount":187131000,
+"budget":0,
+"rate":98.66,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"이비에스미디어주식회사",
+"sucsfbidAmt":"187131000",
+"sucsfbidRate":"98.657"
 }
 },
 {
@@ -121,6 +204,48 @@
 "raw":{
 "bidwinnrNm":"주식회사코넥",
 "sucsfbidAmt":"98450000"
+}
+},
+{
+"id":"R26BK01776982-000",
+"kind":"용역",
+"name":"나사렛대학교 AI 학사상담 챗봇 시스템 구축",
+"inst":"나사렛대학교",
+"winner":"주식회사 프리윌린",
+"amount":33330000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":4,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"주식회사 프리윌린",
+"sucsfbidAmt":"33330000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01786874-000",
+"kind":"물품",
+"name":"딥러닝 모델 학습용 AI 슈퍼컴퓨터",
+"inst":"국방과학연구소",
+"winner":"(주)리더스시스템즈",
+"amount":1163432000,
+"budget":0,
+"rate":91.62,
+"rateEst":null,
+"bidders":15,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"(주)리더스시스템즈",
+"sucsfbidAmt":"1163432000",
+"sucsfbidRate":"91.617"
 }
 },
 {
@@ -696,6 +821,26 @@
 "raw":{
 "bidwinnrNm":"(주)인사이트코리아",
 "sucsfbidAmt":"121000000"
+}
+},
+{
+"id":"R26BK01757066-000",
+"kind":"용역",
+"name":"2026년 AI동행 데모데이 기획·운영 및 성과 확산",
+"inst":"한국과학창의재단",
+"winner":"주식회사 아이베리컴",
+"amount":199900000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-10-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-05",
+"raw":{
+"bidwinnrNm":"주식회사 아이베리컴",
+"sucsfbidAmt":"199900000"
 }
 },
 {
