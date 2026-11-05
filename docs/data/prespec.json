@@ -72,37 +72,6 @@
 "fetchedOn":"2026-10-24"
 },
 {
-"id":"R26BD00276784",
-"name":"AI 인프라 및 생성형 AI 구축 사업",
-"inst":"신용보증재단중앙회",
-"order":"조달청",
-"amount":622503000,
-"rgst":"2026-09-21 14:00",
-"opnClse":"2026-09-27 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"정희경",
-"tel":"070-4056-7245",
-"dlvr":"",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276784&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":15,
-"keywords":[
-"생성형",
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276784",
-"dlvrDays":210
-},
-{
 "id":"R26BD00279313",
 "name":"2026년 인간-다중 AI 에이전트 협업 기반 예술창작 커리큘럼 개발 실증 연구 용역",
 "inst":"문화체육관광부 한국예술종합학교",
@@ -304,6 +273,39 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00295377",
+"name":"헬프데스크 AI 상담지원시스템 구축 사업",
+"inst":"인천국제공항공사",
+"order":"인천국제공항공사",
+"amount":572161983,
+"rgst":"2026-11-05 11:00",
+"opnClse":"2026-11-08 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00295377",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00295377&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":15,
+"keywords":[
+"상담",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-06"
 },
 {
 "id":"R26BD00284958",
@@ -1051,35 +1053,6 @@
 ],
 "position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-04"
-},
-{
-"id":"R26BD00276932",
-"name":"2026년 평가정보 자동수집·활용을 위한 AI 모델 개발 용역",
-"inst":"한국발명진흥회",
-"order":"한국발명진흥회",
-"amount":108500000,
-"rgst":"2026-09-21 16:29",
-"opnClse":"2026-09-26 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"추명지",
-"tel":"02-3459-2779",
-"dlvr":"2026-12-15 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276932&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00276932"
 },
 {
 "id":"R26BD00277458",

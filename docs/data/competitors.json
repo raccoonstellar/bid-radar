@@ -1,5 +1,109 @@
 [
 {
+"id":"R26BK01764403-000",
+"kind":"용역",
+"name":"26년 스마트팜 데이터 활용 AI 서비스 연계 및 개발 용역",
+"inst":"주식회사 라이트플라이어",
+"winner":"주식회사 지농",
+"amount":44000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-11-05",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"주식회사 지농",
+"sucsfbidAmt":"44000000"
+}
+},
+{
+"id":"R26BK01808544-000",
+"kind":"용역",
+"name":"2026 AI/SW 융합페어 및 Job Conference 대행 용역",
+"inst":"재단법인 전북테크노파크",
+"winner":"두인",
+"amount":98500000,
+"budget":0,
+"rate":98.5,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-05",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"두인",
+"sucsfbidAmt":"98500000",
+"sucsfbidRate":"98.5"
+}
+},
+{
+"id":"R26BK01796628-000",
+"kind":"용역",
+"name":"여수국가산업단지 AX실증산단구축사업 기업지원 효과 성과지표 개발용역",
+"inst":"재단법인전남테크노파크",
+"winner":"참조은",
+"amount":26524820,
+"budget":27272727,
+"rate":88.0,
+"rateEst":null,
+"bidders":348,
+"date":"2026-11-05",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"참조은",
+"sucsfbidAmt":"26524820",
+"sucsfbidRate":"88.001"
+}
+},
+{
+"id":"R26BK01801662-000",
+"kind":"물품",
+"name":"상용SW 3자단가계약(Exo AI-CMS v2.0 (주)엑소텍)",
+"inst":"각 수요기관",
+"winner":"주식회사 엑소텍",
+"amount":6600000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-05",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"주식회사 엑소텍",
+"sucsfbidAmt":"6600000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01795639-000",
+"kind":"물품",
+"name":"지역 주도형 AI대전환 사업 AI 실증 테스트를 위한 Flipper 제작",
+"inst":"주식회사 디에스피",
+"winner":"에스제이에레츠",
+"amount":55000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-05",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"에스제이에레츠",
+"sucsfbidAmt":"55000000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01760029-000",
 "kind":"용역",
 "name":"정책연구용역(금융권 AI 에이전트 도입을 위한 규율체계 마련)",
@@ -124,6 +228,27 @@
 }
 },
 {
+"id":"R26BK01793500-000",
+"kind":"물품",
+"name":"초거대AI연구센터 연구 수행을 위한 컴퓨터 구매",
+"inst":"한국과학기술정보연구원",
+"winner":"(주)아이와이시스템",
+"amount":18450000,
+"budget":0,
+"rate":95.25,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"(주)아이와이시스템",
+"sucsfbidAmt":"18450000",
+"sucsfbidRate":"95.25"
+}
+},
+{
 "id":"R26BK01802564-000",
 "kind":"용역",
 "name":"2026년 AI+X 실전 문제해결 프로젝트 2기 운영 용역",
@@ -142,6 +267,47 @@
 "bidwinnrNm":"(주)데이터스케쳐스",
 "sucsfbidAmt":"21560000",
 "sucsfbidRate":"98"
+}
+},
+{
+"id":"R26BK01779091-000",
+"kind":"용역",
+"name":"2026년 글로컬대학 AI 에이전트 기반 「CWNU DNA+ AI 커리어 패스포트」운영 용역",
+"inst":"국립창원대학교",
+"winner":"주식회사 뉴온",
+"amount":94300000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"주식회사 뉴온",
+"sucsfbidAmt":"94300000"
+}
+},
+{
+"id":"R26BK01793213-000",
+"kind":"물품",
+"name":"초거대AI연구센터 연구 수행 및 연구환경 유지를 위한 노트북, 공기청정기 구입",
+"inst":"한국과학기술정보연구원",
+"winner":"(주)아이와이시스템",
+"amount":3910000,
+"budget":0,
+"rate":92.32,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-02",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"(주)아이와이시스템",
+"sucsfbidAmt":"3910000",
+"sucsfbidRate":"92.324"
 }
 },
 {
@@ -246,6 +412,27 @@
 "bidwinnrNm":"(주)리더스시스템즈",
 "sucsfbidAmt":"1163432000",
 "sucsfbidRate":"91.617"
+}
+},
+{
+"id":"R26BK01797169-000",
+"kind":"용역",
+"name":"지능형 생활안정지원시스템 구축 사업",
+"inst":"근로복지공단본부",
+"winner":"주식회사 아이티센엔텍",
+"amount":5867000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-10-30",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-06",
+"raw":{
+"bidwinnrNm":"주식회사 아이티센엔텍",
+"sucsfbidAmt":"5867000000",
+"sucsfbidRate":"100"
 }
 },
 {
@@ -2171,130 +2358,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 파란샘",
 "sucsfbidAmt":"196602000"
-}
-},
-{
-"id":"R26BK01736960-001",
-"kind":"용역",
-"name":"생성형 AI 실감콘텐츠 전시 공간 조성 용역(재공고)",
-"inst":"주식회사 레벨나인",
-"winner":"유프스튜디오",
-"amount":94050000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-07",
-"raw":{
-"bidwinnrNm":"유프스튜디오",
-"sucsfbidAmt":"94050000"
-}
-},
-{
-"id":"R26BK01746008-000",
-"kind":"용역",
-"name":"국립광주과학관 인공지능관 리뉴얼 연계 「AI 융합체험존」 시범운영 용역",
-"inst":"국립광주과학관",
-"winner":"주식회사 풍선껌",
-"amount":29983667,
-"budget":0,
-"rate":90.4,
-"rateEst":null,
-"bidders":6,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"주식회사 풍선껌",
-"sucsfbidAmt":"29983667",
-"sucsfbidRate":"90.397"
-}
-},
-{
-"id":"R26BK01717746-000",
-"kind":"물품",
-"name":"AI 기반 초고속 3D 형광 이미징 시스템",
-"inst":"한국화학연구원",
-"winner":"(주)바이오플러스",
-"amount":283192470,
-"budget":0,
-"rate":98.61,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"(주)바이오플러스",
-"sucsfbidAmt":"283192470",
-"sucsfbidRate":"98.606"
-}
-},
-{
-"id":"R26BK01747722-000",
-"kind":"물품",
-"name":"글로벌 공급망 위기 사전감지 AI에이전트 구축 사업 연구를 위한 데스크탑(1대) 구매",
-"inst":"한국과학기술정보연구원",
-"winner":"주식회사 투비와이드",
-"amount":5588000,
-"budget":0,
-"rate":88.09,
-"rateEst":null,
-"bidders":4,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"주식회사 투비와이드",
-"sucsfbidAmt":"5588000",
-"sucsfbidRate":"88.091"
-}
-},
-{
-"id":"R26BK01756238-000",
-"kind":"물품",
-"name":"『AX시대의 신라 기와 연구, 어떻게 접근할 것인가』 한국고고학회 공동 학술 워크숍 발표 자료집 발간",
-"inst":"국가유산청 국립문화유산연구원 국립경주문화유산연구소",
-"winner":"디자인잇오앤오 주식회사",
-"amount":10785000,
-"budget":0,
-"rate":97.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-08",
-"raw":{
-"bidwinnrNm":"디자인잇오앤오 주식회사",
-"sucsfbidAmt":"10785000",
-"sucsfbidRate":"96.997"
-}
-},
-{
-"id":"R26BK01721025-000",
-"kind":"용역",
-"name":"2026년 AI활용 초기상담정보시스템 업무 편의성 개선",
-"inst":"한국사회보장정보원",
-"winner":"주식회사 케이원",
-"amount":367990000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":5,
-"date":"2026-10-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-17",
-"raw":{
-"bidwinnrNm":"주식회사 케이원",
-"sucsfbidAmt":"367990000"
 }
 }
 ]
