@@ -644,6 +644,47 @@
 "fetchedOn":"2026-11-04"
 },
 {
+"id":"R26BD00296427",
+"name":"AX 디바이스 AI 모델 검증 플랫폼 구축 용역",
+"inst":"특수법인 한국전파진흥협회",
+"order":"특수법인 한국전파진흥협회",
+"amount":200000000,
+"rgst":"2026-11-06 17:29",
+"opnClse":"2026-11-11 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"곽현수",
+"tel":"02-317-6119",
+"dlvr":"2026-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-06 17:29",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00296427",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00296427&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00296427&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00296427&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"AX",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-07"
+},
+{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",
@@ -1053,39 +1094,6 @@
 ],
 "position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-04"
-},
-{
-"id":"R26BD00277458",
-"name":"순천향대학교 AI의료융합데이터센터 플랫폼 구축 사업",
-"inst":"순천향대학교",
-"order":"순천향대학교",
-"amount":596200000,
-"rgst":"2026-09-22 16:12",
-"opnClse":"2026-09-27 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"권나은",
-"tel":"",
-"dlvr":"2027-05-31 00:00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277458&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277458&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00277458"
 },
 {
 "id":"R26BD00278050",
