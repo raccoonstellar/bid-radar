@@ -1096,33 +1096,36 @@
 "fetchedOn":"2026-11-04"
 },
 {
-"id":"R26BD00278050",
-"name":"2026년 권역책임의료기관 AI 기반 진료시스템 지원 서비스 도입 및 통합 플랫폼 용역",
-"inst":"강원대학교병원",
-"order":"강원대학교병원",
-"amount":445242450,
-"rgst":"2026-09-23 14:41",
-"opnClse":"2026-09-28 23:59",
+"id":"R26BD00296252",
+"name":"AI 실시간 경정 경주수면 수초 탐지시스템 구축 용역(긴급)",
+"inst":"서울올림픽기념국민체육진흥공단 경륜경정총괄본부",
+"order":"서울올림픽기념국민체육진흥공단 경륜경정총괄본부",
+"amount":174000000,
+"rgst":"2026-11-07 09:42",
+"opnClse":"2026-11-10 23:59",
 "bidNos":[],
 "sw":"Y",
-"ofcl":"이세연",
-"tel":"033-258-9079",
-"dlvr":"2027-03-31 00:00:00",
+"ofcl":"이대승",
+"tel":"02-2067-5411",
+"dlvr":"",
+"dlvrDays":90,
+"div":"일반용역",
+"chg":"2026-11-07 09:42",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00296252",
 "files":[
 {
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278050&fileType=BFDTL&fileSeq=1",
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00296252&fileType=BFDTL&fileSeq=1",
 "name":"사전규격 첨부 1"
 }
 ],
 "bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
+"reason":"긴급(경쟁 참여율 하락)",
+"score":11,
 "keywords":[
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00278050"
+"fetchedOn":"2026-11-08"
 },
 {
 "id":"R26BD00278861",
