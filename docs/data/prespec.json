@@ -685,6 +685,46 @@
 "fetchedOn":"2026-11-07"
 },
 {
+"id":"R26BD00297134",
+"name":"여수 스마트 산업단지 수요기업 지능형 영상정보기기 HW개발 및 구축",
+"inst":"한전KDN(주)",
+"order":"한전KDN(주)",
+"amount":218963866,
+"rgst":"2026-11-09 16:38",
+"opnClse":"2026-11-14 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이나현",
+"tel":"",
+"dlvr":"2026-12-23 00:00",
+"dlvrDays":0,
+"div":"기술용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00297134",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-10"
+},
+{
 "id":"R26BD00278810",
 "name":"AX서비스 개발환경 구축 용역",
 "inst":"한국남동발전(주)",

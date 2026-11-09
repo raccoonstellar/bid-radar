@@ -1,5 +1,25 @@
 [
 {
+"id":"R26BK01778399-000",
+"kind":"용역",
+"name":"AI컴퓨팅 실증인프라 시험검증",
+"inst":"사단법인 한국정보통신진흥협회",
+"winner":"주식회사 에이아이웍스( AIWORKX Inc.)",
+"amount":92935000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-09",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-10",
+"raw":{
+"bidwinnrNm":"주식회사 에이아이웍스( AIWORKX Inc.)",
+"sucsfbidAmt":"92935000"
+}
+},
+{
 "id":"R26BK01772777-000",
 "kind":"용역",
 "name":"[긴급]지능형통합관제시스템 경비용역 입찰",
@@ -80,6 +100,47 @@
 "bidwinnrNm":"주식회사 에이아이쓰리",
 "sucsfbidAmt":"39600000",
 "sucsfbidRate":"88"
+}
+},
+{
+"id":"R26BK01774755-000",
+"kind":"용역",
+"name":"AI 기반 통합 학생·취업지원 챗봇 서비스 구축 고도화",
+"inst":"인하대학교 산학협력단",
+"winner":"주식회사 클라비",
+"amount":100000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-11-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-10",
+"raw":{
+"bidwinnrNm":"주식회사 클라비",
+"sucsfbidAmt":"100000000"
+}
+},
+{
+"id":"R26BK01786466-000",
+"kind":"물품",
+"name":"LLM 추론시스템 서버 구매 및 설치 수의계약 안내 공고",
+"inst":"인천광역시교육청 인천과학고등학교",
+"winner":"주식회사 매쓰에이아이",
+"amount":83600000,
+"budget":0,
+"rate":94.27,
+"rateEst":null,
+"bidders":13,
+"date":"2026-11-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-10",
+"raw":{
+"bidwinnrNm":"주식회사 매쓰에이아이",
+"sucsfbidAmt":"83600000",
+"sucsfbidRate":"94.272"
 }
 },
 {
@@ -329,6 +390,26 @@
 "bidwinnrNm":"(주)아이와이시스템",
 "sucsfbidAmt":"18450000",
 "sucsfbidRate":"95.25"
+}
+},
+{
+"id":"R26BK01767839-000",
+"kind":"용역",
+"name":"울산 주력산업 연계 AI팩토리 및 AX확산 신규 과제 발굴·기획",
+"inst":"재단법인 울산정보산업진흥원",
+"winner":"세종경영자문 주식회사",
+"amount":80100000,
+"budget":80909091,
+"rate":null,
+"rateEst":99.0,
+"bidders":3,
+"date":"2026-11-03",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-10",
+"raw":{
+"bidwinnrNm":"세종경영자문 주식회사",
+"sucsfbidAmt":"80100000"
 }
 },
 {
@@ -1419,6 +1500,27 @@
 "raw":{
 "bidwinnrNm":"(사)한국능률협회",
 "sucsfbidAmt":"570000000"
+}
+},
+{
+"id":"R26BK01765899-000",
+"kind":"물품",
+"name":"생성형AI 통합 학습지원 플랫폼 토큰",
+"inst":"한국기술교육대학교",
+"winner":"주식회사 씽크렉스",
+"amount":43900000,
+"budget":0,
+"rate":92.02,
+"rateEst":null,
+"bidders":26,
+"date":"2026-10-20",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-10",
+"raw":{
+"bidwinnrNm":"주식회사 씽크렉스",
+"sucsfbidAmt":"43900000",
+"sucsfbidRate":"92.017"
 }
 },
 {
