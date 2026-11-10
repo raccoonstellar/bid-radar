@@ -1,5 +1,89 @@
 [
 {
+"id":"R25BK00998307-000",
+"kind":"용역",
+"name":"2025-2호 성결대학교 AI 기반 통합역량개발시스템 구축 고도화 용역",
+"inst":"성결대학교",
+"winner":"(주)휴노",
+"amount":155000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-10",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-11",
+"raw":{
+"bidwinnrNm":"(주)휴노",
+"sucsfbidAmt":"155000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01777349-000",
+"kind":"용역",
+"name":"AI기반 초광역 리빙랩 해커톤 운영 용역",
+"inst":"동서대학교산학협력단",
+"winner":"인(IN)코칭연구소",
+"amount":150000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":5,
+"date":"2026-11-10",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-11",
+"raw":{
+"bidwinnrNm":"인(IN)코칭연구소",
+"sucsfbidAmt":"150000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01792858-000",
+"kind":"용역",
+"name":"2026 AID전환중점 지원사업 시스템(플랫폼)간 기능고도화_타임리AI플랫폼 ",
+"inst":"경민대학 산학협력단",
+"winner":"주식회사 오르덴",
+"amount":29000000,
+"budget":0,
+"rate":96.67,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-10",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-11",
+"raw":{
+"bidwinnrNm":"주식회사 오르덴",
+"sucsfbidAmt":"29000000",
+"sucsfbidRate":"96.666"
+}
+},
+{
+"id":"R26BK01805143-000",
+"kind":"물품",
+"name":"인공지능 작·편곡 모듈이 탑재된 자동연주 업라이트 피아노 시스템",
+"inst":"광주과학기술원",
+"winner":"에넥스 순천점",
+"amount":17219500,
+"budget":0,
+"rate":88.01,
+"rateEst":null,
+"bidders":124,
+"date":"2026-11-10",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-11",
+"raw":{
+"bidwinnrNm":"에넥스 순천점",
+"sucsfbidAmt":"17219500",
+"sucsfbidRate":"88.006"
+}
+},
+{
 "id":"R26BK01778399-000",
 "kind":"용역",
 "name":"AI컴퓨팅 실증인프라 시험검증",
@@ -742,6 +826,27 @@
 "bidwinnrNm":"주식회사 지인연구소",
 "sucsfbidAmt":"26063000",
 "sucsfbidRate":"88.573"
+}
+},
+{
+"id":"R26BK01725538-000",
+"kind":"용역",
+"name":"AI 적용 비축사업 통합정보시스템 고도화 용역",
+"inst":"한국농수산식품유통공사",
+"winner":"주식회사 오픈노트",
+"amount":514250000,
+"budget":0,
+"rate":85.0,
+"rateEst":null,
+"bidders":8,
+"date":"2026-10-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-11",
+"raw":{
+"bidwinnrNm":"주식회사 오픈노트",
+"sucsfbidAmt":"514250000",
+"sucsfbidRate":"85"
 }
 },
 {
