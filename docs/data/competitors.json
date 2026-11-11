@@ -1,5 +1,46 @@
 [
 {
+"id":"R26BK01822546-000",
+"kind":"용역",
+"name":"국가 농업AX플랫폼 사업법인 성과관리(KPI) 체계 수립 용역",
+"inst":"한국농어촌공사",
+"winner":"(주) 한국능률협회컨설팅",
+"amount":21500000,
+"budget":19636364,
+"rate":99.54,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-12",
+"raw":{
+"bidwinnrNm":"(주) 한국능률협회컨설팅",
+"sucsfbidAmt":"21500000",
+"sucsfbidRate":"99.537"
+}
+},
+{
+"id":"R26BK01770994-000",
+"kind":"용역",
+"name":"AI기반 챗봇서비스 도입",
+"inst":"서울특별시 중구",
+"winner":"주식회사 이노디스",
+"amount":72270000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-12",
+"raw":{
+"bidwinnrNm":"주식회사 이노디스",
+"sucsfbidAmt":"72270000"
+}
+},
+{
 "id":"R25BK00998307-000",
 "kind":"용역",
 "name":"2025-2호 성결대학교 AI 기반 통합역량개발시스템 구축 고도화 용역",
@@ -101,6 +142,46 @@
 "raw":{
 "bidwinnrNm":"주식회사 에이아이웍스( AIWORKX Inc.)",
 "sucsfbidAmt":"92935000"
+}
+},
+{
+"id":"R26BK01783175-000",
+"kind":"용역",
+"name":"AI 기반 지역혁신 데이터 플랫폼 구축",
+"inst":"부산대학교 산학협력단",
+"winner":"주식회사 한국취업정보기술",
+"amount":295500000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-11-09",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-12",
+"raw":{
+"bidwinnrNm":"주식회사 한국취업정보기술",
+"sucsfbidAmt":"295500000"
+}
+},
+{
+"id":"R26BK01760208-000",
+"kind":"용역",
+"name":"쇄빙선 실운항 데이터를 활용한 설명가능 AI(XAI) 빙하중 추정 모델 개발",
+"inst":"한국해양과학기술원 부설 선박해양플랜트연구소",
+"winner":"세종대학교산학협력단",
+"amount":50000000,
+"budget":45454545,
+"rate":null,
+"rateEst":110.0,
+"bidders":4,
+"date":"2026-11-09",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-12",
+"raw":{
+"bidwinnrNm":"세종대학교산학협력단",
+"sucsfbidAmt":"50000000"
 }
 },
 {
@@ -2116,190 +2197,6 @@
 "bidwinnrNm":"주식회사 인텔리빅스",
 "sucsfbidAmt":"102960000",
 "sucsfbidRate":"90.444"
-}
-},
-{
-"id":"R26BK01743087-000",
-"kind":"용역",
-"name":"(채혈 없이 실시간 저전력 온디바이스 혈당값 추론이 가능한 광음향 비침습 혈당측정기) AX 디바이스용 AI 학습 데이터 라벨링 용역",
-"inst":"한국화학융합시험연구원",
-"winner":"주식회사 크라우드웍스",
-"amount":206839600,
-"budget":188181818,
-"rate":null,
-"rateEst":109.9,
-"bidders":2,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"주식회사 크라우드웍스",
-"sucsfbidAmt":"206839600"
-}
-},
-{
-"id":"R26BK01747588-000",
-"kind":"용역",
-"name":"[육성] 교수자 인공지능 활용 지원을 위한 인공지능 서비스 구독권 제공",
-"inst":"한국교원대학교",
-"winner":"주식회사 소사이어티",
-"amount":22403332,
-"budget":0,
-"rate":88.17,
-"rateEst":null,
-"bidders":10,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"주식회사 소사이어티",
-"sucsfbidAmt":"22403332",
-"sucsfbidRate":"88.167"
-}
-},
-{
-"id":"R26BK01734970-000",
-"kind":"용역",
-"name":"택배상자 송장위치 검출 및 원근변환과 송장 내용 OCR 검출시스템 제작 및 테스트",
-"inst":"한국철도기술연구원",
-"winner":"주식회사 지미션",
-"amount":80586000,
-"budget":0,
-"rate":98.88,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"주식회사 지미션",
-"sucsfbidAmt":"80586000",
-"sucsfbidRate":"98.882"
-}
-},
-{
-"id":"R26BK01752163-000",
-"kind":"물품",
-"name":"[2026 앵커(신산업)] 연성대학교 LLM 서버 구입",
-"inst":"연성대학교 산학협력단",
-"winner":"(주)오픈네트웍시스템",
-"amount":52140000,
-"budget":0,
-"rate":87.02,
-"rateEst":null,
-"bidders":5,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-13",
-"raw":{
-"bidwinnrNm":"(주)오픈네트웍시스템",
-"sucsfbidAmt":"52140000",
-"sucsfbidRate":"87.015"
-}
-},
-{
-"id":"R26BK01732373-000",
-"kind":"용역",
-"name":"한국섬유소재연구원 지능형 염색공정 데이터수집 인프라 및  ERP/SCADA 기반 구축",
-"inst":"한국섬유소재연구원",
-"winner":"(주)평화아이씨티",
-"amount":79970000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"(주)평화아이씨티",
-"sucsfbidAmt":"79970000"
-}
-},
-{
-"id":"R26BK01749095-000",
-"kind":"용역",
-"name":"한양대학교 산학협력단 2026년 글로벌 AI 인재양성 해외 파견 프로그램 지원 용역",
-"inst":"한양대학교 산학협력단",
-"winner":"(주)리키항공",
-"amount":69850000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"(주)리키항공",
-"sucsfbidAmt":"69850000"
-}
-},
-{
-"id":"R26BK01728112-000",
-"kind":"용역",
-"name":"[한남대학교 산학협력단]철도 도메인 특화 RAG 기반 AI 실시간 안전교관 시스템 구축 및 연동 용역",
-"inst":"한남대학교 산학협력단",
-"winner":"주식회사 새임",
-"amount":125400000,
-"budget":0,
-"rate":96.28,
-"rateEst":null,
-"bidders":3,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-14",
-"raw":{
-"bidwinnrNm":"주식회사 새임",
-"sucsfbidAmt":"125400000",
-"sucsfbidRate":"96.277"
-}
-},
-{
-"id":"R26BK01720378-000",
-"kind":"용역",
-"name":"2026년 AI정밀의료SW 선도기반조성 사업 성과분석 용역",
-"inst":"정보통신산업진흥원",
-"winner":"한국정보경영평가(주)",
-"amount":54000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":5,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-16",
-"raw":{
-"bidwinnrNm":"한국정보경영평가(주)",
-"sucsfbidAmt":"54000000"
-}
-},
-{
-"id":"R26BK01709561-000",
-"kind":"용역",
-"name":"AI 기반 업무지원 강화를 위한 LLM 프로토타입 및 RAG 시스템 구축",
-"inst":"국토교통과학기술진흥원",
-"winner":"주식회사 엠큐닉",
-"amount":128144000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":12,
-"date":"2026-10-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-21",
-"raw":{
-"bidwinnrNm":"주식회사 엠큐닉",
-"sucsfbidAmt":"128144000"
 }
 }
 ]

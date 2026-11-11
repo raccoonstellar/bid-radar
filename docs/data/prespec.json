@@ -1200,6 +1200,50 @@
 "fetchedOn":"2026-11-11"
 },
 {
+"id":"R26BD00298197",
+"name":"2027년 인천광역시 지능형교통시스템(ITS) 유지.관리",
+"inst":"인천스마트시티 주식회사",
+"order":"조달청 인천지방조달청",
+"amount":2199533570,
+"rgst":"2026-11-11 09:50",
+"opnClse":"2026-11-16 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"김준권",
+"tel":"070-4056-7872",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-11 09:50",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00298197",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=4",
+"name":"사전규격 첨부 4"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":11,
+"keywords":[
+"지능형"
+],
+"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-12"
+},
+{
 "id":"R26BD00278861",
 "name":"자율형 인공지능 적합 데이터 파이프라인 및 데이터 품질 관리 시스템 구축사업",
 "inst":"국가과학기술연구회",
@@ -2023,5 +2067,41 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-05"
+},
+{
+"id":"R26BD00298774",
+"name":"방과후 AI 강사 인증·관리 기능 개발",
+"inst":"한국과학창의재단",
+"order":"한국과학창의재단",
+"amount":499000000,
+"rgst":"2026-11-11 18:40",
+"opnClse":"2026-11-14 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이원표",
+"tel":"",
+"dlvr":"2027-05-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-11 18:49",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00298774",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298774&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298774&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-12"
 }
 ]
