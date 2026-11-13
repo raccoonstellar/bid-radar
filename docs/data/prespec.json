@@ -72,39 +72,6 @@
 "fetchedOn":"2026-10-24"
 },
 {
-"id":"R26BD00279313",
-"name":"2026년 인간-다중 AI 에이전트 협업 기반 예술창작 커리큘럼 개발 실증 연구 용역",
-"inst":"문화체육관광부 한국예술종합학교",
-"order":"문화체육관광부 한국예술종합학교",
-"amount":100000000,
-"rgst":"2026-09-29 17:50",
-"opnClse":"2026-10-06 10:00",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이유림",
-"tel":"",
-"dlvr":"2026-12-11 00:00",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279313&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":15,
-"keywords":[
-"에이전트",
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-09-29",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-09-29 17:50",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279313"
-},
-{
 "id":"R26BD00280785",
 "name":"헬프데스크 AI 상담지원시스템 구축 사업",
 "inst":"인천국제공항공사",
@@ -2039,5 +2006,77 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-12"
+},
+{
+"id":"R26BD00300221",
+"name":"AI 기반 식품정보시스템 통합 구축(1차) 사업관리(PMO) 용역",
+"inst":"식품의약품안전처",
+"order":"조달청 충북지방조달청",
+"amount":170753840,
+"rgst":"2026-11-13 16:20",
+"opnClse":"2026-11-18 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"윤재용",
+"tel":"070-4056-8570",
+"dlvr":"2027-12-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-13 16:20",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00300221",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300221&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-14"
+},
+{
+"id":"R26BD00300370",
+"name":"AI 데이터 기반 R&D 정보 분석·매칭 및 산학연협력 체계 구축을 위한「개방형 산학연 공유플랫폼 OCEAN+」기능 개발",
+"inst":"한국해양대학교 산학협력단",
+"order":"한국해양대학교 산학협력단",
+"amount":104000000,
+"rgst":"2026-11-13 18:44",
+"opnClse":"2026-11-18 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"오윤정",
+"tel":"051-410-5286",
+"dlvr":"",
+"dlvrDays":70,
+"div":"일반용역",
+"chg":"2026-11-13 18:44",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00300370",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300370&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300370&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300370&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-14"
 }
 ]
