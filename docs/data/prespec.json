@@ -1179,38 +1179,6 @@
 "fetchedOn":"2026-11-12"
 },
 {
-"id":"R26BD00279754",
-"name":"순천향대학교 AI의료융합데이터센터 플랫폼 구축 사업",
-"inst":"순천향대학교",
-"order":"순천향대학교",
-"amount":596200000,
-"rgst":"2026-09-30 17:03",
-"opnClse":"2026-10-05 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"권나은",
-"tel":"",
-"dlvr":"",
-"dlvrDays":150,
-"div":"일반용역",
-"chg":"2026-10-01 09:02",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00279754",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279754&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-01"
-},
-{
 "id":"R26BD00281082",
 "name":"AI 기반 지역혁신 데이터 플랫폼 구축",
 "inst":"부산대학교 산학협력단",
