@@ -1,5 +1,26 @@
 [
 {
+"id":"R26BK01824348-000",
+"kind":"용역",
+"name":"AI OCR 기반 지능형 문서처리 시스템 스크립트 개발 및 안정화 용역",
+"inst":"한국농어촌공사",
+"winner":"(주)그리드원",
+"amount":13750000,
+"budget":0,
+"rate":98.42,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-17",
+"raw":{
+"bidwinnrNm":"(주)그리드원",
+"sucsfbidAmt":"13750000",
+"sucsfbidRate":"98.425"
+}
+},
+{
 "id":"R26BK01821370-000",
 "kind":"용역",
 "name":"AI 온라인 학습 콘텐츠 기획 및 제작",
@@ -82,6 +103,26 @@
 }
 },
 {
+"id":"R26BK01783881-000",
+"kind":"용역",
+"name":"2026년도 AI 학습 추천 및 플랫폼 고도화 사업 용역",
+"inst":"한국고용노동교육원",
+"winner":"주식회사 인시퀀스",
+"amount":408000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":11,
+"date":"2026-11-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-17",
+"raw":{
+"bidwinnrNm":"주식회사 인시퀀스",
+"sucsfbidAmt":"408000000"
+}
+},
+{
 "id":"R26BK01822546-000",
 "kind":"용역",
 "name":"국가 농업AX플랫폼 사업법인 성과관리(KPI) 체계 수립 용역",
@@ -120,6 +161,46 @@
 "raw":{
 "bidwinnrNm":"주식회사 이노디스",
 "sucsfbidAmt":"72270000"
+}
+},
+{
+"id":"R26BK01792006-000",
+"kind":"용역",
+"name":"광양만권 철강·금속 기업  AX 기술지원(기초단계) 용역",
+"inst":"한국산업기술시험원",
+"winner":"주식회사 포드림",
+"amount":140000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-17",
+"raw":{
+"bidwinnrNm":"주식회사 포드림",
+"sucsfbidAmt":"140000000"
+}
+},
+{
+"id":"R26BK01773484-000",
+"kind":"물품",
+"name":"지능형 포렌식센터 현황실 LED 디지털월 구축",
+"inst":"한국인터넷진흥원",
+"winner":"상승종합통신 주식회사",
+"amount":239400000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-11",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-17",
+"raw":{
+"bidwinnrNm":"상승종합통신 주식회사",
+"sucsfbidAmt":"239400000"
 }
 },
 {
@@ -2054,27 +2135,6 @@
 "raw":{
 "bidwinnrNm":"(주)스마트소셜",
 "sucsfbidAmt":"64350000"
-}
-},
-{
-"id":"R26BK01771291-000",
-"kind":"물품",
-"name":"지능형 에너지안전관리 통합플랫폼 2차 고도화",
-"inst":"주식회사 윌코모시스템즈",
-"winner":"주식회사 에프에스",
-"amount":109792100,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-17",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-18",
-"raw":{
-"bidwinnrNm":"주식회사 에프에스",
-"sucsfbidAmt":"109792100",
-"sucsfbidRate":"100"
 }
 }
 ]

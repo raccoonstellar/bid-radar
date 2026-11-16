@@ -72,39 +72,6 @@
 "fetchedOn":"2026-10-24"
 },
 {
-"id":"R26BD00280785",
-"name":"헬프데스크 AI 상담지원시스템 구축 사업",
-"inst":"인천국제공항공사",
-"order":"인천국제공항공사",
-"amount":629300000,
-"rgst":"2026-10-02 14:30",
-"opnClse":"2026-10-07 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00280785",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00280785&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":15,
-"keywords":[
-"상담",
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-03"
-},
-{
 "id":"R26BD00284697",
 "name":"교육혁신본부 AX를 위한 AI 에이전트 플랫폼 구축",
 "inst":"부산대학교",
@@ -722,6 +689,42 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-21"
+},
+{
+"id":"R26BD00300891",
+"name":"「지역거점 AX 혁신 기술개발 사업」 AX 혁신 R&D센터 구축 설계 용역",
+"inst":"재단법인 대구디지털혁신진흥원(지역거점 AX혁신 기술개발 사업단)",
+"order":"재단법인 대구디지털혁신진흥원(지역거점 AX혁신 기술개발 사업단)",
+"amount":704000000,
+"rgst":"2026-11-16 14:44",
+"opnClse":"2026-11-19 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"장지해",
+"tel":"053-219-3745",
+"dlvr":"",
+"dlvrDays":120,
+"div":"기술용역",
+"chg":"2026-11-16 14:44",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00300891",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300891&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300891&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":12,
+"keywords":[
+"AX"
+],
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-17"
 },
 {
 "id":"R26BD00283207",
@@ -2013,5 +2016,32 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-14"
+},
+{
+"id":"R26BD00300685",
+"name":"온디바이스 형태의 AI 의사결정체계 개발 실증 사업",
+"inst":"국방부 국군재정관리단",
+"order":"국방부 국군재정관리단",
+"amount":600000000,
+"rgst":"2026-11-16 10:56",
+"opnClse":"2026-11-18 00:00",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00300685",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-17"
 }
 ]
