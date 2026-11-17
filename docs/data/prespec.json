@@ -659,6 +659,80 @@
 "fetchedOn":"2026-11-10"
 },
 {
+"id":"R26BD00301614",
+"name":"제주대학교 생성형 AI 멀티 LLM 플랫폼 이용권 및 크래딧 구입",
+"inst":"제주대학교 디지털정보처",
+"order":"조달청",
+"amount":403350000,
+"rgst":"2026-11-17 14:32",
+"opnClse":"2026-11-22 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"이유림",
+"tel":"070-4056-6122",
+"dlvr":"",
+"dlvrDays":30,
+"div":"일반용역",
+"chg":"2026-11-17 14:32",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00301614",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00301614&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"생성형",
+"LLM",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-18"
+},
+{
+"id":"R26BD00301516",
+"name":"지능형 분석 기반 사비도성 유적정보 통합 데이터베이스 구축 용역",
+"inst":"재단법인 백제문화재단",
+"order":"재단법인 백제문화재단",
+"amount":150000000,
+"rgst":"2026-11-17 17:05",
+"opnClse":"2026-11-22 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"김유태",
+"tel":"041-835-2721",
+"dlvr":"",
+"dlvrDays":150,
+"div":"일반용역",
+"chg":"2026-11-17 17:05",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00301516",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00301516&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00301516&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00301516&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-18"
+},
+{
 "id":"R26BD00287609",
 "name":"이화여자대학교 지능형학생지원시스템 E-벗 기능 개선",
 "inst":"이화여자대학교",
@@ -1147,42 +1221,6 @@
 ],
 "position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-12"
-},
-{
-"id":"R26BD00281082",
-"name":"AI 기반 지역혁신 데이터 플랫폼 구축",
-"inst":"부산대학교 산학협력단",
-"order":"부산대학교 산학협력단",
-"amount":300000000,
-"rgst":"2026-10-03 12:32",
-"opnClse":"2026-10-08 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"김주연",
-"tel":"",
-"dlvr":"",
-"dlvrDays":90,
-"div":"일반용역",
-"chg":"2026-10-03 14:51",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00281082",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00281082&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00281082&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-04"
 },
 {
 "id":"R26BD00282420",
@@ -2043,5 +2081,73 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-17"
+},
+{
+"id":"R26BD00301333",
+"name":"국민인공지능서비스혁신추진단 온프레미스SW 개발 환경 구성 용역",
+"inst":"과학기술정보통신부",
+"order":"조달청 대전지방조달청",
+"amount":165712040,
+"rgst":"2026-11-17 09:34",
+"opnClse":"2026-11-22 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"박수경",
+"tel":"070-4056-8383",
+"dlvr":"",
+"dlvrDays":30,
+"div":"일반용역",
+"chg":"2026-11-17 09:34",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00301333",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00301333&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"인공지능"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-18"
+},
+{
+"id":"R26BD00300498",
+"name":"천안시 AI기반 화재대응 솔루션 개발 용역",
+"inst":"충청남도 천안시",
+"order":"충청남도 천안시",
+"amount":625000000,
+"rgst":"2026-11-17 15:48",
+"opnClse":"2026-11-20 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"류하연",
+"tel":"041-521-5293",
+"dlvr":"",
+"dlvrDays":150,
+"div":"일반용역",
+"chg":"2026-11-17 15:48",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00300498",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300498&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00300498&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-18"
 }
 ]
