@@ -1,0 +1,81 @@
+{
+ "id": "R26BK01836286-001",
+ "name": "대규모 언어모델(LLM) 데이터 학습 및 고성능 연산을 위한 GPU 연산 서버 구매",
+ "parser": 4,
+ "checkedAt": "2026-11-18T23:39:21",
+ "files": [
+  {
+   "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836286&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=01",
+   "name": "취소공고서(컴퓨터서버).hwpx",
+   "doc": "공고",
+   "kind": "hwpx",
+   "bytes": 60037,
+   "chars": 346
+  }
+ ],
+ "gate": {
+  "공동수급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "하도급": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "실적요건": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "배점": {
+   "n": 0,
+   "verdict": "",
+   "snippets": [],
+   "차등제": false
+  },
+  "제출방식": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "대기업": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "지역제한": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업설명회": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "직접생산": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "제안서마감": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "사업기간": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  },
+  "과업내용": {
+   "n": 0,
+   "verdict": "",
+   "snippets": []
+  }
+ },
+ "status": "ok",
+ "textChars": 378
+}

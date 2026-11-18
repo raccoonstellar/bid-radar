@@ -1,5 +1,67 @@
 [
 {
+"id":"R26BK01765824-000",
+"kind":"용역",
+"name":"온프레미스 기반 Multi-modal AI Agent 및 Graph RAG 시스템 구축",
+"inst":"국립금오공과대학교산학협력단",
+"winner":"주식회사 포엠디엑스",
+"amount":95000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"주식회사 포엠디엑스",
+"sucsfbidAmt":"95000000"
+}
+},
+{
+"id":"R26BK01828510-000",
+"kind":"물품",
+"name":"상용SW 3자단가계약(Bandi Agent Hub v1.0 반디에스앤씨 주식회사)",
+"inst":"각 수요기관",
+"winner":"반디에스앤씨 주식회사",
+"amount":7755000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"반디에스앤씨 주식회사",
+"sucsfbidAmt":"7755000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01831293-000",
+"kind":"물품",
+"name":"2026년 혁신제품 추가 지원 사업(AI 스마트 비디오 후두경)",
+"inst":"한국국제협력단",
+"winner":"주식회사 에이아이엠디",
+"amount":86661818,
+"budget":0,
+"rate":99.8,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"주식회사 에이아이엠디",
+"sucsfbidAmt":"86661818",
+"sucsfbidRate":"99.799"
+}
+},
+{
 "id":"R26BK01824348-000",
 "kind":"용역",
 "name":"AI OCR 기반 지능형 문서처리 시스템 스크립트 개발 및 안정화 용역",
@@ -78,6 +140,47 @@
 "raw":{
 "bidwinnrNm":"(주)시디알어소시에이츠",
 "sucsfbidAmt":"716300000"
+}
+},
+{
+"id":"R26BK01798533-000",
+"kind":"용역",
+"name":"[충남앵커 4-5-A-3] AI 해커톤 창업 디자인 경진대회 운영업체 선정",
+"inst":"중부대학교",
+"winner":"주식회사 팀모노리스",
+"amount":27000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"주식회사 팀모노리스",
+"sucsfbidAmt":"27000000"
+}
+},
+{
+"id":"R26BK01783947-000",
+"kind":"용역",
+"name":"MUM-T 체계 적용 AI 및 자율 참조 아키텍처 검증 지원",
+"inst":"국방과학연구소",
+"winner":"육군사관학교 산학협력단",
+"amount":110000000,
+"budget":0,
+"rate":93.26,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"육군사관학교 산학협력단",
+"sucsfbidAmt":"110000000",
+"sucsfbidRate":"93.26"
 }
 },
 {
@@ -180,6 +283,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 인시퀀스",
 "sucsfbidAmt":"408000000"
+}
+},
+{
+"id":"R26BK01787371-000",
+"kind":"용역",
+"name":"DX/AX수준진단 및 자가진단 도구 개발",
+"inst":"국립금오공과대학교산학협력단",
+"winner":"주식회사 이노플러스컴퍼니",
+"amount":45000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":7,
+"date":"2026-11-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-19",
+"raw":{
+"bidwinnrNm":"주식회사 이노플러스컴퍼니",
+"sucsfbidAmt":"45000000"
 }
 },
 {
@@ -2175,88 +2298,6 @@
 "bidwinnrNm":"주식회사 씽크렉스",
 "sucsfbidAmt":"43900000",
 "sucsfbidRate":"92.017"
-}
-},
-{
-"id":"R26BK01664051-000",
-"kind":"용역",
-"name":"2026년 과학기술인 AI 역량강화 해외연수 기획·운영 지원 용역",
-"inst":"국가과학기술인력개발원",
-"winner":"지엔코리아 주식회사",
-"amount":214003000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-10-19",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-20",
-"raw":{
-"bidwinnrNm":"지엔코리아 주식회사",
-"sucsfbidAmt":"214003000"
-}
-},
-{
-"id":"R26BK01755090-001",
-"kind":"용역",
-"name":"(변경공고)K-FAST 채널 송출용 AI 더빙 콘텐츠 음성 편집 및 믹싱 용역",
-"inst":"(주)허드슨에이아이",
-"winner":"(주)미디어큐브",
-"amount":74690000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"date":"2026-10-19",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-20",
-"raw":{
-"bidwinnrNm":"(주)미디어큐브",
-"sucsfbidAmt":"74690000"
-}
-},
-{
-"id":"R26BK01776540-000",
-"kind":"물품",
-"name":"로컬 LLM 환경 구축을 위한 AI 워크스테이션 전자시담",
-"inst":"한국광기술원",
-"winner":"주식회사 엔에스지",
-"amount":19300000,
-"budget":0,
-"rate":99.74,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-19",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-20",
-"raw":{
-"bidwinnrNm":"주식회사 엔에스지",
-"sucsfbidAmt":"19300000",
-"sucsfbidRate":"99.741"
-}
-},
-{
-"id":"R26BK01754338-000",
-"kind":"용역",
-"name":"공주교대 AI 통합플랫폼 서비스 도입사업 규격·가격 동시 입찰 공고",
-"inst":"공주교육대학교",
-"winner":"주식회사 아름정보",
-"amount":49000000,
-"budget":0,
-"rate":99.01,
-"rateEst":null,
-"bidders":3,
-"date":"2026-10-19",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-21",
-"raw":{
-"bidwinnrNm":"주식회사 아름정보",
-"sucsfbidAmt":"49000000",
-"sucsfbidRate":"99.006"
 }
 }
 ]

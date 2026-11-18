@@ -2149,5 +2149,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-18"
+},
+{
+"id":"R26BD00302193",
+"name":"뿌리산업 AI 디지털 플랫폼 구축을 위한 멀티테넌트 산업데이터 운영 플랫폼 공급 및 통합 포털연동 규격 구축",
+"inst":"한국생산기술연구원",
+"order":"한국생산기술연구원",
+"amount":200000000,
+"rgst":"2026-11-18 10:38",
+"opnClse":"2026-11-23 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이승옥",
+"tel":"041-589-8547",
+"dlvr":"",
+"dlvrDays":90,
+"div":"일반용역",
+"chg":"2026-11-18 10:38",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00302193",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00302193&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-19"
 }
 ]
