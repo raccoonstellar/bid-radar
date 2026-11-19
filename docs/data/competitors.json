@@ -1,5 +1,25 @@
 [
 {
+"id":"R26BK01780002-000",
+"kind":"용역",
+"name":"전남대학교 AI 기반 지능형 플랫폼(e클래스2.0) 구축",
+"inst":"전남대학교 교육혁신본부",
+"winner":"(주)유비온",
+"amount":495000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-11-19",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-20",
+"raw":{
+"bidwinnrNm":"(주)유비온",
+"sucsfbidAmt":"495000000"
+}
+},
+{
 "id":"R26BK01765824-000",
 "kind":"용역",
 "name":"온프레미스 기반 Multi-modal AI Agent 및 Graph RAG 시스템 구축",
@@ -181,6 +201,27 @@
 "bidwinnrNm":"육군사관학교 산학협력단",
 "sucsfbidAmt":"110000000",
 "sucsfbidRate":"93.26"
+}
+},
+{
+"id":"R26BK01829240-000",
+"kind":"물품",
+"name":"거대 생성형 모델 학습용 GPU Server 구매",
+"inst":"대구경북과학기술원",
+"winner":"주식회사 컴퓨웍스",
+"amount":65296000,
+"budget":0,
+"rate":94.63,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-20",
+"raw":{
+"bidwinnrNm":"주식회사 컴퓨웍스",
+"sucsfbidAmt":"65296000",
+"sucsfbidRate":"94.631"
 }
 },
 {
@@ -1481,6 +1522,27 @@
 }
 },
 {
+"id":"R26BK01705928-001",
+"kind":"용역",
+"name":"생성형 AI 플랫폼 구축 및 AX 개발 사업",
+"inst":"한국석유공사",
+"winner":"삼성에스디에스 주식회사",
+"amount":12961300000,
+"budget":0,
+"rate":98.12,
+"rateEst":null,
+"bidders":3,
+"date":"2026-10-29",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-20",
+"raw":{
+"bidwinnrNm":"삼성에스디에스 주식회사",
+"sucsfbidAmt":"12961300000",
+"sucsfbidRate":"98.121"
+}
+},
+{
 "id":"R26BK01795113-000",
 "kind":"용역",
 "name":"국가 농업AX플랫폼 구축 사업 변경 재무 모델 검토 용역",
@@ -2215,89 +2277,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 인터로이드 ",
 "sucsfbidAmt":"99000000"
-}
-},
-{
-"id":"R26BK01768274-000",
-"kind":"물품",
-"name":" 2026년 상생협력 실증 프로그램_인공지능 자동주입 플랫폼, 원수자료 전처리 및 최적화 시스템, 딥러닝 알고리즘, 학습자료 전처리 및 최적화 시스템, 데이터 송수신 시스템 ",
-"inst":"에코피스 주식회사",
-"winner":"주식회사 에이아이이와이",
-"amount":330000000,
-"budget":0,
-"rate":100.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-20",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-21",
-"raw":{
-"bidwinnrNm":"주식회사 에이아이이와이",
-"sucsfbidAmt":"330000000",
-"sucsfbidRate":"100"
-}
-},
-{
-"id":"R26BK01741088-000",
-"kind":"용역",
-"name":"AI Agent 기반 다이캐스팅 공정데이터 수집분석전처리 체계 구축 용역",
-"inst":"한국생산기술연구원",
-"winner":"주식회사 제오노스 (Xeonos Inc.)",
-"amount":27620000,
-"budget":0,
-"rate":96.92,
-"rateEst":null,
-"bidders":4,
-"date":"2026-10-20",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-23",
-"raw":{
-"bidwinnrNm":"주식회사 제오노스 (Xeonos Inc.)",
-"sucsfbidAmt":"27620000",
-"sucsfbidRate":"96.915"
-}
-},
-{
-"id":"R26BK01739019-000",
-"kind":"용역",
-"name":"2026년 인공지능 활용 역량 강화를 위한 교사 글로벌 연수 운영",
-"inst":"한국교육학술정보원",
-"winner":"(사)한국능률협회",
-"amount":570000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":7,
-"date":"2026-10-20",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-29",
-"raw":{
-"bidwinnrNm":"(사)한국능률협회",
-"sucsfbidAmt":"570000000"
-}
-},
-{
-"id":"R26BK01765899-000",
-"kind":"물품",
-"name":"생성형AI 통합 학습지원 플랫폼 토큰",
-"inst":"한국기술교육대학교",
-"winner":"주식회사 씽크렉스",
-"amount":43900000,
-"budget":0,
-"rate":92.02,
-"rateEst":null,
-"bidders":26,
-"date":"2026-10-20",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-10",
-"raw":{
-"bidwinnrNm":"주식회사 씽크렉스",
-"sucsfbidAmt":"43900000",
-"sucsfbidRate":"92.017"
 }
 }
 ]
