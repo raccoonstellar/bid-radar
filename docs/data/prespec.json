@@ -714,9 +714,14 @@
 "dlvr":"",
 "dlvrDays":45,
 "div":"기술용역",
-"chg":"2026-11-20 22:20",
+"chg":"2026-11-23 09:05",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00304375",
-"files":[],
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00304375&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
 "bucket":"OPEN",
 "reason":"키워드 적합",
 "score":13,
@@ -727,6 +732,34 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-21"
+},
+{
+"id":"R26BD00305052",
+"name":"AI 기반 LMS 및 스마트자기관리시스템 통합플랫폼 구축 사업",
+"inst":"한성대학교",
+"order":"한성대학교",
+"amount":592000000,
+"rgst":"2026-11-23 17:14",
+"opnClse":"2026-11-28 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"임연정",
+"tel":"",
+"dlvr":"2027-08-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-23 17:14",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00305052",
+"files":[],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"LMS",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-24"
 },
 {
 "id":"R26BD00287609",
@@ -2190,5 +2223,37 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-20"
+},
+{
+"id":"R26BD00305187",
+"name":"AI 기반 서·논술형 평가 평가지원시스템 솔루션 도입 및 운영 용역",
+"inst":"세종특별자치시교육청",
+"order":"조달청",
+"amount":393274000,
+"rgst":"2026-11-23 18:38",
+"opnClse":"2026-11-28 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"정은희",
+"tel":"070-4056-7161",
+"dlvr":"2027-12-15 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-23 18:38",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00305187",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305187&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-24"
 }
 ]

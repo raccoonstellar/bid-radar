@@ -1,5 +1,89 @@
 [
 {
+"id":"R26BK01844654-000",
+"kind":"용역",
+"name":"(천안시 거점형 스마트도시 조성사업) 행정정보 제공용 RAG 기반 SLM 응답 소프트웨어 개발",
+"inst":"코나아이(주)",
+"winner":"하나에이아이 주식회사",
+"amount":18500000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-24",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"하나에이아이 주식회사",
+"sucsfbidAmt":"18500000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01796464-000",
+"kind":"용역",
+"name":"(동의대학교 산학협력단) 2026학년도 동의대학교 AI부트캠프 소프트웨어(AI Agent 개발 솔루션) 플랫폼 구축 및 운영지원",
+"inst":"동의대학교 산학협력단",
+"winner":"주식회사 제네시스랩",
+"amount":100000000,
+"budget":0,
+"rate":83.33,
+"rateEst":null,
+"bidders":4,
+"date":"2026-11-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 제네시스랩",
+"sucsfbidAmt":"100000000",
+"sucsfbidRate":"83.333"
+}
+},
+{
+"id":"R26BK01847358-000",
+"kind":"용역",
+"name":"AI 스마트 민원 챗봇 구축 용역",
+"inst":"강원특별자치도 고성군",
+"winner":"주식회사 바이브컴퍼니",
+"amount":45320000,
+"budget":0,
+"rate":88.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 바이브컴퍼니",
+"sucsfbidAmt":"45320000",
+"sucsfbidRate":"88"
+}
+},
+{
+"id":"R26BK01848751-000",
+"kind":"용역",
+"name":"(용역) 산림과학기술 AX 추진전략 고도화 기획 연구",
+"inst":"산림청 국립산림과학원",
+"winner":"(주)디아이엔티",
+"amount":21560000,
+"budget":20000000,
+"rate":98.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-23",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"(주)디아이엔티",
+"sucsfbidAmt":"21560000",
+"sucsfbidRate":"98"
+}
+},
+{
 "id":"R26BK01834017-000",
 "kind":"물품",
 "name":"상용SW 제3자단가(intoSeal AI v1.0 주식회사 인투소프트)",
@@ -100,6 +184,27 @@
 "bidwinnrNm":"주식회사 에이아이엠디",
 "sucsfbidAmt":"86661818",
 "sucsfbidRate":"99.799"
+}
+},
+{
+"id":"R26BK01819479-000",
+"kind":"용역",
+"name":"2027년 경남인공지능혁신본부 시설물 관리용역",
+"inst":"재단법인 경남테크노파크",
+"winner":"주식회사 청송",
+"amount":383214350,
+"budget":0,
+"rate":87.75,
+"rateEst":null,
+"bidders":232,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 청송",
+"sucsfbidAmt":"383214350",
+"sucsfbidRate":"87.752"
 }
 },
 {
@@ -246,6 +351,47 @@
 }
 },
 {
+"id":"R26BK01788041-000",
+"kind":"용역",
+"name":"한국해양과학기술원 연구·행정 지원 AI Agent 개발 및 적용",
+"inst":"한국해양과학기술원",
+"winner":"주식회사 비즈데이터",
+"amount":149292000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 비즈데이터",
+"sucsfbidAmt":"149292000"
+}
+},
+{
+"id":"R26BK01795787-000",
+"kind":"용역",
+"name":"신재생에너지 발전소 O&M AI 모델 활용을 위한 에이전트 기반 데이터 전처리 및 AI 모델 학습 파이프라인 개발",
+"inst":"한국과학기술정보연구원",
+"winner":"주식회사 지신",
+"amount":47500000,
+"budget":0,
+"rate":96.45,
+"rateEst":null,
+"bidders":8,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 지신",
+"sucsfbidAmt":"47500000",
+"sucsfbidRate":"96.446"
+}
+},
+{
 "id":"R26BK01821370-000",
 "kind":"용역",
 "name":"AI 온라인 학습 콘텐츠 기획 및 제작",
@@ -365,6 +511,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 이노플러스컴퍼니",
 "sucsfbidAmt":"45000000"
+}
+},
+{
+"id":"R26BK01796859-000",
+"kind":"용역",
+"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
+"inst":"(주)한국가스기술공사",
+"winner":"주식회사 지오멕스소프트",
+"amount":199795200,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-12",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 지오멕스소프트",
+"sucsfbidAmt":"199795200"
 }
 },
 {
