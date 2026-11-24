@@ -202,3 +202,14 @@ for nm,exp in C10:
     b,r,sc,*_=s.classify({"bidNtceNm":nm,"presmptPrce":500000000,"bidClseDt":"20261231","dminsttNm":"","techAbltEvlRt":"90"},"용역",TODAY)
     ok10+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:40]:<42} {r[:34]}")
 print(f"v0.8 회귀 {ok10}/{len(C10)}")
+
+print("\n── v0.8.1 지능형·AX·딥러닝 단독 + 비도메인(관제·물관리·경비) = DROP ──")
+C11=[("지능형통합관제시스템 경비용역 입찰","DROP"),("탄자니아 이링가 통합물관리센터 지능형 운영지원 S/W 개발 용역","DROP"),
+     ("AI 정수장 플랫폼 전환 구축","DROP"),("지능형 CCTV 관제 시스템 구축","DROP"),
+     ("음성인식 기반 교통 민원 안내 시스템 구축","OPEN"),("지능형 민원 챗봇 구축","OPEN"),
+     ("AX 디바이스 AI 모델 검증 플랫폼 구축 용역","OPEN")]
+ok11=0
+for nm,exp in C11:
+    b,r,sc,*_=s.classify({"bidNtceNm":nm,"presmptPrce":500000000,"bidClseDt":"20261231","dminsttNm":"","techAbltEvlRt":"90"},"용역",TODAY)
+    ok11+= b==exp; print(("✓" if b==exp else "✗")+f" {b:<6}{exp:<7}{sc:>3}  {nm[:40]:<42} {r[:34]}")
+print(f"v0.8.1 회귀 {ok11}/{len(C11)}")
