@@ -313,33 +313,6 @@
 "fetchedOn":"2026-10-17"
 },
 {
-"id":"R26BD00285234",
-"name":"지능형통합관제시스템 경비용역 입찰",
-"inst":"경기도교육청 용인한국외국어대학교부설고등학교",
-"order":"경기도교육청 용인한국외국어대학교부설고등학교",
-"amount":289450000,
-"rgst":"2026-10-15 11:38",
-"opnClse":"2026-10-20 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이원형",
-"tel":"031-324-0011",
-"dlvr":"2029-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-15 11:38",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00285234",
-"files":[],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":13,
-"keywords":[
-"지능형"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-16"
-},
-{
 "id":"R26BD00285952",
 "name":"「AICC 도입방안 수립 컨설팅」",
 "inst":"국민연금공단",
@@ -370,106 +343,6 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-17"
-},
-{
-"id":"R26BD00287177",
-"name":"탄자니아 이링가 통합물관리센터 지능형 운영지원 S/W 개발 용역",
-"inst":"한국수자원공사",
-"order":"한국수자원공사",
-"amount":380000000,
-"rgst":"2026-10-19 23:50",
-"opnClse":"2026-10-23 13:00",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"",
-"tel":"",
-"dlvr":"",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-21 11:23",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00287177",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287177&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00287177&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":13,
-"keywords":[
-"지능형"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-20"
-},
-{
-"id":"R26BD00291069",
-"name":"AX가상실증공장 시뮬레이션 플랫폼 구축 용역",
-"inst":"한국화학융합시험연구원",
-"order":"한국화학융합시험연구원",
-"amount":220000000,
-"rgst":"2026-10-27 15:51",
-"opnClse":"2026-11-01 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이명구",
-"tel":"02-2164-0054",
-"dlvr":"2026-12-18 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-27 15:51",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291069",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291069&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":13,
-"keywords":[
-"AX"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-28"
-},
-{
-"id":"R26BD00291077",
-"name":"고속 신호처리 및 지능형 영상처리 시스템 개발",
-"inst":"한국천문연구원",
-"order":"한국천문연구원",
-"amount":262531000,
-"rgst":"2026-10-27 15:57",
-"opnClse":"2026-11-01 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"한주혜",
-"tel":"042-865-3390",
-"dlvr":"2028-10-30 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-27 15:57",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291077",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00291077&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":13,
-"keywords":[
-"지능형"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-28"
 },
 {
 "id":"R26BD00291461",
@@ -584,46 +457,6 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-07"
-},
-{
-"id":"R26BD00297134",
-"name":"여수 스마트 산업단지 수요기업 지능형 영상정보기기 HW개발 및 구축",
-"inst":"한전KDN(주)",
-"order":"한전KDN(주)",
-"amount":218963866,
-"rgst":"2026-11-09 16:38",
-"opnClse":"2026-11-14 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"이나현",
-"tel":"",
-"dlvr":"2026-12-23 00:00",
-"dlvrDays":0,
-"div":"기술용역",
-"chg":"",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00297134",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00297134&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":13,
-"keywords":[
-"지능형"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-11-10"
 },
 {
 "id":"R26BD00301614",
@@ -748,15 +581,60 @@
 "dlvr":"2027-08-31 00:00",
 "dlvrDays":0,
 "div":"일반용역",
-"chg":"2026-11-23 17:14",
+"chg":"2026-11-24 16:14",
 "url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00305052",
-"files":[],
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305052&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+}
+],
 "bucket":"OPEN",
 "reason":"키워드 적합",
 "score":13,
 "keywords":[
 "LMS",
 "AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-24"
+},
+{
+"id":"R26BD00305363",
+"name":"(2026/27 EIPP 카자흐스탄) 전력공급 안정화를 위한 지능형 스마트그리드 구축 마스터플랜 수립",
+"inst":"한국수출입은행",
+"order":"한국수출입은행",
+"amount":383685337,
+"rgst":"2026-11-24 14:00",
+"opnClse":"2026-11-27 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"이건영",
+"tel":"",
+"dlvr":"2027-08-31 00:00",
+"dlvrDays":0,
+"div":"일반용역",
+"chg":"2026-11-24 14:00",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00305363",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305363&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305363&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305363&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":13,
+"keywords":[
+"지능형"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-24"
@@ -1104,46 +982,6 @@
 "fetchedOn":"2026-10-21"
 },
 {
-"id":"R26BD00294490",
-"name":"’27~’28년 농업 AX 데이터 구축 및  스마트팜코리아 플랫폼 운영",
-"inst":"농림수산식품교육문화정보원",
-"order":"농림수산식품교육문화정보원",
-"amount":4600000000,
-"rgst":"2026-11-03 17:58",
-"opnClse":"2026-11-08 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"강구남",
-"tel":"044-861-8743",
-"dlvr":"2028-12-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-11-03 17:58",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00294490",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00294490&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"AX"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-11-04"
-},
-{
 "id":"R26BD00296252",
 "name":"AI 실시간 경정 경주수면 수초 탐지시스템 구축 용역(긴급)",
 "inst":"서울올림픽기념국민체육진흥공단 경륜경정총괄본부",
@@ -1176,80 +1014,36 @@
 "fetchedOn":"2026-11-08"
 },
 {
-"id":"R26BD00298051",
-"name":"수도시설 지능형 영상 안전관리 인프라 성능검증 용역",
-"inst":"한국수자원공사",
-"order":"한국수자원공사",
-"amount":224290000,
-"rgst":"2026-11-10 19:57",
-"opnClse":"2026-11-15 20:00",
+"id":"R26BD00305349",
+"name":"AX 프라이버시 통합지원 운영",
+"inst":"한국인터넷진흥원",
+"order":"조달청 광주지방조달청",
+"amount":181678000,
+"rgst":"2026-11-24 09:31",
+"opnClse":"2026-11-30 23:59",
 "bidNos":[],
 "sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"",
-"dlvrDays":0,
-"div":"기술용역",
-"chg":"",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00298051",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298051&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"지능형"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-11-11"
-},
-{
-"id":"R26BD00298197",
-"name":"2027년 인천광역시 지능형교통시스템(ITS) 유지.관리",
-"inst":"인천스마트시티 주식회사",
-"order":"조달청 인천지방조달청",
-"amount":2199533570,
-"rgst":"2026-11-11 09:50",
-"opnClse":"2026-11-16 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"김준권",
-"tel":"070-4056-7872",
+"ofcl":"김해찬",
+"tel":"070-4056-8267",
 "dlvr":"2027-12-31 00:00",
 "dlvrDays":0,
 "div":"일반용역",
-"chg":"2026-11-11 09:50",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00298197",
+"chg":"2026-11-24 09:31",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00305349",
 "files":[
 {
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=1",
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00305349&fileType=BFDTL&fileSeq=1",
 "name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00298197&fileType=BFDTL&fileSeq=4",
-"name":"사전규격 첨부 4"
 }
 ],
 "bucket":"OPEN",
 "reason":"키워드 적합",
 "score":11,
 "keywords":[
-"지능형"
+"AX"
 ],
-"position":"컨소 구성사 — 대표사 불가, 구성사 지분 참여 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-11-12"
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-24"
 },
 {
 "id":"R26BD00282810",
@@ -1596,42 +1390,6 @@
 "fetchedOn":"2026-10-23"
 },
 {
-"id":"R26BD00288843",
-"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
-"inst":"(주)한국가스기술공사",
-"order":"(주)한국가스기술공사",
-"amount":227040000,
-"rgst":"2026-10-22 14:01",
-"opnClse":"2026-10-27 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"우경제",
-"tel":"",
-"dlvr":"2027-08-31 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-22 14:01",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00288843",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288843&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00288843&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-23"
-},
-{
 "id":"R26BD00289804",
 "name":"기업용 AI 통합 이용환경 구축",
 "inst":"한국마사회",
@@ -1730,33 +1488,6 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-10-28"
-},
-{
-"id":"R26BD00291709",
-"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
-"inst":"(주)한국가스기술공사",
-"order":"(주)한국가스기술공사",
-"amount":227040000,
-"rgst":"2026-10-28 15:50",
-"opnClse":"2026-10-27 00:00",
-"bidNos":[],
-"sw":"N",
-"ofcl":"",
-"tel":"",
-"dlvr":"2027-08-31 00:00",
-"dlvrDays":0,
-"div":"기술용역",
-"chg":"",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00291709",
-"files":[],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-29"
 },
 {
 "id":"R26BD00291912",

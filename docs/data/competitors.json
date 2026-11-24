@@ -21,6 +21,69 @@
 }
 },
 {
+"id":"R26BK01841029-000",
+"kind":"용역",
+"name":"AI 컴퓨팅센터 계획 수립",
+"inst":"국가보안기술연구소",
+"winner":"성한 주식회사",
+"amount":88200000,
+"budget":0,
+"rate":99.14,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-24",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"성한 주식회사",
+"sucsfbidAmt":"88200000",
+"sucsfbidRate":"99.142"
+}
+},
+{
+"id":"R26BK01848324-000",
+"kind":"용역",
+"name":"AX-ETU 온라인 플랫폼 개발·구축 용역",
+"inst":"경북대학교 산학협력단",
+"winner":"주식회사 스마트크리에이터",
+"amount":37400000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-24",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 스마트크리에이터",
+"sucsfbidAmt":"37400000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01839383-000",
+"kind":"물품",
+"name":"생성형 AI 플랫폼 기반 국산 AI 반도체 NPU 서버 구매",
+"inst":"한국산업단지공단",
+"winner":"주식회사 퓨리오사에이아이",
+"amount":275000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"date":"2026-11-24",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 퓨리오사에이아이",
+"sucsfbidAmt":"275000000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01796464-000",
 "kind":"용역",
 "name":"(동의대학교 산학협력단) 2026학년도 동의대학교 AI부트캠프 소프트웨어(AI Agent 개발 솔루션) 플랫폼 구축 및 운영지원",
@@ -208,6 +271,66 @@
 }
 },
 {
+"id":"R26BK01791366-000",
+"kind":"용역",
+"name":"AX서비스 개발환경 구축 용역 ",
+"inst":"한국남동발전(주)",
+"winner":"주식회사 로이드케이",
+"amount":744700000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":5,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 로이드케이",
+"sucsfbidAmt":"744700000"
+}
+},
+{
+"id":"R26BK01795517-000",
+"kind":"용역",
+"name":"새만금 피지컬 AI 지원 시설 기본구상 용역",
+"inst":"새만금개발청",
+"winner":"주식회사 종합건축사사무소가람건축",
+"amount":106700000,
+"budget":100000000,
+"rate":null,
+"rateEst":106.7,
+"bidders":5,
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 종합건축사사무소가람건축",
+"sucsfbidAmt":"106700000"
+}
+},
+{
+"id":"R26BK01779858-000",
+"kind":"물품",
+"name":"지능형 농기계 정적상태.주행성능 분석시험장치",
+"inst":"한국농업기술진흥원",
+"winner":"주식회사 동승하이테크",
+"amount":1486100000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-17",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 동승하이테크",
+"sucsfbidAmt":"1486100000"
+}
+},
+{
 "id":"R26BK01824348-000",
 "kind":"용역",
 "name":"AI OCR 기반 지능형 문서처리 시스템 스크립트 개발 및 안정화 용역",
@@ -246,6 +369,26 @@
 "raw":{
 "bidwinnrNm":"주식회사 시너지어스",
 "sucsfbidAmt":"99300000"
+}
+},
+{
+"id":"R26BK01792917-000",
+"kind":"용역",
+"name":"CES 2027 KOREA-M.AX ALLIANCE 공동관 조성·운영",
+"inst":"한국산업기술기획평가원",
+"winner":"주식회사 더 웰컴",
+"amount":293900000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"date":"2026-11-16",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 더 웰컴",
+"sucsfbidAmt":"293900000"
 }
 },
 {
@@ -392,6 +535,26 @@
 }
 },
 {
+"id":"R26BK01797537-000",
+"kind":"용역",
+"name":"[대림대학교]2026년 AID 전환 중점 전문대학 지원사업 AI 학습성과 지원 시스템 구축",
+"inst":"대림대학교 산학협력단",
+"winner":"주식회사 아이컴테크놀러지",
+"amount":98000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":4,
+"date":"2026-11-13",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"주식회사 아이컴테크놀러지",
+"sucsfbidAmt":"98000000"
+}
+},
+{
 "id":"R26BK01821370-000",
 "kind":"용역",
 "name":"AI 온라인 학습 콘텐츠 기획 및 제작",
@@ -511,47 +674,6 @@
 "raw":{
 "bidwinnrNm":"주식회사 이노플러스컴퍼니",
 "sucsfbidAmt":"45000000"
-}
-},
-{
-"id":"R26BK01796859-000",
-"kind":"용역",
-"name":"AI기반 실시간 가스배관망 안전관리시스템 시범구축 용역",
-"inst":"(주)한국가스기술공사",
-"winner":"주식회사 지오멕스소프트",
-"amount":199795200,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-11-12",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-24",
-"raw":{
-"bidwinnrNm":"주식회사 지오멕스소프트",
-"sucsfbidAmt":"199795200"
-}
-},
-{
-"id":"R26BK01822546-000",
-"kind":"용역",
-"name":"국가 농업AX플랫폼 사업법인 성과관리(KPI) 체계 수립 용역",
-"inst":"한국농어촌공사",
-"winner":"(주) 한국능률협회컨설팅",
-"amount":21500000,
-"budget":19636364,
-"rate":99.54,
-"rateEst":null,
-"bidders":1,
-"date":"2026-11-11",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-12",
-"raw":{
-"bidwinnrNm":"(주) 한국능률협회컨설팅",
-"sucsfbidAmt":"21500000",
-"sucsfbidRate":"99.537"
 }
 },
 {
@@ -817,27 +939,6 @@
 "raw":{
 "bidwinnrNm":"(주)오르카아이씨티",
 "sucsfbidAmt":"141986900"
-}
-},
-{
-"id":"R26BK01772777-000",
-"kind":"용역",
-"name":"[긴급]지능형통합관제시스템 경비용역 입찰",
-"inst":"경기도교육청 용인한국외국어대학교부설고등학교",
-"winner":"에스케이쉴더스 주식회사",
-"amount":289238400,
-"budget":0,
-"rate":96.24,
-"rateEst":null,
-"bidders":22,
-"date":"2026-11-06",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-07",
-"raw":{
-"bidwinnrNm":"에스케이쉴더스 주식회사",
-"sucsfbidAmt":"289238400",
-"sucsfbidRate":"96.24"
 }
 },
 {
@@ -1791,27 +1892,6 @@
 }
 },
 {
-"id":"R26BK01795113-000",
-"kind":"용역",
-"name":"국가 농업AX플랫폼 구축 사업 변경 재무 모델 검토 용역",
-"inst":"한국농어촌공사",
-"winner":"회계법인 나무",
-"amount":20377500,
-"budget":0,
-"rate":95.0,
-"rateEst":null,
-"bidders":1,
-"date":"2026-10-28",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-29",
-"raw":{
-"bidwinnrNm":"회계법인 나무",
-"sucsfbidAmt":"20377500",
-"sucsfbidRate":"95"
-}
-},
-{
 "id":"R26BK01792951-000",
 "kind":"용역",
 "name":"UOS Physical AI·Robot Lab 운영 용역",
@@ -1911,6 +1991,26 @@
 "raw":{
 "bidwinnrNm":"세종경영자문 주식회사",
 "sucsfbidAmt":"63000000"
+}
+},
+{
+"id":"R26BK01722145-000",
+"kind":"용역",
+"name":"2026년 AI디지털기반 수업혁신 역량강화 교원 해외연수 위탁용역",
+"inst":"전북특별자치도교육청",
+"winner":"(주)전주방송",
+"amount":224000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":6,
+"date":"2026-10-28",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-24",
+"raw":{
+"bidwinnrNm":"(주)전주방송",
+"sucsfbidAmt":"224000000"
 }
 },
 {
@@ -2055,26 +2155,6 @@
 "bidwinnrNm":"케이에스유통",
 "sucsfbidAmt":"21520860",
 "sucsfbidRate":"88.049"
-}
-},
-{
-"id":"R26BK01771394-000",
-"kind":"물품",
-"name":"AI 머신비전 기반 시료이송 통합 연계 외관·치수 검사 자동 판별 및 지능형 선행 품질예측 시스템 구축",
-"inst":"신라정보기술(주)",
-"winner":"아이브이에스 IVS",
-"amount":90200000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"date":"2026-10-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-10-27",
-"raw":{
-"bidwinnrNm":"아이브이에스 IVS",
-"sucsfbidAmt":"90200000"
 }
 },
 {
