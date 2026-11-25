@@ -241,7 +241,7 @@ td.num{text-align:right;white-space:nowrap}
 .bar i b{display:block;height:100%;background:var(--hot);border-radius:99px}
 .bar em{font-style:normal;font-size:.78rem;color:var(--ink-2);width:48px;text-align:right}
 .cfil{display:flex;flex-direction:column;gap:8px;margin:0 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
-.cfil .row{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.cfil .frow{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .cfil .lb{font-size:.7rem;color:var(--muted);font-weight:600;min-width:44px}
 .cfil button{font:inherit;font-size:.74rem;padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:var(--bg);color:var(--ink-2);cursor:pointer}
 .cfil button[aria-pressed="true"]{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 55%,transparent);color:var(--accent-ink);font-weight:600}
@@ -348,13 +348,13 @@ footer b{color:var(--ink-2);font-weight:500}
     <div class="head"><h2>낙찰 현황 — 최근 3개월, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
     <ul class="lede"><li>우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률.</li><li>투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 참가사가 1개사면 "단독"(경쟁 없음).</li><li>적합도는 입찰공고와 같은 스크리닝 규칙으로 매긴 점수 — 10점↑이면 OPEN에 올랐을 사업.</li><li>유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</li><li>사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</li></ul>
     <div class="cfil" id="cFil">
-      <div class="row"><span class="lb">기간</span><span data-g="days"><button data-v="30">30일</button><button data-v="60">60일</button><button data-v="92" aria-pressed="true">3개월</button></span></div>
-      <div class="row"><span class="lb">금액</span><span data-g="amt"><button data-v="" aria-pressed="true">전체</button><button data-v="0-1">1억 미만</button><button data-v="1-3">1~3억</button><button data-v="3-5">3~5억</button><button data-v="5-10">5~10억</button><button data-v="10-">10억↑</button></span>
+      <div class="frow"><span class="lb">기간</span><span data-g="days"><button data-v="30">30일</button><button data-v="60">60일</button><button data-v="92" aria-pressed="true">3개월</button></span></div>
+      <div class="frow"><span class="lb">금액</span><span data-g="amt"><button data-v="" aria-pressed="true">전체</button><button data-v="0-1">1억 미만</button><button data-v="1-3">1~3억</button><button data-v="3-5">3~5억</button><button data-v="5-10">5~10억</button><button data-v="10-">10억↑</button></span>
         <span class="amt">직접 <input id="cMin" inputmode="decimal" placeholder="최소" aria-label="최소 금액(억)">~<input id="cMax" inputmode="decimal" placeholder="최대" aria-label="최대 금액(억)">억</span></div>
-      <div class="row"><span class="lb">적합도</span><span data-g="fit"><button data-v="" aria-pressed="true">전체</button><button data-v="10">10점↑ OPEN급</button><button data-v="6">6점↑</button><button data-v="-6">6점 미만</button></span></div>
-      <div class="row"><span class="lb">경쟁</span><span data-g="bid"><button data-v="" aria-pressed="true">전체</button><button data-v="1">단독(1개사)</button><button data-v="2-4">2~4개사</button><button data-v="5-">5개사↑</button></span>
+      <div class="frow"><span class="lb">적합도</span><span data-g="fit"><button data-v="" aria-pressed="true">전체</button><button data-v="10">10점↑ OPEN급</button><button data-v="6">6점↑</button><button data-v="-6">6점 미만</button></span></div>
+      <div class="frow"><span class="lb">경쟁</span><span data-g="bid"><button data-v="" aria-pressed="true">전체</button><button data-v="1">단독(1개사)</button><button data-v="2-4">2~4개사</button><button data-v="5-">5개사↑</button></span>
         <span data-g="tag"><button data-v="partner">AICC 접점만</button><button data-v="유찰">유찰만</button></span></div>
-      <div class="row"><input id="cQ" type="search" placeholder="사업명·기관·낙찰사 검색" aria-label="낙찰 검색"><select id="cKind" aria-label="구분"><option value="">용역+물품</option><option>용역</option><option>물품</option></select></div>
+      <div class="frow"><input id="cQ" type="search" placeholder="사업명·기관·낙찰사 검색" aria-label="낙찰 검색"><select id="cKind" aria-label="구분"><option value="">용역+물품</option><option>용역</option><option>물품</option></select></div>
     </div>
     <div class="csum" id="cSum"></div>
     <div class="ctop" id="cTop"></div>
