@@ -240,6 +240,33 @@ td.num{text-align:right;white-space:nowrap}
 .bar i{flex:1;height:5px;background:var(--surface-2);border-radius:99px;overflow:hidden;display:block}
 .bar i b{display:block;height:100%;background:var(--hot);border-radius:99px}
 .bar em{font-style:normal;font-size:.78rem;color:var(--ink-2);width:48px;text-align:right}
+.cfil{display:flex;flex-direction:column;gap:8px;margin:0 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.cfil .row{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.cfil .lb{font-size:.7rem;color:var(--muted);font-weight:600;min-width:44px}
+.cfil button{font:inherit;font-size:.74rem;padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:var(--bg);color:var(--ink-2);cursor:pointer}
+.cfil button[aria-pressed="true"]{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 55%,transparent);color:var(--accent-ink);font-weight:600}
+.cfil input,.cfil select{font:inherit;font-size:.78rem;padding:5px 9px;border:1px solid var(--line);border-radius:3px;background:var(--bg);color:var(--ink);min-width:0}
+.cfil input{flex:1 1 180px}
+.cfil .amt{display:flex;align-items:center;gap:4px;font-size:.74rem;color:var(--muted)}
+.cfil .amt input{width:72px;flex:none}
+.csum{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;margin:0 0 12px;border:1px solid var(--line);border-radius:3px;background:var(--line);overflow:hidden}
+.csum div{background:var(--surface);padding:9px 12px;display:flex;flex-direction:column;gap:2px}
+.csum span{font-size:.68rem;color:var(--muted)}
+.csum b{font-size:1.02rem;font-weight:600;color:var(--ink)}
+.csum small{font-size:.66rem;color:var(--muted)}
+.ctop{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;font-size:.74rem;color:var(--muted);align-items:center}
+.ctop button{font:inherit;font-size:.74rem;padding:3px 9px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink-2);cursor:pointer}
+.ctop button b{color:var(--ink);font-weight:600}
+.fit{display:inline-block;min-width:30px;text-align:center;font-size:.78rem;font-weight:600;padding:2px 6px;border-radius:3px;background:var(--surface-2);color:var(--muted)}
+.fit.hi{background:var(--accent-soft);color:var(--accent-ink)}
+.fit.mid{background:var(--warm-soft);color:var(--warm)}
+.fitr{display:block;font-size:.64rem;color:var(--muted);margin-top:3px;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.solo{font-size:.62rem;padding:1px 5px;border-radius:3px;background:var(--hot-soft);color:var(--hot);margin-left:4px;font-weight:600}
+#sec-comp th.sort{cursor:pointer;user-select:none}
+#sec-comp th.sort[data-on]::after{content:" ↓";color:var(--accent)}
+#sec-comp th.sort[data-on="asc"]::after{content:" ↑"}
+#sec-comp table{min-width:760px}
+.cmore{display:block;margin:10px auto 0;font:inherit;font-size:.78rem;padding:6px 16px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink-2);cursor:pointer}
 
 .empty{padding:34px 20px;text-align:center;color:var(--muted);font-size:.85rem;
        border:1px dashed var(--line);border-radius:3px;background:var(--surface)}
@@ -318,14 +345,26 @@ footer b{color:var(--ink-2);font-weight:500}
   </section>
 
   <section id="sec-comp">
-    <div class="head"><h2>낙찰 현황 — 최근 30일, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
-    <ul class="lede"><li>우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률.</li><li>투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비).</li><li>유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</li><li>사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</li></ul>
+    <div class="head"><h2>낙찰 현황 — 최근 3개월, 누가 얼마에 땄나</h2><i class="rule"></i><span class="n" id="nComp"></span></div>
+    <ul class="lede"><li>우리가 들어갔을 법한 사업의 낙찰사·금액·투찰률.</li><li>투찰률이 낮을수록 가격 싸움이 붙은 것 (≈는 추정가격 대비). 참가사가 1개사면 "단독"(경쟁 없음).</li><li>적합도는 입찰공고와 같은 스크리닝 규칙으로 매긴 점수 — 10점↑이면 OPEN에 올랐을 사업.</li><li>유찰은 재공고 신호, "AICC 접점"은 콜센터 운영사 = 파트너 후보.</li><li>사업명을 누르면 나라장터 공고 상세(개찰결과 포함)로 이동.</li></ul>
+    <div class="cfil" id="cFil">
+      <div class="row"><span class="lb">기간</span><span data-g="days"><button data-v="30">30일</button><button data-v="60">60일</button><button data-v="92" aria-pressed="true">3개월</button></span></div>
+      <div class="row"><span class="lb">금액</span><span data-g="amt"><button data-v="" aria-pressed="true">전체</button><button data-v="0-1">1억 미만</button><button data-v="1-3">1~3억</button><button data-v="3-5">3~5억</button><button data-v="5-10">5~10억</button><button data-v="10-">10억↑</button></span>
+        <span class="amt">직접 <input id="cMin" inputmode="decimal" placeholder="최소" aria-label="최소 금액(억)">~<input id="cMax" inputmode="decimal" placeholder="최대" aria-label="최대 금액(억)">억</span></div>
+      <div class="row"><span class="lb">적합도</span><span data-g="fit"><button data-v="" aria-pressed="true">전체</button><button data-v="10">10점↑ OPEN급</button><button data-v="6">6점↑</button><button data-v="-6">6점 미만</button></span></div>
+      <div class="row"><span class="lb">경쟁</span><span data-g="bid"><button data-v="" aria-pressed="true">전체</button><button data-v="1">단독(1개사)</button><button data-v="2-4">2~4개사</button><button data-v="5-">5개사↑</button></span>
+        <span data-g="tag"><button data-v="partner">AICC 접점만</button><button data-v="유찰">유찰만</button></span></div>
+      <div class="row"><input id="cQ" type="search" placeholder="사업명·기관·낙찰사 검색" aria-label="낙찰 검색"><select id="cKind" aria-label="구분"><option value="">용역+물품</option><option>용역</option><option>물품</option></select></div>
+    </div>
+    <div class="csum" id="cSum"></div>
+    <div class="ctop" id="cTop"></div>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>사업</th><th>낙찰사</th><th class="num">낙찰금액</th><th>투찰률</th><th class="num">개찰</th></tr></thead>
+        <thead><tr><th>사업</th><th class="sort" data-k="score">적합도</th><th>낙찰사</th><th class="num sort" data-k="amount">낙찰금액</th><th class="sort" data-k="rate">투찰률</th><th class="num sort" data-k="bidders">참가사</th><th class="num sort" data-k="date" data-on="desc">개찰</th></tr></thead>
         <tbody id="compRows"></tbody>
       </table>
     </div>
+    <button class="cmore" id="cMore" hidden></button>
   </section>
 
   <footer>
@@ -535,7 +574,7 @@ function render(rows, runs, comps){
     ["이번 주 결정", hot, "D-14 이내 · 지금 정해야 함", hot > 0 ? "hot" : "dim"],
     ["사전영업", sig.length, "본사업 예상 기관", ""],
     ["지켜볼 것", watch.length, "재공고·컨소 대기", ""],
-    ["낙찰 기록", comps.length, "최근 30일", ""],
+    ["낙찰 기록", comps.length, "최근 3개월", ""],
     ["오늘 수집", (last.total || 0).toLocaleString(), `통과 ${todayPass} · 제외 ${dropped.toLocaleString()}`, "dim"],
   ].map(([l,v,s,cls]) => `<div class="cell ${cls}"><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
 
@@ -554,19 +593,102 @@ function render(rows, runs, comps){
       `<div><span class="t">${g2bUrl(r) ? `<a class="lnk" href="${esc(g2bUrl(r))}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name)}</span><span class="r">${esc(r.reason)}</span><span class="mono" style="font-size:.74rem;color:var(--muted)">${esc(r.inst)||""}</span></div>`
     ).join("") : `<div style="padding:22px;text-align:center;color:var(--muted);font-size:.85rem">신호 없음</div>`;
 
-  document.getElementById("compRows").innerHTML = comps.length ? comps.map(c => {
-    const ratio = c.ratio ?? c.rate ?? null, est = c.rateEst ?? null, shown = ratio ?? est, pct = Math.max(0, Math.min(100, shown || 0));
-    const vendor = c.vendor || c.winner || "";
-    const failed = c.result === "유찰" || (!vendor && !c.amount);
+  renderComp();
+}
+
+/* ── 낙찰 현황: 필터·요약·정렬 ── */
+const CF = {days: 92, amt: "", fit: "", bid: "", tag: "", q: "", kind: "", min: "", max: "", sort: "date", dir: "desc", limit: 100};
+const cRate = c => c.ratio ?? c.rate ?? c.rateEst ?? null;
+const cFailed = c => c.result === "유찰" || (!(c.vendor || c.winner) && !c.amount);
+const rng = (v, s) => { if(!s) return true; const [lo, hi] = s.split("-"); return (lo === "" || v >= +lo) && (hi === "" || hi === undefined || v < +hi); };
+function compFiltered(){
+  const cut = new Date(Date.now() + 9*3600e3 - CF.days*864e5).toISOString().slice(0,10);
+  const q = CF.q.trim().toLowerCase(), min = parseFloat(CF.min), max = parseFloat(CF.max);
+  return COMPS.filter(c => {
+    if((c.date || c.fetchedOn || "") < cut) return false;
+    const eok = (c.amount || 0) / 1e8;
+    if(CF.amt && !rng(eok, CF.amt)) return false;
+    if(!isNaN(min) && eok < min) return false;
+    if(!isNaN(max) && eok > max) return false;
+    const sc = c.score ?? 0;
+    if(CF.fit && (CF.fit.startsWith("-") ? sc >= -CF.fit : sc < +CF.fit)) return false;
+    if(CF.bid){ const [lo, hi] = CF.bid.split("-"); const n = c.bidders || 0; if(!n || n < +lo || (hi !== undefined && hi !== "" && n > +hi) || (hi === undefined && n !== +lo)) return false; }
+    if(CF.tag === "partner" && c.tag !== "partner") return false;
+    if(CF.tag === "유찰" && !cFailed(c)) return false;
+    if(CF.kind && c.kind !== CF.kind) return false;
+    if(q && ![c.name, c.inst, c.vendor || c.winner].some(x => String(x || "").toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+function renderComp(){
+  const list = compFiltered();
+  const key = {date: c => c.date || "", amount: c => c.amount || 0, rate: c => cRate(c) ?? 999, bidders: c => c.bidders || 0, score: c => c.score ?? -1}[CF.sort];
+  list.sort((a, b) => { const x = key(a), y = key(b); const d = x < y ? -1 : x > y ? 1 : 0; return CF.dir === "asc" ? d : -d; });
+  document.querySelectorAll("#sec-comp th.sort").forEach(th => th.dataset.k === CF.sort ? th.dataset.on = CF.dir : delete th.dataset.on);
+  const won_ = list.filter(c => !cFailed(c));
+  const rates = won_.map(cRate).filter(v => v != null).sort((a,b) => a-b);
+  const med = rates.length ? rates[Math.floor(rates.length/2)] : null;
+  const bids = won_.map(c => c.bidders).filter(Boolean);
+  const total = won_.reduce((s, c) => s + (c.amount || 0), 0);
+  const solo = won_.filter(c => c.bidders === 1).length, fitHi = list.filter(c => (c.score ?? 0) >= 10).length;
+  document.getElementById("cSum").innerHTML = [
+    ["건수", list.length.toLocaleString(), `낙찰 ${won_.length} · 유찰 ${list.length - won_.length}`],
+    ["낙찰금액 합계", total ? won(total).replace("원","") : "—", won_.length ? "건당 평균 " + won(total / won_.length) : ""],
+    ["투찰률 중앙값", med != null ? med.toFixed(1) + "%" : "—", rates.length ? `범위 ${rates[0].toFixed(1)}~${rates[rates.length-1].toFixed(1)}%` : ""],
+    ["평균 참가사", bids.length ? (bids.reduce((a,b)=>a+b,0)/bids.length).toFixed(1) + "개사" : "—", `단독 ${solo}건`],
+    ["OPEN급 적합도", fitHi, "10점 이상"],
+  ].map(([l,v,s]) => `<div><span>${l}</span><b class="mono">${v}</b><small>${s}</small></div>`).join("");
+  const agg = {};
+  won_.forEach(c => { const v = c.vendor || c.winner; if(!v) return; (agg[v] ||= {n: 0, amt: 0}); agg[v].n++; agg[v].amt += c.amount || 0; });
+  const top = Object.entries(agg).sort((a,b) => b[1].amt - a[1].amt).slice(0, 6);
+  document.getElementById("cTop").innerHTML = top.length ? `<span>금액 상위 낙찰사</span>` + top.map(([v, x]) =>
+    `<button data-vendor="${esc(v)}" title="이 낙찰사로 검색">${esc(v)} <b class="mono">${x.n}건 · ${won(x.amt).replace("원","")}</b></button>`).join("") : "";
+  const shown = list.slice(0, CF.limit);
+  document.getElementById("compRows").innerHTML = shown.length ? shown.map(c => {
+    const ratio = c.ratio ?? c.rate ?? null, est = c.rateEst ?? null, rt = ratio ?? est, pct = Math.max(0, Math.min(100, rt || 0));
+    const vendor = c.vendor || c.winner || "", failed = cFailed(c), sc = c.score;
+    const url = g2bUrl({id: c.id});
     return `<tr>
-      <td>${g2bUrl({id: c.id}) ? `<a class="lnk" href="${esc(g2bUrl({id: c.id}))}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}${c.inst ? `<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst)}</div>` : ""}</td>
+      <td>${url ? `<a class="lnk" href="${esc(url)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}${c.tag === "partner" ? ' <span class="g" style="font-size:.65rem;padding:1px 6px;border:1px solid var(--line);border-radius:3px">AICC 접점</span>' : ""}<div style="font-size:.7rem;color:var(--muted)">${esc(c.inst || "")}${c.kind ? " · " + esc(c.kind) : ""}${c.budget ? " · 추정 " + won(c.budget) : ""}</div></td>
+      <td>${sc != null ? `<span class="fit ${sc >= 10 ? "hi" : sc >= 6 ? "mid" : ""}">${sc}점</span>${c.fit ? `<span class="fitr" title="${esc(c.fit)}">${esc(c.fit)}</span>` : ""}` : '<span class="fit">—</span>'}</td>
       <td class="vendor">${failed ? '<span style="color:var(--accent-ink)">유찰 — 재공고 대기</span>' : esc(vendor)}</td>
       <td class="num mono">${failed ? "—" : won(c.amount)}</td>
-      <td>${shown ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${ratio ? "" : "≈"}${Number(shown).toFixed(1)}%</em></span>` : "—"}${c.bidders ? `<div style="font-size:.68rem;color:var(--muted)">참가 ${c.bidders}개사</div>` : ""}</td>
-      <td class="num mono" style="color:var(--muted)">${esc(c.date||"")}</td>
+      <td>${rt ? `<span class="bar"><i><b style="width:${pct}%"></b></i><em class="mono">${ratio ? "" : "≈"}${Number(rt).toFixed(1)}%</em></span>` : "—"}</td>
+      <td class="num mono">${c.bidders ? c.bidders + "개사" + (c.bidders === 1 ? '<span class="solo">단독</span>' : "") : "—"}</td>
+      <td class="num mono" style="color:var(--muted)">${esc(c.date || "")}</td>
     </tr>`;
-  }).join("") : `<tr><td colspan="5" style="padding:22px;text-align:center;color:var(--muted)">기록된 개찰결과가 없습니다.</td></tr>`;
+  }).join("") : `<tr><td colspan="7" style="padding:22px;text-align:center;color:var(--muted)">${COMPS.length ? "조건에 맞는 낙찰 기록이 없습니다." : "기록된 개찰결과가 없습니다."}</td></tr>`;
+  const more = document.getElementById("cMore");
+  more.hidden = list.length <= CF.limit; more.textContent = `더 보기 (${(list.length - CF.limit).toLocaleString()}건 남음)`;
+  document.getElementById("nComp").textContent = list.length !== COMPS.length ? `${list.length} / ${COMPS.length}건` : (COMPS.length ? COMPS.length + "건" : "");
 }
+(() => {
+  const fil = document.getElementById("cFil");
+  fil.addEventListener("click", e => {
+    const b = e.target.closest("button"); if(!b) return;
+    const g = b.parentElement.dataset.g; if(!g) return;
+    const on = b.getAttribute("aria-pressed") === "true";
+    if(g === "tag"){ CF.tag = on ? "" : b.dataset.v; }
+    else { CF[g] = g === "days" ? +b.dataset.v : b.dataset.v; if(g === "amt"){ CF.min = CF.max = ""; document.getElementById("cMin").value = document.getElementById("cMax").value = ""; } }
+    b.parentElement.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(g === "tag" ? (x === b && !on) : x === b)));
+    CF.limit = 100; renderComp();
+  });
+  const inp = (id, k) => document.getElementById(id).addEventListener("input", e => {
+    CF[k] = e.target.value; CF.limit = 100;
+    if(k === "min" || k === "max"){ CF.amt = ""; fil.querySelectorAll('[data-g="amt"] button').forEach(x => x.setAttribute("aria-pressed", String(x.dataset.v === ""))); }
+    renderComp();
+  });
+  inp("cQ", "q"); inp("cMin", "min"); inp("cMax", "max");
+  document.getElementById("cKind").addEventListener("change", e => { CF.kind = e.target.value; renderComp(); });
+  document.querySelectorAll("#sec-comp th.sort").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.k; CF.dir = CF.sort === k ? (CF.dir === "desc" ? "asc" : "desc") : (k === "rate" ? "asc" : "desc"); CF.sort = k; renderComp();
+  }));
+  document.getElementById("cTop").addEventListener("click", e => {
+    const b = e.target.closest("button[data-vendor]"); if(!b) return;
+    const q = document.getElementById("cQ"); q.value = CF.q = q.value === b.dataset.vendor ? "" : b.dataset.vendor; renderComp();
+  });
+  document.getElementById("cMore").addEventListener("click", () => { CF.limit += 200; renderComp(); });
+})();
 
 document.addEventListener("click", e => {
   const b = e.target.closest(".status");
