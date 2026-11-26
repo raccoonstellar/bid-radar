@@ -1,5 +1,77 @@
 [
 {
+"id":"R26BK01849260-000",
+"kind":"물품",
+"name":"자동차 부품 프레스·용접 공정의 자율화를 위한 AI 기반 통합운영 시스템 개발",
+"inst":"주식회사 디에이치지",
+"winner":"에이비비로보틱스코리아 유한회사",
+"amount":143000000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"score":10,
+"bucket":"OPEN",
+"fit":"키워드 적합",
+"date":"2026-11-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"에이비비로보틱스코리아 유한회사",
+"sucsfbidAmt":"143000000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01842499-000",
+"kind":"물품",
+"name":"상용SW 3자단가(센스AI v1 (주)아이모션)",
+"inst":"각 수요기관",
+"winner":"주식회사 아이모션",
+"amount":22000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"score":9,
+"bucket":"DROP",
+"fit":"소액(0.00억 < 1억)",
+"date":"2026-11-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"주식회사 아이모션",
+"sucsfbidAmt":"22000",
+"sucsfbidRate":"100"
+}
+},
+{
+"id":"R26BK01847961-000",
+"kind":"물품",
+"name":"상용SW 제3자단가(AI Meet One V1.0_주식회사 제이디원)",
+"inst":"각 수요기관",
+"winner":"주식회사 제이디원",
+"amount":23200000,
+"budget":0,
+"rate":100.0,
+"rateEst":null,
+"bidders":1,
+"score":9,
+"bucket":"DROP",
+"fit":"소액(0.23억 < 1억)",
+"date":"2026-11-26",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"주식회사 제이디원",
+"sucsfbidAmt":"23200000",
+"sucsfbidRate":"100"
+}
+},
+{
 "id":"R26BK01852200-000",
 "kind":"물품",
 "name":"RAG 기반 파이프라인 검증을 위한 모듈형 클러스터 시제품 제작",
@@ -449,6 +521,52 @@
 "score":9,
 "bucket":"DROP",
 "fit":"저점(9) Fit2"
+},
+{
+"id":"R26BK01797064-000",
+"kind":"용역",
+"name":"2026년 인간-다중 AI 에이전트 협업 기반 예술창작 커리큘럼 개발 실증 연구 용역",
+"inst":"문화체육관광부 한국예술종합학교",
+"winner":"(주)디지캡",
+"amount":95700000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":3,
+"score":15,
+"bucket":"DROP",
+"fit":"소액(0.96억 < 1억)",
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"(주)디지캡",
+"sucsfbidAmt":"95700000"
+}
+},
+{
+"id":"R26BK01802851-000",
+"kind":"용역",
+"name":"2026 하반기 강원아이로(AI-ro) 및 AIEP 활용 교원·업무담당자 역량강화 연수 위탁 용역",
+"inst":"강원특별자치도교육청",
+"winner":"주식회사 케이에스씨",
+"amount":152475000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"score":9,
+"bucket":"DROP",
+"fit":"저점(9) Fit2",
+"date":"2026-11-18",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"주식회사 케이에스씨",
+"sucsfbidAmt":"152475000"
+}
 },
 {
 "id":"R26BK01779858-000",
@@ -1338,6 +1456,29 @@
 "score":9,
 "bucket":"DROP",
 "fit":"저점(9) Fit2"
+},
+{
+"id":"R26BK01762605-000",
+"kind":"용역",
+"name":"연세대학교 AI기반 맞춤형 연구 및 학습지원 서비스 구축 사업",
+"inst":"연세대학교",
+"winner":"주식회사 타임리",
+"amount":840000000,
+"budget":0,
+"rate":null,
+"rateEst":null,
+"bidders":2,
+"score":9,
+"bucket":"DROP",
+"fit":"저점(9) Fit3",
+"date":"2026-11-06",
+"result":"낙찰",
+"tag":"competitor",
+"fetchedOn":"2026-11-27",
+"raw":{
+"bidwinnrNm":"주식회사 타임리",
+"sucsfbidAmt":"840000000"
+}
 },
 {
 "id":"R26BK01764403-000",
@@ -7821,122 +7962,6 @@
 "raw":{
 "bidwinnrNm":"앨리스래빗 주식회사",
 "sucsfbidAmt":"70000000"
-}
-},
-{
-"id":"R26BK01697629-000",
-"kind":"물품",
-"name":"광펄스 생성형 100MSps 이더넷 데이터수집 모듈",
-"inst":"한국광기술원",
-"winner":"주식회사 엔코어스",
-"amount":4400000,
-"budget":0,
-"rate":97.56,
-"rateEst":null,
-"bidders":1,
-"score":13,
-"bucket":"DROP",
-"fit":"소액(0.04억 < 1억)",
-"date":"2026-08-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-25",
-"raw":{
-"bidwinnrNm":"주식회사 엔코어스",
-"sucsfbidAmt":"4400000",
-"sucsfbidRate":"97.56"
-}
-},
-{
-"id":"R26BK01645663-002",
-"kind":"용역",
-"name":"AI/IoT 기반 스마트 숙박 운영시스템 고도화 용역",
-"inst":"주식회사 하우스사라",
-"winner":"주식회사 코드클릭",
-"amount":141350000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":8,
-"score":9,
-"bucket":"DROP",
-"fit":"저점(9) Fit3",
-"date":"2026-08-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-25",
-"raw":{
-"bidwinnrNm":"주식회사 코드클릭",
-"sucsfbidAmt":"141350000"
-}
-},
-{
-"id":"R26BK01665647-000",
-"kind":"용역",
-"name":"국립현대미술관 미술아카이브 표준관리시스템 고도화사업",
-"inst":"문화체육관광부 국립현대미술관",
-"winner":"한국문헌정보기술 주식회사",
-"amount":117000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":2,
-"score":6,
-"bucket":"WATCH",
-"fit":"AI 요소 미확인 — 과업에 AI·OCR·챗봇 요건 있으면 검토",
-"date":"2026-08-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-25",
-"raw":{
-"bidwinnrNm":"한국문헌정보기술 주식회사",
-"sucsfbidAmt":"117000000"
-}
-},
-{
-"id":"R26BK01665047-000",
-"kind":"용역",
-"name":"AX 디바이스 도입 확산을 위한 AX 디바이스 수요 발굴 및 분석 용역",
-"inst":"정보통신산업진흥원",
-"winner":"주식회사 씨앤엘컨설팅",
-"amount":130000000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":8,
-"score":11,
-"bucket":"OPEN",
-"fit":"키워드 적합",
-"date":"2026-08-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-25",
-"raw":{
-"bidwinnrNm":"주식회사 씨앤엘컨설팅",
-"sucsfbidAmt":"130000000"
-}
-},
-{
-"id":"R26BK01668114-000",
-"kind":"용역",
-"name":"인공지능 분야 국내대리인 제도 운영 방안 마련",
-"inst":"한국지능정보사회진흥원",
-"winner":"주식회사 아이앤아이리서치",
-"amount":33640000,
-"budget":0,
-"rate":null,
-"rateEst":null,
-"bidders":3,
-"score":9,
-"bucket":"DROP",
-"fit":"소액(0.34억 < 1억)",
-"date":"2026-08-26",
-"result":"낙찰",
-"tag":"competitor",
-"fetchedOn":"2026-11-25",
-"raw":{
-"bidwinnrNm":"주식회사 아이앤아이리서치",
-"sucsfbidAmt":"33640000"
 }
 }
 ]

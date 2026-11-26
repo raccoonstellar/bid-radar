@@ -708,42 +708,6 @@
 "fetchedOn":"2026-11-17"
 },
 {
-"id":"R26BD00283207",
-"name":"지능형 포렌식센터 프라이빗 클라우드 도입 및 구축",
-"inst":"한국인터넷진흥원",
-"order":"조달청 광주지방조달청",
-"amount":3017510000,
-"rgst":"2026-10-12 09:21",
-"opnClse":"2026-10-17 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"김진영",
-"tel":"070-4056-8281",
-"dlvr":"2026-12-15 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-12 09:21",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00283207",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283207&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283207&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":11,
-"keywords":[
-"지능형"
-],
-"position":"대형사 컨소 구성사 — 대표사 수배 필요 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-13"
-},
-{
 "id":"R26BD00284963",
 "name":"첨단 AI 기반 디지털의료기기 신속제품화 지원사업(AX-Sprint 300) - 디지털의료기기 신속 인허가의 규제 대응을 위한 기술 지원",
 "inst":"주식회사 알에스리햅",
@@ -1046,80 +1010,73 @@
 "fetchedOn":"2026-11-24"
 },
 {
-"id":"R26BD00282810",
-"name":"동국대학교 AI기반 맞춤형 학습지원 서비스 운영 인프라 구축 사업자 선정",
-"inst":"동국대학교",
-"order":"동국대학교",
-"amount":371800000,
-"rgst":"2026-10-12 09:18",
-"opnClse":"2026-10-15 23:59",
+"id":"R26BD00306632",
+"name":"2027년 전북AI 평가시스템 및 디지털 디딤돌반, 디지털역량강화 교원 연수 위탁용역(긴급)",
+"inst":"전북특별자치도교육청",
+"order":"전북특별자치도교육청",
+"amount":169200000,
+"rgst":"2026-11-26 09:54",
+"opnClse":"2026-11-29 23:59",
 "bidNos":[],
 "sw":"N",
-"ofcl":"하정수",
-"tel":"02-2260-3091",
-"dlvr":"",
-"dlvrDays":60,
-"div":"일반용역",
-"chg":"2026-10-12 09:18",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00282810",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00282810&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00282810&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-13"
-},
-{
-"id":"R26BD00283570",
-"name":"정부광고 AI 솔루션 구축을 위한 기초연구 용역",
-"inst":"한국언론진흥재단",
-"order":"한국언론진흥재단",
-"amount":154000000,
-"rgst":"2026-10-12 15:59",
-"opnClse":"2026-10-15 23:59",
-"bidNos":[],
-"sw":"N",
-"ofcl":"박의연",
-"tel":"02-2001-7723",
-"dlvr":"2026-12-31 00:00",
+"ofcl":"정향미",
+"tel":"063-239-3597",
+"dlvr":"2027-02-26 00:00",
 "dlvrDays":0,
 "div":"일반용역",
-"chg":"2026-10-12 16:04",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00283570",
+"chg":"2026-11-26 09:54",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00306632",
 "files":[
 {
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=1",
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00306632&fileType=BFDTL&fileSeq=1",
 "name":"사전규격 첨부 1"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=2",
-"name":"사전규격 첨부 2"
-},
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00283570&fileType=BFDTL&fileSeq=3",
-"name":"사전규격 첨부 3"
 }
 ],
 "bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
+"reason":"긴급(경쟁 참여율 하락)",
+"score":11,
 "keywords":[
 "AI"
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-13"
+"fetchedOn":"2026-11-27"
+},
+{
+"id":"R26BD00307108",
+"name":"AI 콜봇 고도화 사업",
+"inst":"한국장학재단",
+"order":"한국장학재단",
+"amount":801000000,
+"rgst":"2026-11-26 13:32",
+"opnClse":"2026-12-01 23:59",
+"bidNos":[],
+"sw":"Y",
+"ofcl":"장인오",
+"tel":"053-238-2501",
+"dlvr":"",
+"dlvrDays":195,
+"div":"일반용역",
+"chg":"2026-11-26 13:32",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00307108",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00307108&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00307108&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+}
+],
+"bucket":"OPEN",
+"reason":"기존 구축사 존재 추정(F2)",
+"score":11,
+"keywords":[
+"콜봇",
+"AI"
+],
+"position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-27"
 },
 {
 "id":"R26BD00284173",
@@ -1986,5 +1943,45 @@
 ],
 "position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-24"
+},
+{
+"id":"R26BD00307514",
+"name":"공단형 AI 플랫폼 구축",
+"inst":"주택관리공단(주)",
+"order":"주택관리공단(주)",
+"amount":198000000,
+"rgst":"2026-11-26 18:02",
+"opnClse":"2026-12-01 23:59",
+"bidNos":[],
+"sw":"N",
+"ofcl":"고경만",
+"tel":"055-923-3053",
+"dlvr":"",
+"dlvrDays":30,
+"div":"일반용역",
+"chg":"2026-11-26 18:02",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00307514",
+"files":[
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00307514&fileType=BFDTL&fileSeq=1",
+"name":"사전규격 첨부 1"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00307514&fileType=BFDTL&fileSeq=2",
+"name":"사전규격 첨부 2"
+},
+{
+"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00307514&fileType=BFDTL&fileSeq=3",
+"name":"사전규격 첨부 3"
+}
+],
+"bucket":"OPEN",
+"reason":"키워드 적합",
+"score":10,
+"keywords":[
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-27"
 }
 ]
