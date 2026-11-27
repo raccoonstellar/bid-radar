@@ -313,6 +313,35 @@
 "fetchedOn":"2026-10-17"
 },
 {
+"id":"R26BD00307684",
+"name":"외부 상용 AI 연계 및 AI Agent 구축을 위한 생성형 AI 플랫폼 고도화 사업 용역",
+"inst":"(주)한국가스기술공사",
+"order":"(주)한국가스기술공사",
+"amount":166430000,
+"rgst":"2026-11-27 09:37",
+"opnClse":"2026-11-22 00:00",
+"bidNos":[],
+"sw":"N",
+"ofcl":"",
+"tel":"",
+"dlvr":"2027-02-26 00:00",
+"dlvrDays":0,
+"div":"기술용역",
+"chg":"",
+"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00307684",
+"files":[],
+"bucket":"OPEN",
+"reason":"기존 구축사 존재 추정(F2)",
+"score":14,
+"keywords":[
+"생성형",
+"Agent",
+"AI"
+],
+"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
+"fetchedOn":"2026-11-28"
+},
+{
 "id":"R26BD00285952",
 "name":"「AICC 도입방안 수립 컨설팅」",
 "inst":"국민연금공단",
@@ -1077,38 +1106,6 @@
 ],
 "position":"단독 가능 — 실적요건 50% 기준이면 통과, 100%면 컨소 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
 "fetchedOn":"2026-11-27"
-},
-{
-"id":"R26BD00284173",
-"name":"AI-LXP(AI 개인화 학습성장 플랫폼) 구축 및 일학습병행과정 컨텐츠 개발 사업",
-"inst":"영남이공대학교 산학협력단",
-"order":"영남이공대학교 산학협력단",
-"amount":400000000,
-"rgst":"2026-10-13 16:06",
-"opnClse":"2026-10-18 23:59",
-"bidNos":[],
-"sw":"Y",
-"ofcl":"반병탁",
-"tel":"053-650-9163",
-"dlvr":"2027-02-28 00:00",
-"dlvrDays":0,
-"div":"일반용역",
-"chg":"2026-10-13 16:06",
-"url":"https://www.g2b.go.kr/link/PRVA004_02/single/?bfSpecRegNo=R26BD00284173",
-"files":[
-{
-"url":"https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00284173&fileType=BFDTL&fileSeq=1",
-"name":"사전규격 첨부 1"
-}
-],
-"bucket":"OPEN",
-"reason":"키워드 적합",
-"score":10,
-"keywords":[
-"AI"
-],
-"position":"단독 · 공동수급 미기재 · 하도급 공고서 확인(SW사업 50% 상한·사전승인)",
-"fetchedOn":"2026-10-14"
 },
 {
 "id":"R26BD00284910",

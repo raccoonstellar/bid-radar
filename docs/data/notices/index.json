@@ -5148,6 +5148,25 @@
 "files": 7,
 "period": ""
 },
+"R26BD00307684": {
+"status": "no-attachment",
+"checkedAt": "2026-11-27T23:40:42",
+"joint": "",
+"sub": "",
+"ratio": "",
+"diff": false,
+"qual": "",
+"quant": "",
+"cutoff": "",
+"method": "",
+"rfp": 0,
+"submit": "",
+"big": "",
+"region": false,
+"perf": false,
+"files": 0,
+"period": ""
+},
 "R26BK01743511-000": {
 "status": "ok",
 "checkedAt": "2026-09-28T06:52:39",
